@@ -663,3 +663,5 @@ incident calls, design reviews, status updates. The everyday half lives in
 35. **is now a good time?** — 现在方便吗？
     - Is now a good time, or should I come back later?
     - 打断别人前的标准礼貌问法。更委婉：Do you have a minute? / Is this a bad time?
+
+35. come down to. 取决于
