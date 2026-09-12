@@ -1,0 +1,53 @@
+# 生词本 · medical
+# 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
+
+- term: nodule
+  ipa: /ˈnɑːdʒuːl/
+  pos: n.
+  kind: word
+  meaning: 结节 —— 只是「这里有东西」的描述，既不等于癌，也不等于没事。
+  examples:
+  - a 1.6 × 1.1 cm nodule in the left breast
+  source: English Teacher · Meaning inquiry
+  added: "2026-09-09"
+- term: benign / malignant
+  pos: adj.
+  kind: word
+  meaning: 良性／恶性。
+  examples:
+  - Most BI-RADS 4 nodules turn out to be benign.
+  source: English Teacher · Meaning inquiry
+  added: "2026-09-09"
+- term: indeterminate
+  pos: adj.
+  kind: word
+  meaning: 性质待定 —— 影像上特征互相矛盾，下不了结论。
+  examples:
+  - an indeterminate solid nodule
+  source: English Teacher · Meaning inquiry
+  added: "2026-09-09"
+- term: biopsy
+  ipa: /ˈbaɪɑːpsi/
+  pos: n.
+  kind: word
+  meaning: 活检 —— 取一点组织做病理，是唯一能定性的手段。
+  examples:
+  - ultrasound-guided biopsy
+  source: English Teacher · Meaning inquiry
+  added: "2026-09-09"
+- term: solid / cyst
+  pos: n.
+  kind: word
+  meaning: 实性／囊肿。实性指里面是组织不是水；囊肿基本都是良性。
+  examples:
+  - a solid, hypoechoic nodule with well-defined margins
+  source: English Teacher · Meaning inquiry
+  added: "2026-09-09"
+- term: referral letter
+  pos: n.
+  kind: phrase
+  meaning: 转诊信。
+  examples:
+  - The referral letter recommends a biopsy.
+  source: English Teacher · Meaning inquiry
+  added: "2026-09-09"

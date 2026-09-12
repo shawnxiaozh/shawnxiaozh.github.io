@@ -1,0 +1,471 @@
+# 生词本 · tech
+# 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
+
+- term: deterministic
+  ipa: /dɪˌtɜːrmɪˈnɪstɪk/
+  pos: adj.
+  kind: word
+  meaning: 确定性的（同样输入必定同样输出）
+  examples:
+  - The retry order isn't deterministic, which is why the test is flaky.
+  - a fully deterministic sequence of steps
+  note: |-
+    反面 non-deterministic / flaky。和 LLM 相关讨论里出现频率很高。
+    确定性的 —— 每次运行结果都一样。
+  source: Notion · Work + English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: agentic
+  ipa: /eɪˈdʒentɪk/
+  pos: adj.
+  kind: word
+  meaning: 具有智能体特性的。刻意用形容词而不是名词 agent，因为这是程度问题，不是非黑即白。
+  examples:
+  - Systems can be agentic to different degrees.
+  source: English Teacher · Agentic as a spectrum
+  added: "2026-09-10"
+- term: autonomy / autonomous
+  ipa: /ɔːˈtɑːnəmi/
+  pos: n. / adj.
+  kind: word
+  meaning: 自主性／自主的。词根 auto（自己）+ nomos（规则）= 自己定规则。
+  examples:
+  - Most of the autonomy is in what text the LLM generates.
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: hard-code
+  pos: v.
+  kind: word
+  meaning: 硬编码，把逻辑写死在程序里。
+  examples:
+  - You can hard code in that you call a web search engine.
+  note: 同族：predetermined（预先决定的）、predefined（预定义的）。
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: spectrum
+  pos: n.
+  kind: word
+  meaning: 光谱、连续区间。强调两端之间是渐变而非对立。
+  examples:
+  - Agents can sit anywhere on this spectrum.
+  note: 搭配：at the more highly autonomous end of the spectrum。
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: fire
+  pos: v.
+  kind: word
+  meaning: （规则、告警）被触发
+  examples:
+  - The rule fired on every transaction over $500.
+  - Claude Code fires around 30 hook events over the course of a session.
+  note: |-
+    在风控、监控、事件系统里 fire 就是 trigger。The alert fired at 3am. 也说 a rule fires 而不是 a rule is triggered，更地道。
+    触发、发出（事件）。比喻来源是「发射」—— 瞬时的一次性信号。 近义：trigger（触发）、emit（抛出）、dispatch（派发）。文档里 fire 最自然。
+  source: Notion · Work + English Teacher · Understanding Claude Code hook events
+  added: "2026-09-08"
+- term: wire it (as a hook)
+  pos: v.
+  kind: phrase
+  meaning: 把它硬接进流程里、写死成机制。带工程上「焊死」的味道。
+  examples:
+  - Don't leave that to trust. Wire it as a hook so Claude can't skip it.
+  note: 关键在 can't 不是 won't：是「做不到跳过」。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: curated
+  pos: adj.
+  kind: word
+  meaning: 人工精选、把过关的。和「谁都能上、机器自动过一遍」相对。
+  examples:
+  - The official marketplace is curated on its own separate track.
+  note: 本义是博物馆策展。track = 流程通道。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: long tail
+  pos: n.
+  kind: phrase
+  meaning: 长尾 —— 零零碎碎但种类很多的那一堆，和「头部」相对。
+  examples:
+  - …plus the longer tail of stuff like LSP servers, monitors and themes.
+  note: 用比较级 longer 是相对前面那份主列表而言。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: wave through
+  pos: v.
+  kind: phrase
+  meaning: 挥手放行。画面是关卡上保安看一眼就让你过，常自带「该查没查」的贬义。
+  examples:
+  - The classifier waves it through, because broken isn't dangerous.
+  note: 近义 slip through 更强调「漏过去了」。
+  source: English Teacher · Intent classification vs code correctness
+  added: "2026-09-07"
+- term: cache
+  ipa: 读 cash
+  kind: pron
+  meaning: 不是「卡奇」。从文档里读来的词，心里的读音多半是错的。
+  examples:
+  - in-memory cache
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: queue
+  ipa: 读 Q
+  kind: pron
+  meaning: 后面四个字母不发音。
+  examples:
+  - a message queue
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: suite
+  ipa: 读 sweet
+  kind: pron
+  meaning: 不是 suit-e。
+  examples:
+  - a test suite
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: schema
+  ipa: SKEE-muh
+  kind: pron
+  meaning: 不是「谢玛」。
+  examples:
+  - validate input against a schema
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: async
+  ipa: AY-sync
+  kind: pron
+  meaning: 不是「阿-sync」。
+  examples:
+  - an async function
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: tuple
+  ipa: TOO-pul / TUH-pul
+  kind: pron
+  meaning: 两种读法都有。
+  examples:
+  - return a tuple
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: null / height
+  ipa: nul / hite
+  kind: pron
+  meaning: null 不是「奶欧」，height 不是「hey-t」。
+  examples:
+  - a null pointer · the height of the tree
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: variable / parameter
+  ipa: VAR-i-a-ble / pa-RAM-e-ter
+  kind: pron
+  meaning: 重音位置最容易错。
+  examples:
+  - pass the parameter as a variable
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: Linux
+  ipa: LIN-ux
+  kind: pron
+  meaning: 不是「莱纳克斯」。
+  examples:
+  - running on Linux
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: source
+  pos: v.
+  kind: word
+  meaning: 进货、找货。比 buy 专业，是行业内的说法。
+  examples:
+  - We help repair shops source parts directly from suppliers.
+  note: 别用 trade —— 英文里默认是「以物易物」或「炒股」。
+  source: English Teacher · Auto parts platform terminology
+  added: "2026-09-04"
+- term: aggregator
+  pos: n.
+  kind: word
+  meaning: 聚合方 —— 自己接了很多供应商，你接它一家就能连到很多家。
+  examples:
+  - Requests are either sent directly to the vendor, or routed through a third-party aggregator.
+  note: 同类：intermediary / middleman（中间转手）、reseller（转卖）、upstream provider（上游）。
+  source: English Teacher · Greeting with confusion
+  added: "2026-09-03"
+- term: route through
+  pos: v.
+  kind: phrase
+  meaning: 经由……转发。描述调用链路时的标准动词。
+  examples:
+  - Requests are routed through a third-party aggregator.
+  note: 也可以说 proxy the call。
+  source: English Teacher · Greeting with confusion
+  added: "2026-09-03"
+- term: frontier capabilities
+  kind: phrase
+  meaning: 前沿能力。业界标准说法，frontier model = 前沿模型。
+  examples:
+  - We need to understand the limits of what the model can reliably do.
+  note: 「AI 的能力边界」最自然的说法是 the limits of AI's capabilities。
+  source: English Teacher · AI的边界能力英语表达
+  added: "2026-08-07"
+- term: standalone / single-node system
+  kind: word
+  meaning: 单机系统。和 distributed system 对照时用 single-node 最准。
+  examples:
+  - It started as a standalone system running on a single node.
+  note: 单机 ≠ 单体。单体架构是 monolithic architecture，它可以多实例部署。
+  source: English Teacher · 单机系统的中文表达
+  added: "2026-08-06"
+- term: recurrence relation
+  pos: n.
+  kind: phrase
+  meaning: 状态转移方程。母语者讲 DP 时最自然的说法，比 state transition equation 地道。
+  examples:
+  - The recurrence is dp[i] = max(dp[i-1], dp[i-2] + nums[i]).
+  note: 动词形式："We transition from state i-1 to state i by…"
+  source: English Teacher · State transition equation in English
+  added: "2026-08-05"
+- term: monotonic stack
+  pos: n.
+  kind: phrase
+  meaning: 单调栈。递减／递增分别是 monotonically decreasing / increasing stack。
+  examples:
+  - I'll maintain a monotonically decreasing stack, decreasing from bottom to top.
+  note: 一定要补一句方向说明，不然中英文都有歧义。
+  source: English Teacher · State transition equation in English
+  added: "2026-08-05"
+- term: amortized
+  ipa: /ˈæmərtaɪzd/
+  pos: adj.
+  kind: word
+  meaning: 均摊的。讲复杂度时的关键词，面试官听到会知道你真的懂。
+  examples:
+  - Each element is pushed and popped at most once, so it's amortized O(n).
+  source: English Teacher · State transition equation in English
+  added: "2026-08-05"
+- term: DFS — Depth-First Search
+  ipa: /depθ/
+  pos: n.
+  kind: word
+  meaning: 深度优先搜索。口语里直接念字母 D-F-S 也很常见。
+  examples:
+  - I'd solve this with DFS, marking nodes as visited as I go.
+  source: English Teacher · DFS英文含义
+  added: "2026-08-04"
+- term: BFS — Breadth-First Search
+  ipa: /bredθ/
+  pos: n.
+  kind: word
+  meaning: 广度优先搜索。breadth 中间的 d 要发出来，别读成 breath。
+  examples:
+  - BFS guarantees the shortest path in an unweighted graph.
+  source: English Teacher · DFS英文含义
+  added: "2026-08-04"
+- term: backtracking
+  pos: n.
+  kind: word
+  meaning: 回溯 —— DFS 的一种，走完一条路要撤销状态。
+  examples:
+  - 'This is a backtracking problem: choose, recurse, undo.'
+  source: English Teacher · DFS英文含义
+  added: "2026-08-04"
+- term: blow up the call stack
+  kind: phrase
+  meaning: 递归太深导致爆栈。
+  examples:
+  - This could blow up the call stack.
+  note: DFS uses a stack — either explicit or the call stack via recursion.
+  source: English Teacher · DFS英文含义
+  added: "2026-08-04"
+- term: two to the n
+  kind: pattern
+  meaning: 2ⁿ 的读法。别说 "two power n"，"to the" 不能省。
+  examples:
+  - The recursion tree has two to the n nodes.
+  note: n² = n squared · n³ = n cubed · n! = n factorial · C(n,k) = n choose k
+  source: English Teacher · DFS英文含义
+  added: "2026-08-04"
+- term: push live
+  kind: phrase
+  meaning: 推上线，把改动发布到生产环境
+  examples:
+  - We're pushing the new checkout flow live on Thursday.
+  note: 比 deploy 口语；deploy 偏技术动作，push live 强调"用户能看到了"。也说 go live（不及物）：We go live on Monday.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: experience a drop in traffic
+  kind: phrase
+  meaning: 流量下跌
+  examples:
+  - We experienced a drop in traffic right after the release.
+  note: experience + 负面事件是事故沟通的固定说法（experience an outage / degradation），比 we had 更中性、不认责。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: ramp up
+  kind: phrase
+  meaning: 逐步放量、逐步提升
+  examples:
+  - We ramped it up to 20% traffic yesterday.
+  note: 灰度发布的标准词，强调"分阶段慢慢加"。回退是 ramp down / roll back。名词 ramp：the 20% ramp。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: decommission
+  kind: word
+  meaning: 下线、退役（系统或服务）
+  examples:
+  - We're decommissioning the legacy gateway next quarter.
+  note: 正式说法，指整套系统正式停用并清理资源。临时关掉只是 turn off / disable。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: scaffolding
+  kind: word
+  meaning: 脚手架（临时搭建、后面会替换的结构）
+  examples:
+  - This is just scaffolding so we can test the flow end to end.
+  note: 说某段代码是 scaffolding，等于提前声明"这是临时的，别当正式实现看"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: replicate
+  kind: word
+  meaning: 复现（问题）/ 复制（数据）
+  examples:
+  - I can't replicate the issue on staging.
+  note: 复现 bug 更口语的说法是 reproduce（缩写 repro）。数据同步语境下 replicate 指"多副本复制"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: the metrics are not emitted
+  kind: phrase
+  meaning: 指标没有上报出来
+  examples:
+  - The metrics aren't emitted for that code path.
+  note: emit 指程序主动把指标/事件发出去。没采集到用 not collected，没显示用 not showing up in the dashboard。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: triage
+  kind: word
+  meaning: 分类定级、分诊
+  examples:
+  - Let's triage the backlog before we plan the sprint.
+  note: 源自战地医疗的"按轻重缓急分诊"。工程里指"先判断严重程度和归属，再决定谁处理"，不是马上修。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: model-agnostic
+  kind: word
+  meaning: 与模型无关的
+  examples:
+  - The protocol is model-agnostic, so you can swap providers.
+  note: -agnostic 是很好用的后缀：platform-agnostic、vendor-agnostic，都指"不绑定某一家/某一种"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: under the hood
+  kind: phrase
+  meaning: 底层实现、引擎盖之下
+  examples:
+  - You don't need to know what's happening under the hood.
+  note: 汽车引擎盖的比喻。英式也说 under the bonnet。潜台词是"这些细节被封装好了，你不用管"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: primitives
+  kind: word
+  meaning: 原语、最基础的构件
+  examples:
+  - Let's dive into some of the primitives, the fundamental pieces of the protocol.
+  note: 可以理解成最小的乐高积木——不能再拆的底层单元，上层能力都由它们组合出来。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: network instability
+  kind: phrase
+  meaning: 网络不稳定
+  examples:
+  - There's network instability in the region right now.
+  note: 事故通报的标准委婉说法，比 the network is broken 中性。相关词：packet loss、latency spike、intermittent failures。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: workaround
+  kind: word
+  meaning: 变通办法、绕过问题的临时方案
+  examples:
+  - As a workaround, we restarted the service. / We're working around this issue while investigating.
+  note: 名词连写 workaround，动词分开写 work around。它绕过问题但不解决问题，所以和 fix 要分清。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: switchover
+  kind: word
+  meaning: 切换（从一个系统切到另一个）
+  examples:
+  - We're preparing for the production switchover.
+  note: 指有计划的正式切换。故障时自动切叫 failover，两者别混。动词形式分开写：switch over to the new system。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: evaluation
+  kind: word
+  meaning: （风控语境）一次评估调用 / 一次审核
+  examples:
+  - If we see the evaluation come through without a date of birth, we reject it.
+  note: 在 risk 系统里 evaluation 是一个 audit 概念，提到它时往往指"触发一次调用去做评估"这个过程本身，而不是抽象的"评价"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: API endpoint
+  kind: phrase
+  meaning: 接口地址
+  examples:
+  - You are calling different API endpoints.
+  note: endpoint 指具体某个 URL 路径，API 是整套接口。所以是"调用不同的 endpoint"，不是"不同的 API"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: behave / behaviour
+  kind: word
+  meaning: （系统）表现、行为
+  examples:
+  - It should be behaving the same way it behaves in ID Plus.
+  note: 描述系统实际表现的中性词，不预设对错。The service is behaving oddly. 名词：expected behaviour vs actual behaviour。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: get back
+  kind: phrase
+  meaning: 拿回、收到返回的东西
+  examples:
+  - What you send through determines what you get back.
+  note: 这里的 get back 指"接口返回的内容"。注意 get back to sb 是"回复某人"，意思完全不同。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: campaign
+  kind: word
+  meaning: 战役、有目标分阶段推进的一整轮行动
+  examples:
+  - One engineer, one prompt, one task — versus campaigns, which persist all the context.
+  note: 日常义是 marketing / political / military campaign，共同点是"有一个目标，要打好几仗才拿得下，中间有计划、有协作、持续一段时间"，和 task 的一次性正相反。AI agent 工具借的就是这层意思：一个 campaign 是"一件要打完的事"，规划、实现、评审都挂在它下面，上下文跨 session 保留。发起用 launch / run a campaign。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: come through as…
+  kind: phrase
+  meaning: （数据、消息）以……形式传过来
+  examples:
+  - These alerts are coming through as high priority.
+  - For this flow, the business name is coming through as another field.
+  note: |-
+    come through 是数据/消息"传到我这边"的固定说法，as 后面接它呈现的形态。数据错位就说 it's coming through as null。
+    传过来的是另一个字段 排查字段映射错误时的标准描述：不是缺失，而是被塞到了别的字段里。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: reinstate
+  kind: word
+  meaning: 恢复（此前被撤销的东西）
+  examples:
+  - Looks like it's been reinstated.
+  note: 特指"恢复原状"：恢复权限、恢复被停用的规则、复职。单纯恢复服务用 restore / bring back up。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: roll out
+  kind: phrase
+  meaning: 发布、铺开
+  examples:
+  - Maybe it was rolled out consecutively with that new rule.
+  note: 强调"分批推给用户"的过程。撤回是 roll back。名词连写：a phased rollout。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: drop a field
+  kind: phrase
+  meaning: 不传 / 去掉某个字段
+  examples:
+  - They're dropping the field entirely on that flow.
+  note: drop 在数据语境里是"丢弃、不发送"。数据库里 drop 是删表删列，语气更硬。
+  source: Notion · Work
+  added: "2026-07-29"

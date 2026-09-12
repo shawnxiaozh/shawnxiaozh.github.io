@@ -1,0 +1,48 @@
+# 生词本的分类定义，被 _layouts/vocab.html 读取。
+#
+# 词条放在 _data/vocab/<scene>.yml，文件名就是场景 id。每条词的字段：
+#
+#   - term: chase (up)            # 必填：单词 / 短语 / 句型
+#     ipa: /tʃeɪs/                # 可选：音标（发音类可写「读 cash」）
+#     pos: v.                     # 可选：词性
+#     kind: phrase                # 必填：下面 kinds 里的 id
+#     meaning: 催进度、追结果。     # 必填：中文释义
+#     examples:                   # 可选：原句，一行一句
+#       - I'll chase, but there's some backlog on their end.
+#     note: 用法 / 语气 / 近义辨析   # 可选；多段用 |- 块写法
+#     source: English Teacher · 某段对话标题
+#     added: "2026-08-13"         # 加引号，按日期倒序放
+#
+# 复习进度的 key 是 "scene::term"，改 term 会让这条的进度重置。
+
+scenes:
+  - id: daily
+    name: 日常生活
+    note: 家人、旅行、吃饭、闲聊、问路 —— 单词都认识，组合起来意思全变的那些。
+  - id: work
+    name: 职场沟通
+    note: 会议、事故通报、设计评审、进度汇报里反复出现的说法和黑话。
+  - id: career
+    name: 求职面试
+    note: 面试沟通、offer、裁员、招聘对接，以及简历里的动词。
+  - id: tech
+    name: 技术表达
+    note: 算法、系统、AI 相关术语，以及在技术讨论里怎么把它们说出口。
+  - id: writing
+    name: 文档书面
+    note: 读英文文档和写正式表达时容易卡住的动词、连接词和搭配。
+  - id: medical
+    name: 医学报告
+    note: 看懂体检和影像报告需要的基本词。
+
+kinds:
+  - id: word
+    name: 单词
+  - id: phrase
+    name: 短语表达
+  - id: pattern
+    name: 句型语法
+  - id: contrast
+    name: 易混辨析
+  - id: pron
+    name: 发音

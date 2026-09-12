@@ -1,0 +1,1064 @@
+# 生词本 · work
+# 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
+
+- term: steer
+  pos: v.
+  kind: word
+  meaning: 引导、把方向
+  examples:
+  - Steer the approach before work begins and while it runs.
+  - Steering long sessions — keeping a long task from drifting off course.
+  note: |-
+    原意是掌舵。管理语境里指"给方向"而不是"下指令"，比 direct 柔和。
+    掌舵、引导、中途纠偏。
+  source: Notion · Work + English Teacher · Steering long sessions meaning
+  added: "2026-09-07"
+- term: your nut
+  pos: n.
+  kind: phrase
+  meaning: 第一桶金、财务安全垫 —— 你必须先赚到、能让你不慌的那笔钱。
+  examples:
+  - You're within your rights to sell 10% if you don't have your nut yet.
+  note: 原义是开门营业前必须覆盖的固定成本："My monthly nut is $40K."
+  source: English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: cap table
+  pos: n.
+  kind: phrase
+  meaning: 股权结构表。put cash on your cap table = 把融资装进公司。
+  examples:
+  - Put that cash on your cap table at a solid valuation.
+  source: English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: be well within your rights to …
+  kind: phrase
+  meaning: 你完全有权（做某事），不必觉得亏心。
+  examples:
+  - You're well within your rights to sell 10% of your shares.
+  source: English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: put off
+  pos: v.
+  kind: phrase
+  meaning: 推迟、往后拖。
+  examples:
+  - I'm going to put off my raise for six months.
+  note: 这里的 raise 是「融资轮」，不是「加薪」。
+  source: English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: holdings
+  pos: n.
+  kind: word
+  meaning: 持有的股份／资产。
+  examples:
+  - …sell 10 to 20 percent of your holdings now.
+  source: English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: speculative
+  pos: adj.
+  kind: word
+  meaning: 推测性的、还没兑现的。和 real（实打实的）成对出现。
+  examples:
+  - It is all real dollars flowing versus speculative utilization.
+  source: English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: standup
+  pos: n.
+  kind: word
+  meaning: 每日站会。
+  examples:
+  - Let's take that to standup tomorrow.
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: blocker
+  pos: n.
+  kind: word
+  meaning: 卡住你的事，进度阻塞点。
+  examples:
+  - My only blocker is waiting on the API key.
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: circle back
+  pos: v.
+  kind: phrase
+  meaning: 回头再聊这件事。
+  examples:
+  - Let's circle back on this next week.
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: loop in
+  pos: v.
+  kind: phrase
+  meaning: 把某人拉进讨论、抄送进来。
+  examples:
+  - I'll loop in the platform team.
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: bandwidth
+  pos: n.
+  kind: word
+  meaning: 精力／工时上的余量。
+  examples:
+  - I don't have the bandwidth for that this sprint.
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: EOD / ETA
+  kind: phrase
+  meaning: 今天下班前 / 预计完成时间。
+  examples:
+  - I'll have it done by EOD. What's the ETA on the fix?
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: sync up / align on
+  pos: v.
+  kind: phrase
+  meaning: 碰一下 / 就某事达成一致。
+  examples:
+  - Let's sync up Friday and align on the rollout plan.
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: ship it / LGTM
+  kind: phrase
+  meaning: 发吧 / Looks Good To Me，代码审查通过。
+  examples:
+  - LGTM, ship it.
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: bump the PR
+  kind: phrase
+  meaning: 顶一下 PR，提醒别人来审。
+  examples:
+  - Can you bump the PR? It's been sitting for two days.
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: take it offline
+  kind: phrase
+  meaning: 这个会后单聊，别占用会议时间。
+  examples:
+  - Good question — let's take it offline.
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: park that
+  pos: v.
+  kind: phrase
+  meaning: 先搁置，之后再说。
+  examples:
+  - Let's park that for now.
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: low-hanging fruit
+  kind: phrase
+  meaning: 容易摘的果子 —— 成本低见效快的事。
+  examples:
+  - Let's start with the low-hanging fruit.
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: nitpick / bikeshedding
+  kind: word
+  meaning: 挑刺 / 在无关紧要的细节上争论不休。
+  examples:
+  - This is a nitpick, but… · We're bikeshedding on the button color.
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: you are aware of that?
+  kind: phrase
+  meaning: 你知道这件事吧？（确认对方已掌握某信息）
+  examples:
+  - You're aware of that, right? The cutoff moved to Friday.
+  note: 比 "Do you know...?" 更中性正式，重点是"你有没有被告知"，不是"你懂不懂"。邮件里常写成 Please be aware that…
+  source: Notion · Work
+  added: "2026-07-29"
+- term: be committed to sth
+  kind: phrase
+  meaning: 坚定地致力于……
+  examples:
+  - We are committed to that goal, and the resourcing reflects it.
+  note: 后面接名词或动名词（committed to delivering）。语气比 we want to 重得多，带承诺性质，对外沟通要谨慎使用。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: around
+  kind: word
+  meaning: 围绕、关于（某个话题范围）
+  examples:
+  - My questions are going to be around the implementation, not the design.
+  note: 比 about 更松，暗示"这一片区域的问题"，不是某个具体问题。会议开场很常用。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: be for
+  kind: phrase
+  meaning: 归属于、给谁用
+  examples:
+  - Which team would that be for — platform or payments?
+  note: 问归属也可以说 Who owns that? 后者更直接，前者更委婉。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: everything else
+  kind: phrase
+  meaning: 其余剩下的事情
+  examples:
+  - For everything else, I would depend on you.
+  note: 常和 for 连用做兜底：先讲清楚自己负责的部分，再把剩下的交出去。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: in the meantime
+  kind: phrase
+  meaning: 与此同时，在这期间
+  examples:
+  - The vendor will get back to us next week. In the meantime, let's unblock the frontend.
+  note: 强调"等待期间先做别的"，隐含一个正在等的事。纯粹同时发生用 meanwhile 或 at the same time。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I will continue with…
+  kind: pattern
+  meaning: 我先继续做……
+  examples:
+  - I'll continue with the migration script while you review the design.
+  note: 表示不改变原计划。想强调"不管怎样还是要做"可以说 I'll carry on with…
+  source: Notion · Work
+  added: "2026-07-29"
+- term: in the short term
+  kind: phrase
+  meaning: 短期内
+  examples:
+  - In the short term we'll patch it manually; long term we need a proper fix.
+  note: 几乎总是和 long term 对着说。注意固定搭配是 in the short term，不是 in short term。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: so in this / that case
+  kind: pattern
+  meaning: 那这样的话
+  examples:
+  - So in that case, we don't need the feature flag at all.
+  note: 用来承接对方刚说的前提，顺着往下推结论。会上很好的过渡词。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: leverage
+  kind: word
+  meaning: 利用（现成的资源/能力）
+  examples:
+  - We can leverage the existing auth service instead of building our own.
+  note: 商务味很浓的 use。工程讨论里说 reuse 更朴实清楚；对管理层汇报时 leverage 更常见。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: move it forward
+  kind: phrase
+  meaning: 把事情往前推进
+  examples:
+  - Let's set a decision date so we can move it forward.
+  note: 隐含"目前卡住了"。近义 push it forward（更用力）、take it forward（英式，接手往下做）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: consolidate A and B into C
+  kind: phrase
+  meaning: 把 A 和 B 合并成 C
+  examples:
+  - Let's consolidate both flows into one workflow.
+  note: consolidate 强调"合并后更精简统一"，merge 只是把两者并到一起，不带精简含义。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: holistic
+  kind: word
+  meaning: 整体的、通盘的
+  examples:
+  - We need a holistic view across the entire pipeline, not per-service dashboards.
+  note: 常搭配 holistic view / approach。潜台词是"别只看自己那一块"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: there isn't a ticket for it
+  kind: phrase
+  meaning: 这件事没有开单
+  examples:
+  - That work isn't tracked — there isn't a ticket for it.
+  note: 意思是没进积压/看板，因此不会被排期。也说 it's not on the board / it's untracked。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: what exactly needs to be encrypted
+  kind: phrase
+  meaning: 到底哪些内容需要加密
+  examples:
+  - Before we scope this, what exactly needs to be encrypted?
+  note: exactly 放在疑问词后面用来收窄范围，礼貌地逼对方给具体答案。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: our committed timeline
+  kind: phrase
+  meaning: 我们已经承诺的时间线
+  examples:
+  - That change would put our committed timeline at risk.
+  note: committed 在这里指"已对外承诺、不能随便改"，比 planned timeline 分量重得多。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: my concern is…
+  kind: pattern
+  meaning: 我担心的是……
+  examples:
+  - My concern is that we're testing against stale data.
+  note: 提反对意见最安全的开场白：把问题说成自己的顾虑，而不是指责对方的方案。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: let me try to work it out
+  kind: phrase
+  meaning: 我来想办法解决 / 算清楚
+  examples:
+  - Let me try to work it out and come back to you tomorrow.
+  note: work out 既是"想出办法"也是"算出结果"。想强调只是先看看，可以说 let me have a look at it。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I'm not following you
+  kind: phrase
+  meaning: 我没跟上你的意思
+  examples:
+  - Sorry, I'm not following you — which service returns the 500?
+  note: 说"没听懂"最礼貌的方式，把责任放在自己身上。比 I don't understand 柔和很多。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: achieve / hit the milestone
+  kind: phrase
+  meaning: 达成里程碑
+  examples:
+  - We hit the milestone two days early.
+  note: 口语里 hit 比 achieve 常见得多。没达成说 we missed the milestone。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I don't have much to say
+  kind: phrase
+  meaning: 我这边没什么要补充的
+  examples:
+  - I don't have much to say this week — everything's on track.
+  note: 站会轮到自己但没进展时的标准说法。近义 nothing much from me / nothing to flag。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: Are we being measured?
+  kind: phrase
+  meaning: 这个有被纳入考核吗？
+  examples:
+  - Are we being measured on this, or is it best-effort?
+  note: be measured on sth 指"被拿这个指标考核"。问这句其实是在问优先级。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: be aligned on sth
+  kind: phrase
+  meaning: 在某事上达成一致
+  examples:
+  - We're aligned on the scope; the timeline is still open.
+  note: align 是职场高频词。想推动对齐说 let's align on…；确认是否一致说 are we aligned?
+  source: Notion · Work
+  added: "2026-07-29"
+- term: disseminate down
+  kind: phrase
+  meaning: （信息）向下传达、同步到下游
+  examples:
+  - Clearly it did not get disseminated down.
+  - This message did not get disseminated down.
+  note: |-
+    这个变更没有被同步到下面的系统 / 下面的团队。语气正式，日常更常说 it didn't get passed down 或 the message didn't reach them。
+    上层没有把消息向下传播。日常沟通更常说 it never made it down to the teams。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: in terms of
+  kind: phrase
+  meaning: 从……的角度看、就……而言
+  examples:
+  - For most projects, I like to think in terms of an MVP, then one or two versions of improvements.
+  note: 用来指定讨论的维度：in terms of cost / risk / effort。口语里也常用来换算：In terms of headcount, that's two engineers.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: deliverable
+  kind: word
+  meaning: 交付物、可交付成果
+  examples:
+  - The deliverable for this phase is a working prototype, not production code.
+  note: 可数名词，常用复数。它必须是别人能看到、能验收的东西，所以"设计文档"算，"想清楚了"不算。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: fuzzy
+  kind: word
+  meaning: 模糊的、不清晰的
+  examples:
+  - The requirements are still fuzzy, so any estimate would be a guess.
+  note: 说需求 fuzzy 比说 unclear 更委婉，暗示"不是你没写清楚，是这事本身还没定"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: prescriptive
+  kind: word
+  meaning: 规定得很细的、给死了做法的
+  examples:
+  - The guideline is intentionally not prescriptive — teams can adapt it.
+  note: 常带轻微负面：too prescriptive 意思是"管太细，限制了灵活性"。反面是 descriptive 或 guidance-only。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: bloated
+  kind: word
+  meaning: 臃肿的
+  examples:
+  - Don't bloat it — one endpoint, one job.
+  note: 形容需求、代码、流程都行。动词 bloat：Every release bloats the config a bit more.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: in charge (of sth)
+  kind: phrase
+  meaning: 负责、主管
+  examples:
+  - Who's in charge of the release this week?
+  note: 强调"有决定权"，不只是干活。只负责某块工作用 responsible for；正式归属用 own：Which team owns this?
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I'm not in a position to…
+  kind: pattern
+  meaning: 我不方便 / 无权……
+  examples:
+  - Unfortunately I'm not in a position to give a satisfactory answer to that question.
+  note: 婉拒的高级说法，暗示"不是我不想，是我没这个立场/权限"，不必解释原因。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: flair
+  kind: word
+  meaning: 天赋、风采、漂亮的手法
+  examples:
+  - I appreciate the intellectual flair you brought to not answering that.
+  note: 这句是玩笑式的反讽——夸对方"把问题绕过去绕得很漂亮"。flair 本身是褒义。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: bounce ideas back and forth
+  kind: phrase
+  meaning: 来回讨论、互相碰想法
+  examples:
+  - Let's get on a call and bounce ideas back and forth.
+  note: 强调轻松的双向交流，还没有要结论。也说 bounce an idea off someone（找某人参谋）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: compulsory
+  kind: word
+  meaning: 强制的、必修的
+  examples:
+  - The security training is compulsory for all engineers.
+  note: 英式用法较多，美式更常说 mandatory 或 required。反面是 optional / voluntary。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: we need to adapt and develop new skills
+  kind: phrase
+  meaning: 我们需要适应并培养新技能
+  examples:
+  - The tooling changed, so we need to adapt and develop new skills.
+  note: adapt to sth 是"适应某事"，adopt 是"采用"，两个词发音接近但意思完全不同，注意别写错。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: exempt sb from sth
+  kind: phrase
+  meaning: 豁免、免除某人某项要求
+  examples:
+  - We can exempt internal accounts from that rule.
+  note: 形容词也是 exempt：Internal traffic is exempt. 名词是 exemption：请求豁免说 request an exemption。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: set in stone
+  kind: phrase
+  meaning: 板上钉钉、定死了
+  examples:
+  - Nothing is set in stone yet. / The date is set in stone.
+  note: 几乎总是先说否定形式，用来表示"还能商量"。近义 locked in（已锁定）、up for discussion（可讨论）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: back and forth
+  kind: phrase
+  meaning: 来回往返、反复沟通
+  examples:
+  - There was a lot of back and forth between the client and the server.
+  note: 既指消息往返，也指人之间反复讨论：We went back and forth on the design. 名词化也行：after a lot of back and forth。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: land on my lap
+  kind: phrase
+  meaning: （责任）突然落到我头上
+  examples:
+  - The responsibility just landed on my lap.
+  note: lap 是坐下时的大腿。隐含"我没主动接，是它掉下来的"，带一点无奈。也说 land on my plate。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: that said
+  kind: phrase
+  meaning: 话虽如此
+  examples:
+  - The rollout was messy. That said, we learned a lot.
+  note: 典型用法是先自我否定、再给积极信息（或反过来）。近义 having said that / then again。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: going / moving forward
+  kind: phrase
+  meaning: 从此之后、今后
+  examples:
+  - Going forward, all schema changes need a review.
+  note: 等于 from now on，但更职场。注意它指未来，不是"推进某事"——那个是 move sth forward。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: hop on a call
+  kind: phrase
+  meaning: 快速开个电话会
+  examples:
+  - Let's hop on a call — this is hard to explain over chat.
+  note: hop 带"轻快、临时起意"的意味，比 schedule a meeting 随意得多。也说 jump on a call。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: run the business
+  kind: phrase
+  meaning: 日常运营（相对于创新项目）
+  examples:
+  - Half the team is on run-the-business work this quarter.
+  note: 常和 change the business 对比：前者是维持现有运转（KPI、维护），后者是做新东西。也写作 RTB / BAU（business as usual）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: catch up with / on sth
+  kind: phrase
+  meaning: 赶上进度、补上落下的
+  examples:
+  - I need to work overtime to catch up on my tasks.
+  note: 补落下的工作用 catch up on；追上某人或某进度用 catch up with。和人叙旧也是 catch up：Let's catch up next week.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: dedicate time to sth
+  kind: phrase
+  meaning: 专门腾出时间做某事
+  examples:
+  - Let me dedicate time to this tomorrow morning.
+  note: 强调"专门留出一整块时间"，比 spend time 郑重。to 后面接名词或动名词。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: downsell
+  kind: word
+  meaning: 降级销售：客户拒绝主推方案后，改推更便宜或更简单的选项
+  examples:
+  - If they decline the premium plan, we downsell them to the standard tier.
+  note: 工程语境里的 downsell scenario 相当于 fallback——主路径走不通时的次优路径。对应词是 upsell（追加销售）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: expedite
+  kind: word
+  meaning: 加快、加急处理
+  examples:
+  - We need to expedite the process.
+  note: 正式用词，通常指"走加急通道"，不是自己加班赶工。口语说 speed it up / fast-track it。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: outstanding
+  kind: word
+  meaning: 尚未完成、悬而未决
+  examples:
+  - There are two outstanding items before we can close this.
+  - It's just those other anomalies that are outstanding.
+  note: |-
+    注意这个词有两个完全相反的常用义：outstanding work 是"还没做完的活"，outstanding performance 是"极其出色"。靠搭配区分。
+    尚未解决的 Outstanding bill 是未偿还的账单；We still have some outstanding issues to resolve 指尚未解决。判断词义看搭配的是"事项"还是"表现"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: get to the bottom of sth
+  kind: phrase
+  meaning: 把事情彻底查清楚、找到根本原因
+  examples:
+  - Let's get to the bottom of this before we ship anything else.
+  note: 强调"不止于止血，要找到真正原因"。近义 root-cause it（动词化，很常见）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: particular / in particular
+  kind: phrase
+  meaning: 特定的；in particular — 尤其
+  examples:
+  - Is there any particular reason? / The latency increased, P99 in particular.
+  note: 作形容词是"特定的"，in particular 作副词短语放句末表示"尤其是"。挑剔的人也叫 particular：He's very particular about naming.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: mitigate / mitigation
+  kind: word
+  meaning: 缓解、减轻（不是根治）
+  examples:
+  - We've put measures in place to mitigate the impact. / This is a temporary mitigation.
+  note: 事故沟通的核心词：mitigation 是先止血，fix 才是修好。所以 mitigated 不等于 resolved。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: revise
+  kind: word
+  meaning: 修订、修改（已有的东西）
+  examples:
+  - We need to revise the plan.
+  note: 针对已存在的文档或计划做调整。从头重做是 rewrite / redo；小改是 tweak。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I'm hoping to…
+  kind: pattern
+  meaning: 我希望能……
+  examples:
+  - I'm hoping to finish today.
+  note: 进行时比 I hope to 更软，暗示"还不确定，别当承诺"。给不准的时间点时很好用。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I have a request for you
+  kind: phrase
+  meaning: 我有件事想请你帮忙
+  examples:
+  - I have a request for you — could you review this before Friday?
+  note: 正式的铺垫句，先打招呼再提要求。更轻松的说法是 I have a favour to ask。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I would be able to advise that…
+  kind: pattern
+  meaning: 我可以正式告知您……
+  examples:
+  - I would be able to advise that the issue appears to have been resolved.
+  note: 客服/对外沟通的正式措辞，基于当前确认结果给出答复。内部沟通说 I can confirm that… 就够了。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: by right(s)
+  kind: word
+  meaning: 按理说、按正常情况
+  examples:
+  - By right, it shouldn't happen.
+  note: 标准英式写法是 by rights；by right 在新马英语里很常见。潜台词是"理论上不该这样，但现实就是发生了"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: burnt out / burnout
+  kind: phrase
+  meaning: 精疲力竭（长期过劳导致）
+  examples:
+  - I'm feeling a bit burnt out lately.
+  note: 形容词是 burnt out（英式）/ burned out（美式），名词是 burnout：He's heading for burnout. 指长期耗竭，不是一天累。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: bear in mind that…
+  kind: pattern
+  meaning: 请记住、要注意
+  examples:
+  - Bear in mind that this is a temporary mitigation.
+  note: 用来提醒对方一个容易被忽略的前提。近义 keep in mind；更正式的是 please note that。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: just to make sure I understand…
+  kind: pattern
+  meaning: 我确认一下我的理解……
+  examples:
+  - Just to make sure I understand, these cases are all from the same merchant?
+  note: 复述对方观点前的黄金句式，既确认信息又不显得质疑对方。近义 let me play that back to you。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: at a high level
+  kind: phrase
+  meaning: 从宏观上、粗略地讲
+  examples:
+  - At a high level, we're splitting the service in two.
+  note: 表示"先讲大概，细节后面说"。反面是 in the weeds（陷在细节里）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: what would really help me is…
+  kind: pattern
+  meaning: 对我最有帮助的是……
+  examples:
+  - What would really help me is a clear timeline.
+  note: 把要求包装成"你这样做我会很受益"，比 I need… 更容易被接受。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: alternatively
+  kind: word
+  meaning: 或者说、另一种方案是
+  examples:
+  - Alternatively, we could cache the response and skip the second call.
+  note: 用来引出并列的另一个方案。放句首后面要加逗号。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I'll come back to you on this one
+  kind: phrase
+  meaning: 这个我回头答复你
+  examples:
+  - I don't have that number handy — I'll come back to you on this one.
+  note: 当场答不上来时最体面的说法，暗示"我会去查"。近义 let me get back to you。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: breakout room
+  kind: phrase
+  meaning: 分组讨论会议室
+  examples:
+  - We'll split into breakout rooms for the next 20 minutes.
+  note: 线上会议的分组功能。动词是 break out into groups。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: on track
+  kind: phrase
+  meaning: 按计划推进中
+  examples:
+  - The project is on track so far.
+  note: 进度正常。落后是 behind schedule / slipping，有风险是 at risk，提前是 ahead of schedule。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: have done so
+  kind: pattern
+  meaning: 已经这么做了（替代重复动词）
+  examples:
+  - Please restart the service if needed. If you have done so, let us know.
+  note: so 代指前面整个动作，避免重复 restarted the service。同类用法：I think so、if you say so。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I have high hopes / high expectations for you
+  kind: pattern
+  meaning: 我对你期望很高
+  examples:
+  - I have high hopes for you on this project.
+  note: hopes 侧重"看好、期待你做成"，expectations 侧重"我要求你做到"。后者压力更大，注意场合。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: business justification
+  kind: phrase
+  meaning: 商业/业务层面的合理依据
+  examples:
+  - What's the business justification for this change?
+  note: 问这句是在要"为什么值得投入"，答案要落在收入、成本、风险、合规上，不能只讲技术优雅。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: enablement
+  kind: word
+  meaning: 赋能（提供工具、培训让别人能自己做）
+  examples:
+  - The team focuses on developer enablement.
+  note: 强调"授人以渔"，不是替别人做。动词 enable：This unblocks and enables other teams.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: extension
+  kind: word
+  meaning: 延期（也指扩展、插件）
+  examples:
+  - Can we get a two-week extension on the deadline?
+  note: 一词三义，靠语境区分：延期、扩展功能、浏览器插件。申请延期说 request an extension。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: in-house
+  kind: word
+  meaning: 内部的、自研的
+  examples:
+  - We built it in-house instead of buying a vendor solution.
+  note: 常和 outsourced / third-party 对着说。可作形容词（an in-house tool）或副词（built in-house）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: move forward with sth
+  kind: phrase
+  meaning: 推进某件事
+  examples:
+  - Are we moving forward with the vendor proposal?
+  note: 注意和 going forward（今后）区分：move forward with 是推进具体某事，going forward 是时间上的"从此之后"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: be on the same page
+  kind: phrase
+  meaning: 意见一致、理解一致
+  examples:
+  - I want to check whether we're on the same page regarding the scope.
+  note: 强调"理解一致"，align 更强调"目标方向一致"。不一致说 we're not on the same page。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: at an early stage
+  kind: phrase
+  meaning: 处于早期阶段
+  examples:
+  - It's still at an early stage, so the numbers will move.
+  note: 常用来预防对方过度解读初步结果。近义 it's still early days（更口语）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: entirely
+  kind: word
+  meaning: 完全地
+  examples:
+  - The fault was entirely mine; you won't pay the price.
+  note: 加强语气的副词。承担责任时说 that's entirely on me 很有分量。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: should be able to
+  kind: pattern
+  meaning: 应该可以（有能力，但不打包票）
+  examples:
+  - The system should be able to handle the load.
+  note: 双重软化：should 表推测，be able to 表能力。想更肯定就直接说 the system will handle the load。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: open questions
+  kind: phrase
+  meaning: 尚未解决的问题
+  examples:
+  - If there are any other open questions, we can also address them with the vendor.
+  note: 指"还没有答案、需要跟进"的问题清单。会议纪要里常与 action items、decisions 并列。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: on the … side of things
+  kind: pattern
+  meaning: 在……这一块
+  examples:
+  - On the engineering side of things, we're still investigating.
+  note: 划分讨论范围的口语说法：on the business side of things、on my side of things。比 regarding engineering 自然得多。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: productivity gains
+  kind: phrase
+  meaning: 生产力提升、效率收益
+  examples:
+  - There are some individual productivity gains, but there's no institutional velocity.
+  note: gains 是"收益、增量"，不是 games——语速快时两个词几乎同音，靠搭配判断：跟 productivity / efficiency / cost 连用的一定是 gains。个人层面说 individual gains，全公司层面说 organization-wide gains。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: institutional velocity
+  kind: phrase
+  meaning: 组织级速度（整个机构作为一个整体前进的快慢）
+  examples:
+  - There are some individual productivity gains, but there's no institutional velocity.
+  note: institutional 指"机构/制度层面的"，永远是和 individual 对着说的。velocity 借自敏捷开发的"团队速度"，比 speed 多一层"单位时间内交付多少"的含义。这句的潜台词是：个体提效没有汇总成组织提效。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: come into the picture
+  kind: phrase
+  meaning: 登场、开始发挥作用
+  examples:
+  - And that's where Amazon comes into the picture.
+  note: 指某个角色在当前局面里开始变得相关。更短的口语版是 that's where X comes in。反过来 out of the picture 是"出局、不在考虑范围内"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: fragmentation
+  kind: word
+  meaning: 碎片化、各自为政
+  examples:
+  - And then, of course, the fragmentation will follow.
+  note: 指工具、流程、数据被拆得零散、互不打通。动词 fragment，形容词 fragmented：a fragmented toolchain。这里的 follow 是"随之而来"，the … will follow 常用来断言一个必然的后果。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: pull ahead
+  kind: phrase
+  meaning: 拉开领先身位、跑到前面去
+  examples:
+  - The teams that pull ahead aren't the ones that prompt better.
+  note: 来自赛跑/赛车："从并排的位置超到前面"。强调的是相对差距被拉开，不是绝对的快——所以主语通常是竞争关系中的一方（团队、公司、选手）。近义 get ahead（更泛，指个人上位）、outpace sb（明确说超过谁）。落后是 fall behind。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: delivery / deliver
+  kind: word
+  meaning: 交付；（不及物）兑现、做到
+  examples:
+  - It doesn't necessarily have to be code delivery. / He talks a lot but never delivers.
+  note: 词根是"送货"，所以隐含"交到谁手上"——写完不算 delivery，交出去才算。已抽象成领域词：code delivery、delivery date、a delivery team、continuous delivery。最值得练的是不及物的 deliver（兑现、做到）：Can he deliver? / The team delivered. 中文没有对应说法，绩效语境高频。第三义指讲话的表达方式：His delivery was flat（内容也许不错，但讲得很平）。和 ship 的分工：ship 更口语、强调"发出去了"，delivery 更正式、强调"承诺的东西兑现了"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: promote
+  kind: word
+  meaning: 晋升；推广、力推；促进
+  examples:
+  - We want to promote end zone at this point. / He was promoted to staff engineer.
+  note: 词源是 pro-（向前）+ movere（移动），本质就是"把某个东西往前/往上推"，中文拆成了三个词但英文是同一个动作，只看对象：对人是晋升（多用被动），对产品/工具是内部推广，对抽象状态是促进（This policy promotes collaboration）。"推广"别译成 popularize，那个词很生硬、基本只用于学术。名词 promotion 同样一词多义：既是晋升（I got a promotion），也是促销（it's on promotion）。近义 drive adoption（最中性的管理说法）、champion sth（当推手、力挺）、evangelize（布道，语气最重）。注意 promote 不表示"打折"，打折是 discount。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: coordination overhead
+  kind: phrase
+  meaning: 协调成本、对接开销
+  examples:
+  - The third problem is coordination overhead — after you develop, you need to do code review; after code review, you need to remember to deploy.
+  note: overhead 是"不直接产出价值、但为了让事情转起来必须付的额外代价"。coordination overhead 特指卡在环节之间的那部分：记得通知谁、等谁批、手动把产物搬到下一步。同类搭配：communication overhead、operational overhead、the overhead of doing sth。注意它不可数，不说 an overhead（英式偶尔例外）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: be on board
+  kind: phrase
+  meaning: 同意、支持
+  examples:
+  - Josh is on board. （= Josh has agreed.）
+  note: 比喻"上了同一条船"。争取支持说 get sb on board；引导新人入职是 onboard sb（一个词，动词）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: it would appear (that)…
+  kind: pattern
+  meaning: 看起来似乎……
+  examples:
+  - Each transaction, it would appear, is coming through multiple times.
+  note: 比 it seems 更委婉正式，用于给出还没坐实的观察。插在句中要用逗号隔开。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: that's a bit of the update from our side
+  kind: phrase
+  meaning: 这就是我们这边的进展
+  examples:
+  - That's a bit of an update from our side; happy to take questions.
+  note: 汇报收尾的软性说法，a bit of 是自谦。更利落的收尾：that's all from us。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: from my / that perspective
+  kind: phrase
+  meaning: 从我的 / 这个角度看
+  examples:
+  - From my perspective, the risk is acceptable.
+  - From our perspective, the data looks clean.
+  note: |-
+    表明这是个人视角、不代表结论。注意别写成 in my perspective，正确介词是 from。
+    从我们的角度看 跨团队沟通时给结论加上限定，暗示"我们只能看到自己这一侧"，留了余地。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: what's the timing on…?
+  kind: pattern
+  meaning: ……的时间安排是怎样的？
+  examples:
+  - What's the timing on those requests?
+  note: 既可以问"什么时候做"，也可以问"耗时多久"。想问具体时刻用 when exactly；想问耗时用 how long does it take。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: drop sth in the chat
+  kind: phrase
+  meaning: 把某样东西发到聊天框
+  examples:
+  - Can you drop the link in the chat?
+  note: 线上会议高频句。同义替换：pop it in the chat（更英式）、put an example in the chat。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: preliminary
+  kind: word
+  meaning: 初步的、前期的
+  examples:
+  - We started preliminary work on what we needed to do on our side.
+  note: 指正式开工前的探索性工作。近义 initial（时间上最早）、exploratory（目的是摸清情况）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: address sth
+  kind: phrase
+  meaning: 处理、着手解决
+  examples:
+  - It'd be addressed a little more urgently if it were customer-facing.
+  note: address 的本义是"把东西朝某个对象送过去"：对人是"向某人讲话"，对事就是"处理某件事"。比 fix 正式，也可指"回应"而不一定"解决"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: call sth out
+  kind: phrase
+  meaning: 当场指出来
+  examples:
+  - If you see something wrong, just call it out.
+  note: 中性偏鼓励，指公开点明问题。但 call someone out 针对人时是"公开批评"，语气重得多，注意区分。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: aligned to vs related to
+  kind: contrast
+  meaning: 方向一致 vs 有关联
+  examples:
+  - I don't know whether it's aligned to any of the ramps that happened.
+  note: related to 只是泛指有关联；aligned to 强调一致性和方向一致，重点在"有没有按计划走"：aligned to our goals / roadmap。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I'll keep you posted
+  kind: phrase
+  meaning: 我会随时向你通报进展
+  examples:
+  - I'll keep you posted as things progress.
+  note: 事故沟通的标配。近义 I'll keep you in the loop（让你保持知情）、I'll update you as I go。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: discrepancy
+  kind: word
+  meaning: 不一致、对不上
+  examples:
+  - There's a time discrepancy between the two logs.
+  note: 专指"本应一致却对不上"的差异。普通差异用 difference；数据对账语境几乎只用 discrepancy。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: than anticipated
+  kind: pattern
+  meaning: 比预期的……
+  examples:
+  - It took a little longer to get started than anticipated.
+  note: anticipate 比 expect 更正式，也更强调"事先预判"。同类表达：sooner than expected、worse than anticipated。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: ready to go
+  kind: phrase
+  meaning: 准备就绪
+  examples:
+  - I'll let you know when it's ready to go.
+  note: 指万事俱备可以开始/发布。近义 good to go（更口语，常用来给放行）：You're good to go.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: just a heads-up
+  kind: phrase
+  meaning: 先提个醒
+  examples:
+  - 'Just a heads-up: the meeting has been moved to 3pm.'
+  note: 名词连字符写 heads-up，动词分开写 give sb a heads-up。语气轻，表示"不需要你做什么，只是让你知道"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: move up vs push back
+  kind: contrast
+  meaning: （时间）提前 vs 推迟
+  examples:
+  - The project schedule has been moved up by three months. / The schedule has been delayed by three months.
+  note: move up 是提前，push back 是推后。注意 push back 在时间语境是"推迟"，在讨论语境是"提出异议"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: get through vs go through
+  kind: contrast
+  meaning: 注重结果 vs 注重过程
+  examples:
+  - I finally got through all my emails. / Let's go through the report together.
+  note: get through 强调"处理完、熬过去"（We will get through the crisis），go through 强调"逐项走一遍"（You have to go through security before boarding）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: my inbox is out of control
+  kind: phrase
+  meaning: 我的邮箱已经失控了
+  examples:
+  - My inbox is a little out of control; I haven't been able to get through them yet.
+  note: 解释回复慢的常见说法，带自嘲。近义 I'm drowning in emails / I'm behind on email。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I'm afraid that doesn't exist
+  kind: phrase
+  meaning: 恐怕没有这个东西
+  examples:
+  - I'm afraid that doesn't exist in the current API.
+  note: I'm afraid 是给坏消息的缓冲，和"害怕"无关。近义 unfortunately，但 I'm afraid 更适合口语。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I wasn't aware of that
+  kind: phrase
+  meaning: 我之前不知道这件事
+  examples:
+  - I wasn't aware of that — thanks for flagging it.
+  note: 中性地承认信息缺口，不含歉意也不含指责。比 nobody told me 得体得多。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: I'm still following up
+  kind: phrase
+  meaning: 我还在跟进
+  examples:
+  - I'm still following up with the vendor on that.
+  note: follow up 是"跟进"的标准说法，后接 with sb（找谁）或 on sth（跟进什么事）。名词连写：a follow-up。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: go off topic
+  kind: phrase
+  meaning: 跑题
+  examples:
+  - I think we've gone too far off topic.
+  note: 拉回话题可以接 let's take that offline（这个我们会后单聊），是会议主持的高频组合。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: liaise with
+  kind: phrase
+  meaning: 联络对接
+  examples:
+  - I'm liaising with the other team on the schedule.
+  note: 英式常用，指作为接口人持续沟通协调，比 talk to 更有职责感。名词 liaison：He's our liaison with legal.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: how are you getting on with…?
+  kind: pattern
+  meaning: ……进展怎么样？
+  examples:
+  - How are you getting on with your project?
+  note: 英式说法，既可问进度也可问相处（How are you getting on with the new team?）。美式更常说 How's it going with…?
+  source: Notion · Work
+  added: "2026-07-29"
+- term: is now a good time?
+  kind: phrase
+  meaning: 现在方便吗？
+  examples:
+  - Is now a good time, or should I come back later?
+  note: 打断别人前的标准礼貌问法。更委婉：Do you have a minute? / Is this a bad time?
+  source: Notion · Work
+  added: "2026-07-29"
+- term: come down to
+  kind: phrase
+  meaning: 取决于
+  source: Notion · Work
+  added: "2026-07-29"

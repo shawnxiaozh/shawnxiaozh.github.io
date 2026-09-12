@@ -1,0 +1,174 @@
+# 生词本 · career
+# 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
+
+- term: career-wise
+  kind: word
+  meaning: 就事业发展而言。-wise 后缀 =「就……来说」，偏口语。
+  examples:
+  - It's a great move career-wise, but I'd have to relocate.
+  note: 同类：money-wise、time-wise、health-wise。正式书面语换成 in terms of my career。
+  source: English Teacher · Understanding "career-wise"
+  added: "2026-09-07"
+- term: Which team would I be joining?
+  kind: phrase
+  meaning: 我会加入哪个组？比 which team I am in 通顺。
+  examples:
+  - Which team would I be joining? And how long is the project expected to run?
+  source: English Teacher · Asking about project role and duration
+  added: "2026-09-03"
+- term: TA — Talent Acquisition
+  kind: word
+  meaning: 招聘／招聘专员。求职语境里 99% 是这个意思，就是你的面试对接人。
+  examples:
+  - Your TA will reach out to schedule the interview.
+  source: English Teacher · Understanding TA abbreviation
+  added: "2026-08-14"
+- term: TA — Teaching Assistant
+  kind: word
+  meaning: 助教。校园语境里的 TA。
+  examples:
+  - Disha is my TA.
+  source: English Teacher · Understanding TA abbreviation
+  added: "2026-08-14"
+- term: chase (up)
+  pos: v.
+  kind: phrase
+  meaning: 催进度、追结果。英式和新加坡职场高频，不是「追赶」。
+  examples:
+  - I'll chase, but there's some backlog on their end.
+  note: 回一句 "No worries, thanks for chasing." 既礼貌又不显着急。
+  source: English Teacher · Asking about next interview steps
+  added: "2026-08-13"
+- term: backlog
+  pos: n.
+  kind: word
+  meaning: 积压的待处理事项。
+  examples:
+  - There is some backlog on their end.
+  source: English Teacher · Asking about next interview steps
+  added: "2026-08-13"
+- term: on their end
+  kind: phrase
+  meaning: 在他们那边（相对于「我们这边」）。
+  examples:
+  - The delay is on their end, not ours.
+  source: English Teacher · Asking about next interview steps
+  added: "2026-08-13"
+- term: I had my first-round interview
+  kind: phrase
+  meaning: 我参加了第一轮面试。比 I finished the interview 自然得多。
+  examples:
+  - I had my first-round interview yesterday. Could you let me know the next steps?
+  note: 写邮件时 had > completed > finished。
+  source: English Teacher · Asking about next interview steps
+  added: "2026-08-13"
+- term: prep (call)
+  pos: n.
+  kind: word
+  meaning: 面试前的准备沟通、briefing。prep = preparation。
+  examples:
+  - Can you speak today for a prep?
+  note: 这里的 speak 是英式的「通个电话」，不是「演讲」。
+  source: English Teacher · 面试前准备通话的含义和回复
+  added: "2026-08-04"
+- term: bar raiser
+  kind: phrase
+  meaning: 亚马逊面试体系里的「抬杆人」，跨部门的把关面试官。
+  examples:
+  - And finally got one final round called "bar raiser".
+  source: English Teacher · 英语听力差如何通过技术面试
+  added: "2026-07-31"
+- term: terminate
+  kind: word
+  meaning: 解雇、终止（正式）
+  examples:
+  - He was terminated last week.
+  note: HR 的正式用语。口语说 fired（被开除）、let go（委婉，常指裁员）、made redundant（英式，岗位取消）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: laid off
+  kind: phrase
+  meaning: 被裁员 —— 最标准、最中性的说法，点明这是公司层面的决定。
+  examples:
+  - I was laid off as part of a company-wide restructuring.
+  note: 别用 I was fired（因过失被开除），性质完全不同。
+  source: English Teacher · 被裁员的英文表达
+  added: "2026-07-28"
+- term: made redundant
+  kind: phrase
+  meaning: 职位被裁撤。英式和新加坡职场更常用，听起来更正式。
+  examples:
+  - My position was made redundant.
+  source: English Teacher · 被裁员的英文表达
+  added: "2026-07-28"
+- term: restructuring / downsizing
+  pos: n.
+  kind: phrase
+  meaning: 公司重组／缩编。用来委婉说明裁员的原因。
+  examples:
+  - I was affected by a company-wide restructuring.
+  source: English Teacher · 被裁员的英文表达
+  added: "2026-07-28"
+- term: fixed-term contract
+  kind: phrase
+  meaning: 定期合同。合同到期没续时最干净的说法。
+  examples:
+  - It was a fixed-term contract that wasn't renewed.
+  source: English Teacher · 被裁员的英文表达
+  added: "2026-07-28"
+- term: descope
+  pos: v.
+  kind: word
+  meaning: 把项目范围砍掉一部分。比任何带 terminate 的说法都好听。
+  examples:
+  - The project I was contracted for was descoped.
+  source: English Teacher · 被裁员的英文表达
+  added: "2026-07-28"
+- term: sponsorship
+  pos: n.
+  kind: word
+  meaning: （工作签证）担保。申请表里的高频问题。
+  examples:
+  - Do you require sponsorship now or in the future?
+  note: 问的是「公司要不要为你办签证」。
+  source: English Teacher · Given names in Western script
+  added: "2026-07-22"
+- term: given name / family name
+  kind: phrase
+  meaning: 名／姓。表格里 Western Script 指用护照上的拼音填。
+  examples:
+  - 'Given Name(s) – Western Script: Wei · Family Name: Zhang'
+  source: English Teacher · Given names in Western script
+  added: "2026-07-22"
+- term: authoring
+  pos: v.
+  kind: word
+  meaning: 主导制定、亲手写出来 —— 强调你是作者和负责人，不只是执行者。
+  examples:
+  - authoring MySQL development standards
+  note: 比 writing 重，比 codifying 明确。简历里很好用。
+  source: English Teacher · Condensing slow SQL optimization
+  added: "2026-07-20"
+- term: enforcing
+  pos: v.
+  kind: word
+  meaning: 强制执行、确保规范真的被落实。
+  examples:
+  - enforcing them through a lint tool
+  note: 区分两件事：写出规范 ≠ 规范被遵守。
+  source: English Teacher · Condensing slow SQL optimization
+  added: "2026-07-20"
+- term: drive adoption
+  kind: phrase
+  meaning: 推动落地、把东西推广出去。比 enforce 柔和，比 introduce 有力。
+  examples:
+  - driving its adoption company-wide
+  source: English Teacher · Condensing slow SQL optimization
+  added: "2026-07-20"
+- term: prevent recurrence
+  kind: phrase
+  meaning: 防止问题再次发生。简历里描述「治本」的标准说法。
+  examples:
+  - prevented recurrence by establishing development standards
+  source: English Teacher · Condensing slow SQL optimization
+  added: "2026-07-20"

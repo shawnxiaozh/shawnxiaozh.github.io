@@ -1,0 +1,398 @@
+# 生词本 · writing
+# 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
+
+- term: move past
+  pos: v.
+  kind: phrase
+  meaning: 越过、不再纠结。注意它不表示问题被解决了。
+  examples:
+  - This helped move past the debate on what is a true agent.
+  note: get past 可互换；get over 更偏情感（走出失恋、康复）。
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: acknowledge
+  pos: v.
+  kind: word
+  meaning: 承认（某个事实成立）。
+  examples:
+  - We're going to have to acknowledge that systems can be agentic to different degrees.
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: denote
+  pos: v.
+  kind: word
+  meaning: 表示、标志。
+  examples:
+  - …the red color to denote the user input.
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: binary
+  pos: n. / adj.
+  kind: word
+  meaning: 非此即彼的二元判断。
+  examples:
+  - …as an adjective rather than a binary.
+  source: English Teacher · Agentic as a spectrum
+  added: "2026-09-10"
+- term: carry out
+  pos: v.
+  kind: phrase
+  meaning: 执行、实施。
+  examples:
+  - …to carry out an action.
+  note: '"Conduct" 也是这个意思：Claude conducts multiple searches.'
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: dive deeper into
+  kind: phrase
+  meaning: 深入探讨。
+  examples:
+  - We'll dive deeper into this later in the course.
+  note: 同组：to different degrees、in advance、somewhere in between。
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: alongside
+  pos: prep.
+  kind: word
+  meaning: 与……并排、同时进行
+  examples:
+  - Claude creates in a dedicated window alongside your conversation.
+  - Components run alongside yours.
+  note: |-
+    空间上是"并排"，抽象用法是"同时进行且互不干扰"：She studies alongside a full-time job.
+    并排、平级共存。原义是船并排靠岸。 排除了两种想象：不是隔离沙箱，也不是替换你的配置。
+  source: Notion · Work + English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: along with
+  pos: prep.
+  kind: phrase
+  meaning: 连同、随附
+  examples:
+  - I sent an email along with the spreadsheet.
+  - …along with a plain warning that Anthropic doesn't control third-party plugins.
+  note: |-
+    注意主谓一致：along with 引导的部分不影响谓语单复数。The report, along with the logs, is attached.
+    连同、一并。有主次之分 —— 后面那项是附带的。 语法点：不改变主语单复数。The plugin, along with its hooks, is installed.
+  source: Notion · Work + English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: over the course of
+  kind: phrase
+  meaning: 在……的整个过程中。比 during 更强调时间的铺展。
+  examples:
+  - Claude Code fires around 30 hook events over the course of a session.
+  note: course 本义是「流动的路径」——同 the course of a river、golf course 同源。
+  source: English Teacher · Understanding Claude Code hook events
+  added: "2026-09-08"
+- term: line up with
+  pos: v.
+  kind: phrase
+  meaning: 与……吻合、对得上。画面是两组东西并排一一对应。
+  examples:
+  - They line up with points in the agentic loop where you'd want to step in.
+  note: 比 align with 口语，比 correspond to 自然。单独用 line up 是「排队」。
+  source: English Teacher · Understanding Claude Code hook events
+  added: "2026-09-08"
+- term: leave it to trust
+  kind: phrase
+  meaning: 寄希望于对方自觉。作者的态度：这不叫保障，这叫赌运气。
+  examples:
+  - Don't leave that to trust.
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: plain
+  pos: adj.
+  kind: word
+  meaning: 直白、不加修饰的（不是「普通」）。
+  examples:
+  - …a plain warning that Anthropic doesn't control what's inside.
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: a slice of
+  kind: phrase
+  meaning: 一部分（不是整个）—— 切出来的一片，很形象。
+  examples:
+  - …and a slice of settings.json.
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: step in
+  pos: v.
+  kind: phrase
+  meaning: 插手、介入（在某个节点上手干预）。
+  examples:
+  - …points in the agentic loop where you'd want to step in.
+  source: English Teacher · Understanding Claude Code hook events
+  added: "2026-09-08"
+- term: reach for
+  pos: v.
+  kind: phrase
+  meaning: （需要时）会去用、伸手拿。文档里常用来说「你会反复用到的那几个」。
+  examples:
+  - There's a small handful you'll reach for again and again.
+  note: a small handful = 一小撮、寥寥几个。
+  source: English Teacher · Understanding Claude Code hook events
+  added: "2026-09-08"
+- term: otherwise
+  pos: adv.
+  kind: word
+  meaning: 要不然的话 —— 指向一个反事实的对照场景。
+  examples:
+  - …everything you'd otherwise share by hand.
+  note: 这里是说「如果不用 plugin 的话，你只能手工一件件传」。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: by hand
+  kind: phrase
+  meaning: 手工、人肉（和自动化、打包安装相对）。
+  examples:
+  - …everything you'd otherwise share by hand.
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: the rule stands
+  kind: phrase
+  meaning: 这条规矩依然成立、结论不变。
+  examples:
+  - 'Reviewed isn''t the same as trusted. So the rule stands: install only from sources you trust.'
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: bundle
+  pos: v.
+  kind: word
+  meaning: 把一堆东西打包进一个整体。
+  examples:
+  - 'It bundles everything: skills, subagents, hooks, and MCP server configs.'
+  note: One version, one install. = 一个版本号，一次安装。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: versus
+  pos: prep.
+  kind: word
+  meaning: （口语用法）而不是、相比之下
+  examples:
+  - One engineer, one prompt, one task — versus in end zone, it actually has campaigns.
+  - It is all real dollars flowing versus speculative utilization.
+  note: |-
+    书面的 A vs B 是并列对照；但口语里 versus 常当连词用，等于 as opposed to，后面可以直接跟一整个从句（versus in end zone, it has…），语法上不严谨但会上很常见。中文使用者一般只会写 vs 不会说，值得刻意练。缩写 vs.（法律文书用 v.）。
+    而不是（= as opposed to），不是「A 对决 B」。 类似："It's a distribution problem versus a product problem."
+  source: Notion · Work + English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: specify
+  pos: v.
+  kind: word
+  meaning: 明确规定、指定
+  examples:
+  - This is where we specify the protocol.
+  - Each policy specifies a set of trigger conditions.
+  note: |-
+    比 say / define 更正式，强调"写清楚、可执行"。名词 spec 就是从这来的。
+    明确写明、逐项给出具体取值。比 define 更强调「写死在文档里」。 define 是下定义划边界，describe 只是描述，specify 是写明具体值。
+  source: Notion · Work + English Teacher · KYC platform rules
+  added: "2026-09-03"
+- term: (customer) journey
+  pos: n.
+  kind: word
+  meaning: 客户旅程 —— 用户从头走到尾的那一整条路径。
+  examples:
+  - …and the corresponding KYC journey.
+  note: process 是机构视角，flow 偏技术页面流转，journey 是客户端到端体验。
+  source: English Teacher · KYC platform rules
+  added: "2026-09-03"
+- term: kick in
+  pos: v.
+  kind: phrase
+  meaning: 开始生效、触发。
+  examples:
+  - At what transaction volume does a restriction kick in?
+  source: English Teacher · KYC platform rules
+  added: "2026-09-03"
+- term: fall back to
+  pos: v.
+  kind: phrase
+  meaning: 回退到（备用方案）。
+  examples:
+  - If electronic verification fails, the case falls back to document verification.
+  source: English Teacher · KYC platform rules
+  added: "2026-09-03"
+- term: essentially
+  pos: adv.
+  kind: word
+  meaning: 本质上、说白了
+  examples:
+  - Essentially, it's the same code path with a different config.
+  - It's essentially a static analyzer — it parses the SQL and flags queries that would miss an index.
+  note: |-
+    用来把复杂的东西一句话概括。近义 basically（更口语）、in essence（更正式）。
+    本质上、说白了。剥掉表面细节直指核心。 比 basically 沉稳；fundamentally 更重；in essence 更书面。
+  source: Notion · Work + English Teacher · On top of it 是什么意思
+  added: "2026-08-06"
+- term: verify A against B
+  kind: phrase
+  meaning: 拿 B 作基准去核验 A。against 后面跟的永远是标准。
+  examples:
+  - verify the user's data against the government database
+  note: 顺序不能反。同类动词：check / validate / match / reconcile / cross-reference。
+  source: English Teacher · Upstream service verification
+  added: "2026-08-06"
+- term: in a timely manner
+  kind: phrase
+  meaning: 及时地。in a … manner 是把形容词转成副词的书面结构。
+  examples:
+  - We'll respond in a timely manner.
+  note: 写作指南建议能用副词就用副词（respond promptly），但合约和规范里偏爱这个结构。
+  source: English Teacher · Upstream service verification
+  added: "2026-08-06"
+- term: manner
+  pos: n.
+  kind: word
+  meaning: 方式（≈ way，偏正式书面）。加 s 变 manners 就是「礼貌」，意思完全不同。
+  examples:
+  - The platform provides a standardised manner for upstream services to request verification.
+  note: bad manners 是「没礼貌」，不是「坏方法」。
+  source: English Teacher · Upstream service verification
+  added: "2026-08-06"
+- term: request verification
+  kind: pattern
+  meaning: 请求验证。request 作动词是及物的，不要加 for。
+  examples:
+  - ✅ to request verification　❌ to request for verification
+  note: 同类错误：discuss about、emphasise on、contact with。
+  source: English Teacher · Upstream service verification
+  added: "2026-08-06"
+- term: dissimulate
+  kind: word
+  meaning: 掩饰真实情感或意图
+  examples:
+  - When people dissimulate, they hide their true feelings, intentions, or nature.
+  note: 书面语，日常几乎不用，读小说会遇到。口语说 hide it / put on a front。近义 dissemble；反义 be upfront。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: subsequent
+  kind: word
+  meaning: 随后的
+  examples:
+  - For several subsequent days I saw little of Mr Rochester.
+  note: 书面语，指"接下来的、后续的"。口语说 the following days / the next few days。副词 subsequently 意为"后来"。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: not least
+  kind: phrase
+  meaning: 尤其是、特别是
+  examples:
+  - It's an expensive city, not least because of the rent.
+  note: 等于 especially，语气正式，常用来引出最重要的那个理由。别和 last but not least（最后但同样重要）混淆。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: span / synthesize
+  kind: word
+  meaning: 涉及、横跨；synthesize — 整合、综合
+  examples:
+  - Enterprise Search is particularly valuable for questions that span multiple sources or require synthesizing information from across your organization.
+  note: span 强调"跨越多个范围"，synthesize 强调"把零散信息合成一个结论"，比 summarize 更主动。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: reference materials
+  kind: phrase
+  meaning: 参考资料
+  examples:
+  - They hold the reference materials Claude needs to understand your work — project specs, meeting notes, research documents.
+  note: 指"供查阅"的背景材料，不是要通读的内容。近义 supporting documents / background material。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: research prospects
+  kind: phrase
+  meaning: 研究方向、可探索的机会
+  examples:
+  - We mapped out the research prospects for next quarter.
+  note: prospect 是"有前景的可能性"。注意别和 perspective（视角）混淆，这两个词很多人会说错。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: have sth in place
+  kind: phrase
+  meaning: 提前准备好、已就位
+  examples:
+  - Understand what you need to have in place before you start.
+  - Understand what you need to have in place before you begin.
+  note: |-
+    指流程、权限、监控这类"事先要搭好的东西"。已完成说 it's in place；要落实说 put it in place。
+    就位、事先准备好。来源是「东西都在它该在的位置上」。 Have a clear goal in place · Have your sources in place。
+  source: Notion · Work + English Teacher · Understanding "instead"
+  added: "2026-07-29"
+- term: in ways that…
+  kind: pattern
+  meaning: 以……的方式
+  examples:
+  - It is the ability to collaborate with AI in ways that are effective, efficient, ethical, and safe.
+  note: 后面接从句，用来一次挂多个形容词，比 effectively, efficiently… 一串副词更好读。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: inherently
+  kind: word
+  meaning: 本质上、本身就
+  examples:
+  - None of these approaches are inherently better than others.
+  note: 用来说"好坏取决于场景，不是这个方案天生更好"。近义 by nature / intrinsically。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: how likely are you to…?
+  kind: pattern
+  meaning: 你有多大可能会……？
+  examples:
+  - How likely are you to recommend this course to a friend or colleague?
+  note: 满意度调查（NPS）的标准问法。回答用 I'm likely to / unlikely to + 动词原形。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: as per
+  kind: phrase
+  meaning: 根据、按照（正式）
+  examples:
+  - His contract, as per the offer, runs till Dec 2026.
+  note: 合同、邮件里的正式用词。口语和普通邮件用 according to 或直接说 based on 更自然，as per 用多了显得刻板。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: with ease
+  kind: phrase
+  meaning: 轻松地、毫不费力地
+  examples:
+  - I'm now communicating with external data sources with ease.
+  note: 比 easily 更书面、更强调"完全不费劲"。口语里 easily 就够了。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: take place
+  kind: phrase
+  meaning: 发生、进行
+  examples:
+  - This is how the communication between the client and the server takes place.
+  note: 用于有安排、有过程的事（会议、流程、通信）。突发事件用 happen / occur，不用 take place。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: correspond to
+  kind: phrase
+  meaning: 对应于
+  examples:
+  - The shared logs correspond to this second call.
+  note: 强调一一对应关系。注意区分 correspond with sb（与某人通信）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: whereby
+  kind: word
+  meaning: 借此、由此（= by which）
+  examples:
+  - It has this concept of campaigns, whereby it will persist all the context.
+  note: 正式的关系副词，引出"通过这个机制会怎样"：a process whereby every change is reviewed。书面语，口语和普通邮件说 where / in which / and that way 更自然。注意它不能单独起句，必须挂在前面的名词上。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: occur
+  kind: word
+  meaning: 发生（正式）
+  examples:
+  - Is this just occurring in the last four hours, or has it been occurring for a while?
+  note: 事故沟通里比 happen 正式。注意时态对比：现在进行时问"正在发生"，现在完成进行时问"持续了多久"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: mount a challenge
+  kind: phrase
+  meaning: 发起挑战
+  examples:
+  - Mounting an effective challenge to Google will still be tough.
+  note: mount 在这里是"组织并发起"，常搭配 mount a campaign / defence / challenge。比 make a challenge 正式且有力。
+  source: Notion · Work
+  added: "2026-07-29"
