@@ -1,6 +1,231 @@
 # 生词本 · tech
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: based off of
+  kind: phrase
+  meaning: 以…为依据、根据…（= based on）。
+  examples:
+  - You can run the /init command which will make Claude generate one based off of your code base.
+  - The movie is based on a true story.
+  note: |-
+    based off (of) 是美式口语，意思和 based on 一样；正式写作里被很多人认为不规范。
+    写文档、邮件、面试时用 based on 最稳妥。
+    based off of 里的 of 是多余的，更口语。
+    结构：A is based on B（A 以 B 为依据）/ generate X based on Y。
+  source: Claude Code · CLAUDE.md 介绍
+  added: "2026-09-13"
+- term: simply put
+  kind: phrase
+  meaning: 简单地说、说白了。
+  examples:
+  - Simply put, the contents of CLAUDE.md file are appended to your own prompt.
+  - Simply put, it's a cache.
+  note: |-
+    放在句首，后面加逗号，用来把前面讲复杂的东西一句话总结出来。
+    替换：in short / in simple terms / to put it simply / put simply / basically（口语）。
+    和 succinctly 相关：to put it succinctly 也是「简单说」，更书面。
+  source: Claude Code · CLAUDE.md 介绍
+  added: "2026-09-13"
+- term: That's where … comes in.
+  kind: pattern
+  meaning: 这时就轮到…派上用场了；…正是为解决这个问题而存在的。
+  examples:
+  - But that's where CLAUDE.md comes in.
+  - Manual testing is slow. That's where automation comes in.
+  note: |-
+    come in 在这里是「发挥作用、登场」，不是「进来」。
+    典型用法：先抛出一个问题，再用这句引出解决办法，讲解、演讲、教程里很常见。
+    变体：This is where … comes in. / Here's where … comes in.
+    近义：come into play / come into the picture（生词本 work 里已有）。
+    单复数跟着主语走：That's where these tools come in.
+  source: Claude Code · CLAUDE.md 介绍
+  added: "2026-09-13"
+- term: underneath
+  ipa: /ˌʌndərˈniːθ/
+  pos: prep. / adv.
+  kind: word
+  meaning: ①在…下方、在…底下（位置）②在表面之下、骨子里（比喻）。
+  examples:
+  - Underneath the description of what Claude changed, there can be a variety of files that were changed.
+  - The cable runs underneath the floor.
+  - He seems tough, but underneath he's very kind.
+  note: |-
+    在界面、文档里常指「在…下面紧接着」，等于 below / under。
+    和 under / below 的区别：under 最常用、最中性；below 常指位置更低（不一定紧挨着），也常用于文档（see below）；underneath 强调「在正下方、被上面的东西盖着」，语气稍重。
+    描述页面布局时，below 更自然：Below the description, you'll see…
+    重音在最后：un-der-NEATH。
+  source: Claude Code · 查看改动的文件
+  added: "2026-09-13"
+- term: a variety of
+  kind: phrase
+  meaning: 各种各样的、多种不同的。
+  examples:
+  - Underneath the description of what Claude changed, there can be a variety of files that were changed.
+  - The tool supports a variety of languages.
+  note: |-
+    后面接复数名词：a variety of files / reasons / options。
+    谓语动词一般跟后面的名词走，用复数：A variety of files were changed.
+    替换词：various（various files）/ many different / all kinds of（口语）/ a range of（偏正式，强调范围广）。
+    区别：the variety of 指「种类的多少」，谓语用单数：The variety of options is impressive.
+    variety /vəˈraɪəti/，重音在第二个音节。
+  source: Claude Code · 查看改动的文件
+  added: "2026-09-13"
+- term: succinct
+  ipa: /səkˈsɪŋkt/
+  pos: adj.
+  kind: word
+  meaning: 简洁的、言简意赅的（话少但把要点说清楚）。
+  examples:
+  - When you give Claude Code a task to complete in your codebase, Claude will often report back in a succinct way.
+  - Keep your summary succinct.
+  note: |-
+    褒义，强调「短而清楚、没有废话」。偏书面，口语里更常说 short / brief / to the point。
+    发音：两个 c 读法不同，suc 读 /sək/，cinct 读 /sɪŋkt/，不读 /səˈsɪŋkt/。
+    替换词：concise（最接近，最常用）/ brief（强调短，不一定抓得住要点）/ to the point（口语，切中要点）/ short and sweet（口语，简短利落）。
+    ❌ terse：也是简短，但常带「生硬、冷淡」的意思，别乱替换。
+    名词 succinctness，副词 succinctly：put it succinctly（简单说）。
+  source: Claude Code · Claude 的汇报方式
+  added: "2026-09-13"
+- term: look around
+  pos: v.
+  kind: phrase
+  meaning: ①四处看看、到处翻找 ②（回头）环顾四周 ③多方比较、货比三家。
+  examples:
+  - Without being explicit, Claude is forced to look around your codebase more and do its own thinking.
+  - Mind if I look around?
+  - Look around before you buy a laptop.
+  note: |-
+    没有明确目标，在一个范围里到处看看。
+    结构：look around + 地点（look around the office / your codebase）。
+    和 look for 的区别：look for 是找某个具体的东西；look around 是随便到处看。
+    英式英语也说 look round。
+  source: Claude Code · 写 prompt 要具体
+  added: "2026-09-13"
+- term: in the long run
+  kind: phrase
+  meaning: 从长远来看、最终（经过较长一段时间后）。
+  examples:
+  - The irony behind writing a smaller prompt is that in the long run, it will take up more context.
+  - Writing tests takes time, but it saves time in the long run.
+  note: |-
+    常用来说「眼前看着省事或吃亏，长期结果却相反」。
+    反义：in the short run / in the short term（短期内）。
+    近义：in the long term / eventually / over time。
+    ❌ in a long run（要用 the）。
+  source: Claude Code · 写 prompt 要具体
+  added: "2026-09-13"
+- term: go over
+  pos: v.
+  kind: phrase
+  meaning: ①超过、超出（限额、预算、时间）②仔细检查、过一遍、复习 ③走过去、过去（到某处）。
+  examples:
+  - A general rule of thumb is when you're working on a specific feature and are going over the context window but need to continue, then compact.
+  - We went over budget by 10%.
+  - Let's go over the plan once more before the meeting.
+  note: |-
+    意思要看后面接什么：接限额、预算、时间，是「超出」（go over the limit / go over time）；接文件、计划、代码，是「过一遍、检查」（go over the code）。
+    表示超出时，等于 exceed，但更口语。
+    名词 over 也常用：over budget（超预算）/ over the limit（超限）。
+  source: Claude Code · /compact 使用时机
+  added: "2026-09-13"
+- term: rule of thumb
+  pos: n.
+  kind: phrase
+  meaning: 经验法则、大致的判断标准（凭经验总结的做法，不是严格规定）。
+  examples:
+  - A general rule of thumb is when you're working on a specific feature and are going over the context window but need to continue, then compact.
+  - As a rule of thumb, keep functions under 50 lines.
+  note: |-
+    强调凭经验、大体上适用，不追求精确，也允许例外。
+    常见说法：a (good / general) rule of thumb is… / as a rule of thumb, …
+    注意是 thumb /θʌm/（大拇指），b 不发音。
+    和 guideline 接近，但 rule of thumb 更口语，更偏「简单好记的经验」。
+  source: Claude Code · /compact 使用时机
+  added: "2026-09-13"
+- term: the big picture
+  pos: n.
+  kind: phrase
+  meaning: 全局、整体情况、大局（不看细节，看整体）。
+  examples:
+  - Here, you'll get a big picture of how large your context size is.
+  - Don't get lost in the details — focus on the big picture.
+  - Let me give you the big picture first.
+  note: |-
+    最常见是 the big picture，前面用 the；原句的 a big picture 口语里也有人说，但不太规范。
+    常见搭配：see the big picture（看清全局）/ get the big picture（了解整体情况）/ look at the big picture（从大局看）。
+    反义：the details / the nitty-gritty（细枝末节）。
+    形容词用法：big-picture thinking（全局思维）/ a big-picture person（看大局的人）。
+  source: Claude Code · /context 说明
+  added: "2026-09-13"
+- term: handy
+  ipa: /ˈhændi/
+  pos: adj.
+  kind: word
+  meaning: ①方便的、有用的、派得上用场的 ②手边的、就近的 ③（人）手巧的。
+  examples:
+  - This will compact everything that you've done up to that point, which could be handy if you want to clear up context space, but also have a memory of what you previously worked on.
+  - This shortcut is really handy.
+  - Keep your passport handy.
+  note: |-
+    口语词，比 useful 更随意，常指「小工具、小技巧用起来很顺手」。
+    常见搭配：come in handy（到时候派得上用场）：A flashlight might come in handy.
+    keep sth handy：把某物放在手边。
+    be handy with：擅长用…（handy with tools）。
+  source: Claude Code · /compact 说明
+  added: "2026-09-13"
+- term: up to that point
+  kind: phrase
+  meaning: 到那个时候为止（之前的所有）。
+  examples:
+  - This will compact everything that you've done up to that point, which could be handy if you want to clear up context space, but also have a memory of what you previously worked on.
+  - Up to that point, everything had gone well.
+  note: |-
+    up to = 直到、截至；that point 指某个时间点（这里指你执行 /compact 的那一刻）。
+    变体：up to now / up until now（到目前为止）、up to this point。
+    和 until 接近，但 up to that point 更强调「从开始一直累积到那一刻」。
+  source: Claude Code · /compact 说明
+  added: "2026-09-13"
+- term: free up
+  pos: v.
+  kind: phrase
+  meaning: ①腾出、释放（空间、内存、资源）②腾出（时间、人手）。
+  examples:
+  - free up a lot of space in your context window
+  - Delete old files to free up disk space.
+  - Can you free up some time this afternoon?
+  note: |-
+    把被占着的东西清出来，让它重新能用。
+    结构：free up + 名词，或 free + 名词 + up（free it up）；代词只能放中间：❌ free up it。
+    对象常是 space / memory / disk space / time / resources。
+    反义可以用 take up：take up a lot of space（占很多空间）。
+  source: Claude Code · context window 原理
+  added: "2026-09-13"
+- term: add on to
+  pos: v.
+  kind: phrase
+  meaning: 往…上追加、叠加；使…不断增加。
+  examples:
+  - Whenever you enter a prompt, Claude reads a file, runs a tool call, gets a tool call result. This is adding on to the context window.
+  - Every new feature adds on to the maintenance cost.
+  note: |-
+    强调在已有的基础上继续往上加，有「越积越多」的感觉。
+    add to 意思接近，更中性、更常用；add on to 口语里常见，更突出「额外加上去」。
+    名词 add-on：附加组件、插件（a browser add-on）。
+  source: Claude Code · context window 原理
+  added: "2026-09-13"
+- term: enter a prompt
+  kind: phrase
+  meaning: 输入一条提示词（在对话框里打字发给 AI）。
+  examples:
+  - Whenever you enter a prompt, Claude reads a file, runs a tool call, gets a tool call result. This is adding on to the context window.
+  - Enter a prompt and press Enter to send it.
+  note: |-
+    enter 在界面语境里是「输入、键入」，不是「进入」。
+    同类搭配：enter your password / enter a command / enter text。
+    prompt 在这里是名词「提示词、你发给模型的那段话」。
+    ❌ 理解成「进入一个提示」。
+  source: Claude Code · context window 原理
+  added: "2026-09-13"
 - term: deterministic
   ipa: /dɪˌtɜːrmɪˈnɪstɪk/
   pos: adj.
