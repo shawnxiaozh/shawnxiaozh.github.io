@@ -28,6 +28,11 @@ twitter_username: ""
 github_username: shawnxiaozh
 show_excerpts: true
 future: true
+
+# 文章 URL 用标题 slug，不含日期（文件名前的 YYYY-MM-DD- 只是 Jekyll 识别 post 的必需前缀，
+# 不参与 URL）。这样以后不管 front matter 里的 date 怎么随机改，线上链接都不会跟着变。
+permalink: /:title/
+
 navigation:
   - title: Home
     url: /

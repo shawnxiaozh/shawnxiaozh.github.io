@@ -4,25 +4,42 @@ title: Tags
 permalink: /tags/
 ---
 
+{% comment %}
+  按 tag 下文章数量降序排列（数量相同的 tag 之间再按字母/拼音排序，保持稳定）。
+  Liquid 的 sort 不支持"按 size 取值降序"这种自定义 key，所以先按数量分桶：
+  统计每个 tag 的文章数 -> 去重降序排列出现过的数量 -> 按数量从多到少，
+  把该数量下的 tag（取自字母序基准 tag_names）依次收集进 sorted_tag_names。
+{% endcomment %}
 {% assign tag_names = site.tags | sort %}
-{% if tag_names and tag_names.size > 0 %}
+{% assign tag_counts = "" | split: "" %}
+{% for tag in tag_names %}
+  {% assign tag_counts = tag_counts | push: tag[1].size %}
+{% endfor %}
+{% assign sorted_counts = tag_counts | sort | reverse | uniq %}
+{% assign sorted_tag_names = "" | split: "" %}
+{% for count in sorted_counts %}
+  {% for tag in tag_names %}
+    {% if tag[1].size == count %}
+      {% assign sorted_tag_names = sorted_tag_names | push: tag[0] %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% if sorted_tag_names and sorted_tag_names.size > 0 %}
   <p>Choose any tag below to focus on the posts filed under it.</p>
 
   <div class="tag-filter">
-    {% for tag in tag_names %}
-      {% assign tag_name = tag[0] %}
+    {% for tag_name in sorted_tag_names %}
       {% assign tag_slug = tag_name | slugify %}
       <button class="tag-chip{% if forloop.first %} is-active{% endif %}" data-tag="{{ tag_slug }}">
-        {{ tag_name }} <span>{{ tag[1] | size }}</span>
+        {{ tag_name }} <span>{{ site.tags[tag_name] | size }}</span>
       </button>
     {% endfor %}
   </div>
 
   <div class="tag-panels">
-    {% for tag in tag_names %}
-      {% assign tag_name = tag[0] %}
+    {% for tag_name in sorted_tag_names %}
       {% assign tag_slug = tag_name | slugify %}
-      {% assign posts_in_tag = tag[1] %}
+      {% assign posts_in_tag = site.tags[tag_name] %}
       <section class="tag-panel{% if forloop.first %} is-active{% endif %}" data-tag="{{ tag_slug }}">
         <h2 id="{{ tag_slug }}">{{ tag_name }} <span>({{ posts_in_tag | size }})</span></h2>
         <ul>

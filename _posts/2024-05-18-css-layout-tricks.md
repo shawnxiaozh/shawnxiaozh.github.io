@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CSS Layout Cheatsheet"
-date: 2024-05-18 14:30:00 +0800
+date: 2024-02-04 14:30:00 +0800
 tags: [css, frontend, ruby, tooling]
 excerpt: "A quick cheat sheet of layout snippets I reach for often."
 ---

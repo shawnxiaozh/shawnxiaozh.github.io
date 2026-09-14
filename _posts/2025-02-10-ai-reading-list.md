@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI Reading List"
-date: 2025-02-10 11:45:00 +0800
+date: 2022-12-18 11:45:00 +0800
 tags: [ai, reading]
 excerpt: "Keeping track of the AI papers, blogs, and videos I'm currently digesting."
 ---

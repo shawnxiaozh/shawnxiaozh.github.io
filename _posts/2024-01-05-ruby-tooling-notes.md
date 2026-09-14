@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ruby Tooling Notes"
-date: 2024-01-05 10:00:00 +0800
+date: 2023-02-09 10:00:00 +0800
 tags: [ruby, tooling]
 excerpt: "A few reminders from my day-to-day experience with bundler and rbenv."
 ---

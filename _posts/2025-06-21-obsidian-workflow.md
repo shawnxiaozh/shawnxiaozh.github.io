@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Obsidian Workflow"
-date: 2025-06-21 08:00:00 +0800
+date: 2021-09-29 08:00:00 +0800
 tags: [notes, workflow]
 excerpt: "How I keep my Obsidian vault tidy and actionable."
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "macOS Fresh Install Checklist"
-date: 2024-08-02 09:15:00 +0800
+date: 2026-01-02 09:15:00 +0800
 tags: [macOS, productivity]
 excerpt: "Documenting my from-scratch macOS setup so future me can follow the same path."
 ---
