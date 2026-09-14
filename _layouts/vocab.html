@@ -4,7 +4,7 @@ layout: default
 {%- comment -%}
   生词本页面。词条数据在 _data/vocab/<scene>.yml，分类定义在 _data/vocab_meta.yml。
   这里把全部词条渲染成静态 HTML（没有 JS 也能完整浏览），
-  assets/js/vocab.js 再在上面加搜索、筛选、自测和闪卡复习。
+  assets/js/vocab.js 再在上面加搜索、筛选、自测和随机闪卡复习。
   闪卡直接读取这里渲染出来的 DOM，所以词条只渲染一次，不另外嵌一份 JSON。
 {%- endcomment -%}
 {%- assign meta = site.data.vocab_meta -%}
@@ -21,9 +21,6 @@ layout: default
     <div class="vocab-intro">{{ content }}</div>
     <p class="vocab-stats">
       <span><b>{{ total }}</b> 条</span>
-      <span data-stat="due" hidden>待复习 <b>0</b></span>
-      <span data-stat="new" hidden>今日新词 <b>0</b></span>
-      <span data-stat="mastered" hidden>已掌握 <b>0</b></span>
     </p>
   </header>
 
@@ -40,7 +37,7 @@ layout: default
     </div>
     <div class="vocab-actions">
       <button type="button" class="vocab-btn" data-action="quiz" aria-pressed="false">自测模式</button>
-      <button type="button" class="vocab-btn vocab-btn-primary" data-action="review">开始复习 <span data-review-count>0</span></button>
+      <button type="button" class="vocab-btn vocab-btn-primary" data-action="review">随机 20 个</button>
     </div>
   </div>
 
@@ -71,13 +68,12 @@ layout: default
 
         {%- for e in entries %}
         {%- assign kind = meta.kinds | where: "id", e.kind | first %}
-        <article class="vocab-entry" data-id="{{ scene.id }}::{{ e.term | escape }}" data-kind="{{ e.kind }}">
+        <article class="vocab-entry" data-kind="{{ e.kind }}">
           <div class="vocab-term-line">
             <h3 class="vocab-term">{{ e.term | escape }}</h3>
             {%- if e.ipa %}<span class="vocab-ipa">{{ e.ipa | escape }}</span>{% endif %}
             {%- if e.pos %}<span class="vocab-pos">{{ e.pos | escape }}</span>{% endif %}
             <span class="vocab-kind">{{ kind.name | default: e.kind }}</span>
-            <span class="vocab-level" aria-hidden="true"></span>
           </div>
           <div class="vocab-answer">
             <p class="vocab-meaning">{{ e.meaning | escape }}</p>
@@ -102,9 +98,9 @@ layout: default
     </div>
   </div>
 
-  <p class="vocab-foot">复习进度只保存在当前浏览器里（localStorage），换设备或清除网站数据后会从头开始。</p>
+  <p class="vocab-foot">复习是纯随机的：每次点「随机 20 个」都从当前筛选结果里重新抽一批，不记录进度，可以反复点。</p>
 
-  <div class="vocab-review" role="dialog" aria-modal="true" aria-label="闪卡复习" hidden>
+  <div class="vocab-review" role="dialog" aria-modal="true" aria-label="随机复习" hidden>
     <div class="vocab-card">
       <div class="vocab-card-top">
         <span class="vocab-card-progress"></span>
@@ -113,8 +109,8 @@ layout: default
       <div class="vocab-card-body"></div>
       <div class="vocab-card-controls">
         <button type="button" class="vocab-btn vocab-btn-primary" data-action="flip">显示答案 <kbd>空格</kbd></button>
-        <button type="button" class="vocab-btn vocab-btn-forgot" data-action="forgot" hidden>忘了 <kbd>1</kbd></button>
-        <button type="button" class="vocab-btn vocab-btn-primary" data-action="remembered" hidden>记得 <kbd>2</kbd></button>
+        <button type="button" class="vocab-btn vocab-btn-primary" data-action="next" hidden>下一个 <kbd>空格</kbd></button>
+        <button type="button" class="vocab-btn vocab-btn-primary" data-action="again" hidden>再来一轮</button>
       </div>
     </div>
   </div>

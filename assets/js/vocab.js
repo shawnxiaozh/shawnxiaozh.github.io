@@ -1,86 +1,24 @@
-// 生词本交互：搜索、场景/类型筛选、自测模式、闪卡复习（Leitner 间隔重复）。
-// 词条来自 _layouts/vocab.html 渲染出来的静态 DOM；复习进度存在 localStorage。
+// 生词本交互：搜索、场景/类型筛选、自测模式、随机闪卡复习。
+// 词条来自 _layouts/vocab.html 渲染出来的静态 DOM。
+// 复习是纯随机的：每次点按钮都从当前筛选结果里重新抽一批，不记录任何进度。
 (function () {
   'use strict';
 
   var app = document.querySelector('.vocab-app');
   if (!app) return;
 
-  // ---------- 复习进度存储 ----------
-  // state = { cards: { "scene::term": { box: 1..5, due: "YYYY-MM-DD" } }, newDay: "YYYY-MM-DD", newCount: n }
-  var STORE_KEY = 'vocab-srs-v1';
-  var INTERVALS = [1, 2, 4, 7, 15]; // 盒子 1..5 对应的复习间隔（天）
-  var NEW_PER_DAY = 20;
-  var MAX_BOX = INTERVALS.length;
-
-  function load() {
-    try {
-      var raw = localStorage.getItem(STORE_KEY);
-      var s = raw ? JSON.parse(raw) : null;
-      if (s && s.cards) return s;
-    } catch (e) {}
-    return { cards: {}, newDay: '', newCount: 0 };
-  }
-  function save() {
-    try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) {}
-  }
-  var state = load();
-
-  function today(offsetDays) {
-    var d = new Date();
-    d.setDate(d.getDate() + (offsetDays || 0));
-    var m = d.getMonth() + 1, day = d.getDate();
-    return d.getFullYear() + '-' + (m < 10 ? '0' : '') + m + '-' + (day < 10 ? '0' : '') + day;
-  }
-  function newLeftToday() {
-    if (state.newDay !== today()) return NEW_PER_DAY;
-    return Math.max(0, NEW_PER_DAY - state.newCount);
-  }
+  var ROUND_SIZE = 20; // 每轮随机抽多少个
 
   // ---------- 词条索引 ----------
   var entries = Array.prototype.map.call(app.querySelectorAll('.vocab-entry'), function (el) {
     return {
       el: el,
-      id: el.dataset.id,
       kind: el.dataset.kind,
       scene: el.closest('.vocab-scene').dataset.scene,
       hay: el.textContent.toLowerCase()
     };
   });
   var sections = Array.prototype.slice.call(app.querySelectorAll('.vocab-scene'));
-
-  function paintLevel(entry) {
-    var card = state.cards[entry.id];
-    var box = card ? card.box : 0;
-    entry.el.dataset.level = box;
-    var level = entry.el.querySelector('.vocab-level');
-    level.title = box ? '复习进度 ' + box + ' / ' + MAX_BOX : '还没复习过';
-    level.innerHTML = '';
-    for (var i = 1; i <= MAX_BOX; i++) {
-      var pip = document.createElement('i');
-      if (i <= box) pip.className = 'on';
-      level.appendChild(pip);
-    }
-  }
-
-  function paintStats() {
-    var t = today(), due = 0, mastered = 0;
-    entries.forEach(function (e) {
-      var c = state.cards[e.id];
-      if (!c) return;
-      if (c.due <= t) due++;
-      if (c.box >= MAX_BOX) mastered++;
-    });
-    setStat('due', due);
-    setStat('new', newLeftToday());
-    setStat('mastered', mastered);
-    app.querySelector('[data-review-count]').textContent = buildQueue().length;
-  }
-  function setStat(name, n) {
-    var el = app.querySelector('[data-stat="' + name + '"]');
-    el.hidden = false;
-    el.querySelector('b').textContent = n;
-  }
 
   // ---------- 筛选 ----------
   var filters = { q: '', scene: '', kind: '' };
@@ -107,7 +45,6 @@
       sec.querySelector('.vocab-scene-count').textContent = n;
     });
     emptyMsg.hidden = shown !== 0;
-    app.querySelector('[data-review-count]').textContent = buildQueue().length;
   }
 
   searchInput.addEventListener('input', function () {
@@ -152,21 +89,20 @@
     if (el) el.classList.toggle('is-revealed');
   });
 
-  // ---------- 闪卡复习 ----------
-  function buildQueue() {
-    var t = today();
-    var due = [], fresh = [];
-    entries.forEach(function (e) {
-      if (!matches(e)) return;
-      var c = state.cards[e.id];
-      if (c) { if (c.due <= t) due.push(e); }
-      else fresh.push(e);
-    });
-    due.sort(function (a, b) {
-      var ca = state.cards[a.id], cb = state.cards[b.id];
-      return ca.due < cb.due ? -1 : ca.due > cb.due ? 1 : ca.box - cb.box;
-    });
-    return due.concat(fresh.slice(0, newLeftToday()));
+  // ---------- 随机闪卡复习 ----------
+  // 部分 Fisher–Yates 洗牌：只洗前 k 个位置，随机范围每轮向右收缩，
+  // 已定下的位置不会再被换走 —— 同一轮内不会重复，且每个词落到每个位置的概率相等。
+  // 不用 sort(() => Math.random() - 0.5)：比较函数不满足传递性，结果分布有偏且跨引擎不一致。
+  function sampleRandom(n) {
+    var pool = entries.filter(matches);
+    var k = Math.min(n, pool.length);
+    for (var i = 0; i < k; i++) {
+      var j = i + Math.floor(Math.random() * (pool.length - i));
+      var tmp = pool[i];
+      pool[i] = pool[j];
+      pool[j] = tmp;
+    }
+    return pool.slice(0, k);
   }
 
   var dialog = app.querySelector('.vocab-review');
@@ -174,14 +110,19 @@
   var progress = dialog.querySelector('.vocab-card-progress');
   var btn = {
     flip: dialog.querySelector('[data-action="flip"]'),
-    forgot: dialog.querySelector('[data-action="forgot"]'),
-    remembered: dialog.querySelector('[data-action="remembered"]')
+    next: dialog.querySelector('[data-action="next"]'),
+    again: dialog.querySelector('[data-action="again"]')
   };
   var session = null;
 
+  // 开一轮新的。从完成页点「再来一轮」时也是走这里，弹窗不关，可以无限点。
   function startReview() {
-    var queue = buildQueue();
-    session = { queue: queue, pos: 0, total: queue.length, remembered: 0, forgot: 0, requeued: {}, flipped: false, lastFocus: document.activeElement };
+    session = {
+      queue: sampleRandom(ROUND_SIZE),
+      pos: 0,
+      flipped: false,
+      lastFocus: (session && session.lastFocus) || document.activeElement
+    };
     dialog.hidden = false;
     document.documentElement.classList.add('vocab-noscroll');
     showCard();
@@ -192,26 +133,28 @@
     document.documentElement.classList.remove('vocab-noscroll');
     if (session && session.lastFocus) session.lastFocus.focus();
     session = null;
-    paintStats();
   }
 
   function showCard() {
     var e = session.queue[session.pos];
     session.flipped = false;
     cardBody.innerHTML = '';
+    btn.flip.hidden = btn.next.hidden = btn.again.hidden = true;
+
     if (!e) {
-      progress.textContent = '完成';
+      progress.textContent = session.queue.length ? '完成' : '';
       var done = document.createElement('div');
       done.className = 'vocab-card-done';
-      done.innerHTML = session.total
-        ? '<p class="vocab-card-big">这一轮复习完了</p><p>记得 <b>' + session.remembered + '</b> · 忘了 <b>' + session.forgot + '</b></p>'
-        : '<p class="vocab-card-big">现在没有要复习的词</p><p>到期的词和今天的新词都复习完了，明天再来。</p>';
+      done.innerHTML = session.queue.length
+        ? '<p class="vocab-card-big">这一轮 ' + session.queue.length + ' 个看完了</p><p>再来一轮是重新随机抽的，想刷几轮都行。</p>'
+        : '<p class="vocab-card-big">当前筛选下没有词条</p><p>清空搜索框，或者在左边换个场景。</p>';
       cardBody.appendChild(done);
-      btn.flip.hidden = btn.forgot.hidden = btn.remembered.hidden = true;
-      dialog.querySelector('.vocab-card-close').focus();
+      btn.again.hidden = false;
+      btn.again.focus();
       return;
     }
-    progress.textContent = (session.pos + 1) + ' / ' + session.queue.length + (state.cards[e.id] ? '' : ' · 新词');
+
+    progress.textContent = (session.pos + 1) + ' / ' + session.queue.length;
 
     var front = document.createElement('div');
     front.className = 'vocab-card-front';
@@ -224,7 +167,6 @@
     cardBody.appendChild(back);
 
     btn.flip.hidden = false;
-    btn.forgot.hidden = btn.remembered.hidden = true;
     btn.flip.focus();
   }
 
@@ -233,32 +175,12 @@
     session.flipped = true;
     cardBody.querySelector('.vocab-card-back').hidden = false;
     btn.flip.hidden = true;
-    btn.forgot.hidden = btn.remembered.hidden = false;
-    btn.remembered.focus();
+    btn.next.hidden = false;
+    btn.next.focus();
   }
 
-  function grade(remembered) {
+  function next() {
     if (!session || !session.flipped) return;
-    var e = session.queue[session.pos];
-    var card = state.cards[e.id];
-    if (!card) {
-      if (state.newDay !== today()) { state.newDay = today(); state.newCount = 0; }
-      state.newCount++;
-      card = state.cards[e.id] = { box: 0, due: today() };
-    }
-    if (remembered) {
-      session.remembered++;
-      // 这一轮里忘过又答对的，留在盒子 1，明天再确认一次
-      if (!session.requeued[e.id]) card.box = Math.min(card.box + 1, MAX_BOX);
-    } else {
-      session.forgot++;
-      card.box = 1;
-      // 忘了的词在这一轮末尾再出现一次
-      if (!session.requeued[e.id]) { session.requeued[e.id] = true; session.queue.push(e); }
-    }
-    card.due = today(INTERVALS[card.box - 1]);
-    save();
-    paintLevel(e);
     session.pos++;
     showCard();
   }
@@ -266,24 +188,23 @@
   app.querySelector('[data-action="review"]').addEventListener('click', startReview);
   dialog.querySelector('[data-action="close"]').addEventListener('click', closeReview);
   btn.flip.addEventListener('click', flip);
-  btn.forgot.addEventListener('click', function () { grade(false); });
-  btn.remembered.addEventListener('click', function () { grade(true); });
+  btn.next.addEventListener('click', next);
+  btn.again.addEventListener('click', startReview);
   dialog.addEventListener('click', function (ev) { if (ev.target === dialog) closeReview(); });
   cardBody.addEventListener('click', flip);
 
   document.addEventListener('keydown', function (ev) {
-    if (dialog.hidden) return;
-    if (ev.key === 'Escape') { ev.preventDefault(); closeReview(); }
-    else if (ev.key === ' ' || ev.key === 'Enter') {
-      if (!session.flipped && session.queue[session.pos]) { ev.preventDefault(); flip(); }
-    }
-    else if (ev.key === '1') grade(false);
-    else if (ev.key === '2') grade(true);
+    if (dialog.hidden || !session) return;
+    if (ev.key === 'Escape') { ev.preventDefault(); closeReview(); return; }
+    if (ev.key !== ' ' && ev.key !== 'Enter' && ev.key !== 'ArrowRight') return;
+    // 完成页上焦点在「再来一轮」按钮上，交给按钮自己响应，别在这里重复触发
+    if (!session.queue[session.pos]) return;
+    ev.preventDefault();
+    if (session.flipped) next();
+    else flip();
   });
 
   // ---------- 初始化 ----------
   app.querySelector('.vocab-toolbar').hidden = false;
   app.classList.add('js-ready');
-  entries.forEach(paintLevel);
-  paintStats();
 })();

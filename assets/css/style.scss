@@ -439,15 +439,6 @@ $vocab-mono: "SFMono-Regular", Menlo, Consolas, monospace;
   }
 }
 
-.vocab-btn-forgot {
-  color: #9a3412;
-  border-color: #fdba74;
-
-  &:hover {
-    border-color: #ea580c;
-  }
-}
-
 .vocab-shell {
   display: grid;
   grid-template-columns: 170px minmax(0, 1fr);
@@ -585,27 +576,6 @@ $vocab-mono: "SFMono-Regular", Menlo, Consolas, monospace;
   background: #eff6ff;
 }
 
-.vocab-level {
-  margin-left: auto;
-  display: inline-flex;
-  gap: 3px;
-
-  i {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: $vocab-rule;
-
-    &.on {
-      background: $vocab-accent;
-    }
-  }
-}
-
-.vocab-entry[data-level="0"] .vocab-level {
-  opacity: 0.6;
-}
-
 .vocab-app .vocab-meaning {
   margin: 0.35rem 0 0;
   color: $vocab-body;
@@ -728,10 +698,6 @@ $vocab-mono: "SFMono-Regular", Menlo, Consolas, monospace;
 
   .vocab-term {
     font-size: 1.8rem;
-  }
-
-  .vocab-level {
-    display: none;
   }
 }
 
