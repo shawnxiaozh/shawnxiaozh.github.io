@@ -24,21 +24,6 @@
   note: ❌ 别说 Rest early，母语者不这么讲。
   source: English Teacher · 早点休息的英文表达
   added: "2026-09-10"
-- term: 连读与弱读
-  kind: pron
-  meaning: 听不懂的主因不是词汇，是音变。
-  examples:
-  - '"What do you want to do" → "Whaddaya wanna do"'
-  note: and 常常只剩一个 n 的音。搜 connected speech 专门练。
-  source: English Teacher · 英语听力理解困难的改善方法
-  added: "2026-09-10"
-- term: 高频短语动词
-  kind: phrase
-  meaning: 表面简单、组合起来意思全变，而且母语者说得又快又糊 —— 听力的主要杀手。
-  examples:
-  - figure out · work around · get back to · run into · come up with · hold off · bring up · follow up on · flag · chase
-  source: English Teacher · 改进英语听力的方法
-  added: "2026-09-06"
 - term: go about doing sth
   kind: phrase
   meaning: 着手做某事、用什么方法做。问的是路径，不是要不要做。
@@ -384,7 +369,10 @@
   meaning: 从……里面（拿走）
   examples:
   - I had some things stolen out of my bag yesterday.
-  note: 强调"从容器内部取出"，比单用 from 更具体。报案的标准说法：I want to report a theft.
+  - They're a practical way to get more out of longer Claude Code sessions.
+  note: |-
+    强调"从容器内部取出"，比单用 from 更具体。报案的标准说法：I want to report a theft.
+    引申：从某样东西里得到价值——get more / the most / a lot out of sth（见 tech 场景的 get more out of）。
   source: Notion · Daily
   added: "2026-07-29"
 - term: come over

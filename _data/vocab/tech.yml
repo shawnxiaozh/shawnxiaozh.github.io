@@ -1,6 +1,185 @@
 # 生词本 · tech
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: might not work as well (as …)
+  kind: pattern
+  meaning: 效果可能没那么好（没有另一种做法好）。
+  examples:
+  - Claude Code will automatically switch to tool search mode, which will discover the right tools on demand, but this might not work as well since it's just not in the context.
+  - The cheaper option might not work as well for large files.
+  note: |-
+    委婉地指出缺点：不说 won't work（不行），只说「没那么好」。as well 在这里是「一样好」，比较对象常省略。
+    ❌ 别和句末的 as well（也）混：I'll come as well.
+  source: Claude Code · MCP tool search
+  added: "2026-09-14"
+- term: on demand
+  kind: phrase
+  meaning: 按需、需要时才（提供、加载、获取）。
+  examples:
+  - If your MCP tools exceed 10% of your context window, Claude Code will automatically switch to tool search mode, which will discover the right tools on demand, but this might not work as well since it's just not in the context.
+  - Movies are available on demand.
+  note: |-
+    和「提前全部准备好」相对：用到了才去拿。
+    形容词形式带连字符：on-demand loading（按需加载）/ video on demand（视频点播，VOD）。
+    近义：as needed / when needed。
+    反义：up front / in advance（提前）。
+  source: Claude Code · MCP tool search
+  added: "2026-09-14"
+- term: eat into
+  pos: v.
+  kind: phrase
+  meaning: 一点点占用、侵蚀、消耗（时间、预算、空间、利润等）。
+  examples:
+  - So if you have a lot of servers configured, this eats into your available context.
+  - Meetings eat into my coding time.
+  note: |-
+    形象：像虫子一点点啃掉一块，强调不知不觉被消耗。
+    和 take up 的区别：take up 只说「占用」；eat into 强调「从已有的额度里被啃掉」。
+    常见对象：time / budget / savings / profits / available space。
+    近义：cut into（更中性）。
+  source: Claude Code · MCP 占用上下文
+  added: "2026-09-14"
+- term: actively using
+  kind: phrase
+  meaning: 正在实际使用的（相对于装着但不用）。
+  examples:
+  - Run the /mcp command to see what's connected and disable anything that you're not actively using or don't think that you're going to use.
+  - This library is actively maintained.
+  note: |-
+    常见：actively maintained（有人在积极维护）。
+    ❌ active using；修饰名词才用 active：an active user。
+  source: Claude Code · MCP 占用上下文
+  added: "2026-09-14"
+- term: One thing to be aware of is that …
+  kind: pattern
+  meaning: 有一点需要注意的是……（温和地提醒一个坑）。
+  examples:
+  - Now, one thing to be aware of is that MCP servers add tool definitions to your context window, even when you're not using them.
+  - One thing to be aware of is that this change will reset your cache.
+  note: |-
+    比 Note that … 更委婉，不像警告。
+    变体：One thing to keep in mind is that … / Just a heads-up: …（口语）。
+  source: Claude Code · MCP 占用上下文
+  added: "2026-09-14"
+- term: be scoped (to …)
+  pos: v.
+  kind: phrase
+  meaning: （被）限定在…范围内生效；划定作用范围。
+  examples:
+  - MCP servers can be scoped in three different ways.
+  - This setting is scoped to the current project.
+  - The API token is scoped to read-only access.
+  note: |-
+    scope 本来是名词「范围」，这里当动词用：scope sth = 给它划定范围；被动 be scoped to X = 只在 X 这个范围里有效。
+    结构：be scoped to + 范围（a project / a user / read-only access）；be scoped in … ways（有几种划定范围的方式）。
+    技术里常见：a project-scoped setting / a user-scoped server（形容词化，只在项目 / 用户级别生效）。
+    另一个动词义：scope out the work = 先摸清工作量有多大。
+    相关：out of scope（不在范围内）/ descope（career 场景，砍掉部分范围）。
+  source: Claude Code · MCP 作用域
+  added: "2026-09-14"
+- term: bring in
+  pos: v.
+  kind: phrase
+  meaning: ①把（外部的信息、数据）引进来、拉进来 ②请来、引入（人、专家、新方法）③带来（收入、客户）。
+  examples:
+  - For example, if your team is using Linear as their project management software, you can add a Linear MCP server to bring in the details of your specific issues.
+  - We brought in a consultant to review the design.
+  - The new feature brought in more users.
+  note: |-
+    核心意思：把外面的东西带到当前这个范围里。技术语境里常指把外部数据导入、接入进来。
+    结构：bring in + 名词，或 bring it in（代词放中间，❌ bring in it）。
+    近义：pull in（拉取，更口语）/ import（导入，更技术）/ fetch（获取）。
+    和 bring up 的区别：bring up 是「提起（话题）」或「调出（界面）」。
+  source: Claude Code · MCP 介绍
+  added: "2026-09-14"
+- term: get more out of
+  pos: v.
+  kind: phrase
+  meaning: 从…中得到更多（价值、好处、效果）；把…用得更好。
+  examples:
+  - They're a practical way to get more out of longer Claude Code sessions.
+  - How can I get more out of my study time?
+  note: |-
+    out of 表示「从…里面拿出来」，这里是从某样东西里「榨出」价值。
+    结构：get + 多少 + out of + sth：get the most out of（充分利用）/ get a lot out of（收获很大）/ get nothing out of（毫无收获）。
+    问句：What did you get out of the course?（这门课你学到了什么？）
+    近义：make the most of（充分利用）。
+    基础义见 daily 场景的 out of。
+  source: Claude Code · subagent 总结
+  added: "2026-09-13"
+- term: practical
+  ipa: /ˈpræktɪkl/
+  pos: adj.
+  kind: word
+  meaning: ①实用的、切实可行的 ②实际的、实践中的（相对于理论）③（人）务实的。
+  examples:
+  - They're a practical way to get more out of longer Claude Code sessions.
+  - That's a good idea, but it's not practical.
+  - practical experience
+  note: |-
+    a practical way to do sth：一个实用的办法（很常见的搭配）。
+    和 useful 的区别：useful 只说有用；practical 强调在现实中能用、好落地。
+    反义：impractical（不切实际的）/ theoretical（理论上的）。
+    副词 practically 常见的意思是「几乎」：It's practically done.（基本做完了）。
+  source: Claude Code · subagent 总结
+  added: "2026-09-13"
+- term: break … into …
+  kind: pattern
+  meaning: 把…拆分成…（把大的整体分成几个小部分）。
+  examples:
+  - Subagents let Claude Code break work into focused pieces.
+  - Break the task into smaller steps.
+  note: |-
+    结构：break A into B（B 通常是复数：pieces / parts / steps / chunks）。
+    常见：break a problem into smaller parts / break a big PR into several small ones。
+    口语里常加 down：break it down into steps（更强调「一步步拆解、讲清楚」）。
+    近义：split … into …（更偏平均切分）/ divide … into …（更正式）。
+    ❌ 别和 break into 混：break into a house 是「闯入」，break into a market 是「打入市场」，中间没有宾语。
+  source: Claude Code · subagent 总结
+  added: "2026-09-13"
+- term: visibility into
+  pos: n.
+  kind: phrase
+  meaning: 对…的可见性、能看清…的内部情况（知道里面发生了什么）。
+  examples:
+  - But the main window loses visibility into how the subagent reaches its conclusions and what it discovered along the way.
+  - Logging gives us visibility into what the service is doing.
+  - We have no visibility into their roadmap.
+  note: |-
+    职场、技术里的高频说法，指「能不能看到、了解某个过程或系统的内部」。
+    介词用 into（看进内部），不用 of / to。
+    常见搭配：have / get / gain visibility into（能看到）；lose visibility into（看不到了）；lack visibility into / have no visibility into（缺乏了解）。
+    近义：insight into（更侧重理解）；transparency（更侧重对方是否公开）。
+  source: Claude Code · subagent 原理
+  added: "2026-09-13"
+- term: journey
+  ipa: /ˈdʒɜːrni/
+  pos: n.
+  kind: word
+  meaning: ①（比喻）过程、经历、摸索的整个路径 ②旅行、旅程（尤指较长的路途）。
+  examples:
+  - With a subagent, you get the answer without the journey.
+  - Learning a language is a long journey.
+  note: |-
+    这里是比喻：journey = 找到答案之前的整个摸索过程（读 15 个文件、搜索、追函数调用）。
+    对照句型：the answer without the journey（只要结果，不要过程）；类似 It's about the journey, not the destination.（重要的是过程，不是终点）。
+    和 trip 的区别：trip 多指短途、有来回的出行；journey 强调路途本身，常用于比喻。
+    另见 writing 场景的 (customer) journey：客户旅程，产品术语。
+  source: Claude Code · subagent 原理
+  added: "2026-09-13"
+- term: along the way
+  kind: phrase
+  meaning: 在这个过程中、一路上、途中（顺带发生或得到的）。
+  examples:
+  - But the main window loses visibility into how the subagent reaches its conclusions and what it discovered along the way.
+  - I made a lot of mistakes, but I learned a lot along the way.
+  note: |-
+    不一定是真的在路上，常比喻「做一件事的整个过程中」。
+    常搭配：learn / discover / pick up / meet sb along the way。
+    近义：in the process / during the process（更正式）/ on the way（多指真实的路上，或「即将到来」）。
+    ❌ on the way 不能随意替换：on the way 更偏物理路途，或 be on the way（快到了）。
+  source: Claude Code · subagent 原理
+  added: "2026-09-13"
 - term: based off of
   kind: phrase
   meaning: 以…为依据、根据…（= based on）。
