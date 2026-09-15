@@ -35,6 +35,7 @@
   meaning: 你完全有权（做某事），不必觉得亏心。
   examples:
   - You're well within your rights to sell 10% of your shares.
+  note: 和 you can 的区别：you can 只说可以做；be well within your rights 多了一层「这是正当的，别人没理由指责你」，常用来打消对方的心理负担。
   source: English Teacher · Data center infrastructure
   added: "2026-09-06"
 - term: put off
@@ -43,7 +44,9 @@
   meaning: 推迟、往后拖。
   examples:
   - I'm going to put off my raise for six months.
-  note: 这里的 raise 是「融资轮」，不是「加薪」。
+  note: |-
+    这里的 raise 是「融资轮」，不是「加薪」。
+    和 postpone / delay 的区别：postpone 正式，通常会定新日期；put off 口语，常带「拖着、不太想做」的意味。
   source: English Teacher · Data center infrastructure
   added: "2026-09-06"
 - term: holdings
@@ -52,6 +55,7 @@
   meaning: 持有的股份／资产。
   examples:
   - …sell 10 to 20 percent of your holdings now.
+  note: 和 shares 的区别：shares 专指股份；holdings 泛指你手里持有的全部资产或股份，说的是总量。
   source: English Teacher · Data center infrastructure
   added: "2026-09-06"
 - term: speculative
@@ -60,6 +64,7 @@
   meaning: 推测性的、还没兑现的。和 real（实打实的）成对出现。
   examples:
   - It is all real dollars flowing versus speculative utilization.
+  note: 和 potential / estimated 的区别：potential 是可能会有；estimated 是有依据地估算；speculative 带「靠推测、没兑现、可能落空」的怀疑意味。
   source: English Teacher · Data center infrastructure
   added: "2026-09-06"
 - term: standup
@@ -76,6 +81,7 @@
   meaning: 卡住你的事，进度阻塞点。
   examples:
   - My only blocker is waiting on the API key.
+  note: 和 issue / problem 的区别：issue 是一般的问题；blocker 特指挡在路上、不解决就没法往下做的那一个。站会上说 blocker，就是在求助。
   source: English Teacher · 改进英语听力的方法
   added: "2026-09-06"
 - term: circle back
@@ -84,6 +90,7 @@
   meaning: 回头再聊这件事。
   examples:
   - Let's circle back on this next week.
+  note: 和 talk about it later 的区别：circle back 的画面是绕一圈再回到这个点，暗示现在先放一放，但之后一定会回来处理，不是不了了之。
   source: English Teacher · 改进英语听力的方法
   added: "2026-09-06"
 - term: loop in
@@ -92,6 +99,7 @@
   meaning: 把某人拉进讨论、抄送进来。
   examples:
   - I'll loop in the platform team.
+  note: 和 cc / include 的区别：cc 只是把人加进邮件抄送；loop in 是让对方进入讨论圈，之后持续知情、参与。
   source: English Teacher · 改进英语听力的方法
   added: "2026-09-06"
 - term: bandwidth
@@ -100,6 +108,7 @@
   meaning: 精力／工时上的余量。
   examples:
   - I don't have the bandwidth for that this sprint.
+  note: 和 time 的区别：time 只说时间；bandwidth 借自网络带宽，说的是精力和处理能力的余量。拒绝时说 no bandwidth，听起来是容量满了，不是不想做。
   source: English Teacher · 改进英语听力的方法
   added: "2026-09-06"
 - term: EOD / ETA
@@ -115,6 +124,7 @@
   meaning: 碰一下 / 就某事达成一致。
   examples:
   - Let's sync up Friday and align on the rollout plan.
+  note: 和 meet / agree 的区别：meet 是开会；sync up 强调同步彼此的进度和信息，通常是短会。agree 是同意某个观点；align on 强调各方方向一致，可以一起往前推。
   source: English Teacher · 改进英语听力的方法
   added: "2026-09-06"
 - term: ship it / LGTM
@@ -129,6 +139,7 @@
   meaning: 顶一下 PR，提醒别人来审。
   examples:
   - Can you bump the PR? It's been sitting for two days.
+  note: 和 remind sb 的区别：remind 是点名提醒某个人；bump 是把帖子或 PR 顶上去，更轻，不像在点名催。
   source: English Teacher · 改进英语听力的方法
   added: "2026-09-06"
 - term: take it offline
@@ -136,6 +147,7 @@
   meaning: 这个会后单聊，别占用会议时间。
   examples:
   - Good question — let's take it offline.
+  note: 和 let's discuss later 的区别：不是字面上的「离线」，而是移出当前会议、会后单独聊。它明确在说「这个不适合占用大家的时间」，比 later 更有控场感。
   source: English Teacher · 改进英语听力的方法
   added: "2026-09-06"
 - term: park that
@@ -144,6 +156,7 @@
   meaning: 先搁置，之后再说。
   examples:
   - Let's park that for now.
+  note: 和 put it aside / postpone 的区别：画面是把车先停在路边，暗示这个话题没丢，之后还会开走；会上用来礼貌地打断跑题。
   source: English Teacher · 改进英语听力的方法
   added: "2026-09-06"
 - term: low-hanging fruit
@@ -151,6 +164,7 @@
   meaning: 容易摘的果子 —— 成本低见效快的事。
   examples:
   - Let's start with the low-hanging fruit.
+  note: 和 quick wins 的区别：quick wins 强调见效快；low-hanging fruit 强调容易拿、不费力，所以适合当第一步。
   source: English Teacher · 改进英语听力的方法
   added: "2026-09-06"
 - term: nitpick / bikeshedding
@@ -158,6 +172,7 @@
   meaning: 挑刺 / 在无关紧要的细节上争论不休。
   examples:
   - This is a nitpick, but… · We're bikeshedding on the button color.
+  note: 代码审查里先说 This is a nitpick，是先承认这是小事、不阻塞合并，免得对方觉得被挑刺。bikeshedding 来自「大家对核电站设计插不上嘴，却对自行车棚刷什么颜色争个不停」。
   source: English Teacher · 改进英语听力的方法
   added: "2026-09-06"
 - term: you are aware of that?
@@ -261,7 +276,9 @@
   meaning: 整体的、通盘的
   examples:
   - We need a holistic view across the entire pipeline, not per-service dashboards.
-  note: 常搭配 holistic view / approach。潜台词是"别只看自己那一块"。
+  note: |-
+    常搭配 holistic view / approach。潜台词是"别只看自己那一块"。
+    和 comprehensive / overall 的区别：comprehensive 是覆盖全面；overall 是总体上；holistic 强调把各部分当作一个相互关联的整体来看，不能拆开单独优化。
   source: Notion · Work
   added: "2026-07-29"
 - term: there isn't a ticket for it
@@ -341,7 +358,9 @@
   meaning: 在某事上达成一致
   examples:
   - We're aligned on the scope; the timeline is still open.
-  note: align 是职场高频词。想推动对齐说 let's align on…；确认是否一致说 are we aligned?
+  note: |-
+    align 是职场高频词。想推动对齐说 let's align on…；确认是否一致说 are we aligned?
+    和 agree 的区别：agree 是同意某个观点；aligned 强调各方方向一致，后续可以一起推进。
   source: Notion · Work
   added: "2026-07-29"
 - term: disseminate down
@@ -360,7 +379,9 @@
   meaning: 从……的角度看、就……而言
   examples:
   - For most projects, I like to think in terms of an MVP, then one or two versions of improvements.
-  note: 用来指定讨论的维度：in terms of cost / risk / effort。口语里也常用来换算：In terms of headcount, that's two engineers.
+  note: |-
+    用来指定讨论的维度：in terms of cost / risk / effort。口语里也常用来换算：In terms of headcount, that's two engineers.
+    和 regarding / about 的区别：regarding 只是「关于」；in terms of 是「按……这个维度来衡量」，后面接的是衡量标准。
   source: Notion · Work
   added: "2026-07-29"
 - term: deliverable
@@ -392,7 +413,9 @@
   meaning: 臃肿的
   examples:
   - Don't bloat it — one endpoint, one job.
-  note: 形容需求、代码、流程都行。动词 bloat：Every release bloats the config a bit more.
+  note: |-
+    形容需求、代码、流程都行。动词 bloat：Every release bloats the config a bit more.
+    和 big / large 的区别：big 中性；bloated 暗示多出来的都是不必要的负担，是在批评。
   source: Notion · Work
   added: "2026-07-29"
 - term: in charge (of sth)
@@ -416,7 +439,9 @@
   meaning: 天赋、风采、漂亮的手法
   examples:
   - I appreciate the intellectual flair you brought to not answering that.
-  note: 这句是玩笑式的反讽——夸对方"把问题绕过去绕得很漂亮"。flair 本身是褒义。
+  note: |-
+    这句是玩笑式的反讽——夸对方"把问题绕过去绕得很漂亮"。flair 本身是褒义。
+    和 talent 的区别：talent 是天赋、能力；flair 强调做事有风格、手法漂亮，偏外在表现。
   source: Notion · Work
   added: "2026-07-29"
 - term: bounce ideas back and forth
@@ -480,7 +505,9 @@
   meaning: 话虽如此
   examples:
   - The rollout was messy. That said, we learned a lot.
-  note: 典型用法是先自我否定、再给积极信息（或反过来）。近义 having said that / then again。
+  note: |-
+    典型用法是先自我否定、再给积极信息（或反过来）。近义 having said that / then again。
+    和 but / however 的区别：but 是直接转折；that said 先承认前面说的成立，再补充另一面，语气更平衡、客观。
   source: Notion · Work
   added: "2026-07-29"
 - term: going / moving forward
@@ -548,6 +575,7 @@
   note: |-
     注意这个词有两个完全相反的常用义：outstanding work 是"还没做完的活"，outstanding performance 是"极其出色"。靠搭配区分。
     尚未解决的 Outstanding bill 是未偿还的账单；We still have some outstanding issues to resolve 指尚未解决。判断词义看搭配的是"事项"还是"表现"。
+    和 pending 的区别：pending 是在等别人或等条件；outstanding 是还没了结、还欠着，需要有人去收尾。
   source: Notion · Work
   added: "2026-07-29"
 - term: get to the bottom of sth
@@ -643,7 +671,9 @@
   meaning: 从宏观上、粗略地讲
   examples:
   - At a high level, we're splitting the service in two.
-  note: 表示"先讲大概，细节后面说"。反面是 in the weeds（陷在细节里）。
+  note: |-
+    表示"先讲大概，细节后面说"。反面是 in the weeds（陷在细节里）。
+    和 roughly / generally 的区别：roughly 是不精确；at a high level 是故意先不讲细节，只讲架构和骨架。
   source: Notion · Work
   added: "2026-07-29"
 - term: what would really help me is…
@@ -659,7 +689,9 @@
   meaning: 或者说、另一种方案是
   examples:
   - Alternatively, we could cache the response and skip the second call.
-  note: 用来引出并列的另一个方案。放句首后面要加逗号。
+  note: |-
+    用来引出并列的另一个方案。放句首后面要加逗号。
+    和 or 的区别：or 在一句话里连接两个选项；alternatively 放句首，单独引出一整套替代方案，更清楚、正式。
   source: Notion · Work
   added: "2026-07-29"
 - term: I'll come back to you on this one
@@ -763,7 +795,9 @@
   meaning: 完全地
   examples:
   - The fault was entirely mine; you won't pay the price.
-  note: 加强语气的副词。承担责任时说 that's entirely on me 很有分量。
+  note: |-
+    加强语气的副词。承担责任时说 that's entirely on me 很有分量。
+    和 completely 的区别：completely 更常用、更泛；entirely 常用在归属和责任上（entirely mine / entirely up to you），强调「全部都是，没有别人的份」。
   source: Notion · Work
   added: "2026-07-29"
 - term: should be able to
@@ -859,7 +893,9 @@
   meaning: 同意、支持
   examples:
   - Josh is on board. （= Josh has agreed.）
-  note: 比喻"上了同一条船"。争取支持说 get sb on board；引导新人入职是 onboard sb（一个词，动词）。
+  note: |-
+    比喻"上了同一条船"。争取支持说 get sb on board；引导新人入职是 onboard sb（一个词，动词）。
+    和 agree 的区别：agree 只是同意；on board 是加入进来，会一起支持和推进。
   source: Notion · Work
   added: "2026-07-29"
 - term: it would appear (that)…
@@ -887,6 +923,7 @@
   note: |-
     表明这是个人视角、不代表结论。注意别写成 in my perspective，正确介词是 from。
     从我们的角度看 跨团队沟通时给结论加上限定，暗示"我们只能看到自己这一侧"，留了余地。
+    和 in my opinion 的区别：in my opinion 是个人观点；from my perspective 强调这是站在我的位置看到的，暗示换个位置可能看到不同的东西。
   source: Notion · Work
   added: "2026-07-29"
 - term: what's the timing on…?
@@ -902,7 +939,9 @@
   meaning: 把某样东西发到聊天框
   examples:
   - Can you drop the link in the chat?
-  note: 线上会议高频句。同义替换：pop it in the chat（更英式）、put an example in the chat。
+  note: |-
+    线上会议高频句。同义替换：pop it in the chat（更英式）、put an example in the chat。
+    和 send / share 的区别：send 中性；drop 轻快随意，像顺手丢过去，适合会议里的临时分享。
   source: Notion · Work
   added: "2026-07-29"
 - term: preliminary
@@ -974,7 +1013,9 @@
   meaning: 先提个醒
   examples:
   - 'Just a heads-up: the meeting has been moved to 3pm.'
-  note: 名词连字符写 heads-up，动词分开写 give sb a heads-up。语气轻，表示"不需要你做什么，只是让你知道"。
+  note: |-
+    名词连字符写 heads-up，动词分开写 give sb a heads-up。语气轻，表示"不需要你做什么，只是让你知道"。
+    和 FYI / please note 的区别：FYI 是缩写，偏书面；please note 正式、像通知；heads-up 的画面是让你抬头注意一下，提前知道好有准备，最友好。
   source: Notion · Work
   added: "2026-07-29"
 - term: move up vs push back
@@ -1060,5 +1101,6 @@
 - term: come down to
   kind: phrase
   meaning: 取决于
+  note: 和 depend on 的区别：depend on 是受很多因素影响；come down to 是层层剥开之后，最终归结为一个关键因素。例：It all comes down to money.
   source: Notion · Work
   added: "2026-07-29"

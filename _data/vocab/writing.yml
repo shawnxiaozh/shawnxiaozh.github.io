@@ -7,7 +7,9 @@
   meaning: 越过、不再纠结。注意它不表示问题被解决了。
   examples:
   - This helped move past the debate on what is a true agent.
-  note: get past 可互换；get over 更偏情感（走出失恋、康复）。
+  note: |-
+    get past 可互换；get over 更偏情感（走出失恋、康复）。
+    和 move on 的区别：move on 是翻篇、去做下一件事；move past 强调越过一个障碍，把它甩在身后，但它不一定被解决了。
   source: English Teacher · 理解文本中的难点
   added: "2026-09-10"
 - term: acknowledge
@@ -16,6 +18,7 @@
   meaning: 承认（某个事实成立）。
   examples:
   - We're going to have to acknowledge that systems can be agentic to different degrees.
+  note: 和 admit 的区别：admit 常带「不情愿地认下（错误、不利的事）」的意味；acknowledge 只是中性地承认某个事实成立，不代表认输。
   source: English Teacher · 理解文本中的难点
   added: "2026-09-10"
 - term: denote
@@ -24,6 +27,7 @@
   meaning: 表示、标志。
   examples:
   - …the red color to denote the user input.
+  note: 和 mean / show 的区别：denote 专指符号、颜色、记号按约定代表某个东西（red denotes user input），比 mean 精确，比 show 更像在讲图例。
   source: English Teacher · 理解文本中的难点
   added: "2026-09-10"
 - term: binary
@@ -32,15 +36,22 @@
   meaning: 非此即彼的二元判断。
   examples:
   - …as an adjective rather than a binary.
+  note: 和 either-or / yes-or-no 的区别：binary 借自计算机的 0 / 1，听起来像术语；拿来当名词说 a binary，常带着批评「把连续的东西硬分成两类」的意味。
   source: English Teacher · Agentic as a spectrum
   added: "2026-09-10"
 - term: carry out
   pos: v.
   kind: phrase
-  meaning: 执行、实施。
+  meaning: 从头到尾把一件事办完（执行、实施）。
   examples:
   - …to carry out an action.
-  note: '"Conduct" 也是这个意思：Claude conducts multiple searches.'
+  - One task that many businesses carry out is invoice processing.
+  - Tasks like these with a clear process tend to be easier for agentic workflows to carry out.
+  note: |-
+    "Conduct" 也是这个意思：Claude conducts multiple searches.
+    核心语感：照着既定的任务 / 计划去落实，一直做到完。carry（搬）+ out（到底）。
+    常搭配 task / plan / research / procedure / instructions，比 do 正式，比 execute 口语。
+    可拆开：carry the task out；宾语是代词时必须拆：carry it out（❌ carry out it）。
   source: English Teacher · 理解文本中的难点
   added: "2026-09-10"
 - term: dive deeper into
@@ -48,7 +59,9 @@
   meaning: 深入探讨。
   examples:
   - We'll dive deeper into this later in the course.
-  note: 同组：to different degrees、in advance、somewhere in between。
+  note: |-
+    同组：to different degrees、in advance、somewhere in between。
+    和 look into / discuss in detail 的区别：dive 的画面是一头扎进水里往深处潜，讲课、演讲时用来预告「后面会深入讲」，比 discuss in detail 生动、随意。
   source: English Teacher · 理解文本中的难点
   added: "2026-09-10"
 - term: alongside
@@ -61,6 +74,7 @@
   note: |-
     空间上是"并排"，抽象用法是"同时进行且互不干扰"：She studies alongside a full-time job.
     并排、平级共存。原义是船并排靠岸。 排除了两种想象：不是隔离沙箱，也不是替换你的配置。
+    和 next to / along with 的区别：next to 只讲位置挨着；along with 有主次；alongside 强调两者平级、同时存在或进行。
   source: Notion · Work + English Teacher · Code Review meaning explained
   added: "2026-09-08"
 - term: along with
@@ -105,6 +119,7 @@
   meaning: 直白、不加修饰的（不是「普通」）。
   examples:
   - …a plain warning that Anthropic doesn't control what's inside.
+  note: 和 clear / simple 的区别：clear 是讲得清楚，措辞可能很讲究；plain 是不加包装、直说，连委婉都省了，所以 a plain warning 是「直截了当的警告」。
   source: English Teacher · Code Review meaning explained
   added: "2026-09-08"
 - term: a slice of
@@ -112,6 +127,7 @@
   meaning: 一部分（不是整个）—— 切出来的一片，很形象。
   examples:
   - …and a slice of settings.json.
+  note: 和 part of / some of 的区别：slice 暗示是从整体里切出来、完整的一块，比 part of 有画面感，常用来说「只截取了其中一段」。
   source: English Teacher · Code Review meaning explained
   added: "2026-09-08"
 - term: step in
@@ -120,6 +136,7 @@
   meaning: 插手、介入（在某个节点上手干预）。
   examples:
   - …points in the agentic loop where you'd want to step in.
+  note: 和 intervene 的区别：意思相同，intervene 正式；step in 口语，画面是在某个节点走进去插手，常用于「需要时人来接管一下」。
   source: English Teacher · Understanding Claude Code hook events
   added: "2026-09-08"
 - term: reach for
@@ -128,7 +145,9 @@
   meaning: （需要时）会去用、伸手拿。文档里常用来说「你会反复用到的那几个」。
   examples:
   - There's a small handful you'll reach for again and again.
-  note: a small handful = 一小撮、寥寥几个。
+  note: |-
+    a small handful = 一小撮、寥寥几个。
+    和 use 的区别：reach for 的画面是「需要时伸手就去拿」，暗示它是你顺手的首选工具，不只是用过而已。
   source: English Teacher · Understanding Claude Code hook events
   added: "2026-09-08"
 - term: otherwise
@@ -145,6 +164,7 @@
   meaning: 手工、人肉（和自动化、打包安装相对）。
   examples:
   - …everything you'd otherwise share by hand.
+  note: 和 manually 的区别：意思一样，manually 书面、偏技术；by hand 口语，更有「一件件亲手去弄、很费事」的画面。
   source: English Teacher · Code Review meaning explained
   added: "2026-09-08"
 - term: the rule stands
@@ -152,6 +172,7 @@
   meaning: 这条规矩依然成立、结论不变。
   examples:
   - 'Reviewed isn''t the same as trusted. So the rule stands: install only from sources you trust.'
+  note: 和 the rule still applies 的区别：stand 的画面是「立着没倒」，暗示经过一番讨论或质疑之后，这条规矩依然成立，比 still applies 更有收尾、下结论的力度。
   source: English Teacher · Code Review meaning explained
   added: "2026-09-08"
 - term: bundle
@@ -160,7 +181,9 @@
   meaning: 把一堆东西打包进一个整体。
   examples:
   - 'It bundles everything: skills, subagents, hooks, and MCP server configs.'
-  note: One version, one install. = 一个版本号，一次安装。
+  note: |-
+    One version, one install. = 一个版本号，一次安装。
+    和 include / package 的区别：include 只是「包含」；package 偏正式的打包、封装；bundle 强调把不同种类的东西捆在一起，作为一个整体交付。
   source: English Teacher · Code Review meaning explained
   added: "2026-09-08"
 - term: versus
@@ -202,6 +225,7 @@
   meaning: 开始生效、触发。
   examples:
   - At what transaction volume does a restriction kick in?
+  note: 和 take effect / start 的区别：take effect 正式；kick in 口语，画面是「到了某个时间点或阈值，自动启动」，常说药效、限制、自动机制。
   source: English Teacher · KYC platform rules
   added: "2026-09-03"
 - term: fall back to
@@ -210,6 +234,7 @@
   meaning: 回退到（备用方案）。
   examples:
   - If electronic verification fails, the case falls back to document verification.
+  note: 和 switch to 的区别：switch to 只是换过去；fall back 的画面是退回后方的阵地，暗示主方案失败了才用，是退而求其次的备用方案。名词 fallback。
   source: English Teacher · KYC platform rules
   added: "2026-09-03"
 - term: essentially
@@ -251,10 +276,10 @@
   added: "2026-08-06"
 - term: request verification
   kind: pattern
-  meaning: 请求验证。request 作动词是及物的，不要加 for。
+  meaning: 请求验证。request 作动词本身已经带有"向……提出要求"的意思，及物动词后面直接接宾语，不需要 for 再引出一次对象——加了 for 等于把动作重复表达了一遍。
   examples:
   - ✅ to request verification　❌ to request for verification
-  note: 同类错误：discuss about、emphasise on、contact with。
+  note: 同类错误：discuss about、emphasise on、contact with——都是中文"请求/讨论/强调/联系 + 介词"的直译习惯，套到及物动词上多了一层不必要的介词。
   source: English Teacher · Upstream service verification
   added: "2026-08-06"
 - term: dissimulate
@@ -314,6 +339,7 @@
   note: |-
     指流程、权限、监控这类"事先要搭好的东西"。已完成说 it's in place；要落实说 put it in place。
     就位、事先准备好。来源是「东西都在它该在的位置上」。 Have a clear goal in place · Have your sources in place。
+    和 prepare / be ready 的区别：prepare 是准备的动作；in place 强调东西已经搭好、放在该在的位置、处于能用的状态，常说流程、权限、监控这类机制。
   source: Notion · Work + English Teacher · Understanding "instead"
   added: "2026-07-29"
 - term: in ways that…
@@ -334,7 +360,7 @@
   added: "2026-07-29"
 - term: how likely are you to…?
   kind: pattern
-  meaning: 你有多大可能会……？
+  meaning: 你有多大可能会……？——用程度提问代替 Would you recommend…? 这种是非问，是为了拿到一个可打分、可统计的梯度答案，而不是简单的会/不会。
   examples:
   - How likely are you to recommend this course to a friend or colleague?
   note: 满意度调查（NPS）的标准问法。回答用 I'm likely to / unlikely to + 动词原形。

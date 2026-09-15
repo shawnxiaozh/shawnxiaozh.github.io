@@ -14,6 +14,7 @@
   meaning: 我会加入哪个组？比 which team I am in 通顺。
   examples:
   - Which team would I be joining? And how long is the project expected to run?
+  note: 用 would 把话说成假设，不预设 offer 已经到手，比 Which team will I join? 更礼貌、不显得想当然。be joining 是把入职当成已经安排好的事来问，比 join 自然。
   source: English Teacher · Asking about project role and duration
   added: "2026-09-03"
 - term: TA — Talent Acquisition
@@ -21,6 +22,7 @@
   meaning: 招聘／招聘专员。求职语境里 99% 是这个意思，就是你的面试对接人。
   examples:
   - Your TA will reach out to schedule the interview.
+  note: 和 recruiter 的区别：recruiter 更通用，公司内部的和猎头都可以这么叫；TA 是公司内部招聘部门的叫法。所以对方自称 TA，说明是公司自己的人，不是猎头。
   source: English Teacher · Understanding TA abbreviation
   added: "2026-08-14"
 - term: TA — Teaching Assistant
@@ -36,7 +38,9 @@
   meaning: 催进度、追结果。英式和新加坡职场高频，不是「追赶」。
   examples:
   - I'll chase, but there's some backlog on their end.
-  note: 回一句 "No worries, thanks for chasing." 既礼貌又不显着急。
+  note: |-
+    回一句 "No worries, thanks for chasing." 既礼貌又不显着急。
+    和 follow up 的区别：follow up 是中性的跟进；chase 带「对方慢了，我去催一下」的意味，更主动。所以别人替你去催时，说 thanks for chasing 是在感谢他出了力。
   source: English Teacher · Asking about next interview steps
   added: "2026-08-13"
 - term: backlog
@@ -45,6 +49,9 @@
   meaning: 积压的待处理事项。
   examples:
   - There is some backlog on their end.
+  note: |-
+    和 to-do list / pending tasks 的区别：to-do list 是中性的待办清单，可以是刚列出来的计划；backlog 强调本该处理却一直积压着，自带落后、有压力的意味。所以 clear the backlog 很自然。
+    敏捷开发里 product backlog 是固定术语，指需求池，积压的意味弱一些。
   source: English Teacher · Asking about next interview steps
   added: "2026-08-13"
 - term: on their end
@@ -52,6 +59,7 @@
   meaning: 在他们那边（相对于「我们这边」）。
   examples:
   - The delay is on their end, not ours.
+  note: 和 on their side 的区别：end 像一条链路或流程的另一头，适合说「问题 / 延迟卡在对方那里」；on their side 还可以表示「站在他们那边、他们的立场」，容易有歧义。
   source: English Teacher · Asking about next interview steps
   added: "2026-08-13"
 - term: I had my first-round interview
@@ -59,7 +67,9 @@
   meaning: 我参加了第一轮面试。比 I finished the interview 自然得多。
   examples:
   - I had my first-round interview yesterday. Could you let me know the next steps?
-  note: 写邮件时 had > completed > finished。
+  note: |-
+    写邮件时 had > completed > finished。
+    finished 暗示「熬完 / 做完一项任务」，completed 像在交差；had 只是陈述参加了这场面试，最自然。
   source: English Teacher · Asking about next interview steps
   added: "2026-08-13"
 - term: prep (call)
@@ -68,7 +78,9 @@
   meaning: 面试前的准备沟通、briefing。prep = preparation。
   examples:
   - Can you speak today for a prep?
-  note: 这里的 speak 是英式的「通个电话」，不是「演讲」。
+  note: |-
+    这里的 speak 是英式的「通个电话」，不是「演讲」。
+    和 preparation / briefing 的区别：prep 是口语里的缩略，recruiter 的电话、消息里常见；preparation 太书面；briefing 更像单方面交代情况，prep 是一起准备。
   source: English Teacher · 面试前准备通话的含义和回复
   added: "2026-08-04"
 - term: bar raiser
@@ -99,6 +111,7 @@
   meaning: 职位被裁撤。英式和新加坡职场更常用，听起来更正式。
   examples:
   - My position was made redundant.
+  note: 和 laid off 的区别：redundant 是「多余的」，字面意思是这个岗位不再需要了。焦点在岗位被取消，比 laid off 更强调「不是我的问题，是岗位没了」，所以听起来更正式、体面。
   source: English Teacher · 被裁员的英文表达
   added: "2026-07-28"
 - term: restructuring / downsizing
@@ -107,6 +120,7 @@
   meaning: 公司重组／缩编。用来委婉说明裁员的原因。
   examples:
   - I was affected by a company-wide restructuring.
+  note: 和直接说 layoffs / cutting jobs 的区别：这两个词把焦点从「裁人」挪到「公司在调整」，所以更委婉。二者本身也不同：restructuring 是组织调整，不一定裁员；downsizing 明确是规模缩小。
   source: English Teacher · 被裁员的英文表达
   added: "2026-07-28"
 - term: fixed-term contract
@@ -114,6 +128,7 @@
   meaning: 定期合同。合同到期没续时最干净的说法。
   examples:
   - It was a fixed-term contract that wasn't renewed.
+  note: 和 temporary contract 的区别：fixed-term 强调结束日期一开始就约定好了，到期不续是合同自然结束，不是被终止；temporary 听起来更像临时工、不稳定。
   source: English Teacher · 被裁员的英文表达
   added: "2026-07-28"
 - term: descope
@@ -122,6 +137,7 @@
   meaning: 把项目范围砍掉一部分。比任何带 terminate 的说法都好听。
   examples:
   - The project I was contracted for was descoped.
+  note: 为什么比 terminate 好听：主语是项目（the project was descoped），对方听到的是「活被砍了」，而不是「你被终止了」，不会联想到个人表现。
   source: English Teacher · 被裁员的英文表达
   added: "2026-07-28"
 - term: sponsorship
@@ -138,6 +154,7 @@
   meaning: 名／姓。表格里 Western Script 指用护照上的拼音填。
   examples:
   - 'Given Name(s) – Western Script: Wei · Family Name: Zhang'
+  note: 和 first name / last name 的区别：表格用 given / family，是因为姓名顺序因文化而异。中文名字姓在前，用 first / last 会有歧义；given / family 按含义区分，不看位置。
   source: English Teacher · Given names in Western script
   added: "2026-07-22"
 - term: authoring
@@ -155,7 +172,9 @@
   meaning: 强制执行、确保规范真的被落实。
   examples:
   - enforcing them through a lint tool
-  note: 区分两件事：写出规范 ≠ 规范被遵守。
+  note: |-
+    区分两件事：写出规范 ≠ 规范被遵守。
+    和 implementing 的区别：implement 是把规范落地、做出来；enforce 强调有机制保证大家必须遵守，不遵守会被拦下（比如 lint 报错）。
   source: English Teacher · Condensing slow SQL optimization
   added: "2026-07-20"
 - term: drive adoption
@@ -170,5 +189,6 @@
   meaning: 防止问题再次发生。简历里描述「治本」的标准说法。
   examples:
   - prevented recurrence by establishing development standards
+  note: 和 prevent it from happening again 的区别：意思一样，但 recurrence 是名词，短而书面，适合简历这种要求紧凑的地方；口语里还是说 happen again。
   source: English Teacher · Condensing slow SQL optimization
   added: "2026-07-20"

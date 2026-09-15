@@ -6,7 +6,9 @@
   meaning: 我的意思是、也就是说。用来澄清刚才说的话。
   examples:
   - As in, we help collect donations from the guests.
-  note: 另一个用法是拼写确认："My name is Kate, as in K-A-T-E."
+  note: |-
+    另一个用法是拼写确认："My name is Kate, as in K-A-T-E."
+    和 I mean 的区别：I mean 常用来改口、纠正自己；as in 是把刚说的话具体化、举个例子，前面的话不收回。
   source: English Teacher · Collecting donations at dinner events
   added: "2026-09-10"
 - term: help collect
@@ -21,7 +23,9 @@
   meaning: 早点休息吧。
   examples:
   - Don't work too late — get some rest.
-  note: ❌ 别说 Rest early，母语者不这么讲。
+  note: |-
+    ❌ 别说 Rest early，母语者不这么讲。
+    和 go to bed early 的区别：go to bed early 管的是几点睡；get some rest 关心的是你能不能缓过来，更体贴。
   source: English Teacher · 早点休息的英文表达
   added: "2026-09-10"
 - term: go about doing sth
@@ -55,7 +59,9 @@
   meaning: （信号／声音）失真、乱掉，听不清。
   examples:
   - I think the connection garbled things a bit there — I only caught fragments.
-  note: catch fragments = 只听到零碎几句。
+  note: |-
+    catch fragments = 只听到零碎几句。
+    和 breaking up / unclear 的区别：breaking up 是信号断断续续；garbled 是声音传过来了，但变形、混成一团听不清。
   source: English Teacher · Greeting with confusion
   added: "2026-09-03"
 - term: decadent
@@ -65,7 +71,9 @@
   meaning: ① 堕落颓废的（贬）② 奢华诱人、好吃到有负罪感（褒／戏谑）。
   examples:
   - a decadent chocolate cake
-  note: 说人和社会时多半是批评，说食物和享受时是赞美。
+  note: |-
+    说人和社会时多半是批评，说食物和享受时是赞美。
+    和 rich 的区别：说食物时，rich 只是浓郁；decadent 带「放纵、吃了有负罪感」的戏谑，是更夸张的赞美。
   source: English Teacher · Decadent的含义
   added: "2026-08-22"
 - term: play around with
@@ -74,12 +82,14 @@
   meaning: 摆弄、鼓捣、随便试试。语气轻松，不是正经研究。
   examples:
   - I've been playing around with the new app.
-  note: 不带宾语说人 is playing around 时，可能是「乱搞男女关系」，看语境。
+  note: |-
+    不带宾语说人 is playing around 时，可能是「乱搞男女关系」，看语境。
+    和 experiment with 的区别：experiment with 有目的、偏正式；play around with 没什么明确目标，随便玩玩、试试看。
   source: English Teacher · Play around的多个含义
   added: "2026-08-07"
 - term: Was it … who …?
   kind: pattern
-  meaning: 强调句型 It is/was + 被强调部分 + who/that，对应中文「是……的吗」。
+  meaning: 强调句型 It is/was + 被强调部分 + who/that，对应中文「是……的吗」；比平铺直叙的 Did the florist tell you this? 多问一层"是不是这个人"，把疑问焦点钉在"谁"上而不是"发生没发生"。
   examples:
   - Was it the florist who told you this?
   note: florist 偏指花店老板；街边卖花的说 flower seller。
@@ -90,7 +100,9 @@
   meaning: 掌控住、跟得上（职场最常用）。
   examples:
   - Don't worry, I'm on top of it.
-  note: 另两义：on top of that = 除此之外（叠加坏消息）；字面 = 在它上面。
+  note: |-
+    另两义：on top of that = 除此之外（叠加坏消息）；字面 = 在它上面。
+    和 I'll take care of it 的区别：take care of it 是「我来处理」；on top of it 强调「一直盯着，局面在我掌控中」，更能让人放心。
   source: English Teacher · On top of it 是什么意思
   added: "2026-08-06"
 - term: stay on top of things
@@ -98,6 +110,7 @@
   meaning: 把事情都盯住、不落下。面试答「怎么管理多任务」很好用。
   examples:
   - I keep a simple daily log so I stay on top of what's in progress.
+  note: 和 keep track of 的区别：keep track of 是记录、跟踪；stay on top of 强调不仅知道进度，还能及时处理，不被事情压着走。
   source: English Teacher · On top of it 是什么意思
   added: "2026-08-06"
 - term: board the plane
@@ -124,15 +137,6 @@
   - Otherwise, it'd be a real shame.
   note: 强调「浪费」用 such a waste；强调「错失机会」用 a missed opportunity。
   source: English Teacher · 英文表达"太可惜了"
-  added: "2026-08-06"
-- term: manifest
-  pos: v.
-  kind: word
-  meaning: 使显现、把抽象的东西变成现实。
-  examples:
-  - Manifest your dream.
-  note: 作形容词是「明显的」(a manifest error)，作名词是「货物清单」。
-  source: English Teacher · 单机系统的中文表达
   added: "2026-08-06"
 - term: I knew I would regret it if I didn't speak to her
   kind: pattern
@@ -163,7 +167,9 @@
   meaning: 除此之外
   examples:
   - The room was small. Other than that, the hotel was great.
-  note: 用来把一个例外圈出来，剩下的一概肯定。近义 apart from that（英式）、besides that。放句首要加逗号。
+  note: |-
+    用来把一个例外圈出来，剩下的一概肯定。近义 apart from that（英式）、besides that。放句首要加逗号。
+    和 besides that 的区别：besides that 是「另外还有」，往上叠加；other than that 是先把例外圈出来，再对其余部分表示肯定。
   source: Notion · Daily
   added: "2026-07-29"
 - term: these things
@@ -187,7 +193,9 @@
   meaning: 没完没了
   examples:
   - The laundry is never-ending.
-  note: 形容词写作 never-ending。抱怨重复性琐事时最常用。近义 it never stops / there's no end to it。
+  note: |-
+    形容词写作 never-ending。抱怨重复性琐事时最常用。近义 it never stops / there's no end to it。
+    和 endless 的区别：endless 偏书面，可褒可贬（endless possibilities）；never-ending 口语，多用于抱怨。
   source: Notion · Daily
   added: "2026-07-29"
 - term: intertwined
@@ -242,6 +250,7 @@
   note: |-
     后面接从句且不用将来时（By the time you arrive, I'll have finished）。主句常配完成时，因为强调"在那之前已经发生"。
     后接从句，主句常用完成时表示"在那之前已发生"。注意 by the time 后不用将来时。
+    和 when 的区别：when 只标一个时间点；by the time 强调「到那个时候，某件事已经发生了」，所以常配完成时。
   source: Notion · Daily
   added: "2026-07-29"
 - term: dwindle
@@ -249,7 +258,9 @@
   meaning: 逐渐减少
   examples:
   - Might I also add, the number of drinking friends has been dwindling.
-  note: 强调"慢慢变少"的过程，常用进行时。近义 shrink（体积缩小）、taper off（逐渐停止）。
+  note: |-
+    强调"慢慢变少"的过程，常用进行时。近义 shrink（体积缩小）、taper off（逐渐停止）。
+    和 decrease 的区别：decrease 中性；dwindle 是一点点变少、越来越少，常带失落感。
   source: Notion · Daily
   added: "2026-07-29"
 - term: ignorance is bliss
@@ -297,7 +308,9 @@
   meaning: 犒劳一下自己、享受一下
   examples:
   - We've been working hard — let's spoil ourselves this weekend.
-  note: 也说 treat ourselves（更常用）。注意 spoil a child 是"宠坏孩子"，spoil the ending 是"剧透"。
+  note: |-
+    也说 treat ourselves（更常用）。注意 spoil a child 是"宠坏孩子"，spoil the ending 是"剧透"。
+    和 treat ourselves 的区别：treat 是奖励一下自己；spoil 程度更重，有「宠一下、放纵一把」的意味。
   source: Notion · Daily
   added: "2026-07-29"
 - term: refreshments
@@ -326,10 +339,10 @@
   added: "2026-07-29"
 - term: if only…
   kind: pattern
-  meaning: 要是……就好了
+  meaning: 要是……就好了——比 I wish… 语气更强烈、更带遗憾/无奈，专门用来叹一件改变不了的事。
   examples:
   - If only I had more time.
-  note: 表达不能实现的愿望，后面用过去式（现在）或过去完成时（过去）。也可以单独说一句 If only. 表示"要是能这样就好了"。
+  note: 表达不能实现的愿望，后面用过去式（现在）或过去完成时（过去）。也可以单独说一句 If only. 表示"要是能这样就好了"。I wish 更中性，可以只是"希望"；if only 自带一声叹气。
   source: Notion · Daily
   added: "2026-07-29"
 - term: a consuming passion
@@ -345,7 +358,9 @@
   meaning: 选择、决定要
   examples:
   - So I think we'll go for the Main Hall. How much would that cost?
-  note: 点餐、选方案都能用：I'll go for the fish. 这里用 would 而不是 does，因为还没最终决定，是假设性询问。
+  note: |-
+    点餐、选方案都能用：I'll go for the fish. 这里用 would 而不是 does，因为还没最终决定，是假设性询问。
+    和 choose 的区别：choose 偏正式；go for 口语，带「就它了」的决定感。
   source: Notion · Daily
   added: "2026-07-29"
 - term: it's got
@@ -404,7 +419,9 @@
   meaning: 称赞某人某方面
   examples:
   - He complimented her on her dress.
-  note: 注意拼写：compliment 是称赞，complement 是补足、搭配得好。发音相同，意思完全不同。
+  note: |-
+    注意拼写：compliment 是称赞，complement 是补足、搭配得好。发音相同，意思完全不同。
+    和 praise 的区别：praise 偏正式，常用于表扬成就、表现；compliment 是日常顺口夸一句，比如衣服、发型、厨艺。
   source: Notion · Daily
   added: "2026-07-29"
 - term: hide and seek
@@ -433,7 +450,7 @@
   added: "2026-07-29"
 - term: what is there to do?
   kind: pattern
-  meaning: 有什么可以玩的？
+  meaning: 有什么可以玩的？——用 there is 句型问"这里现成摆着什么"，问的是当地有什么活动/选项，不是问"我们能做什么"（what can we do 更像问能力或对策）。
   examples:
   - We're in town for the weekend — what is there to do?
   note: 问当地活动的固定句型。也可以说 What's there to do around here? 回答常用 There's plenty to do.
@@ -444,7 +461,9 @@
   meaning: 成就感；履行
   examples:
   - She finds fulfillment in her work. / the fulfilment of a promise
-  note: 两个意思：内心的满足感，以及承诺、订单的履行。英式拼 fulfilment，美式拼 fulfillment。
+  note: |-
+    两个意思：内心的满足感，以及承诺、订单的履行。英式拼 fulfilment，美式拼 fulfillment。
+    和 satisfaction 的区别：satisfaction 是需求被满足后的满意；fulfillment 是更深一层、实现了自我价值的满足感。
   source: Notion · Daily
   added: "2026-07-29"
 - term: maiden name
@@ -468,7 +487,9 @@
   meaning: 分散在各地
   examples:
   - They're all my college friends, but they're scattered all over the country.
-  note: scatter 是"撒开、分散"，被动形式描述人分布在很多地方。近义 spread out across。
+  note: |-
+    scatter 是"撒开、分散"，被动形式描述人分布在很多地方。近义 spread out across。
+    和 spread out 的区别：spread out 中性；scattered 暗示分得很散、没有规律，常带「聚不到一起」的感慨。
   source: Notion · Daily
   added: "2026-07-29"
 - term: more or less
@@ -532,7 +553,9 @@
   meaning: 除了（= except）
   examples:
   - I didn't listen to much other than when she was addressing me directly.
-  note: address 的本义是"把东西朝某个对象送过去"：对人是"向某人讲话"，对事是"处理某件事"。这里 addressing me 指"直接对我说话"。
+  note: |-
+    address 的本义是"把东西朝某个对象送过去"：对人是"向某人讲话"，对事是"处理某件事"。这里 addressing me 指"直接对我说话"。
+    和 except 的区别：except 是严格地排除；other than / apart from 更口语，还可以表示「除了……之外还有」。
   source: Notion · Daily
   added: "2026-07-29"
 - term: side hustle
@@ -589,7 +612,9 @@
   meaning: 从小到大、在成长过程中
   examples:
   - Growing up, I had three siblings.
-  note: 放句首作状语，等于 when I was a child。siblings 是兄弟姐妹的统称，不分性别。
+  note: |-
+    放句首作状语，等于 when I was a child。siblings 是兄弟姐妹的统称，不分性别。
+    为什么不说 when I was a child：growing up 更简洁，而且说的是一整段成长时期，不只是某个时间点。
   source: Notion · Daily
   added: "2026-07-29"
 - term: picture sth
@@ -637,7 +662,9 @@
   meaning: 熬夜
   examples:
   - I stayed up too late too many times this week.
-  note: stay up 是"不去睡"，通宵是 stay up all night / pull an all-nighter。被吵醒睡不着是 be up。
+  note: |-
+    stay up 是"不去睡"，通宵是 stay up all night / pull an all-nighter。被吵醒睡不着是 be up。
+    ❌ 别说 sleep late：sleep late 是睡懒觉、起得晚，不是熬夜。
   source: Notion · Daily
   added: "2026-07-29"
 - term: goodwill
@@ -645,7 +672,9 @@
   meaning: 善意、好意
   examples:
   - They did it out of goodwill.
-  note: 常搭配 out of goodwill（出于好意）、a goodwill gesture（示好的举动）。商业语境里还指"商誉"。
+  note: |-
+    常搭配 out of goodwill（出于好意）、a goodwill gesture（示好的举动）。商业语境里还指"商誉"。
+    和 kindness 的区别：kindness 是善良的行为；goodwill 是不求回报、希望对方好的态度。
   source: Notion · Daily
   added: "2026-07-29"
 - term: it seems to be
@@ -701,7 +730,9 @@
   meaning: 迫不及待
   examples:
   - I can't wait to see them.
-  note: 后接 to + 动词原形，或 for + 名词：I can't wait for the weekend. 表达期待最自然的说法。
+  note: |-
+    后接 to + 动词原形，或 for + 名词：I can't wait for the weekend. 表达期待最自然的说法。
+    和 look forward to 的区别：look forward to 平稳、适合写邮件；can't wait 口语，情绪更强烈。
   source: Notion · Daily
   added: "2026-07-29"
 - term: barely
@@ -789,7 +820,9 @@
   meaning: 收尾、结束
   examples:
   - I think I'll wrap up this video here.
-  note: to finish / to bring something to an end。会议、视频、项目都能 wrap up。名词 a wrap 表示拍摄结束：That's a wrap.
+  note: |-
+    to finish / to bring something to an end。会议、视频、项目都能 wrap up。名词 a wrap 表示拍摄结束：That's a wrap.
+    和 finish 的区别：finish 只说结束了；wrap up 的画面是把东西包好、收起来，强调有个收尾的动作，比如总结一下再结束。
   source: Notion · Daily
   added: "2026-07-29"
 - term: here we are
@@ -849,7 +882,9 @@
   meaning: 上前一步；挺身而出
   examples:
   - I stepped forward to get a better look.
-  note: 字面是往前走一步，引申义是"主动站出来"：Nobody stepped forward to take responsibility.
+  note: |-
+    字面是往前走一步，引申义是"主动站出来"：Nobody stepped forward to take responsibility.
+    和 volunteer 的区别：volunteer 是报名、自愿去做；step forward 强调在别人都不动的时候，主动站出来。
   source: Notion · Daily
   added: "2026-07-29"
 - term: the catch
@@ -857,7 +892,9 @@
   meaning: 隐藏的条件、附带的问题
   examples:
   - The offer sounds great — the only catch is you have to pay in advance.
-  note: 指看起来很好的事情背后的限制条件。近义 drawback、limitation。常说 What's the catch?（有什么陷阱？）
+  note: |-
+    指看起来很好的事情背后的限制条件。近义 drawback、limitation。常说 What's the catch?（有什么陷阱？）
+    和 drawback 的区别：drawback 是摆在明面上的缺点；catch 暗示藏在好条件背后、一开始没说出来的问题。
   source: Notion · Daily
   added: "2026-07-29"
 - term: make it to somewhere
@@ -905,7 +942,9 @@
   meaning: 不利之处、弊端
   examples:
   - The downside of modern life is that we're always reachable.
-  note: 对应词是 the upside（好处）。近义 drawback。常说 the downside is that…
+  note: |-
+    对应词是 the upside（好处）。近义 drawback。常说 the downside is that…
+    和 drawback 的区别：downside 常和 upside 成对出现，用来讲利弊权衡，偏口语；drawback 更书面。
   source: Notion · Daily
   added: "2026-07-29"
 - term: bend to the right
@@ -953,7 +992,9 @@
   meaning: 把 A 和 B 联系起来
   examples:
   - I'd never associated spatial awareness with handwriting either.
-  note: 固定介词是 with。名词 association 指这种心理关联：I have good associations with that song.
+  note: |-
+    固定介词是 with。名词 association 指这种心理关联：I have good associations with that song.
+    和 connect / link 的区别：connect、link 说的是事物之间客观存在的联系；associate 是脑子里的联想，不一定真有关系。
   source: Notion · Daily
   added: "2026-07-29"
 - term: more to do with / in relation to
@@ -1006,7 +1047,7 @@
   added: "2026-07-29"
 - term: Did you find anything to eat?
   kind: pattern
-  meaning: 你找到吃的了吗？中文的「什么」在是非问句里要翻成 anything，不是 what。
+  meaning: 你找到吃的了吗？中文的「什么」在是非问句里要翻成 anything，不是 what——用 anything 是因为这是个不预设答案的中性提问（"有没有找到，不知道"）；换成 something 就变成预设"你应该找到了点什么"。
   examples:
   - Did you find anything to eat?
   note: 「刚才」通常不用译出来。日常里 get 比 find 更常用：Did you get anything to eat?
@@ -1025,7 +1066,9 @@
   meaning: 一点都不挤。描述场地空间的地道说法。
   examples:
   - Loads of room around each table — never feels cramped, even with a few people playing.
-  note: 「地板减弱弹力」：the flooring softens / dampens the bounce。
+  note: |-
+    「地板减弱弹力」：the flooring softens / dampens the bounce。
+    和 crowded 的区别：crowded 说人多；cramped 说空间小、伸展不开。
   source: English Teacher · 乒乓球场地描写修改
   added: "2026-07-26"
 - term: b 开头的称谓词
@@ -1050,7 +1093,9 @@
   meaning: 进行、开展（有组织地做某件事）。
   examples:
   - Claude conducts multiple searches before answering.
-  note: 常搭配 research / a survey / an interview / an experiment。
+  note: |-
+    常搭配 research / a survey / an interview / an experiment。
+    和 do 的区别：do 太泛；conduct 正式，强调有组织、按方法进行，所以常搭 research、survey 这类有流程的事。
   source: English Teacher · Understanding "instead"
   added: "2026-04-04"
 - term: pay off
@@ -1059,5 +1104,6 @@
   meaning: 有回报、值得。
   examples:
   - Investing time in crafting your prompt pays off.
+  note: 和 be worth it 的区别：worth it 是事后判断「值得」；pay off 的画面是之前投入的时间、钱终于「还清、有了回报」，强调先投入、后回报。
   source: English Teacher · Understanding "instead"
   added: "2026-04-04"

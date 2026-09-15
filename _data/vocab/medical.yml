@@ -8,6 +8,7 @@
   meaning: 结节 —— 只是「这里有东西」的描述，既不等于癌，也不等于没事。
   examples:
   - a 1.6 × 1.1 cm nodule in the left breast
+  note: 和 lump / tumor 的区别：lump 是口语的「肿块」，自己摸到时这么说；tumor 是「肿瘤」，已经暗示有新生物；nodule 是报告里最中性的描述，只说有个小团块，不下判断。
   source: English Teacher · Meaning inquiry
   added: "2026-09-09"
 - term: benign / malignant
@@ -16,6 +17,7 @@
   meaning: 良性／恶性。
   examples:
   - Most BI-RADS 4 nodules turn out to be benign.
+  note: 和 non-cancerous / cancerous 的区别：意思一样，benign / malignant 是报告和医生之间用的术语；医生跟病人口头解释时，常换成 not cancer / cancerous。
   source: English Teacher · Meaning inquiry
   added: "2026-09-09"
 - term: indeterminate
@@ -24,6 +26,7 @@
   meaning: 性质待定 —— 影像上特征互相矛盾，下不了结论。
   examples:
   - an indeterminate solid nodule
+  note: 和 uncertain / unclear 的区别：uncertain 说的是人拿不准；indeterminate 是报告用语，说的是影像本身无法判定性质、需要进一步检查，不是医生水平不够。
   source: English Teacher · Meaning inquiry
   added: "2026-09-09"
 - term: biopsy
