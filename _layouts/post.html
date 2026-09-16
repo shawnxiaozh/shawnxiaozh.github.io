@@ -1,0 +1,75 @@
+---
+layout: default
+---
+<div class="post-with-toc">
+  <article class="post">
+    <header>
+      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.excerpt %}
+        <p class="post-description">{{ page.excerpt | strip_html }}</p>
+      {% endif %}
+    </header>
+
+    {{ content }}
+
+    <nav class="post-navigation">
+      {% if page.previous %}
+        <a class="post-prev" href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next %}
+        <a class="post-next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
+      {% endif %}
+    </nav>
+  </article>
+
+  <aside class="post-toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <nav class="post-toc-list" aria-label="Section navigation"></nav>
+  </aside>
+</div>
+
+<script>
+(function() {
+  function buildTOC() {
+    var toc = document.querySelector('.post-toc');
+    var tocList = document.querySelector('.post-toc-list');
+    var article = document.querySelector('.post-with-toc .post');
+    if (!toc || !tocList || !article) {
+      return;
+    }
+
+    tocList.innerHTML = '';
+    var headings = article.querySelectorAll('h2, h3, h4');
+    if (!headings.length) {
+      toc.hidden = true;
+      return;
+    }
+
+    var list = document.createElement('ul');
+    headings.forEach(function(heading) {
+      if (!heading.id) {
+        heading.id = heading.textContent.trim()
+          .toLowerCase()
+          .replace(/[^a-z0-9\u4e00-\u9fa5\s-]/g, '')
+          .replace(/\s+/g, '-');
+      }
+      var li = document.createElement('li');
+      li.className = 'toc-level-' + heading.tagName.substring(1);
+      var link = document.createElement('a');
+      link.textContent = heading.textContent;
+      link.href = '#' + heading.id;
+      li.appendChild(link);
+      list.appendChild(li);
+    });
+
+    tocList.appendChild(list);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', buildTOC);
+  } else {
+    buildTOC();
+  }
+})();
+</script>

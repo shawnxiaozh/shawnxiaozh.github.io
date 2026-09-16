@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{{ content }}
+
+<section class="post-listing">
+  <h2>{{ page.list_title | default: "Latest posts" }}</h2>
+  {% if site.posts and site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h3>
+          {% if site.show_excerpts %}
+            <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No posts yet. Add markdown files inside the <code>_posts</code> directory to get started.</p>
+  {% endif %}
+</section>
