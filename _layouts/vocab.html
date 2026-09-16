@@ -1,0 +1,119 @@
+---
+layout: default
+---
+{%- comment -%}
+  生词本页面。词条数据在 _data/vocab/<scene>.yml，分类定义在 _data/vocab_meta.yml。
+  这里把全部词条渲染成静态 HTML（没有 JS 也能完整浏览），
+  assets/js/vocab.js 再在上面加搜索、筛选、自测和随机闪卡复习。
+  闪卡直接读取这里渲染出来的 DOM，所以词条只渲染一次，不另外嵌一份 JSON。
+{%- endcomment -%}
+{%- assign meta = site.data.vocab_meta -%}
+{%- assign total = 0 -%}
+{%- for scene in meta.scenes -%}
+  {%- assign n = site.data.vocab[scene.id] | size -%}
+  {%- assign total = total | plus: n -%}
+{%- endfor -%}
+
+<article class="vocab-app">
+  <header class="vocab-head">
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
+    {% if page.excerpt %}<p class="post-description">{{ page.excerpt | strip_html }}</p>{% endif %}
+    <div class="vocab-intro">{{ content }}</div>
+    <p class="vocab-stats">
+      <span><b>{{ total }}</b> 条</span>
+    </p>
+  </header>
+
+  <div class="vocab-toolbar" hidden>
+    <label class="vocab-search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input type="search" placeholder="搜单词、释义或例句…" autocomplete="off" aria-label="搜索词条">
+    </label>
+    <div class="vocab-chips" data-filter="kind" role="group" aria-label="按类型筛选">
+      <button type="button" class="tag-chip is-active" data-value="">全部类型</button>
+      {%- for kind in meta.kinds %}
+      <button type="button" class="tag-chip" data-value="{{ kind.id }}">{{ kind.name }}</button>
+      {%- endfor %}
+    </div>
+    <div class="vocab-actions">
+      <button type="button" class="vocab-btn" data-action="quiz" aria-pressed="false">自测模式</button>
+      <button type="button" class="vocab-btn vocab-btn-primary" data-action="review">随机 20 个</button>
+    </div>
+  </div>
+
+  <div class="vocab-shell">
+    <nav class="vocab-index" aria-label="场景">
+      <p class="vocab-index-label">场景</p>
+      <ul>
+        <li><a href="#vocab-top" data-scene="" class="is-active">全部 <span>{{ total }}</span></a></li>
+        {%- for scene in meta.scenes %}
+        {%- assign entries = site.data.vocab[scene.id] %}
+        {%- if entries %}
+        <li><a href="#scene-{{ scene.id }}" data-scene="{{ scene.id }}">{{ scene.name }} <span>{{ entries | size }}</span></a></li>
+        {%- endif %}
+        {%- endfor %}
+      </ul>
+    </nav>
+
+    <div class="vocab-list" id="vocab-top">
+      {%- for scene in meta.scenes %}
+      {%- assign entries = site.data.vocab[scene.id] %}
+      {%- if entries %}
+      <section class="vocab-scene" id="scene-{{ scene.id }}" data-scene="{{ scene.id }}">
+        <header class="vocab-scene-head">
+          <h2>{{ scene.name }}</h2>
+          <span class="vocab-scene-count">{{ entries | size }}</span>
+        </header>
+        <p class="vocab-scene-note">{{ scene.note }}</p>
+
+        {%- for e in entries %}
+        {%- assign kind = meta.kinds | where: "id", e.kind | first %}
+        <article class="vocab-entry" data-kind="{{ e.kind }}">
+          <div class="vocab-term-line">
+            <h3 class="vocab-term">{{ e.term | escape }}</h3>
+            {%- if e.ipa %}<span class="vocab-ipa">{{ e.ipa | escape }}</span>{% endif %}
+            {%- if e.pos %}<span class="vocab-pos">{{ e.pos | escape }}</span>{% endif %}
+            <span class="vocab-kind">{{ kind.name | default: e.kind }}</span>
+          </div>
+          <div class="vocab-answer">
+            <p class="vocab-meaning">{{ e.meaning | escape }}</p>
+            {%- if e.examples %}
+            <div class="vocab-examples">
+              {%- for ex in e.examples %}
+              <p lang="en">{{ ex | escape }}</p>
+              {%- endfor %}
+            </div>
+            {%- endif %}
+            {%- if e.note %}
+            <p class="vocab-note">{{ e.note | escape | newline_to_br }}</p>
+            {%- endif %}
+          </div>
+          <p class="vocab-src">{{ e.source | escape }} · {{ e.added }}</p>
+        </article>
+        {%- endfor %}
+      </section>
+      {%- endif %}
+      {%- endfor %}
+      <p class="vocab-empty" hidden>没有匹配的词条。换个词试试，或者清空搜索框。</p>
+    </div>
+  </div>
+
+  <p class="vocab-foot">复习是纯随机的：每次点「随机 20 个」都从当前筛选结果里重新抽一批，不记录进度，可以反复点。</p>
+
+  <div class="vocab-review" role="dialog" aria-modal="true" aria-label="随机复习" hidden>
+    <div class="vocab-card">
+      <div class="vocab-card-top">
+        <span class="vocab-card-progress"></span>
+        <button type="button" class="vocab-card-close" data-action="close" aria-label="退出复习">✕</button>
+      </div>
+      <div class="vocab-card-body"></div>
+      <div class="vocab-card-controls">
+        <button type="button" class="vocab-btn vocab-btn-primary" data-action="flip">显示答案 <kbd>空格</kbd></button>
+        <button type="button" class="vocab-btn vocab-btn-primary" data-action="next" hidden>下一个 <kbd>空格</kbd></button>
+        <button type="button" class="vocab-btn vocab-btn-primary" data-action="again" hidden>再来一轮</button>
+      </div>
+    </div>
+  </div>
+</article>
+
+<script src="{{ '/assets/js/vocab.js' | relative_url }}" defer></script>

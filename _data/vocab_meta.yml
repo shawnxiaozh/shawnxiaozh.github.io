@@ -1,0 +1,39 @@
+# 生词本的分类定义，被 _layouts/vocab.html 读取。
+#
+# 词条放在 _data/vocab/<scene>.yml，文件名就是场景 id。每条词的字段：
+#
+#   - term: chase (up)            # 必填：单词 / 短语 / 句型
+#     ipa: /tʃeɪs/                # 可选：音标（发音类可写「读 cash」）
+#     pos: v.                     # 可选：词性
+#     kind: phrase                # 必填：下面 kinds 里的 id
+#     meaning: 催进度、追结果。     # 必填：中文释义
+#     examples:                   # 可选：原句，一行一句
+#       - I'll chase, but there's some backlog on their end.
+#     note: 用法 / 语气 / 近义辨析   # 可选；多段用 |- 块写法
+#     source: English Teacher · 某段对话标题
+#     added: "2026-08-13"         # 加引号，按日期倒序放
+#
+# 同一场景内 term 不能重复；复习是随机抽题、不记进度，所以改 term 没有副作用。
+#
+# 场景按「这个词难在哪」分，不按「在哪遇到的」—— 遇到的语境记在 source 字段里。
+# 判定顺序固定，问到第一个「是」就停：
+#   1. 换个场合还会这么说吗？不会 → situational
+#   2. 其余一律 → general（兜底桶就是它，别再新建场景）
+
+scenes:
+  - id: general
+    name: 通用表达
+    note: 跨场合都能用的动词搭配、句型、连接词和领域术语 —— 判定不出场景绑定的都在这里。
+  - id: situational
+    name: 场景用语
+    note: 绑定特定场合才说的说法和话术 —— 会议、面试、裁员、发布、机场，换个场合就不说了。
+
+kinds:
+  - id: phrase
+    name: 短语表达
+  - id: pattern
+    name: 句型语法
+  - id: contrast
+    name: 易混辨析
+  - id: pron
+    name: 发音

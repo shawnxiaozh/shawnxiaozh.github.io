@@ -1,0 +1,3178 @@
+# 生词本 · general
+# 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
+# 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
+
+- term: plan out
+  pos: v.
+  kind: phrase
+  meaning: 动手之前把每一步都排好、摊开摆在面前（详细规划）。
+  examples:
+  - you actually have to plan out what is the sequence of database queries
+  note: |-
+    out 是"摊开、铺开"，同 lay out / map out / spell out。
+    vs plan：plan 本身可以只是"打算"（I plan to go），不管细节；plan out 强调把完整的步骤和顺序一步步排出来。原句要先查黑色牛仔裤、再查蓝色、最后回复，所以用 plan out。
+    用法：plan out sth / plan sth out；plan out your day / a route；a well planned-out trip。
+    ❌ plan out to do sth → ✅ plan to do sth（plan out 后面接要排的事，不接 to do）。
+  source: Claude Code · agentic AI 视频
+  added: "2026-09-15"
+- term: one aspect of sth is that …
+  ipa: /ˈæspekt/
+  pos: n.
+  kind: pattern
+  meaning: 从某个角度看一件事时看到的那一面（方面、层面）。
+  examples:
+  - So one aspect of this agentic workflow is that there is a clear process to follow.
+  note: |-
+    vs part：part 是把东西切下来的一块（组成部分）；aspect 不切，是换个角度看整体，看到的是一个特点。所以说 "one aspect of this workflow is that…"，后面接的是特点，不是某一步骤。
+    vs side：side 偏口语，常暗示正反两面（the good side / on the other side）；aspect 暗示有很多面，更书面、更有分析感。
+    常见搭配：an important aspect of sth / in every aspect / the technical aspects。
+    ❌ from this aspect / in this aspect → ✅ from this perspective / in this respect。
+    ❌ as for my aspect（真实转录）→ ✅ on my side / for my part。
+  source: Claude Code · aspect
+  added: "2026-09-15"
+- term: for the LLM to ingest
+  ipa: /ɪnˈdʒest/
+  pos: v.
+  kind: phrase
+  meaning: 像吃东西一样把原料吞进去，留给后面消化处理（摄入、导入）。
+  examples:
+  - Turn the PDF into maybe formatted text, such as markdown text for the LLM to ingest.
+  note: |-
+    为什么不说 read / process：read 只是“看”，process 已经是在处理了。ingest 说的是“吞进来”这一步，只管收进来，后面还要消化，而且暗示量大、东西是原料。
+    本义是生物“摄入食物”，技术里常见 data ingestion（数据接入/导入）、ingest logs、ingestion pipeline。
+    名词：ingestion。
+  source: Claude Code · Agentic AI 课程字幕
+  added: "2026-09-15"
+- term: input sth
+  pos: v.
+  kind: phrase
+  meaning: 把东西作为第一步“喂进”系统里（输入、接收）。讲流程时常当步骤名，用祈使句罗列。
+  examples:
+  - You write input an invoice, then call a PDF to text conversion API to turn the PDF into maybe formatted text.
+  note: |-
+    为什么不说 receive / get an invoice：input 是系统视角的词，和后面的 call an API、update the database 一样是在念流程图里的步骤标签，像伪代码。
+    口语转写里常省掉冒号：You write: "input an invoice", then "call ..."——write 后面是在引用你要写下的步骤，不是 write input 连用。
+    ❌ 别把 input 当名词读成“写输入”。
+  source: Claude Code · Agentic AI 课程字幕
+  added: "2026-09-15"
+- term: If … were to do …
+  pos: ''
+  kind: pattern
+  meaning: 比直接条件句 If you do X 更委婉的假设句，用来引出一个演示性的例子，而不是真的在商量要不要做。
+  examples:
+  - If you were to implement this with an agentic workflow, you might do so like this.
+  note: If you implement this, it will be faster.——更像真的在讨论要不要做；If you were to implement this...——更像教程/讲座里"假设我们这么做"的举例开场白，不代表真的建议你现在就做。
+  source: Claude Code · Agentic AI examples transcript
+  added: "2026-09-15"
+- term: the task (that) sb carry out
+  kind: pattern
+  meaning: 某人要办完的那件事：carry out 的宾语被提到前面当先行词，out 就剩在从句末尾。
+  examples:
+  - One task that many businesses carry out is invoice processing.
+  - Tasks like these … tend to be maybe easier for agentic workflows to carry out.
+  note: |-
+    拆开看：One task [that many businesses carry out] is invoice processing。主干是 One task is invoice processing，中间是修饰 task 的定语从句。
+    businesses 是"公司、企业"（可数名词复数），做从句主语；不是 business carry out 连成一个名词。
+    句尾剩个 out 很正常，英语的短语动词进了从句就会这样：the problem we ran into / the plan I came up with。
+    为什么不说 Invoice processing is a common task for businesses：先抛出 One task…，听的人知道要举例了，答案留到句尾，适合口头开场。
+    别混：carryout / carry-out 确实能当名词，是美式英语里的"外卖"（= takeout），和这句无关。
+  source: Claude Code · agentic AI 视频
+  added: "2026-09-15"
+- term: the biller on an invoice
+  ipa: /ˈbɪlər/
+  pos: n.
+  kind: phrase
+  meaning: 开出这张账单、找你要钱的那一方（出账方、开票方）。
+  examples:
+  - the most important fields, which for this application, let's say is the biller, that would be tech flow solutions, the biller address, the amount due
+  note: |-
+    bill（账单）+ -er（做这件事的人），biller 就是开账单的人。
+    vs vendor / supplier：这两个词说的是买卖关系（你从他那儿买东西）；biller 只看这张单子，谁开的票谁就是 biller，所以常用作发票、缴费系统里的字段名。
+    vs payee：payee 是从付款这边看的"收款人"；biller 是从开票这边看的"出账方"，通常是同一方。
+    银行 App 里的 add a biller 是"添加缴费对象"（电力公司、电信公司等）。
+    发票上对应的另一方写作 Bill to（付款方、客户）。
+  source: Claude Code · agentic AI 视频
+  added: "2026-09-15"
+- term: might not work as well (as …)
+  kind: pattern
+  meaning: 效果可能没那么好（没有另一种做法好）。
+  examples:
+  - Claude Code will automatically switch to tool search mode, which will discover the right tools on demand, but this might not work as well since it's just not in the context.
+  - The cheaper option might not work as well for large files.
+  note: |-
+    委婉地指出缺点：不说 won't work（不行），只说「没那么好」。as well 在这里是「一样好」，比较对象常省略。
+    ❌ 别和句末的 as well（也）混：I'll come as well.
+  source: Claude Code · MCP tool search
+  added: "2026-09-14"
+- term: on demand
+  kind: phrase
+  meaning: 按需、需要时才（提供、加载、获取）。
+  examples:
+  - If your MCP tools exceed 10% of your context window, Claude Code will automatically switch to tool search mode, which will discover the right tools on demand, but this might not work as well since it's just not in the context.
+  - Movies are available on demand.
+  note: |-
+    和「提前全部准备好」相对：用到了才去拿。
+    形容词形式带连字符：on-demand loading（按需加载）/ video on demand（视频点播，VOD）。
+    近义：as needed / when needed。
+    反义：up front / in advance（提前）。
+    和 when needed / as needed 的区别：when needed 只是普通描述；on demand 是技术和产品里的固定说法，强调「一请求就即时提供」，由系统响应调用方，还能直接当形容词用（on-demand）。
+  source: Claude Code · MCP tool search
+  added: "2026-09-14"
+- term: eat into
+  pos: v.
+  kind: phrase
+  meaning: 一点点占用、侵蚀、消耗（时间、预算、空间、利润等）。
+  examples:
+  - So if you have a lot of servers configured, this eats into your available context.
+  - Meetings eat into my coding time.
+  note: |-
+    形象：像虫子一点点啃掉一块，强调不知不觉被消耗。
+    和 take up 的区别：take up 只说「占用」；eat into 强调「从已有的额度里被啃掉」。
+    常见对象：time / budget / savings / profits / available space。
+    近义：cut into（更中性）。
+  source: Claude Code · MCP 占用上下文
+  added: "2026-09-14"
+- term: actively using
+  kind: phrase
+  meaning: 正在实际使用的（相对于装着但不用）。
+  examples:
+  - Run the /mcp command to see what's connected and disable anything that you're not actively using or don't think that you're going to use.
+  - This library is actively maintained.
+  note: |-
+    常见：actively maintained（有人在积极维护）。
+    ❌ active using；修饰名词才用 active：an active user。
+  source: Claude Code · MCP 占用上下文
+  added: "2026-09-14"
+- term: One thing to be aware of is that …
+  kind: pattern
+  meaning: 有一点需要注意的是……（温和地提醒一个坑）。
+  examples:
+  - Now, one thing to be aware of is that MCP servers add tool definitions to your context window, even when you're not using them.
+  - One thing to be aware of is that this change will reset your cache.
+  note: |-
+    比 Note that … 更委婉，不像警告。
+    变体：One thing to keep in mind is that … / Just a heads-up: …（口语）。
+  source: Claude Code · MCP 占用上下文
+  added: "2026-09-14"
+- term: be scoped (to …)
+  pos: v.
+  kind: phrase
+  meaning: （被）限定在…范围内生效；划定作用范围。
+  examples:
+  - MCP servers can be scoped in three different ways.
+  - This setting is scoped to the current project.
+  - The API token is scoped to read-only access.
+  note: |-
+    scope 本来是名词「范围」，这里当动词用：scope sth = 给它划定范围；被动 be scoped to X = 只在 X 这个范围里有效。
+    结构：be scoped to + 范围（a project / a user / read-only access）；be scoped in … ways（有几种划定范围的方式）。
+    技术里常见：a project-scoped setting / a user-scoped server（形容词化，只在项目 / 用户级别生效）。
+    另一个动词义：scope out the work = 先摸清工作量有多大。
+    相关：out of scope（不在范围内）/ descope（career 场景，砍掉部分范围）。
+    和 be limited to / restricted to 的区别：limited、restricted 有「被限制、受约束」的负面意味；scoped to 是中性的技术说法，表示它的作用范围本来就是这么设计的。
+  source: Claude Code · MCP 作用域
+  added: "2026-09-14"
+- term: bring in
+  pos: v.
+  kind: phrase
+  meaning: ①把（外部的信息、数据）引进来、拉进来 ②请来、引入（人、专家、新方法）③带来（收入、客户）。
+  examples:
+  - For example, if your team is using Linear as their project management software, you can add a Linear MCP server to bring in the details of your specific issues.
+  - We brought in a consultant to review the design.
+  - The new feature brought in more users.
+  note: |-
+    核心意思：把外面的东西带到当前这个范围里。技术语境里常指把外部数据导入、接入进来。
+    结构：bring in + 名词，或 bring it in（代词放中间，❌ bring in it）。
+    近义：pull in（拉取，更口语）/ import（导入，更技术）/ fetch（获取）。
+    和 bring up 的区别：bring up 是「提起（话题）」或「调出（界面）」。
+  source: Claude Code · MCP 介绍
+  added: "2026-09-14"
+- term: get more out of
+  pos: v.
+  kind: phrase
+  meaning: 从…中得到更多（价值、好处、效果）；把…用得更好。
+  examples:
+  - They're a practical way to get more out of longer Claude Code sessions.
+  - How can I get more out of my study time?
+  note: |-
+    out of 表示「从…里面拿出来」，这里是从某样东西里「榨出」价值。
+    结构：get + 多少 + out of + sth：get the most out of（充分利用）/ get a lot out of（收获很大）/ get nothing out of（毫无收获）。
+    问句：What did you get out of the course?（这门课你学到了什么？）
+    近义：make the most of（充分利用）。
+    基础义见 daily 场景的 out of。
+  source: Claude Code · subagent 总结
+  added: "2026-09-13"
+- term: a practical way to do sth
+  ipa: /ˈpræktɪkl/
+  pos: adj.
+  kind: phrase
+  meaning: ①实用的、切实可行的 ②实际的、实践中的（相对于理论）③（人）务实的。
+  examples:
+  - They're a practical way to get more out of longer Claude Code sessions.
+  - That's a good idea, but it's not practical.
+  - practical experience
+  note: |-
+    a practical way to do sth：一个实用的办法（很常见的搭配）。
+    和 useful 的区别：useful 只说有用；practical 强调在现实中能用、好落地。
+    反义：impractical（不切实际的）/ theoretical（理论上的）。
+    副词 practically 常见的意思是「几乎」：It's practically done.（基本做完了）。
+  source: Claude Code · subagent 总结
+  added: "2026-09-13"
+- term: break … into …
+  kind: pattern
+  meaning: 把…拆分成…（把大的整体分成几个小部分）。
+  examples:
+  - Subagents let Claude Code break work into focused pieces.
+  - Break the task into smaller steps.
+  note: |-
+    结构：break A into B（B 通常是复数：pieces / parts / steps / chunks）。
+    常见：break a problem into smaller parts / break a big PR into several small ones。
+    口语里常加 down：break it down into steps（更强调「一步步拆解、讲清楚」）。
+    近义：split … into …（更偏平均切分）/ divide … into …（更正式）。
+    ❌ 别和 break into 混：break into a house 是「闯入」，break into a market 是「打入市场」，中间没有宾语。
+  source: Claude Code · subagent 总结
+  added: "2026-09-13"
+- term: visibility into
+  pos: n.
+  kind: phrase
+  meaning: 对…的可见性、能看清…的内部情况（知道里面发生了什么）。
+  examples:
+  - But the main window loses visibility into how the subagent reaches its conclusions and what it discovered along the way.
+  - Logging gives us visibility into what the service is doing.
+  - We have no visibility into their roadmap.
+  note: |-
+    职场、技术里的高频说法，指「能不能看到、了解某个过程或系统的内部」。
+    介词用 into（看进内部），不用 of / to。
+    常见搭配：have / get / gain visibility into（能看到）；lose visibility into（看不到了）；lack visibility into / have no visibility into（缺乏了解）。
+    近义：insight into（更侧重理解）；transparency（更侧重对方是否公开）。
+  source: Claude Code · subagent 原理
+  added: "2026-09-13"
+- term: the answer without the journey
+  ipa: /ˈdʒɜːrni/
+  pos: n.
+  kind: phrase
+  meaning: ①（比喻）过程、经历、摸索的整个路径 ②旅行、旅程（尤指较长的路途）。
+  examples:
+  - With a subagent, you get the answer without the journey.
+  - Learning a language is a long journey.
+  note: |-
+    这里是比喻：journey = 找到答案之前的整个摸索过程（读 15 个文件、搜索、追函数调用）。
+    对照句型：the answer without the journey（只要结果，不要过程）；类似 It's about the journey, not the destination.（重要的是过程，不是终点）。
+    和 trip 的区别：trip 多指短途、有来回的出行；journey 强调路途本身，常用于比喻。
+    另见 writing 场景的 (customer) journey：客户旅程，产品术语。
+    和 process 的区别：process 是中性的步骤；journey 强调一路摸索、有曲折的经历，所以 the answer without the journey 有「省掉了走弯路的过程」的味道。
+  source: Claude Code · subagent 原理
+  added: "2026-09-13"
+- term: along the way
+  kind: phrase
+  meaning: 在这个过程中、一路上、途中（顺带发生或得到的）。
+  examples:
+  - But the main window loses visibility into how the subagent reaches its conclusions and what it discovered along the way.
+  - I made a lot of mistakes, but I learned a lot along the way.
+  note: |-
+    不一定是真的在路上，常比喻「做一件事的整个过程中」。
+    常搭配：learn / discover / pick up / meet sb along the way。
+    近义：in the process / during the process（更正式）/ on the way（多指真实的路上，或「即将到来」）。
+    ❌ on the way 不能随意替换：on the way 更偏物理路途，或 be on the way（快到了）。
+  source: Claude Code · subagent 原理
+  added: "2026-09-13"
+- term: based off of
+  kind: phrase
+  meaning: 以…为依据、根据…（= based on）。
+  examples:
+  - You can run the /init command which will make Claude generate one based off of your code base.
+  - The movie is based on a true story.
+  note: |-
+    based off (of) 是美式口语，意思和 based on 一样；正式写作里被很多人认为不规范。
+    写文档、邮件、面试时用 based on 最稳妥。
+    based off of 里的 of 是多余的，更口语。
+    结构：A is based on B（A 以 B 为依据）/ generate X based on Y。
+  source: Claude Code · CLAUDE.md 介绍
+  added: "2026-09-13"
+- term: simply put
+  kind: phrase
+  meaning: 简单地说、说白了。
+  examples:
+  - Simply put, the contents of CLAUDE.md file are appended to your own prompt.
+  - Simply put, it's a cache.
+  note: |-
+    放在句首，后面加逗号，用来把前面讲复杂的东西一句话总结出来。
+    替换：in short / in simple terms / to put it simply / put simply / basically（口语）。
+    和 succinctly 相关：to put it succinctly 也是「简单说」，更书面。
+    和 in short 的区别：in short 是「总之」，重点是缩短、概括；simply put 是「换成更简单的话说」，重点是好懂。
+  source: Claude Code · CLAUDE.md 介绍
+  added: "2026-09-13"
+- term: That's where … comes in.
+  kind: pattern
+  meaning: 这时就轮到…派上用场了；…正是为解决这个问题而存在的。
+  examples:
+  - But that's where CLAUDE.md comes in.
+  - Manual testing is slow. That's where automation comes in.
+  note: |-
+    come in 在这里是「发挥作用、登场」，不是「进来」。
+    典型用法：先抛出一个问题，再用这句引出解决办法，讲解、演讲、教程里很常见。
+    变体：This is where … comes in. / Here's where … comes in.
+    近义：come into play / come into the picture（生词本 work 里已有）。
+    单复数跟着主语走：That's where these tools come in.
+  source: Claude Code · CLAUDE.md 介绍
+  added: "2026-09-13"
+- term: underneath sth, there's …
+  ipa: /ˌʌndərˈniːθ/
+  pos: prep. / adv.
+  kind: pattern
+  meaning: ①在…下方、在…底下（位置）②在表面之下、骨子里（比喻）。
+  examples:
+  - Underneath the description of what Claude changed, there can be a variety of files that were changed.
+  - The cable runs underneath the floor.
+  - He seems tough, but underneath he's very kind.
+  note: |-
+    在界面、文档里常指「在…下面紧接着」，等于 below / under。
+    和 under / below 的区别：under 最常用、最中性；below 常指位置更低（不一定紧挨着），也常用于文档（see below）；underneath 强调「在正下方、被上面的东西盖着」，语气稍重。
+    描述页面布局时，below 更自然：Below the description, you'll see…
+    重音在最后：un-der-NEATH。
+  source: Claude Code · 查看改动的文件
+  added: "2026-09-13"
+- term: a variety of
+  kind: phrase
+  meaning: 各种各样的、多种不同的。
+  examples:
+  - Underneath the description of what Claude changed, there can be a variety of files that were changed.
+  - The tool supports a variety of languages.
+  note: |-
+    后面接复数名词：a variety of files / reasons / options。
+    谓语动词一般跟后面的名词走，用复数：A variety of files were changed.
+    替换词：various（various files）/ many different / all kinds of（口语）/ a range of（偏正式，强调范围广）。
+    区别：the variety of 指「种类的多少」，谓语用单数：The variety of options is impressive.
+    variety /vəˈraɪəti/，重音在第二个音节。
+    和 many 的区别：many 只说数量多；a variety of 强调种类不一样、各不相同。
+  source: Claude Code · 查看改动的文件
+  added: "2026-09-13"
+- term: in a succinct way
+  ipa: /səkˈsɪŋkt/
+  pos: adj.
+  kind: phrase
+  meaning: 简洁的、言简意赅的（话少但把要点说清楚）。
+  examples:
+  - When you give Claude Code a task to complete in your codebase, Claude will often report back in a succinct way.
+  - Keep your summary succinct.
+  note: |-
+    褒义，强调「短而清楚、没有废话」。偏书面，口语里更常说 short / brief / to the point。
+    发音：两个 c 读法不同，suc 读 /sək/，cinct 读 /sɪŋkt/，不读 /səˈsɪŋkt/。
+    替换词：concise（最接近，最常用）/ brief（强调短，不一定抓得住要点）/ to the point（口语，切中要点）/ short and sweet（口语，简短利落）。
+    ❌ terse：也是简短，但常带「生硬、冷淡」的意思，别乱替换。
+    名词 succinctness，副词 succinctly：put it succinctly（简单说）。
+  source: Claude Code · Claude 的汇报方式
+  added: "2026-09-13"
+- term: look around
+  pos: v.
+  kind: phrase
+  meaning: ①四处看看、到处翻找 ②（回头）环顾四周 ③多方比较、货比三家。
+  examples:
+  - Without being explicit, Claude is forced to look around your codebase more and do its own thinking.
+  - Mind if I look around?
+  - Look around before you buy a laptop.
+  note: |-
+    没有明确目标，在一个范围里到处看看。
+    结构：look around + 地点（look around the office / your codebase）。
+    和 look for 的区别：look for 是找某个具体的东西；look around 是随便到处看。
+    英式英语也说 look round。
+  source: Claude Code · 写 prompt 要具体
+  added: "2026-09-13"
+- term: in the long run
+  kind: phrase
+  meaning: 从长远来看、最终（经过较长一段时间后）。
+  examples:
+  - The irony behind writing a smaller prompt is that in the long run, it will take up more context.
+  - Writing tests takes time, but it saves time in the long run.
+  note: |-
+    常用来说「眼前看着省事或吃亏，长期结果却相反」。
+    反义：in the short run / in the short term（短期内）。
+    近义：in the long term / eventually / over time。
+    ❌ in a long run（要用 the）。
+    和 in the long term 的区别：in the long term 中性，常用于规划（long-term plan）；in the long run 常带「眼前一套、最终结果却反过来」的转折意味，所以很适合讲这种反直觉的道理。
+  source: Claude Code · 写 prompt 要具体
+  added: "2026-09-13"
+- term: go over
+  pos: v.
+  kind: phrase
+  meaning: ①超过、超出（限额、预算、时间）②仔细检查、过一遍、复习 ③走过去、过去（到某处）。
+  examples:
+  - A general rule of thumb is when you're working on a specific feature and are going over the context window but need to continue, then compact.
+  - We went over budget by 10%.
+  - Let's go over the plan once more before the meeting.
+  note: |-
+    意思要看后面接什么：接限额、预算、时间，是「超出」（go over the limit / go over time）；接文件、计划、代码，是「过一遍、检查」（go over the code）。
+    表示超出时，等于 exceed，但更口语。
+    名词 over 也常用：over budget（超预算）/ over the limit（超限）。
+  source: Claude Code · /compact 使用时机
+  added: "2026-09-13"
+- term: rule of thumb
+  pos: n.
+  kind: phrase
+  meaning: 经验法则、大致的判断标准（凭经验总结的做法，不是严格规定）。
+  examples:
+  - A general rule of thumb is when you're working on a specific feature and are going over the context window but need to continue, then compact.
+  - As a rule of thumb, keep functions under 50 lines.
+  note: |-
+    强调凭经验、大体上适用，不追求精确，也允许例外。
+    常见说法：a (good / general) rule of thumb is… / as a rule of thumb, …
+    注意是 thumb /θʌm/（大拇指），b 不发音。
+    和 guideline 接近，但 rule of thumb 更口语，更偏「简单好记的经验」。
+  source: Claude Code · /compact 使用时机
+  added: "2026-09-13"
+- term: the big picture
+  pos: n.
+  kind: phrase
+  meaning: 全局、整体情况、大局（不看细节，看整体）。
+  examples:
+  - Here, you'll get a big picture of how large your context size is.
+  - Don't get lost in the details — focus on the big picture.
+  - Let me give you the big picture first.
+  note: |-
+    最常见是 the big picture，前面用 the；原句的 a big picture 口语里也有人说，但不太规范。
+    常见搭配：see the big picture（看清全局）/ get the big picture（了解整体情况）/ look at the big picture（从大局看）。
+    反义：the details / the nitty-gritty（细枝末节）。
+    形容词用法：big-picture thinking（全局思维）/ a big-picture person（看大局的人）。
+    和 overview 的区别：overview 是一份概述，偏信息；the big picture 是全局视角，重点是看清各部分怎么拼在一起、整件事意味着什么。
+  source: Claude Code · /context 说明
+  added: "2026-09-13"
+- term: could be handy if …
+  ipa: /ˈhændi/
+  pos: adj.
+  kind: phrase
+  meaning: ①方便的、有用的、派得上用场的 ②手边的、就近的 ③（人）手巧的。
+  examples:
+  - This will compact everything that you've done up to that point, which could be handy if you want to clear up context space, but also have a memory of what you previously worked on.
+  - This shortcut is really handy.
+  - Keep your passport handy.
+  note: |-
+    口语词，比 useful 更随意，常指「小工具、小技巧用起来很顺手」。
+    常见搭配：come in handy（到时候派得上用场）：A flashlight might come in handy.
+    keep sth handy：把某物放在手边。
+    be handy with：擅长用…（handy with tools）。
+  source: Claude Code · /compact 说明
+  added: "2026-09-13"
+- term: up to that point
+  kind: phrase
+  meaning: 到那个时候为止（之前的所有）。
+  examples:
+  - This will compact everything that you've done up to that point, which could be handy if you want to clear up context space, but also have a memory of what you previously worked on.
+  - Up to that point, everything had gone well.
+  note: |-
+    up to = 直到、截至；that point 指某个时间点（这里指你执行 /compact 的那一刻）。
+    变体：up to now / up until now（到目前为止）、up to this point。
+    和 until 接近，但 up to that point 更强调「从开始一直累积到那一刻」。
+  source: Claude Code · /compact 说明
+  added: "2026-09-13"
+- term: free up
+  pos: v.
+  kind: phrase
+  meaning: ①腾出、释放（空间、内存、资源）②腾出（时间、人手）。
+  examples:
+  - free up a lot of space in your context window
+  - Delete old files to free up disk space.
+  - Can you free up some time this afternoon?
+  note: |-
+    把被占着的东西清出来，让它重新能用。
+    结构：free up + 名词，或 free + 名词 + up（free it up）；代词只能放中间：❌ free up it。
+    对象常是 space / memory / disk space / time / resources。
+    反义可以用 take up：take up a lot of space（占很多空间）。
+    和 clear 的区别：clear 是清空、清掉；free up 强调腾出来以后可以拿去做别的，关注点在「重新变得可用」。
+  source: Claude Code · context window 原理
+  added: "2026-09-13"
+- term: add on to
+  pos: v.
+  kind: phrase
+  meaning: 往…上追加、叠加；使…不断增加。
+  examples:
+  - Whenever you enter a prompt, Claude reads a file, runs a tool call, gets a tool call result. This is adding on to the context window.
+  - Every new feature adds on to the maintenance cost.
+  note: |-
+    强调在已有的基础上继续往上加，有「越积越多」的感觉。
+    add to 意思接近，更中性、更常用；add on to 口语里常见，更突出「额外加上去」。
+    名词 add-on：附加组件、插件（a browser add-on）。
+  source: Claude Code · context window 原理
+  added: "2026-09-13"
+- term: as in
+  kind: phrase
+  meaning: 我的意思是、也就是说。用来澄清刚才说的话。
+  examples:
+  - As in, we help collect donations from the guests.
+  note: |-
+    另一个用法是拼写确认："My name is Kate, as in K-A-T-E."
+    和 I mean 的区别：I mean 常用来改口、纠正自己；as in 是把刚说的话具体化、举个例子，前面的话不收回。
+  source: English Teacher · Collecting donations at dinner events
+  added: "2026-09-10"
+- term: help collect
+  kind: phrase
+  meaning: 帮忙收（款）。口语里 help + 动词原形比 help to 更自然。
+  examples:
+  - We help collect donations from the guests.
+  source: English Teacher · Collecting donations at dinner events
+  added: "2026-09-10"
+- term: Get some sleep / Get some rest
+  kind: phrase
+  meaning: 早点休息吧。
+  examples:
+  - Don't work too late — get some rest.
+  note: |-
+    ❌ 别说 Rest early，母语者不这么讲。
+    和 go to bed early 的区别：go to bed early 管的是几点睡；get some rest 关心的是你能不能缓过来，更体贴。
+  source: English Teacher · 早点休息的英文表达
+  added: "2026-09-10"
+- term: sit anywhere on the spectrum
+  pos: n.
+  kind: phrase
+  meaning: 光谱、连续区间。强调两端之间是渐变而非对立。
+  examples:
+  - Agents can sit anywhere on this spectrum.
+  note: |-
+    搭配：at the more highly autonomous end of the spectrum。
+    和 range 的区别：range 只是一个范围；spectrum 强调两端之间连续过渡、没有明确分界，常用来反驳「非此即彼」。
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: move past
+  pos: v.
+  kind: phrase
+  meaning: 越过、不再纠结。注意它不表示问题被解决了。
+  examples:
+  - This helped move past the debate on what is a true agent.
+  note: |-
+    get past 可互换；get over 更偏情感（走出失恋、康复）。
+    和 move on 的区别：move on 是翻篇、去做下一件事；move past 强调越过一个障碍，把它甩在身后，但它不一定被解决了。
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: acknowledge that …
+  pos: v.
+  kind: phrase
+  meaning: 承认（某个事实成立）。
+  examples:
+  - We're going to have to acknowledge that systems can be agentic to different degrees.
+  note: 和 admit 的区别：admit 常带「不情愿地认下（错误、不利的事）」的意味；acknowledge 只是中性地承认某个事实成立，不代表认输。
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: use red to denote sth
+  pos: v.
+  kind: phrase
+  meaning: 用一个记号「指定」它代表什么（表示、标志）。de-（往下）+ note（记号）——按约定钉死的对应关系。
+  examples:
+  - …the red color to denote the user input.
+  - you can have another planner that you denote inside the planner what you want to do（真实转录）
+  - Deployed to a test environment, you can denote these steps within（真实转录）
+  note: |-
+    vs mean：mean 是「意思是」，什么都能说；denote 专指符号、颜色、记号按事先的约定代表某个东西，所以讲图例（legend）、讲标注时用它。
+    vs show：show 是展示出来给你看；denote 是「我规定它代表这个」，重点在约定，不在展示。
+    口语里也被拿来说"写明、标注"（上面两句例句就是这个用法）。
+    近义 indicate 更中性；对应的名词是 denotation（字面义），和 connotation（言外之意）成对。
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: rather than a binary
+  pos: n. / adj.
+  kind: phrase
+  meaning: 非此即彼的二元判断。
+  examples:
+  - …as an adjective rather than a binary.
+  note: 和 either-or / yes-or-no 的区别：binary 借自计算机的 0 / 1，听起来像术语；拿来当名词说 a binary，常带着批评「把连续的东西硬分成两类」的意味。
+  source: English Teacher · Agentic as a spectrum
+  added: "2026-09-10"
+- term: carry out
+  pos: v.
+  kind: phrase
+  meaning: 从头到尾把一件事办完（执行、实施）。
+  examples:
+  - …to carry out an action.
+  - One task that many businesses carry out is invoice processing.
+  - Tasks like these with a clear process tend to be easier for agentic workflows to carry out.
+  - if the steps are not known ahead of time of what's needed to carry out a task, … the agent may need to plan or solve as you go
+  note: |-
+    "Conduct" 也是这个意思：Claude conducts multiple searches.
+    核心语感：照着既定的任务 / 计划去落实，一直做到完。carry（搬）+ out（到底）。
+    常搭配 task / plan / research / procedure / instructions，比 do 正式，比 execute 口语。
+    可拆开：carry the task out；宾语是代词时必须拆：carry it out（❌ carry out it）。
+    out 的两种意思别混：carry out 里是"到底、做完"（同 hear sb out / wear out / run out）；plan out 里是"摊开、铺开"（同 lay out / map out）。先 plan out 步骤，再 carry it out。
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: dive deeper into
+  kind: phrase
+  meaning: 深入探讨。
+  examples:
+  - We'll dive deeper into this later in the course.
+  note: |-
+    同组：to different degrees、in advance、somewhere in between。
+    和 look into / discuss in detail 的区别：dive 的画面是一头扎进水里往深处潜，讲课、演讲时用来预告「后面会深入讲」，比 discuss in detail 生动、随意。
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: a deterministic sequence of steps
+  ipa: /dɪˌtɜːrmɪˈnɪstɪk/
+  pos: adj.
+  kind: phrase
+  meaning: 同样的输入必定给出同样的输出，不掷骰子（确定性的）。
+  examples:
+  - The retry order isn't deterministic, which is why the test is flaky.
+  - a fully deterministic sequence of steps
+  note: |-
+    vs predictable / consistent：predictable 是大致能猜到；consistent 是表现一贯；deterministic 是严格的术语——给定输入，输出必然唯一，出现一次反例就不成立。
+    反面是 non-deterministic / flaky。LLM 相关讨论里高频。
+  source: Notion · Work + English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: agentic to different degrees
+  ipa: /eɪˈdʒentɪk/
+  pos: adj.
+  kind: phrase
+  meaning: 能自己规划、自己调工具接着往下走的（智能体式的）。刻意用形容词而不是名词 agent，因为这是程度问题，不是非黑即白。
+  examples:
+  - Systems can be agentic to different degrees.
+  - If you were to implement this with an agentic workflow, you might do so like this.
+  note: |-
+    vs automated：automated 是按写死的流程跑，每一步都是人定好的；agentic 是它自己决定下一步做什么、调哪个工具，所以才谈得上"程度"。
+    常见：an agentic workflow / system、agentic to different degrees。
+  source: English Teacher · Agentic as a spectrum
+  added: "2026-09-10"
+- term: a degree of autonomy / fully autonomous
+  ipa: /ɔːˈtɑːnəmi/
+  pos: n. / adj.
+  kind: phrase
+  meaning: 自己定规则、自己拿主意的那份余地（自主性／自主的）。词根 auto（自己）+ nomos（规则）。
+  examples:
+  - Most of the autonomy is in what text the LLM generates.
+  - because it's autonomous, we don't need to keep monitoring it（真实转录）
+  - it's not totally autonomous for very critical, mission critical stuff（真实转录）
+  note: |-
+    vs independent：independent 是不依赖别人；autonomous 强调能自己做决定、按自己的规则行事，所以 AI agent 用 autonomous。
+    常见：a high degree of autonomy、fully / not totally autonomous、give sb autonomy。
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: hard-code sth in
+  pos: v.
+  kind: phrase
+  meaning: 把值或逻辑直接写死在代码里，不从配置、不在运行时决定（硬编码）。
+  examples:
+  - You can hard code in that you call a web search engine.
+  note: |-
+    vs configure：configure 是留了口子、以后能改；hard-code 是钉死在代码里，要改就得改代码重新发版。所以这个词常带批评，但在"先跑通"的语境里是中性的。
+    同族：predetermined（预先定好的）、predefined（预定义的）。
+  source: English Teacher · 理解文本中的难点
+  added: "2026-09-10"
+- term: the rule fires
+  pos: v.
+  kind: phrase
+  meaning: 像扣扳机一样，条件一到就瞬间打出去（规则、告警被触发）。
+  examples:
+  - The rule fired on every transaction over $500.
+  - Claude Code fires around 30 hook events over the course of a session.
+  note: |-
+    比喻来源是「发射」—— 一次性的瞬时信号，打完就结束，不是持续状态。
+    vs trigger：意思一样，但在风控、监控、事件系统里 a rule fires 比 a rule is triggered 地道 —— 用主动态，规则自己打出来，不强调「谁触发了它」。近义还有 emit（抛出）、dispatch（派发），文档里 fire 最自然。
+    主语是规则 / 告警 / 事件：The alert fired at 3am. 系统当主语时接事件作宾语：Claude Code fires 30 hook events.
+  source: Notion · Work + English Teacher · Understanding Claude Code hook events
+  added: "2026-09-08"
+- term: wire it (as a hook)
+  pos: v.
+  kind: phrase
+  meaning: 把它硬接进流程里、写死成机制。带工程上「焊死」的味道。
+  examples:
+  - Don't leave that to trust. Wire it as a hook so Claude can't skip it.
+  note: |-
+    关键在 can't 不是 won't：是「做不到跳过」。
+    和 set it up / configure 的区别：set up 只是配置好；wire 的画面是把线接死在电路里，强调它成了流程的一部分，绕不过去。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: sth is curated
+  ipa: /ˈkjʊəreɪtɪd/
+  pos: adj.
+  kind: phrase
+  meaning: 人工精选、把过关的。和「谁都能上、机器自动过一遍」相对。
+  examples:
+  - The official marketplace is curated on its own separate track.
+  note: |-
+    本义是博物馆策展。track = 流程通道。
+    和 selected 的区别：selected 只说被挑出来了；curated 强调有专人按标准挑选、整理过，暗示质量有把关。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: run alongside sth
+  pos: prep.
+  kind: phrase
+  meaning: 像两条船并排靠在一起，各走各的、谁也不挡谁（在……旁边、与……同时进行）。
+  examples:
+  - Claude creates in a dedicated window alongside your conversation.
+  - Components run alongside yours.
+  note: |-
+    本义是船并排靠岸（along + side），所以画面是平级共存 —— 说 runs alongside yours 等于排除了两种想象：既不是关在隔离沙箱里，也不是把你原来的替换掉。
+    vs next to：next to 只说位置挨着，不含"同时在进行"。
+    vs along with：along with 有主次，后面那项是附带的；alongside 两边平级。
+    抽象用法很常见：She studies alongside a full-time job（一边全职上班一边念书）。
+  source: Notion · Work + English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: along with
+  pos: prep.
+  kind: phrase
+  meaning: 主角走的时候顺手把它也带上（连同、随附）。重点在前面那个，后面是捎带的。
+  examples:
+  - I sent an email along with the spreadsheet.
+  - …along with a plain warning that Anthropic doesn't control third-party plugins.
+  note: |-
+    vs and：and 是并列，两边一样重；along with 明确有主次 —— 邮件是主角，表格是附件。
+    vs alongside：alongside 两边平级、各自独立进行；along with 是捎带关系。
+    语法点：along with 引导的部分不影响主语单复数 —— The report, along with the logs, is attached（不是 are）。这是考试和 review 里常被挑出来的点。
+  source: Notion · Work + English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: over the course of
+  kind: phrase
+  meaning: 在……的整个过程中。比 during 更强调时间的铺展。
+  examples:
+  - Claude Code fires around 30 hook events over the course of a session.
+  note: course 本义是「流动的路径」——同 the course of a river、golf course 同源。
+  source: English Teacher · Understanding Claude Code hook events
+  added: "2026-09-08"
+- term: line up with
+  pos: v.
+  kind: phrase
+  meaning: 与……吻合、对得上。画面是两组东西并排一一对应。
+  examples:
+  - They line up with points in the agentic loop where you'd want to step in.
+  note: 比 align with 口语，比 correspond to 自然。单独用 line up 是「排队」。
+  source: English Teacher · Understanding Claude Code hook events
+  added: "2026-09-08"
+- term: leave it to trust
+  kind: phrase
+  meaning: 不设机制，把事情「撂给信任」去管（指望对方自觉）。leave sth to X = 把它交给 X 去决定。
+  examples:
+  - Don't leave that to trust.
+  note: |-
+    为什么用 leave it to：同一个句式是 leave it to chance（听天由命）、leave it to fate。把 trust 放进这个位置，等于说信任和碰运气是一回事 —— 这句话的力度全在这个类比上，换成 don't just trust them 就没了。
+    所以它总是以否定形式出现，配合一个「该上机制」的建议：Don't leave that to trust — enforce it in CI。
+    别混：leave it to me 是「交给我」，那是真的托付，没有贬义。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: a plain warning / plain English
+  pos: adj.
+  kind: phrase
+  meaning: 什么都没往上加 —— 不加修饰、不加包装（直白的、大白话的）。不是「普通」。
+  examples:
+  - …a plain warning that Anthropic doesn't control what's inside.
+  - user can just describe the rules with plain English, without any knowledge of how the rules is written（真实转录）
+  note: |-
+    vs clear：clear 是讲得清楚，措辞可以很讲究、很婉转；plain 是连委婉都省了，直说。所以 a plain warning 是「把话挑明的警告」。
+    vs simple：simple 说的是内容不复杂；plain 说的是表达没有装饰。plain English = 不用术语、不绕弯的英文，是政府和产品文档里的固定说法。
+    同一个「没加东西」的画面：plain rice（白饭）、plain text（纯文本）、plain black T-shirt（纯黑没印花）。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: a slice of
+  kind: phrase
+  meaning: 一部分（不是整个）—— 切出来的一片，很形象。
+  examples:
+  - …and a slice of settings.json.
+  note: 和 part of / some of 的区别：slice 暗示是从整体里切出来、完整的一块，比 part of 有画面感，常用来说「只截取了其中一段」。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: step in
+  pos: v.
+  kind: phrase
+  meaning: 插手、介入（在某个节点上手干预）。
+  examples:
+  - …points in the agentic loop where you'd want to step in.
+  note: 和 intervene 的区别：意思相同，intervene 正式；step in 口语，画面是在某个节点走进去插手，常用于「需要时人来接管一下」。
+  source: English Teacher · Understanding Claude Code hook events
+  added: "2026-09-08"
+- term: reach for
+  pos: v.
+  kind: phrase
+  meaning: （需要时）会去用、伸手拿。文档里常用来说「你会反复用到的那几个」。
+  examples:
+  - There's a small handful you'll reach for again and again.
+  note: |-
+    a small handful = 一小撮、寥寥几个。
+    和 use 的区别：reach for 的画面是「需要时伸手就去拿」，暗示它是你顺手的首选工具，不只是用过而已。
+  source: English Teacher · Understanding Claude Code hook events
+  added: "2026-09-08"
+- term: what you would otherwise do by hand
+  pos: adv.
+  kind: pattern
+  meaning: 在另一种走法里（要不然的话）—— 指向一个没有发生的对照场景。
+  examples:
+  - …everything you'd otherwise share by hand.
+  - You need to trigger harness with the correct params, otherwise it will fail.（真实转录）
+  note: |-
+    两个位置、两种读法，别混：
+    句首/句中接结果 = 「否则」，像上面第一句：不这么做就会失败。
+    插在句中修饰动词 = 「本来会/不然就得」，像 you'd otherwise share by hand —— 如果不用 plugin，你只能一件件手工传。这个用法中文使用者最容易漏掉。
+    vs or else：or else 只有「否则」一个意思，且口语、带威胁感；otherwise 两种意思都有，书面。
+    第三个意思是 adj.「相反的」：evidence to the contrary / unless stated otherwise（除非另有说明）。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: by hand
+  kind: phrase
+  meaning: 手工、人肉（和自动化、打包安装相对）。
+  examples:
+  - …everything you'd otherwise share by hand.
+  note: 和 manually 的区别：意思一样，manually 书面、偏技术；by hand 口语，更有「一件件亲手去弄、很费事」的画面。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: the rule stands
+  kind: phrase
+  meaning: 这条规矩依然成立、结论不变。
+  examples:
+  - 'Reviewed isn''t the same as trusted. So the rule stands: install only from sources you trust.'
+  note: 和 the rule still applies 的区别：stand 的画面是「立着没倒」，暗示经过一番讨论或质疑之后，这条规矩依然成立，比 still applies 更有收尾、下结论的力度。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: it bundles everything
+  pos: v.
+  kind: phrase
+  meaning: 把一堆东西打包进一个整体。
+  examples:
+  - 'It bundles everything: skills, subagents, hooks, and MCP server configs.'
+  note: |-
+    One version, one install. = 一个版本号，一次安装。
+    和 include / package 的区别：include 只是「包含」；package 偏正式的打包、封装；bundle 强调把不同种类的东西捆在一起，作为一个整体交付。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: long tail
+  pos: n.
+  kind: phrase
+  meaning: 长尾 —— 零零碎碎但种类很多的那一堆，和「头部」相对。
+  examples:
+  - …plus the longer tail of stuff like LSP servers, monitors and themes.
+  note: 用比较级 longer 是相对前面那份主列表而言。
+  source: English Teacher · Code Review meaning explained
+  added: "2026-09-08"
+- term: a good move career-wise
+  kind: phrase
+  meaning: 单看事业这一面的话……（就职业发展而言）。-wise 是往名词屁股上一贴，临时圈出一个评价角度。
+  examples:
+  - It's a great move career-wise, but I'd have to relocate.
+  note: |-
+    vs in terms of my career：意思一样，但 -wise 是随口一贴的口语速记，短、轻，常用来先圈个角度再话锋一转（career-wise 好，但是要搬家）；in terms of 是书面的正式说法，写邮件、简历用它。
+    同类：money-wise、time-wise、health-wise，都能现造。
+    ❌ 别和 otherwise / likewise 里的 -wise 混——那两个是固定词，不是这个后缀。
+  source: English Teacher · Understanding "career-wise"
+  added: "2026-09-07"
+- term: wave through
+  pos: v.
+  kind: phrase
+  meaning: 挥手放行。画面是关卡上保安看一眼就让你过，常自带「该查没查」的贬义。
+  examples:
+  - The classifier waves it through, because broken isn't dangerous.
+  note: |-
+    近义 slip through 更强调「漏过去了」。
+    和 let through / approve 的区别：let through 中性；wave through 的画面是看都没细看就挥手放行，带「审查草率」的意味。
+  source: English Teacher · Intent classification vs code correctness
+  added: "2026-09-07"
+- term: steer the approach
+  pos: v.
+  kind: phrase
+  meaning: 手扶着舵给方向，中途还能随时纠偏（引导、把方向）。
+  examples:
+  - Steer the approach before work begins and while it runs.
+  - Steering long sessions — keeping a long task from drifting off course.
+  note: |-
+    vs direct / instruct：这两个是下指令，把事情交代死；steer 只给方向、随时微调，不替对方决定每一步——管理和 AI 协作语境偏爱它就是因为这层分寸。
+    原意是掌舵。常见：steer the conversation / the approach、steer sb away from sth。
+  source: Notion · Work + English Teacher · Steering long sessions meaning
+  added: "2026-09-07"
+- term: put off
+  pos: v.
+  kind: phrase
+  meaning: 推迟、往后拖。
+  examples:
+  - I'm going to put off my raise for six months.
+  note: |-
+    这里的 raise 是「融资轮」，不是「加薪」。
+    和 postpone / delay 的区别：postpone 正式，通常会定新日期；put off 口语，常带「拖着、不太想做」的意味。
+  source: English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: speculative utilization
+  pos: adj.
+  kind: phrase
+  meaning: 全靠推测、还没兑现的，可能落空（推测性的）。
+  examples:
+  - It is all real dollars flowing versus speculative utilization.
+  note: |-
+    vs potential / estimated：potential 是"有可能会有"，中性；estimated 是有依据地估算；speculative 带怀疑——这数字是拍出来的。所以常和 real 成对出现，像上面那句 real dollars versus speculative utilization。
+    金融里 speculative investment 是投机性投资。
+  source: English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: A versus B
+  pos: prep.
+  kind: pattern
+  meaning: 把两样东西摆在一起比，重点是「是这个，而不是那个」（= as opposed to），不是「A 对决 B」。
+  examples:
+  - One engineer, one prompt, one task — versus in the new platform, it actually has campaigns.（真实转录）
+  - you can see that the individual versus institutional（真实转录）
+  - It is all real dollars flowing versus speculative utilization.
+  note: |-
+    为什么值得刻意练：中文使用者一般只会写 vs、不会说。但英语会议里 versus 是当连词用的 —— 后面可以直接跟一整个从句（versus in the new platform, it has…），语法上不严谨，会上却极常见。能顺口说出来，对比就讲得又快又清楚。
+    vs rather than：rather than 更书面、两边结构要对称；versus 口语，两边可以一长一短、不对称。
+    书面写 A vs B 是并列对照，缩写 vs.（法律文书用 v.）。
+  source: Notion · Work + English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: cache
+  ipa: 读 cash
+  kind: pron
+  meaning: 不是「卡奇」。从文档里读来的词，心里的读音多半是错的。
+  examples:
+  - in-memory cache
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: queue
+  ipa: 读 Q
+  kind: pron
+  meaning: 后面四个字母不发音。
+  examples:
+  - a message queue
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: suite
+  ipa: 读 sweet
+  kind: pron
+  meaning: 不是 suit-e。
+  examples:
+  - a test suite
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: schema
+  ipa: SKEE-muh
+  kind: pron
+  meaning: 不是「谢玛」。
+  examples:
+  - validate input against a schema
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: async
+  ipa: AY-sync
+  kind: pron
+  meaning: 不是「阿-sync」。
+  examples:
+  - an async function
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: tuple
+  ipa: TOO-pul / TUH-pul
+  kind: pron
+  meaning: 两种读法都有。
+  examples:
+  - return a tuple
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: null / height
+  ipa: nul / hite
+  kind: pron
+  meaning: null 不是「奶欧」，height 不是「hey-t」。
+  examples:
+  - a null pointer · the height of the tree
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: variable / parameter
+  ipa: VAR-i-a-ble / pa-RAM-e-ter
+  kind: pron
+  meaning: 重音位置最容易错。
+  examples:
+  - pass the parameter as a variable
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: Linux
+  ipa: LIN-ux
+  kind: pron
+  meaning: 不是「莱纳克斯」。
+  examples:
+  - running on Linux
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: your nut
+  pos: n.
+  kind: phrase
+  meaning: 第一桶金、财务安全垫 —— 你必须先赚到、能让你不慌的那笔钱。
+  examples:
+  - You're within your rights to sell 10% if you don't have your nut yet.
+  note: 原义是开门营业前必须覆盖的固定成本："My monthly nut is $40K."
+  source: English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: cap table
+  pos: n.
+  kind: phrase
+  meaning: 股权结构表。put cash on your cap table = 把融资装进公司。
+  examples:
+  - Put that cash on your cap table at a solid valuation.
+  source: English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: sell part of your holdings
+  pos: n.
+  kind: phrase
+  meaning: 你名下攥着的那些股份和资产（持仓）。
+  examples:
+  - …sell 10 to 20 percent of your holdings now.
+  note: |-
+    vs shares：shares 专指股份、论股数；holdings 说的是手里持有的全部，论总量，所以谈仓位、谈减持时用它。
+    这个意思只用复数。常见：sell / trim / increase your holdings。
+  source: English Teacher · Data center infrastructure
+  added: "2026-09-06"
+- term: low-hanging fruit
+  kind: phrase
+  meaning: 容易摘的果子 —— 成本低见效快的事。
+  examples:
+  - Let's start with the low-hanging fruit.
+  note: 和 quick wins 的区别：quick wins 强调见效快；low-hanging fruit 强调容易拿、不费力，所以适合当第一步。
+  source: English Teacher · 改进英语听力的方法
+  added: "2026-09-06"
+- term: go about doing sth
+  kind: phrase
+  meaning: 着手做某事、用什么方法做。问的是路径，不是要不要做。
+  examples:
+  - How do you go about testing that?
+  note: 暗含「这事听起来不好办，你从哪儿下手？」回答要讲步骤，不要只给结论。
+  source: English Teacher · Understanding English phrase meaning
+  added: "2026-09-04"
+- term: see someone around
+  kind: phrase
+  meaning: 平时在附近偶然碰见过，只是眼熟，不是正式认识。
+  examples:
+  - I don't think I'm trying to recall if I saw you around.
+  note: recall = 回想起来。
+  source: English Teacher · Understanding English phrase meaning
+  added: "2026-09-04"
+- term: source sth from sb
+  pos: v.
+  kind: phrase
+  meaning: 想办法把货找到、弄进来（进货、找货）。
+  examples:
+  - We help repair shops source parts directly from suppliers.
+  note: |-
+    vs buy：buy 只说付钱成交；source 说的是"从哪儿找到、找谁供"的那一整套活，是行业里的说法。
+    ❌ 别用 trade —— 英文里默认是"以物易物"或"炒股"。
+    常见：source parts / talent from sb、locally sourced。
+  source: English Teacher · Auto parts platform terminology
+  added: "2026-09-04"
+- term: work on commission
+  pos: n. / v.
+  kind: phrase
+  meaning: 按成交额抽的那笔提成（佣金）；另有委员会、委托创作、使投入使用几义。
+  examples:
+  - He works on commission.
+  note: |-
+    vs bonus：bonus 是公司额外发的奖金，和单笔成交不直接挂钩；commission 是卖多少抽多少，没卖就没有。所以销售说 I work on commission，等于说"我的收入全看业绩"。
+    介词固定用 on commission。
+    同根 decommission = 退役、关停（de- 就是反过来）。
+  source: English Teacher · Commission 的多个含义
+  added: "2026-09-03"
+- term: come through garbled
+  pos: adj.
+  kind: phrase
+  meaning: 话是传过来了，但揉成一团、听不出原样（失真、乱掉）。
+  examples:
+  - I think the connection garbled things a bit there — I only caught fragments.
+  note: |-
+    vs breaking up：breaking up 是信号断断续续，有一截没一截；garbled 是声音全到了，但变形、混在一起听不清。
+    文字也能用：a garbled message（内容被弄乱了）。
+    配套说法：I only caught fragments（只听到零碎几句）。
+  source: English Teacher · Greeting with confusion
+  added: "2026-09-03"
+- term: route through
+  pos: v.
+  kind: phrase
+  meaning: 经由……转发。描述调用链路时的标准动词。
+  examples:
+  - Requests are routed through a third-party aggregator.
+  note: |-
+    也可以说 proxy the call。
+    和 go through 的区别：go through 只说经过；route 强调这是一条被规划、配置好的转发路径。
+  source: English Teacher · Greeting with confusion
+  added: "2026-09-03"
+- term: specify the protocol
+  pos: v.
+  kind: phrase
+  meaning: 不含糊地把具体的那一项、那个值点出来（明确指定）。specific（具体的）的动词形式。
+  examples:
+  - This is where we specify the protocol.
+  - Each policy specifies a set of trigger conditions.
+  - in GCP Secrets Manager, you can specify like, oh, when does the key expire（真实转录）
+  - AI will figure out how to construct test cases to satisfy the requirements I specified in the skills（真实转录）
+  note: |-
+    vs say / tell：说话式的词，听起来像随口讲的；specify 暗示这是写下来的、有约束力的取值，别人照着做就行。
+    vs define：define 是下定义、划出边界（什么算 X）；specify 是在边界内填上具体的值（X 取 3）。describe 只是描述，不带规定性。
+    名词 spec（specification）就是从这来的 —— 一份写满 specified 取值的文档。
+    技术会议里高频，常接 specify + 参数/条件/版本：specify the branch / the instance count / when the key expires。
+  source: Notion · Work + English Teacher · KYC platform rules
+  added: "2026-09-03"
+- term: kick in
+  pos: v.
+  kind: phrase
+  meaning: 开始生效、触发。
+  examples:
+  - At what transaction volume does a restriction kick in?
+  note: 和 take effect / start 的区别：take effect 正式；kick in 口语，画面是「到了某个时间点或阈值，自动启动」，常说药效、限制、自动机制。
+  source: English Teacher · KYC platform rules
+  added: "2026-09-03"
+- term: fall back to
+  pos: v.
+  kind: phrase
+  meaning: 前面顶不住了，退回到后方那道防线（回退到备用方案）。军事上 fall back 就是撤退到预设阵地。
+  examples:
+  - If electronic verification fails, the case falls back to document verification.
+  - if we need fallback, then fall back to the next test（真实转录）
+  note: |-
+    vs switch to：switch to 只是平级地换一个，没有好坏之分；fall back to 明确说了主方案失败在先，这是退而求其次 —— 系统设计文档里这层含义很关键。
+    名词写作一个词 fallback（a fallback vendor / the fallback path），动词分开写 fall back to。别写反。
+    ❌ fallback to the next vendor（名词当动词）→ ✅ fall back to the next vendor。
+  source: English Teacher · KYC platform rules
+  added: "2026-09-03"
+- term: routed through a third-party aggregator
+  pos: n.
+  kind: phrase
+  meaning: 自己先接好了一堆供应商，你只接它一家就连到了所有家（聚合方）。
+  examples:
+  - Requests are either sent directly to the vendor, or routed through a third-party aggregator.
+  note: |-
+    vs middleman / reseller：middleman 强调中间转手抽成；reseller 是买断了再卖给你；aggregator 的重点在"把多家收拢到一个接口后面"，接它等于接了所有家。
+    常见：a payment / data / travel aggregator、route through an aggregator。
+  source: English Teacher · Greeting with confusion
+  added: "2026-09-03"
+- term: design a customer journey
+  pos: n.
+  kind: phrase
+  meaning: 把客户走完全程当成一趟旅行来看 —— 从进门到办完的那一整条路（客户旅程）。
+  examples:
+  - …and the corresponding KYC journey.
+  - after you design the policy requirements, you can actually design your own journeys（真实转录）
+  - I should allow people to delete their last journey（真实转录）
+  note: |-
+    vs process：process 是机构视角，讲我们内部要走哪几步；journey 是坐到客户那一侧看，他一路上看到什么、卡在哪、什么感受。用词一换，讨论的重心就变了，这是产品会上刻意选它的原因。
+    vs flow：flow 偏技术，指页面和状态怎么流转。
+    在 KYC / onboarding 这类系统里，journey 已经被当成可配置的实体名词用（design a journey / delete a journey），就是一条端到端流程的配置。
+  source: English Teacher · KYC platform rules
+  added: "2026-09-03"
+- term: a decadent chocolate cake
+  ipa: /ˈdekədənt/
+  pos: adj.
+  kind: phrase
+  meaning: 奢华诱人、好吃到有负罪感（褒／戏谑）；说人或社会时是堕落颓废（贬）。
+  examples:
+  - a decadent chocolate cake
+  note: |-
+    vs rich：说食物时 rich 只是浓郁；decadent 带"放纵、吃了有负罪感"的戏谑，是更夸张的赞美。
+    说人和社会时多半是批评，说食物和享受时是赞美，靠对象区分。
+  source: English Teacher · Decadent的含义
+  added: "2026-08-22"
+- term: chase (up)
+  pos: v.
+  kind: phrase
+  meaning: 催进度、追结果。英式和新加坡职场高频，不是「追赶」。
+  examples:
+  - I'll chase, but there's some backlog on their end.
+  note: |-
+    回一句 "No worries, thanks for chasing." 既礼貌又不显着急。
+    和 follow up 的区别：follow up 是中性的跟进；chase 带「对方慢了，我去催一下」的意味，更主动。所以别人替你去催时，说 thanks for chasing 是在感谢他出了力。
+  source: English Teacher · Asking about next interview steps
+  added: "2026-08-13"
+- term: some backlog on their end
+  pos: n.
+  kind: phrase
+  meaning: 该处理却一直没处理、在那儿越堆越高的一摞事（积压）。back（落后）+ log（堆的木头）。
+  examples:
+  - There is some backlog on their end.
+  note: |-
+    和 to-do list / pending tasks 的区别：to-do list 是中性的待办清单，可以是刚列出来的计划；backlog 强调本该处理却一直积压着，自带落后、有压力的意味。所以 clear the backlog 很自然。
+    敏捷开发里 product backlog 是固定术语，指需求池，积压的意味弱一些。
+  source: English Teacher · Asking about next interview steps
+  added: "2026-08-13"
+- term: on their end
+  kind: phrase
+  meaning: 在他们那边（相对于「我们这边」）。
+  examples:
+  - The delay is on their end, not ours.
+  note: 和 on their side 的区别：end 像一条链路或流程的另一头，适合说「问题 / 延迟卡在对方那里」；on their side 还可以表示「站在他们那边、他们的立场」，容易有歧义。
+  source: English Teacher · Asking about next interview steps
+  added: "2026-08-13"
+- term: play around with
+  pos: v.
+  kind: phrase
+  meaning: 摆弄、鼓捣、随便试试。语气轻松，不是正经研究。
+  examples:
+  - I've been playing around with the new app.
+  note: |-
+    不带宾语说人 is playing around 时，可能是「乱搞男女关系」，看语境。
+    和 experiment with 的区别：experiment with 有目的、偏正式；play around with 没什么明确目标，随便玩玩、试试看。
+  source: English Teacher · Play around的多个含义
+  added: "2026-08-07"
+- term: Was it … who …?
+  kind: pattern
+  meaning: 强调句型 It is/was + 被强调部分 + who/that，对应中文「是……的吗」；比平铺直叙的 Did the florist tell you this? 多问一层"是不是这个人"，把疑问焦点钉在"谁"上而不是"发生没发生"。
+  examples:
+  - Was it the florist who told you this?
+  note: florist 偏指花店老板；街边卖花的说 flower seller。
+  source: English Teacher · 英文强调句型表达
+  added: "2026-08-07"
+- term: frontier capabilities
+  kind: phrase
+  meaning: 前沿能力。业界标准说法，frontier model = 前沿模型。
+  examples:
+  - We need to understand the limits of what the model can reliably do.
+  note: |-
+    「AI 的能力边界」最自然的说法是 the limits of AI's capabilities。
+    和 cutting-edge / advanced capabilities 的区别：advanced 只说先进；frontier 是 AI 业界的固定说法（frontier model / frontier lab），画面是边界的最前沿，暗示「再往外就是没人做到过的地方」。
+  source: English Teacher · AI的边界能力英语表达
+  added: "2026-08-07"
+- term: on top of it
+  kind: phrase
+  meaning: 掌控住、跟得上（职场最常用）。
+  examples:
+  - Don't worry, I'm on top of it.
+  note: |-
+    另两义：on top of that = 除此之外（叠加坏消息）；字面 = 在它上面。
+    和 I'll take care of it 的区别：take care of it 是「我来处理」；on top of it 强调「一直盯着，局面在我掌控中」，更能让人放心。
+  source: English Teacher · On top of it 是什么意思
+  added: "2026-08-06"
+- term: stay on top of things
+  kind: phrase
+  meaning: 把事情都盯住、不落下。面试答「怎么管理多任务」很好用。
+  examples:
+  - I keep a simple daily log so I stay on top of what's in progress.
+  note: 和 keep track of 的区别：keep track of 是记录、跟踪；stay on top of 强调不仅知道进度，还能及时处理，不被事情压着走。
+  source: English Teacher · On top of it 是什么意思
+  added: "2026-08-06"
+- term: it'd be a real shame
+  kind: phrase
+  meaning: 那就太可惜了（感情色彩上的遗憾）。
+  examples:
+  - Otherwise, it'd be a real shame.
+  note: 强调「浪费」用 such a waste；强调「错失机会」用 a missed opportunity。
+  source: English Teacher · 英文表达"太可惜了"
+  added: "2026-08-06"
+- term: it is essentially a …
+  pos: adv.
+  kind: pattern
+  meaning: 把表面那些细节都剥掉之后，它其实就是……（本质上、说白了）。
+  examples:
+  - Essentially, it's the same code path with a different config.
+  - It's essentially a static analyzer — it parses the SQL and flags queries that would miss an index.
+  - I essentially didn't have to keep repeating myself to Claude（真实转录）
+  - for every capability that we built, we essentially had to follow like a specific workflow（真实转录）
+  note: |-
+    vs basically：两个都是"说白了"，但 basically 更随意，口头禅味重；essentially 沉稳一点，暗示"我这是在给你一个准确的概括"，讲技术时更站得住。
+    比它重的：fundamentally（根本上，常用于反驳）；比它书面的：in essence。
+    口语里还有个弱化用法 —— 像上面两句例句，essentially 近似"基本上、差不多就是"，用来给自己的说法留一点余地，不必字字较真。
+    位置灵活：句首带逗号总括，或直接放在 be 动词/助动词后面。
+  source: Notion · Work + English Teacher · On top of it 是什么意思
+  added: "2026-08-06"
+- term: verify A against B
+  kind: phrase
+  meaning: 拿 B 作基准去核验 A。against 后面跟的永远是标准。
+  examples:
+  - verify the user's data against the government database
+  note: 顺序不能反。同类动词：check / validate / match / reconcile / cross-reference。
+  source: English Teacher · Upstream service verification
+  added: "2026-08-06"
+- term: a standalone / single-node system
+  kind: phrase
+  meaning: 在一台机器上跑完、不依赖其他节点的系统（单机系统）。
+  examples:
+  - It started as a standalone system running on a single node.
+  note: |-
+    和 distributed system 对照时用 single-node 最准；standalone 偏"不依赖外部也能独立运行"。
+    单机 ≠ 单体：单体架构是 monolithic architecture，它照样可以多实例部署。
+  source: English Teacher · 单机系统的中文表达
+  added: "2026-08-06"
+- term: recurrence relation
+  pos: n.
+  kind: phrase
+  meaning: 状态转移方程。母语者讲 DP 时最自然的说法，比 state transition equation 地道。
+  examples:
+  - The recurrence is dp[i] = max(dp[i-1], dp[i-2] + nums[i]).
+  note: 动词形式："We transition from state i-1 to state i by…"
+  source: English Teacher · State transition equation in English
+  added: "2026-08-05"
+- term: monotonic stack
+  pos: n.
+  kind: phrase
+  meaning: 单调栈。递减／递增分别是 monotonically decreasing / increasing stack。
+  examples:
+  - I'll maintain a monotonically decreasing stack, decreasing from bottom to top.
+  note: 一定要补一句方向说明，不然中英文都有歧义。
+  source: English Teacher · State transition equation in English
+  added: "2026-08-05"
+- term: amortized O(n)
+  ipa: /ˈæmərtaɪzd/
+  pos: adj.
+  kind: phrase
+  meaning: 把一连串操作的总开销摊到每一次头上算出来的（均摊的）。
+  examples:
+  - Each element is pushed and popped at most once, so it's amortized O(n).
+  note: |-
+    vs average：average 是在不同输入之间取平均，碰上坏输入就不成立；amortized 是同一串操作内部摊账，是有保证的上界。所以单调栈说 amortized O(1)，不能说 average O(1)。
+    本义来自会计的"分期摊销"。面试里用对这个词，面试官就知道你真懂。
+  source: English Teacher · State transition equation in English
+  added: "2026-08-05"
+- term: solve it with DFS
+  ipa: /depθ/
+  pos: n.
+  kind: phrase
+  meaning: DFS = depth-first search，深度优先搜索——一条路走到黑，再回头换下一条。
+  examples:
+  - I'd solve this with DFS, marking nodes as visited as I go.
+  note: |-
+    口语里直接念字母 D-F-S，不用展开全称。
+    常见：solve it with DFS、do a DFS from the root、DFS on the grid。
+    depth /depθ/ 末尾的 θ 要送出来。
+  source: English Teacher · DFS英文含义
+  added: "2026-08-04"
+- term: BFS guarantees the shortest path
+  ipa: /bredθ/
+  pos: n.
+  kind: phrase
+  meaning: BFS = breadth-first search，广度优先搜索——一圈一圈往外扩。
+  examples:
+  - BFS guarantees the shortest path in an unweighted graph.
+  note: |-
+    正因为是一层层扩出去的，无权图里第一次碰到终点就是最短路，所以 BFS guarantees the shortest path 这句在面试里很好用。
+    breadth /bredθ/ 中间的 d 要发出来，别读成 breath（呼吸）。
+  source: English Teacher · DFS英文含义
+  added: "2026-08-04"
+- term: a backtracking problem
+  pos: n.
+  kind: phrase
+  meaning: 走一步试一步，走不通就退回来、把状态撤掉再试别的（回溯）。
+  examples:
+  - 'This is a backtracking problem: choose, recurse, undo.'
+  note: |-
+    vs DFS：backtracking 是 DFS 的一种用法，区别在那个"撤销"——DFS 只管往下走，backtracking 每退一层都要把这一步的改动还原。
+    三步口诀：choose, recurse, undo。
+  source: English Teacher · DFS英文含义
+  added: "2026-08-04"
+- term: two to the n
+  kind: pattern
+  meaning: 2ⁿ 的读法。别说 "two power n"，"to the" 不能省。
+  examples:
+  - The recursion tree has two to the n nodes.
+  note: n² = n squared · n³ = n cubed · n! = n factorial · C(n,k) = n choose k
+  source: English Teacher · DFS英文含义
+  added: "2026-08-04"
+- term: I knew I would regret it if I didn't speak to her
+  kind: pattern
+  meaning: 我知道不跟她说话我会后悔
+  examples:
+  - I knew I would regret it if I didn't speak to her.
+  note: 原笔记写的 if I wouldn't have spoken 是常见错句：if 从句里不用 would。虚拟语气正确写法是 if I hadn't spoken to her, I would have regretted it。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: all of them
+  kind: pattern
+  meaning: 全部、所有这些
+  examples:
+  - Which ones do you want? — All of them.
+  note: 注意 all of them 后面必须是代词或带限定词的名词（all of the files），直接说 all files 时不加 of。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: it was ready
+  kind: phrase
+  meaning: 已经准备好了
+  examples:
+  - By the time we arrived, dinner was ready.
+  note: ready 描述状态而非动作。人也可以 ready：Are you ready to go? 强调"随时可以"用 ready to go。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: other than that
+  kind: phrase
+  meaning: 除此之外
+  examples:
+  - The room was small. Other than that, the hotel was great.
+  note: |-
+    用来把一个例外圈出来，剩下的一概肯定。近义 apart from that（英式）、besides that。放句首要加逗号。
+    和 besides that 的区别：besides that 是「另外还有」，往上叠加；other than that 是先把例外圈出来，再对其余部分表示肯定。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: these things
+  kind: phrase
+  meaning: 这些事情
+  examples:
+  - These things take time.
+  note: 原笔记记成 these think，是听音误记。These things take time 是很好用的安慰句，意思是"这种事急不来"。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: be sick of sth
+  kind: phrase
+  meaning: 厌倦、受够了
+  examples:
+  - I'm sick of eating the same thing every day.
+  note: 后接名词或动名词。程度递增：tired of（有点烦）< sick of（受够了）< sick and tired of（忍无可忍）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: it's never-ending
+  kind: phrase
+  meaning: 没完没了
+  examples:
+  - The laundry is never-ending.
+  note: |-
+    形容词写作 never-ending。抱怨重复性琐事时最常用。近义 it never stops / there's no end to it。
+    和 endless 的区别：endless 偏书面，可褒可贬（endless possibilities）；never-ending 口语，多用于抱怨。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: A and B are intertwined
+  kind: phrase
+  meaning: 两股东西缠成一团，抽不开了（交织、密不可分）。
+  examples:
+  - Their lives have been intertwined since childhood.
+  - Billing and entitlements are so intertwined that we can't ship them separately.
+  note: |-
+    vs connected / coupled：connected 只是连着，剪一刀就断；coupled 是工程说法，指互相依赖；intertwined 更重，是缠到理不清、分不出哪根是哪根。
+    常见：tightly coupled（工程里更常说这个）、their lives are intertwined（人）。
+  source: Notion · Daily + Notion · Work
+  added: "2026-07-29"
+- term: vicious cycle
+  kind: phrase
+  meaning: 恶性循环
+  examples:
+  - I sleep badly, so I drink more coffee, so I sleep badly — a vicious cycle.
+  note: 反面是 virtuous cycle（良性循环）。注意别拼成 viscous（黏稠的），这两个词长得很像。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: try it out
+  kind: phrase
+  meaning: 试一试
+  examples:
+  - The new place opened downstairs — let's try it out.
+  note: out 强调"实际用一次看看效果"。试穿衣服是 try it on，两者别混。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: distribute vs disturb
+  kind: contrast
+  meaning: 分发 vs 打扰
+  examples:
+  - Could you distribute the handouts? / Sorry to disturb you.
+  note: 两个词只是长得像，意思毫无关系。酒店门牌上的 Do not disturb 就是这个 disturb。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: more of
+  kind: phrase
+  meaning: 更偏向于、更像是
+  examples:
+  - It's more of a hobby than a job.
+  note: more of a A than a B 是很好用的句型，用来修正对方的定性，而不是直接否定。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: by the time
+  kind: phrase
+  meaning: 等到……的时候
+  examples:
+  - By the time we got there, the kitchen had closed.
+  - By the time we got there, it was around 6 or 7 in the morning.
+  note: |-
+    后面接从句且不用将来时（By the time you arrive, I'll have finished）。主句常配完成时，因为强调"在那之前已经发生"。
+    后接从句，主句常用完成时表示"在那之前已发生"。注意 by the time 后不用将来时。
+    和 when 的区别：when 只标一个时间点；by the time 强调「到那个时候，某件事已经发生了」，所以常配完成时。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: the number of sth is dwindling
+  kind: phrase
+  meaning: 一点一点少下去，越来越少（逐渐减少）。
+  examples:
+  - Might I also add, the number of drinking friends has been dwindling.
+  note: |-
+    vs decrease / drop：decrease 中性地说变少；drop 是猛地掉下去；dwindle 是缓慢流失的过程，常用进行时，还常带一点失落感。
+    近义 shrink（体积缩小）、taper off（逐渐停下来）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: ignorance is bliss
+  kind: phrase
+  meaning: 不知道反而幸福
+  examples:
+  - I didn't read the reviews before going. Ignorance is bliss.
+  note: 固定谚语，多用于自嘲。完整原句是 where ignorance is bliss, 'tis folly to be wise。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: it doesn't sit right with me
+  kind: phrase
+  meaning: 我总觉得这样不太对
+  examples:
+  - Something about that deal doesn't sit right with me.
+  note: 表达直觉上的不适，说不出具体理由。比 I disagree 柔和，适合提出模糊但真实的顾虑。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: I'm still around
+  kind: phrase
+  meaning: 我还在（没走）
+  examples:
+  - I'm still around if you need anything.
+  note: around 指"在附近、还在线"。下班道别常说 I'm around tomorrow if you need me。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: come across sth
+  kind: phrase
+  meaning: 偶然发现、无意中看到
+  examples:
+  - I went into the library this afternoon to have a look at a newspaper and I came across something really interesting.
+  note: 强调"不是刻意找的"。come across as 是另一个意思：给人留下某种印象（He comes across as shy）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: shall we … then?
+  kind: pattern
+  meaning: 那我们就……吧？
+  examples:
+  - So everything is ready — shall we go then?
+  note: 句末的 then 承接前面的结论，起推进作用，相当于"那就……"。英式口语高频。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: spoil ourselves
+  kind: phrase
+  meaning: 犒劳一下自己、享受一下
+  examples:
+  - We've been working hard — let's spoil ourselves this weekend.
+  note: |-
+    也说 treat ourselves（更常用）。注意 spoil a child 是"宠坏孩子"，spoil the ending 是"剧透"。
+    和 treat ourselves 的区别：treat 是奖励一下自己；spoil 程度更重，有「宠一下、放纵一把」的意味。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: that sounds like a bargain
+  kind: phrase
+  meaning: 听起来很划算
+  examples:
+  - Twenty dollars for all that? That sounds like a bargain to me.
+  note: bargain 作名词是"划算的买卖"。近义 a good deal、a steal（便宜得离谱）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: keen on sth
+  kind: phrase
+  meaning: 对某件事来劲、跃跃欲试（有兴趣的、热衷的）。
+  examples:
+  - So what else? I'm feeling quite keen now.
+  note: |-
+    vs interested：interested 只是"有兴趣"，中性；keen 带劲头，是想马上动手。
+    英式常用，美式更爱说 excited / eager。
+    keen on sth 常用于否定，是委婉地说不喜欢：I'm not keen on spicy food.
+    be keen to do sth = 急着想做。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: if only…
+  kind: pattern
+  meaning: 要是……就好了——比 I wish… 语气更强烈、更带遗憾/无奈，专门用来叹一件改变不了的事。
+  examples:
+  - If only I had more time.
+  note: 表达不能实现的愿望，后面用过去式（现在）或过去完成时（过去）。也可以单独说一句 If only. 表示"要是能这样就好了"。I wish 更中性，可以只是"希望"；if only 自带一声叹气。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: a consuming passion
+  kind: phrase
+  meaning: 强烈到占据全部心思的热爱
+  examples:
+  - My consuming passion for cycling keeps me training every day.
+  note: consuming 字面是"吞噬性的"，形容爱好几乎占满生活。近义 all-consuming。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: go for sth
+  kind: phrase
+  meaning: 选择、决定要
+  examples:
+  - So I think we'll go for the Main Hall. How much would that cost?
+  note: |-
+    点餐、选方案都能用：I'll go for the fish. 这里用 would 而不是 does，因为还没最终决定，是假设性询问。
+    和 choose 的区别：choose 偏正式；go for 口语，带「就它了」的决定感。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: it's got
+  kind: pattern
+  meaning: 它有（英式口语）
+  examples:
+  - It's got very good facilities — good quality cookers and fridges and so on.
+  note: have got 在英式口语里比 have 更常用，强调现在拥有的状态。美式更常直接说 it has。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: sort sth out
+  kind: phrase
+  meaning: 处理好、搞定
+  examples:
+  - That's Mr Evans — he'll sort that out with you.
+  note: 英式高频动词短语，涵盖"安排、解决、整理"。美式更常说 take care of it / figure it out。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: out of
+  kind: phrase
+  meaning: 从……里面（拿走）
+  examples:
+  - I had some things stolen out of my bag yesterday.
+  - They're a practical way to get more out of longer Claude Code sessions.
+  note: |-
+    强调"从容器内部取出"，比单用 from 更具体。报案的标准说法：I want to report a theft.
+    引申：从某样东西里得到价值——get more / the most / a lot out of sth（见 tech 场景的 get more out of）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: come over
+  kind: phrase
+  meaning: 过来（到我这里）
+  examples:
+  - Do you want to come over tonight? / Come over when you're free.
+  note: 特指来说话人所在的地方，通常是家里。去别人那儿用 go over；随便逛过去用 drop by / pop over。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: get out to somewhere
+  kind: phrase
+  meaning: （特意）跑到较远的地方去
+  examples:
+  - There are some really lovely things around here, but you need to get out to the small towns.
+  note: out 强调"离开市区、路途不近"。近义 venture out。语气上暗示"值得专门跑一趟"。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: drop sth off
+  kind: phrase
+  meaning: 顺路送到、放下
+  examples:
+  - We went to see friends, we dropped off the food, and now we're going to head home.
+  note: 指把东西（或人）送到某地就走。接人是 pick sb up，两者是一对。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: compliment sb on sth
+  kind: phrase
+  meaning: 称赞某人某方面
+  examples:
+  - He complimented her on her dress.
+  note: |-
+    注意拼写：compliment 是称赞，complement 是补足、搭配得好。发音相同，意思完全不同。
+    和 praise 的区别：praise 偏正式，常用于表扬成就、表现；compliment 是日常顺口夸一句，比如衣服、发型、厨艺。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: hide and seek
+  kind: phrase
+  meaning: 捉迷藏
+  examples:
+  - We're playing hide and seek.
+  note: 固定搭配不加冠词。玩这个游戏用 play hide and seek。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: it's not as useful as it could be
+  kind: pattern
+  meaning: 它本可以更有用
+  examples:
+  - The app works, but it's not as useful as it could be.
+  note: not as … as it could be 是很委婉的批评方式：不说"不好"，只说"没发挥出应有的水平"。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: outspoken in meetings
+  kind: phrase
+  meaning: 心里怎么想就当众说出来，不怕场面尴尬（直言不讳的）。
+  examples:
+  - She's quite outspoken in meetings.
+  note: |-
+    vs honest：honest 是不说谎，私下也算；outspoken 一定是公开说，而且是别人会选择闭嘴的场合还说。
+    中性偏褒，指敢公开表达看法。贬义的"说话不过脑"是 blunt 或 tactless。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: what is there to do?
+  kind: pattern
+  meaning: 有什么可以玩的？——用 there is 句型问"这里现成摆着什么"，问的是当地有什么活动/选项，不是问"我们能做什么"（what can we do 更像问能力或对策）。
+  examples:
+  - We're in town for the weekend — what is there to do?
+  note: 问当地活动的固定句型。也可以说 What's there to do around here? 回答常用 There's plenty to do.
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: find fulfillment in sth
+  kind: phrase
+  meaning: 做这件事让你觉得没白活的那种满足（成就感）；另一义是承诺、订单的履行。
+  examples:
+  - She finds fulfillment in her work. / the fulfilment of a promise
+  note: |-
+    vs satisfaction：satisfaction 是需求被满足后的满意，可以很浅（a satisfying meal）；fulfillment 深一层，指自我价值实现了，所以谈工作意义时用它。
+    英式拼 fulfilment，美式拼 fulfillment。
+    履行义：the fulfilment of a promise、order fulfillment（订单履约）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: I was going to ask you…
+  kind: pattern
+  meaning: 我本来想问你……
+  examples:
+  - I was going to ask you if you're free tomorrow.
+  note: was going to 表示"原本打算"，用来软化提问，听起来不那么突兀。近义 I meant to ask you…
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: be scattered all over…
+  kind: phrase
+  meaning: 分散在各地
+  examples:
+  - They're all my college friends, but they're scattered all over the country.
+  note: |-
+    scatter 是"撒开、分散"，被动形式描述人分布在很多地方。近义 spread out across。
+    和 spread out 的区别：spread out 中性；scattered 暗示分得很散、没有规律，常带「聚不到一起」的感慨。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: more or less
+  kind: phrase
+  meaning: 差不多、基本上
+  examples:
+  - The report is more or less finished.
+  note: 用来给陈述留余地，避免把话说死。近义 pretty much（更口语）、roughly（偏数量）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: come up with sth
+  kind: phrase
+  meaning: 想出（办法、点子）
+  examples:
+  - She came up with a great idea.
+  note: 强调"从无到有想出来"。注意过去式是 came up with，原笔记漏了时态。近义 think of（更随意）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: props to sb for sth
+  kind: phrase
+  meaning: 当众给某人鼓个掌、认这份功劳（赞扬、认可）。
+  examples:
+  - Props to the team for turning that around so fast.
+  note: |-
+    vs credit：credit 说的是功劳归属，中性，能写进正式文档（credit goes to…）；props 是口语里的拍手叫好，年轻、随意，Slack 里常见。
+    来自 proper respect，只用复数。近义 kudos、hats off to。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: intend to do sth
+  kind: phrase
+  meaning: 打算做某事
+  examples:
+  - I was intending to call you yesterday.
+  note: 过去进行时 was intending 暗示"本来打算但没做成"，常用来道歉。比 I wanted to 更正式一点。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: spray sth on sth
+  kind: phrase
+  meaning: 把液体喷成细雾撒出去（喷）。
+  examples:
+  - She sprayed the perfume. / mosquito spray
+  note: |-
+    vs pour / squirt：pour 是倒成一股水流；squirt 是挤出一小股；spray 一定是散成雾状。
+    动词名词同形：sunscreen spray（防晒喷雾）、bug spray / mosquito spray（驱蚊液）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: I can't remember exactly
+  kind: phrase
+  meaning: 我记不太清了
+  examples:
+  - I can't remember exactly, but it was around 2019.
+  note: 承认记不清但仍给个大概，比单说 I don't know 有用。搭配 around / roughly 一起用最自然。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: Welp, I guess …
+  kind: pattern
+  meaning: 事情没成，摊摊手接受现实（行吧、那就这样吧）。
+  examples:
+  - Welp, I guess we'll try again tomorrow.
+  note: |-
+    vs well：well 只是开口前的停顿，接什么语气都行；welp 专门用来接一个不理想的结果，带一点认命的幽默，后面常跟 I guess…。
+    只用于非正式口语，别写进邮件。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: other than / apart from
+  kind: phrase
+  meaning: 除了（= except）
+  examples:
+  - I didn't listen to much other than when she was addressing me directly.
+  note: |-
+    address 的本义是"把东西朝某个对象送过去"：对人是"向某人讲话"，对事是"处理某件事"。这里 addressing me 指"直接对我说话"。
+    和 except 的区别：except 是严格地排除；other than / apart from 更口语，还可以表示「除了……之外还有」。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: side hustle
+  kind: phrase
+  meaning: 副业
+  examples:
+  - I'm thinking of getting a side hustle.
+  note: 指本职之外的赚钱项目，带积极进取的意味。中性说法是 a second job；hustle 本身有"折腾、拼"的味道。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: a herd of elephants
+  kind: phrase
+  meaning: 一群大型食草动物（兽群）。
+  examples:
+  - We saw an elephant herd at the waterhole.
+  note: |-
+    难的不是词义是搭配 —— 中文一个"群"全包了，英文按动物换词：a herd of elephants / cattle、a flock of birds / sheep、a school of fish、a pack of wolves、a swarm of bees。
+    也可以把 herd 放后面当名词定语：an elephant herd。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: 宾语从句语序
+  kind: pattern
+  meaning: 从句里要用陈述语序（主语 + 动词），不能再用疑问语序
+  examples:
+  - I know why he leaves. ✅ / I know why does he leave. ❌
+  - Can you explain how it works? ✅ / Can you explain how does it work? ❌
+  note: 这是中文母语者最高频的错误之一。疑问词后面立刻跟主语，助动词 do/does 一律去掉，时态回归正常动词。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: be … apart
+  kind: pattern
+  meaning: 相隔（时间或距离）
+  examples:
+  - They are about six weeks apart.
+  note: 说年龄差、时间差、距离都能用：The two towns are 30 km apart. 兄弟姐妹年龄差常这么说。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: a good match with
+  kind: phrase
+  meaning: 和……很搭
+  examples:
+  - This cucumber salad is a good match with spicy food.
+  note: 食物搭配也常说 pairs well with（更地道）：This wine pairs well with seafood.
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: I would love to…
+  kind: pattern
+  meaning: 我很想……
+  examples:
+  - I would love to have six kids.
+  note: 比 I want to 更热情也更礼貌。婉拒时也很好用：I'd love to, but I can't.
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: growing up
+  kind: phrase
+  meaning: 从小到大、在成长过程中
+  examples:
+  - Growing up, I had three siblings.
+  note: |-
+    放句首作状语，等于 when I was a child。siblings 是兄弟姐妹的统称，不分性别。
+    为什么不说 when I was a child：growing up 更简洁，而且说的是一整段成长时期，不只是某个时间点。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: picture sth
+  kind: phrase
+  meaning: 想象、设想
+  examples:
+  - What do you picture family life to look like?
+  note: picture 作动词是"在脑中描绘"，比 imagine 更具画面感。常说 I can't picture it（我想象不出来）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: be on a call
+  kind: phrase
+  meaning: 在通话中
+  examples:
+  - Anytime we're all on a call, someone's connection drops.
+  note: 电话或视频会议中用 on a call。注意介词是 on，不是 in。开会中是 in a meeting。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: eat downstairs
+  kind: phrase
+  meaning: 在楼下、往楼下 —— "在/往"已经含在词里了。
+  examples:
+  - I usually eat downstairs.
+  note: |-
+    难点就是它自带介词，不能再加：❌ in downstairs / ❌ go to downstairs → ✅ eat downstairs / go downstairs。
+    对应 upstairs。楼下邻居是 the people downstairs（后置）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: gotta / down there
+  kind: phrase
+  meaning: 得去…… / 在下面那边
+  examples:
+  - We gotta go help fix a toddler issue down there now.
+  note: gotta 是 have got to 的口语缩写，只用于说话和聊天，不写进正式文字。down there 指"下面某个地方"。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: catch up on sleep
+  kind: phrase
+  meaning: 补觉
+  examples:
+  - I'm catching up on sleep this weekend.
+  note: catch up on 用于补落下的东西：sleep、work、emails、a TV show。补觉也说 sleep in（睡懒觉）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: stay up late
+  kind: phrase
+  meaning: 熬夜
+  examples:
+  - I stayed up too late too many times this week.
+  note: |-
+    stay up 是"不去睡"，通宵是 stay up all night / pull an all-nighter。被吵醒睡不着是 be up。
+    ❌ 别说 sleep late：sleep late 是睡懒觉、起得晚，不是熬夜。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: out of goodwill
+  kind: phrase
+  meaning: 不图回报、就是希望对方好的那份心意（善意）。
+  examples:
+  - They did it out of goodwill.
+  note: |-
+    vs kindness：kindness 是做出来的善举，看得见；goodwill 是背后那份态度，所以常跟 out of / a gesture of 一起出现，而不是单独说。
+    不可数。商业语境里还指"商誉"（收购时真要算钱的那一项）。
+    常见：out of goodwill、a goodwill gesture、build goodwill。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: it seems to be
+  kind: pattern
+  meaning: 似乎是这样
+  examples:
+  - Is it fixed? — It seems to be.
+  note: 回答时可以省略后面的内容，只说 It seems to be. 相当于中文的"看起来是的"。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: come out
+  kind: phrase
+  meaning: 出现、显露；发布
+  examples:
+  - The sun came out in the afternoon. / The new season comes out next month.
+  note: 一词多义，靠主语判断：天气、污渍、真相、新产品，都能 come out。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: second time around
+  kind: phrase
+  meaning: 第二次（再来一次时）
+  examples:
+  - It was much easier the second time around.
+  note: around 强调"再次经历同一件事"。也说 this time around（这一回）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: how soon…?
+  kind: pattern
+  meaning: 还要多久……？
+  examples:
+  - How soon will the baby come after the water breaks?
+  note: how soon 问"多快会发生"，how long 问"持续多久"。原笔记的 water brakes 应作 water breaks（羊水破了）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: how far along
+  kind: phrase
+  meaning: 进展到哪一步了（尤指孕期）
+  examples:
+  - How far along are you? — About seven months.
+  note: 问孕期进度的固定说法。泛用于项目进度：How far along is the migration?
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: in between
+  kind: phrase
+  meaning: 在（两者）中间的空档
+  examples:
+  - So you have time in between to catch a breath.
+  note: 指两件事之间的间隙。catch a breath 是"喘口气"，也说 catch your breath。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: can't wait
+  kind: phrase
+  meaning: 迫不及待
+  examples:
+  - I can't wait to see them.
+  note: |-
+    后接 to + 动词原形，或 for + 名词：I can't wait for the weekend. 表达期待最自然的说法。
+    和 look forward to 的区别：look forward to 平稳、适合写邮件；can't wait 口语，情绪更强烈。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: barely slept
+  kind: phrase
+  meaning: 勉强够到那条线、差一点就没有（几乎不）。
+  examples:
+  - We barely slept.
+  note: |-
+    vs hardly：两个都译成"几乎不"，barely 强调"差一点就不够了"（We barely made the flight = 再晚一分钟就赶不上）；hardly 偏"程度很低"（I hardly know him）。
+    ❌ didn't barely sleep —— barely 自带否定，不能再加 not。
+    位置在实义动词前、be 动词后：We barely slept. / It's barely enough.
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: a lot sooner
+  kind: pattern
+  meaning: 早得多
+  examples:
+  - It happened a lot sooner than we expected.
+  note: a lot 用来加强比较级，比 much 口语。同类：a lot better、a lot more expensive。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: the other day
+  kind: phrase
+  meaning: 前几天
+  examples:
+  - I ran into him the other day.
+  note: 指最近某天，不具体说是哪天，通常在一两周内。同类模糊时间：the other week、a while back。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: get to do sth
+  kind: pattern
+  meaning: 有机会做（带幸运或享受的语气）
+  examples:
+  - I get to eat spicy food all the time.
+  note: 和 have to（不得不）正好相反：I have to work weekends（无奈）vs I get to work from home（幸运）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: 分数表达
+  kind: pattern
+  meaning: one third of…；nine out of ten
+  examples:
+  - One third of the class was absent. / Nine out of ten people prefer it.
+  note: 分子用基数词，分母用序数词；分子大于一时分母加 s（two thirds）。口语里 X out of Y 更常用也更好懂。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: it's worth a lot
+  kind: phrase
+  meaning: 很值钱、很有价值
+  examples:
+  - That advice is worth a lot.
+  note: worth 后面直接接名词，不加 of。同类：worth a try（值得一试）、worth it（值得）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: walk onwards
+  kind: phrase
+  meaning: 不停下来、接着往前（继续向前）。
+  examples:
+  - He waved and walked onwards.
+  note: |-
+    vs forward：forward 只说方向（朝前）；onwards 强调"接下去不中断"，所以时间上也能用：from 2020 onwards（从 2020 年起一直）。
+    英式拼 onwards，美式拼 onward。
+    常见：walk / move / press onwards、from … onwards。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: on her own
+  kind: phrase
+  meaning: 自己、独自
+  examples:
+  - Sometimes she wakes up on her own.
+  note: 强调"没人帮忙"。近义 by herself。alone 只是"独自一人"，不含"靠自己完成"的意思。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: undivided attention
+  kind: phrase
+  meaning: 全神贯注、心无旁骛
+  examples:
+  - I can't give it my full undivided attention anymore.
+  note: 固定搭配 give sb your undivided attention。undivided 就是"没被分走的"，所以带娃时说这句特别贴切。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: a stretch
+  kind: phrase
+  meaning: 一段连续的时间
+  examples:
+  - I think I might get a two-hour stretch here.
+  note: 指不被打断的一整段时间，常用于睡眠：a four-hour stretch of sleep。也指一段路或一段时期。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: wrap up
+  kind: phrase
+  meaning: 收尾、结束
+  examples:
+  - I think I'll wrap up this video here.
+  note: |-
+    to finish / to bring something to an end。会议、视频、项目都能 wrap up。名词 a wrap 表示拍摄结束：That's a wrap.
+    和 finish 的区别：finish 只说结束了；wrap up 的画面是把东西包好、收起来，强调有个收尾的动作，比如总结一下再结束。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: here we are
+  kind: phrase
+  meaning: 我们到了
+  examples:
+  - Here we are — this is the place.
+  note: 到达目的地时说。注意区分 there you go（给你/就这样）、here you are（东西递给你）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: the broth is flavorful
+  kind: phrase
+  meaning: 味道足、有层次，一口能尝出内容（味道浓郁的）。
+  examples:
+  - The broth is so flavorful.
+  note: |-
+    vs tasty：tasty 只说好吃；flavorful 说的是"味道本身有东西"，夸汤头、卤水、香料最贴切。
+    vs rich：rich 偏油润厚重（a rich sauce），flavorful 不一定油。
+    美式拼 flavorful，英式拼 flavourful。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: the view was phenomenal
+  kind: phrase
+  meaning: 好到不像真的、当场愣住（了不起、太棒了）。
+  examples:
+  - The view was phenomenal.
+  note: |-
+    vs great / amazing：great 日常，amazing 已经不轻，phenomenal 再重一档 —— 真的超出预期时说才不显得假。
+    虽然来自 phenomenon（现象），但语气是纯褒义的"太棒了"，不是中性的"不寻常"。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: home delivery
+  kind: phrase
+  meaning: 送货上门
+  examples:
+  - They do home deliveries now.
+  note: 外卖更常说 food delivery、takeaway（英式）、takeout（美式）。点外卖的动作是 order in。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: three 20-minute periods
+  kind: phrase
+  meaning: 比赛或演出切出来的一段时长（节、时段）。
+  examples:
+  - Each game is played in three 20-minute periods.
+  note: |-
+    难点是按项目换词，中文都叫"节"：冰球三节 periods、篮球四节 quarters、足球两个 halves、网球 sets。
+    interval 在英式里还指演出的中场休息（美式 intermission）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: do sth instead
+  pos: adv.
+  kind: phrase
+  meaning: 不走前面那条，换成这个（作为替代、反而）。
+  examples:
+  - We didn't take a taxi, we walked instead.
+  - Consider web search instead when you need a quick, specific fact.
+  - I wanted the full responses instead of key information（真实转录）
+  note: |-
+    vs rather than：rather than 更书面，常放句中做对比；instead 单独一个词就能收在句末，口语里最顺。
+    单独用时放句末：We didn't take a taxi, we walked instead.
+    instead of 后面接被替代的东西：We walked instead of taking a taxi.
+    ❌ instead to do sth。
+  source: Notion · Daily + English Teacher · Understanding "instead"
+  added: "2026-07-29"
+- term: step forward
+  kind: phrase
+  meaning: 上前一步；挺身而出
+  examples:
+  - I stepped forward to get a better look.
+  note: |-
+    字面是往前走一步，引申义是"主动站出来"：Nobody stepped forward to take responsibility.
+    和 volunteer 的区别：volunteer 是报名、自愿去做；step forward 强调在别人都不动的时候，主动站出来。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: the catch
+  kind: phrase
+  meaning: 隐藏的条件、附带的问题
+  examples:
+  - The offer sounds great — the only catch is you have to pay in advance.
+  note: |-
+    指看起来很好的事情背后的限制条件。近义 drawback、limitation。常说 What's the catch?（有什么陷阱？）
+    和 drawback 的区别：drawback 是摆在明面上的缺点；catch 暗示藏在好条件背后、一开始没说出来的问题。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: make it to somewhere
+  kind: phrase
+  meaning: 成功抵达
+  examples:
+  - We made it to the summit.
+  note: make it 强调"克服困难才到达"，也用于赶上：I made it to the meeting on time. 单纯到达用 arrive / get to。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: bucket list
+  kind: phrase
+  meaning: 遗愿清单、人生必做清单
+  examples:
+  - Seeing the northern lights is on my bucket list.
+  note: 源自 kick the bucket（去世）。常说 tick sth off my bucket list（划掉一项）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: keep it up
+  kind: phrase
+  meaning: 保持下去、继续加油
+  examples:
+  - Great progress — keep it up!
+  note: 鼓励对方维持现状的固定说法。近义 keep going（更强调别停）、keep at it（强调坚持啃难题）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: the road ahead
+  kind: phrase
+  meaning: 前方道路
+  examples:
+  - Follow the road ahead in a straight line.
+  note: 字面指前面的路，比喻义是"未来的路"：The road ahead won't be easy. 问路对话里常出现。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: that way
+  kind: phrase
+  meaning: 这样一来
+  examples:
+  - Tell me your address. That way, I can send you the documents.
+  note: 用来说明前一句动作带来的好处，起因果连接作用。近义 so that…，但 that way 更口语、断句更轻。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: the downside
+  kind: phrase
+  meaning: 不利之处、弊端
+  examples:
+  - The downside of modern life is that we're always reachable.
+  note: |-
+    对应词是 the upside（好处）。近义 drawback。常说 the downside is that…
+    和 drawback 的区别：downside 常和 upside 成对出现，用来讲利弊权衡，偏口语；drawback 更书面。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: bend to the right
+  kind: phrase
+  meaning: 向右转弯（路自己拐弯）
+  examples:
+  - Take the main path ahead of you, go straight on, and keep going till the path bends to the right.
+  note: bend 是路本身的弯曲；turn right 是你主动转向。听力指路题里这个区别很关键。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: benefit from sth
+  kind: phrase
+  meaning: 从……中获益
+  examples:
+  - We all benefit in many ways from regular exercise.
+  note: benefit from 是受益，benefit sb 是使某人受益（The change benefits everyone）。名词短语：the benefits of exercise。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: hardly ever
+  kind: phrase
+  meaning: 几乎从不
+  examples:
+  - I hardly ever eat breakfast.
+  note: 等于 almost never。hardly 本身是否定词，所以不能再加 not。位置放在主要动词前。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: sit still
+  kind: phrase
+  meaning: 坐着不动
+  examples:
+  - They have to sit still and focus on one thing.
+  note: still 在这里是形容词"静止的"，不是副词"仍然"。同类：stand still、hold still（别动，拍照或打针时说）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: that aspect of sth
+  kind: phrase
+  meaning: ……的那个方面
+  examples:
+  - That aspect of handwriting had never occurred to me before.
+  note: occur to sb 是"（想法）突然进入某人脑中"，主语是想法不是人：It never occurred to me that…
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: associate A with B
+  kind: phrase
+  meaning: 把 A 和 B 联系起来
+  examples:
+  - I'd never associated spatial awareness with handwriting either.
+  note: |-
+    固定介词是 with。名词 association 指这种心理关联：I have good associations with that song.
+    和 connect / link 的区别：connect、link 说的是事物之间客观存在的联系；associate 是脑子里的联想，不一定真有关系。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: more to do with / in relation to
+  kind: pattern
+  meaning: 更多是关于…… / 相对于……而言
+  examples:
+  - I thought spatial awareness was more to do with knowing where you are in relation to objects or other people.
+  note: in relation to 用于比较两者的大小、状态或位置关系。more to do with 用来纠正对方的理解侧重点，很委婉。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: it's not just … that …
+  kind: pattern
+  meaning: 重要的不只是……
+  examples:
+  - It's not just the looks that matter.
+  note: 这是强调句型 it is … that …，把 not just 放进去，用来突出"还有别的因素"。后面常接 it's also…
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: coordinate movement
+  kind: phrase
+  meaning: 协调动作
+  examples:
+  - Handwriting helps children coordinate movement.
+  note: coordinate 作动词是"使协调配合"。名词 coordination：hand-eye coordination（手眼协调）是固定搭配。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: anyone in particular
+  kind: phrase
+  meaning: 有特定的某个人吗
+  examples:
+  - So is there anyone in particular I should speak to there?
+  note: in particular 放在名词后表示"特指的"。同类：anything in particular（有什么特别的吗）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: what are you up to?
+  kind: pattern
+  meaning: 你在忙什么？
+  examples:
+  - What are you up to this weekend?
+  note: 问对方在做什么或有什么安排，比 What are you doing? 更随意。缩写 wuu2 只用于短信聊天。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: it's everyday, bro
+  kind: phrase
+  meaning: 天天都这样
+  examples:
+  - Traffic like this? It's everyday, bro.
+  note: 注意区分：everyday 是形容词"日常的"（everyday life），every day 是"每天"。这句口语里当"稀松平常"用。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: under the hood
+  kind: phrase
+  meaning: 底层实现、引擎盖之下
+  examples:
+  - You don't need to know what's happening under the hood.
+  note: 汽车引擎盖的比喻。英式也说 under the bonnet。潜台词是"这些细节被封装好了，你不用管"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: it behaves the same way as sth
+  kind: phrase
+  meaning: 系统实际表现成什么样（表现、行为），不预设对错。
+  examples:
+  - It should be behaving the same way it behaves in the other platform.
+  - it takes a lot of time to research and discover what the legacy system behavior is（真实转录）
+  note: |-
+    vs work：work 只问好不好使（it works / it doesn't work）；behave 描述"它是怎么表现的"，中性，所以排查问题时说 the service is behaving oddly，而不是 it's bad。
+    名词对照：expected behaviour vs actual behaviour。
+    英式拼 behaviour，美式拼 behavior。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: get back
+  kind: phrase
+  meaning: 拿回、收到返回的东西
+  examples:
+  - What you send through determines what you get back.
+  note: |-
+    这里的 get back 指"接口返回的内容"。注意 get back to sb 是"回复某人"，意思完全不同。
+    和 receive / return 的区别：receive 书面；return 是从接口的角度说「返回」；get back 是口语，站在调用方的角度说「发出去之后拿回来的东西」。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: come through as…
+  kind: phrase
+  meaning: （数据、消息）以……形式传过来
+  examples:
+  - These alerts are coming through as high priority.
+  - For this flow, the business name is coming through as another field.
+  note: |-
+    come through 是数据/消息"传到我这边"的固定说法，as 后面接它呈现的形态。数据错位就说 it's coming through as null。
+    传过来的是另一个字段 排查字段映射错误时的标准描述：不是缺失，而是被塞到了别的字段里。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: sth has been reinstated
+  kind: phrase
+  meaning: 把之前被撤掉的东西原样放回去（恢复、复职）。
+  examples:
+  - Looks like it's been reinstated.
+  note: |-
+    vs restore：restore 是把坏掉或丢失的恢复正常（restore the service / a backup）；reinstate 特指"当初是被人为撤销的"——权限、规则、职位，暗示撤销是个决定，现在这个决定改了。
+    常见：reinstate access / a rule / sb to their post。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: my questions are around …
+  kind: pattern
+  meaning: 问题落在这一片话题范围里（围绕、关于）。
+  examples:
+  - My questions are going to be around the implementation, not the design.
+  note: vs about：about 指向一个具体的点；around 更松，说的是"这一片区域的事"，还没细到某一个问题，所以听起来不咄咄逼人。会议开场很常用：I have a few questions around the rollout plan.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: be for
+  kind: phrase
+  meaning: 归属于、给谁用
+  examples:
+  - Which team would that be for — platform or payments?
+  note: 问归属也可以说 Who owns that? 后者更直接，前者更委婉。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: everything else
+  kind: phrase
+  meaning: 其余剩下的事情
+  examples:
+  - For everything else, I would depend on you.
+  note: 常和 for 连用做兜底：先讲清楚自己负责的部分，再把剩下的交出去。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: in the meantime
+  kind: phrase
+  meaning: 与此同时，在这期间
+  examples:
+  - The vendor will get back to us next week. In the meantime, let's unblock the frontend.
+  note: 强调"等待期间先做别的"，隐含一个正在等的事。纯粹同时发生用 meanwhile 或 at the same time。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: in the short term
+  kind: phrase
+  meaning: 短期内
+  examples:
+  - In the short term we'll patch it manually; long term we need a proper fix.
+  note: 几乎总是和 long term 对着说。注意固定搭配是 in the short term，不是 in short term。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: so in this / that case
+  kind: pattern
+  meaning: 那这样的话
+  examples:
+  - So in that case, we don't need the feature flag at all.
+  note: 用来承接对方刚说的前提，顺着往下推结论。会上很好的过渡词。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: leverage the existing sth
+  kind: phrase
+  meaning: 借现成的东西使力，不另起炉灶（利用）。
+  examples:
+  - We can leverage the existing auth service instead of building our own.
+  - leveraging 3rd party vendors to verify the information being passed from the upstream（真实转录）
+  note: |-
+    vs use / reuse：意思一样，leverage 商务味重，暗示"借了力、省了成本"；工程讨论里说 reuse 更朴实清楚，对管理层汇报时 leverage 更常见。
+    常见：leverage existing infrastructure / third-party vendors。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: move it forward
+  kind: phrase
+  meaning: 把事情往前推进
+  examples:
+  - Let's set a decision date so we can move it forward.
+  note: 隐含"目前卡住了"。近义 push it forward（更用力）、take it forward（英式，接手往下做）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: consolidate A and B into C
+  kind: phrase
+  meaning: 把 A 和 B 合并成 C
+  examples:
+  - Let's consolidate both flows into one workflow.
+  note: consolidate 强调"合并后更精简统一"，merge 只是把两者并到一起，不带精简含义。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: a holistic view of sth
+  kind: phrase
+  meaning: 把各部分当成互相牵连的一个整体来看，不拆开单看（整体的、通盘的）。
+  examples:
+  - We need a holistic view across the entire pipeline, not per-service dashboards.
+  note: |-
+    vs overall / comprehensive：overall 是"总体上"，comprehensive 是"覆盖全面不遗漏"；holistic 强调各部分互相影响，拆开单独优化就会出错——潜台词是"别只看自己那一块"。
+    常见：a holistic view / approach。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: in terms of
+  kind: phrase
+  meaning: 从……的角度看、就……而言
+  examples:
+  - For most projects, I like to think in terms of an MVP, then one or two versions of improvements.
+  note: |-
+    用来指定讨论的维度：in terms of cost / risk / effort。口语里也常用来换算：In terms of headcount, that's two engineers.
+    和 regarding / about 的区别：regarding 只是「关于」；in terms of 是「按……这个维度来衡量」，后面接的是衡量标准。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: the requirements are fuzzy
+  kind: phrase
+  meaning: 边界糊着、看不出轮廓（模糊的）。
+  examples:
+  - The requirements are still fuzzy, so any estimate would be a guess.
+  note: |-
+    vs unclear / vague：说需求 unclear 容易听成"你没写清楚"，是在怪人；fuzzy 把责任放回事情本身——这事现在就还没定形，所以会上说 fuzzy 更委婉。
+    技术上还有固定搭配 fuzzy matching（模糊匹配）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: the guideline isn't prescriptive
+  kind: phrase
+  meaning: 把做法一条条规定死，不留自由发挥的余地（规定得很细的）。
+  examples:
+  - The guideline is intentionally not prescriptive — teams can adapt it.
+  note: |-
+    vs strict：strict 说的是执行得严；prescriptive 说的是"连怎么做都替你定好了"，重点在细，不在严。
+    常带轻微负面：too prescriptive = 管太细，限制了灵活性。反面是 descriptive / guidance-only。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: bloat sth
+  kind: phrase
+  meaning: 撑得鼓起来，多出来的全是没用的负担（臃肿）。
+  examples:
+  - Don't bloat it — one endpoint, one job.
+  note: |-
+    vs big / large：big 中性说体量；bloated 是在批评——多出来的部分不必要，像吃撑了一样难受。
+    形容需求、代码、流程都行。动词 bloat：Every release bloats the config a bit more.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: have a flair for sth
+  kind: phrase
+  meaning: 做这件事天生带一股漂亮劲儿，看得出风格（天赋、风采）。
+  examples:
+  - I appreciate the intellectual flair you brought to not answering that.
+  note: |-
+    vs talent：talent 说的是能力强、做得成；flair 说的是做出来好看、有个人风格，偏外在表现，所以设计、写作、表达上常用。
+    常见：have a flair for sth、do sth with flair。
+    上面那句例句是玩笑式的反讽——夸对方"把问题绕过去绕得很漂亮"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: bounce ideas back and forth
+  kind: phrase
+  meaning: 来回讨论、互相碰想法
+  examples:
+  - Let's get on a call and bounce ideas back and forth.
+  note: 强调轻松的双向交流，还没有要结论。也说 bounce an idea off someone（找某人参谋）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: set in stone
+  kind: phrase
+  meaning: 板上钉钉、定死了
+  examples:
+  - Nothing is set in stone yet. / The date is set in stone.
+  note: 几乎总是先说否定形式，用来表示"还能商量"。近义 locked in（已锁定）、up for discussion（可讨论）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: back and forth
+  kind: phrase
+  meaning: 来回往返、反复沟通
+  examples:
+  - There was a lot of back and forth between the client and the server.
+  note: 既指消息往返，也指人之间反复讨论：We went back and forth on the design. 名词化也行：after a lot of back and forth。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: land on my lap
+  kind: phrase
+  meaning: （责任）突然落到我头上
+  examples:
+  - The responsibility just landed on my lap.
+  note: lap 是坐下时的大腿。隐含"我没主动接，是它掉下来的"，带一点无奈。也说 land on my plate。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: that said
+  kind: phrase
+  meaning: 话虽如此
+  examples:
+  - The rollout was messy. That said, we learned a lot.
+  note: |-
+    典型用法是先自我否定、再给积极信息（或反过来）。近义 having said that / then again。
+    和 but / however 的区别：but 是直接转折；that said 先承认前面说的成立，再补充另一面，语气更平衡、客观。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: going / moving forward
+  kind: phrase
+  meaning: 从此之后、今后
+  examples:
+  - Going forward, all schema changes need a review.
+  note: 等于 from now on，但更职场。注意它指未来，不是"推进某事"——那个是 move sth forward。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: catch up with / on sth
+  kind: phrase
+  meaning: 赶上进度、补上落下的
+  examples:
+  - I need to work overtime to catch up on my tasks.
+  note: 补落下的工作用 catch up on；追上某人或某进度用 catch up with。和人叙旧也是 catch up：Let's catch up next week.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: dedicate time to sth
+  kind: phrase
+  meaning: 专门腾出时间做某事
+  examples:
+  - Let me dedicate time to this tomorrow morning.
+  note: 强调"专门留出一整块时间"，比 spend time 郑重。to 后面接名词或动名词。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: expedite the process
+  kind: phrase
+  meaning: 给这件事开一条快速通道，让它比正常流程更快走完（加急）。
+  examples:
+  - We need to expedite the process.
+  note: vs speed it up / hurry：speed up 是自己加班赶工；expedite 是让流程本身提速、走加急通道，正式用词，邮件和工单里常见。口语说 fast-track it。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: outstanding items
+  kind: phrase
+  meaning: 还欠着、没了结的（尚未完成、悬而未决）；另一个常用义是"极其出色"。
+  examples:
+  - There are two outstanding items before we can close this.
+  - It's just those other anomalies that are outstanding.
+  note: |-
+    两个常用义正好相反，靠搭配分：outstanding items / bills / issues 是没了结的；outstanding performance 是出色的。本义都是"突出在外"——账没结所以突出在外，人太强也突出在外。
+    vs pending：pending 是在等别人、等条件，自己动不了；outstanding 是还欠着、需要有人去收尾。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: get to the bottom of sth
+  kind: phrase
+  meaning: 把事情彻底查清楚、找到根本原因
+  examples:
+  - Let's get to the bottom of this before we ship anything else.
+  note: 强调"不止于止血，要找到真正原因"。近义 root-cause it（动词化，很常见）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: particular / in particular
+  kind: phrase
+  meaning: 特定的；in particular — 尤其
+  examples:
+  - Is there any particular reason? / The latency increased, P99 in particular.
+  note: 作形容词是"特定的"，in particular 作副词短语放句末表示"尤其是"。挑剔的人也叫 particular：He's very particular about naming.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: mitigate the impact
+  kind: phrase
+  meaning: 先把伤害压到最小（缓解、减轻），但没根治。
+  examples:
+  - We've put measures in place to mitigate the impact. / This is a temporary mitigation.
+  note: |-
+    vs fix / resolve：这是事故沟通的核心区分——mitigation 是止血（回滚、限流、切流量），fix 才是修好根因，所以 mitigated ≠ resolved，写 update 时别混着用。
+    常见：put measures in place to mitigate sth、a temporary mitigation。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: revise the plan
+  kind: phrase
+  meaning: 在已有的东西上改出一版（修订）。
+  examples:
+  - We need to revise the plan.
+  note: |-
+    vs rewrite / tweak：rewrite 是推倒重来；tweak 是小修小补；revise 是保留原件、出一个新版本，所以文档、计划、估算用它。
+    名词 revision 还指"某一版"：云平台上的 revisions 就是部署过的各个版本。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: by right(s)
+  kind: phrase
+  meaning: 按规矩本该是这样（言下之意：事实却不是）——按理说、照正常情况。
+  examples:
+  - By right, it shouldn't happen.
+  note: |-
+    vs in theory / supposedly：in theory 中性地说理论上；by rights 带无奈甚至不平——该发生的没发生、该属于谁的没给谁。
+    标准英式写法是 by rights，by right 在新马英语里很常见。
+    位置在句首，后面加逗号：By right, it shouldn't happen.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: Alternatively, we could …
+  kind: pattern
+  meaning: 换一条路的话，我们可以……（或者说，另一种方案是）。
+  examples:
+  - Alternatively, we could cache the response and skip the second call.
+  note: |-
+    vs or：or 在一句话里连两个选项；alternatively 放句首单独起一句，引出一整套替代方案，更清楚也更正式——写设计文档、提方案时常用。
+    放句首，后面要加逗号。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: have done so
+  kind: pattern
+  meaning: 已经这么做了（替代重复动词）
+  examples:
+  - Please restart the service if needed. If you have done so, let us know.
+  note: so 代指前面整个动作，避免重复 restarted the service。同类用法：I think so、if you say so。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: get a two-week extension on sth
+  kind: phrase
+  meaning: 在原定期限后面正式接上一段（延期）；也指扩展功能、浏览器插件。
+  examples:
+  - Can we get a two-week extension on the deadline?
+  note: |-
+    vs delay：delay 是"拖了、晚了"，被动、带负面色彩；extension 是申请并被批准的一段额外时间，所以跟老板说 request an extension，别说 delay。
+    一词三义靠语境分：延期、扩展、插件。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: be entirely sb's fault
+  kind: phrase
+  meaning: 全部都是，一点别的成分都没有（完全地）。
+  examples:
+  - The fault was entirely mine; you won't pay the price.
+  - I said that I wanted this class to now do something different, and it went in the wrong way entirely（真实转录）
+  note: |-
+    vs completely：多数时候可以互换，但 entirely 更常用在归属和责任上——entirely mine / entirely up to you，强调"全在我这边，没别人的份"，所以认错时说 that's entirely on me 很有分量。
+    也常放句末加强语气，像上面那句 it went in the wrong way entirely。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: should be able to
+  kind: pattern
+  meaning: 应该可以（有能力，但不打包票）
+  examples:
+  - The system should be able to handle the load.
+  note: 双重软化：should 表推测，be able to 表能力。想更肯定就直接说 the system will handle the load。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: on the … side of things
+  kind: pattern
+  meaning: 在……这一块
+  examples:
+  - On the engineering side of things, we're still investigating.
+  note: 划分讨论范围的口语说法：on the business side of things、on my side of things。比 regarding engineering 自然得多。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: come into the picture
+  kind: phrase
+  meaning: 登场、开始发挥作用
+  examples:
+  - And that's where Amazon comes into the picture.
+  note: 指某个角色在当前局面里开始变得相关。更短的口语版是 that's where X comes in。反过来 out of the picture 是"出局、不在考虑范围内"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: pull ahead
+  kind: phrase
+  meaning: 拉开领先身位、跑到前面去
+  examples:
+  - The teams that pull ahead aren't the ones that prompt better.
+  note: 来自赛跑/赛车："从并排的位置超到前面"。强调的是相对差距被拉开，不是绝对的快——所以主语通常是竞争关系中的一方（团队、公司、选手）。近义 get ahead（更泛，指个人上位）、outpace sb（明确说超过谁）。落后是 fall behind。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: talk a lot but never deliver
+  kind: phrase
+  meaning: 把答应的东西真交到别人手上（交付）；不及物用时是"兑现、做到"。
+  examples:
+  - It doesn't necessarily have to be code delivery. / He talks a lot but never delivers.
+  note: 词根是"送货"，所以隐含"交到谁手上"——写完不算 delivery，交出去才算。已抽象成领域词：code delivery、delivery date、a delivery team、continuous delivery。最值得练的是不及物的 deliver（兑现、做到）：Can he deliver? / The team delivered. 中文没有对应说法，绩效语境高频。第三义指讲话的表达方式：His delivery was flat（内容也许不错，但讲得很平）。和 ship 的分工：ship 更口语、强调"发出去了"，delivery 更正式、强调"承诺的东西兑现了"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: promote sth / be promoted to sth
+  kind: phrase
+  meaning: 本质就是把某个东西往前、往上推——对人是晋升，对产品是推广，对抽象状态是促进。
+  examples:
+  - We want to promote the new platform at this point. / He was promoted to staff engineer.
+  note: 词源是 pro-（向前）+ movere（移动），本质就是"把某个东西往前/往上推"，中文拆成了三个词但英文是同一个动作，只看对象：对人是晋升（多用被动），对产品/工具是内部推广，对抽象状态是促进（This policy promotes collaboration）。"推广"别译成 popularize，那个词很生硬、基本只用于学术。名词 promotion 同样一词多义：既是晋升（I got a promotion），也是促销（it's on promotion）。近义 drive adoption（最中性的管理说法）、champion sth（当推手、力挺）、evangelize（布道，语气最重）。注意 promote 不表示"打折"，打折是 discount。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: preliminary work on sth
+  kind: phrase
+  meaning: 正式开工前先去探路的那一段（初步的、前期的）。
+  examples:
+  - We started preliminary work on what we needed to do on our side.
+  note: |-
+    vs initial：initial 只说时间上最早；preliminary 强调"这还不算数，正式的在后面"，所以 preliminary results 意味着结论还可能变。
+    近义 exploratory（目的是摸清情况）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: address sth
+  kind: phrase
+  meaning: 处理、着手解决
+  examples:
+  - It'd be addressed a little more urgently if it were customer-facing.
+  note: address 的本义是"把东西朝某个对象送过去"：对人是"向某人讲话"，对事就是"处理某件事"。比 fix 正式，也可指"回应"而不一定"解决"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: call sth out
+  kind: phrase
+  meaning: 当场指出来
+  examples:
+  - If you see something wrong, just call it out.
+  note: 中性偏鼓励，指公开点明问题。但 call someone out 针对人时是"公开批评"，语气重得多，注意区分。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: aligned to vs related to
+  kind: contrast
+  meaning: 方向一致 vs 有关联
+  examples:
+  - I don't know whether it's aligned to any of the ramps that happened.
+  note: related to 只是泛指有关联；aligned to 强调一致性和方向一致，重点在"有没有按计划走"：aligned to our goals / roadmap。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: than anticipated
+  kind: pattern
+  meaning: 比预期的……
+  examples:
+  - It took a little longer to get started than anticipated.
+  note: anticipate 比 expect 更正式，也更强调"事先预判"。同类表达：sooner than expected、worse than anticipated。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: move up vs push back
+  kind: contrast
+  meaning: （时间）提前 vs 推迟
+  examples:
+  - The project schedule has been moved up by three months. / The schedule has been delayed by three months.
+  note: move up 是提前，push back 是推后。注意 push back 在时间语境是"推迟"，在讨论语境是"提出异议"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: get through vs go through
+  kind: contrast
+  meaning: 注重结果 vs 注重过程
+  examples:
+  - I finally got through all my emails. / Let's go through the report together.
+  note: get through 强调"处理完、熬过去"（We will get through the crisis），go through 强调"逐项走一遍"（You have to go through security before boarding）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: come down to
+  kind: phrase
+  meaning: 取决于
+  note: 和 depend on 的区别：depend on 是受很多因素影响；come down to 是层层剥开之后，最终归结为一个关键因素。例：It all comes down to money.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: when people dissimulate
+  kind: phrase
+  meaning: 装作没有 —— 把真实的情绪或意图藏在一副若无其事的表情后面（掩饰）。dis-（否定）+ simulate（装样子）。
+  examples:
+  - When people dissimulate, they hide their true feelings, intentions, or nature.
+  note: |-
+    和 simulate 对着记：simulate 是装出一个没有的东西；dissimulate 是把一个有的东西藏起来。前者无中生有，后者有中装无。
+    vs hide it / put on a front：口语里说这两个就够了。dissimulate 是相当文的书面词，日常几乎不用，读小说、看心理学文章才遇到 —— 认得就行，不必主动说。
+    近义 dissemble（同样文）；反义 be upfront（有话直说）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: for several subsequent days
+  kind: phrase
+  meaning: 跟在那件事后面接着来的（随后的、后续的）。sub-（在下/在后）+ sequ（跟随），和 sequence 同源。
+  examples:
+  - For several subsequent days I saw little of Mr Rochester.
+  note: |-
+    vs next：next 只是「下一个」，谁都能说；subsequent 隐含一个参照事件 —— 是在某件事之后接着发生的，所以报告、纪要里用它把因果和先后串起来。
+    vs following：意思最接近，但 following 更中性、口语也能用；subsequent 纯书面。日常说 the following days / the next few days 就好。
+    副词 subsequently = 后来、随后（常用来引出后果）。
+  source: Notion · Daily
+  added: "2026-07-29"
+- term: span multiple sources
+  pos: v.
+  kind: phrase
+  meaning: 一座桥似的从这头搭到那头，把好几个来源都盖进去（横跨、涉及多个）。span 本义就是桥的跨度。
+  examples:
+  - questions that span multiple sources
+  note: |-
+    vs cover：cover 是「覆盖到」，一个一个盖过去也算；span 强调是连成一片、从一端伸到另一端，暗示这些来源本来是分开的，现在被一个问题串起来了。
+    vs involve：involve 只说牵涉到，没有跨度的画面。
+    常见搭配：span multiple teams / sources / time zones / decades；名词也常用：a span of three years、attention span。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: synthesize information
+  pos: v.
+  kind: phrase
+  meaning: 把零散的材料融在一起，炼出一个新结论（综合、整合）。化学里 synthesize 就是「合成」。
+  examples:
+  - questions that require synthesizing information from across your organization
+  note: |-
+    vs summarize：summarize 是把原文压短，信息还是那些；synthesize 要把多份材料对照、打通，产出原文里任何一份都没有直接写的判断。这一步主动得多，也是描述 AI 能力时刻意用它的原因。
+    vs aggregate：aggregate 只是堆到一起（数据汇总）；synthesize 强调融合出新东西。
+    名词 synthesis（复数 syntheses）；反义 analysis —— 一个拆开，一个合成。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: reference materials
+  kind: phrase
+  meaning: 放在手边随时翻、需要时才去查的材料（参考资料）。refer back to 的那个 reference —— 回头查阅。
+  examples:
+  - They hold the reference materials Claude needs to understand your work — project specs, meeting notes, research documents.
+  note: |-
+    vs documents / reading materials：这两个暗示要读完；reference materials 明确是「供查阅」的，没人指望你从头读到尾。给 AI 喂上下文时说 reference materials，就是在说"用得上再查"。
+    近义 supporting documents（佐证性的）、background material（打底的背景）。
+    ❌ 不可数，别写 a reference material → ✅ reference material / some reference materials。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: research prospects
+  kind: phrase
+  meaning: 研究方向、可探索的机会
+  examples:
+  - We mapped out the research prospects for next quarter.
+  note: prospect 是"有前景的可能性"。注意别和 perspective（视角）混淆，这两个词很多人会说错。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: have sth in place
+  kind: phrase
+  meaning: 提前准备好、已就位
+  examples:
+  - Understand what you need to have in place before you start.
+  - Understand what you need to have in place before you begin.
+  note: |-
+    画面是「每样东西都已经摆在它该在的位置上」，随时能用。
+    vs prepare：prepare 是准备这个动作，可能还在忙；in place 说的是结果状态 —— 已经搭好、就位了。
+    vs be ready：ready 多用于人或单个东西；in place 多用于流程、权限、监控、预案这类要事先搭起来的机制。
+    三个形态：已完成 it's in place；要落实 put it in place；要有 have it in place。
+  source: Notion · Work + English Teacher · Understanding "instead"
+  added: "2026-07-29"
+- term: in ways that…
+  kind: pattern
+  meaning: 以……的方式
+  examples:
+  - It is the ability to collaborate with AI in ways that are effective, efficient, ethical, and safe.
+  note: 后面接从句，用来一次挂多个形容词，比 effectively, efficiently… 一串副词更好读。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: not inherently better than …
+  kind: pattern
+  meaning: 这性质是长在它身上的、生来就带的（本身就、天生）。inherit（继承）同源 —— 不是外面加上去的。
+  examples:
+  - None of these approaches are inherently better than others.
+  note: |-
+    vs really / actually：这些只是加强语气；inherently 是在限定范围 —— 「就其本身而言」。所以 not inherently better 是一句很讲究的话：不是说它不好，而是说好坏取决于场景，不是这方案天生就强。技术评审里用它能把话说得既准确又不树敌。
+    近义 by nature（口语）、intrinsically（更学术）；反义常说 not inherently X, but X in practice。
+    位置：放在形容词或过去分词前面 —— inherently risky / inherently tied to…。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: how likely are you to…?
+  kind: pattern
+  meaning: 你有多大可能会……？——用程度提问代替 Would you recommend…? 这种是非问，是为了拿到一个可打分、可统计的梯度答案，而不是简单的会/不会。
+  examples:
+  - How likely are you to recommend this course to a friend or colleague?
+  note: 满意度调查（NPS）的标准问法。回答用 I'm likely to / unlikely to + 动词原形。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: with ease
+  kind: phrase
+  meaning: 一身轻松地做完，全程没使劲（毫不费力地）。ease 是名词「轻松」，with + 抽象名词 = 带着这个状态去做。
+  examples:
+  - I'm now communicating with external data sources with ease.
+  note: |-
+    vs easily：意思一样，但位置和味道不同 —— easily 是普通副词，句中随便放；with ease 押在句尾，像给这件事盖了个「轻松收工」的章，更书面、更有成就感。营销文案和总结句里常见，口语说 easily 就够了。
+    同一个结构能造一串：with care / with confidence / with caution / without difficulty。
+    ❌ 别写 with easy（ease 是名词）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: take place
+  kind: phrase
+  meaning: 一件安排好的事「占住了它那个位置」，按时按点地进行（举行、发生）。
+  examples:
+  - This is how the communication between the client and the server takes place.
+  note: |-
+    vs happen：happen 是事情自己撞上来的，可以是意外；take place 里的 place 提示这事有预定的时间地点 —— 是安排好的。所以会议、婚礼、演练、协议交互用 take place，交通事故只能用 happen / occur。
+    这层差别反过来也能用：说 the outage took place 会有点怪，因为听起来像事故是计划好的。
+    ❌ take place 没有被动式 —— ❌ was taken place → ✅ took place。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: correspond to
+  kind: phrase
+  meaning: 两边一个对一个、位置能对上（对应于）。co-（共同）+ respond（回应）—— 这边动一下，那边跟着有个对得上的。
+  examples:
+  - The shared logs correspond to this second call.
+  note: |-
+    vs match：match 强调两个东西一样、能配对；correspond to 强调的是「对应关系」本身 —— 这条日志属于那次调用，两者不是一个东西，但有固定的对位。排查问题时要说的正是这层。
+    vs relate to：relate to 只说有关系，松得多。
+    介词分两种意思，别混：correspond to sth = 对应于某物；correspond with sb = 与某人通信（书信往来）。
+    形容词 corresponding 很好用：the corresponding KYC journey（与之对应的那条）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: decommission the legacy sth
+  kind: phrase
+  meaning: 让一套系统正式退役，连资源一起清掉（下线、退役）。
+  examples:
+  - We're decommissioning the legacy gateway next quarter.
+  note: |-
+    vs turn off / disable：那两个是临时关掉，随时能开回来；decommission 是走流程的正式终结——停用、下架、回收机器、清数据，不打算再开。
+    词根同 commission（使投入使用），de- 就是反过来。
+    常见：decommission a service / a data centre。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: this is just scaffolding
+  kind: phrase
+  meaning: 为了把活先干起来搭的临时架子，回头要拆（脚手架）。
+  examples:
+  - This is just scaffolding so we can test the flow end to end.
+  note: |-
+    vs prototype / placeholder：prototype 是验证想法的完整小样；placeholder 是占位的空壳；scaffolding 是托着你往下走的支撑结构，本身不进最终产品。
+    说某段代码是 scaffolding，等于提前声明"这是临时的，别当正式实现看"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: replicate the issue
+  kind: phrase
+  meaning: 在别处照着做出一模一样的一份（复现问题／复制数据）。
+  examples:
+  - I can't replicate the issue on staging.
+  - I want to replicate exactly what I can do in the UI directly（真实转录）
+  - it was very easy for us to replicate from one region to another（真实转录）
+  note: |-
+    vs reproduce：复现 bug 更口语的说法是 reproduce（缩写 repro）；replicate 偏"照着复制出一份一样的"，所以数据多副本、跨区域复制用它。
+    常见：replicate the issue on staging、replicate from one region to another。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: triage the backlog
+  kind: phrase
+  meaning: 先分轻重缓急、定谁来管，再决定动不动手（分类定级、分诊）。
+  examples:
+  - Let's triage the backlog before we plan the sprint.
+  note: |-
+    vs prioritize：prioritize 只排先后；triage 还要判断严重程度和归属，甚至判定"不修"——是决定要不要进队列，不是排队列内的顺序。
+    源自战地医疗的分诊。常见：triage the backlog / an incident、a triage rota。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: the protocol is model-agnostic
+  kind: phrase
+  meaning: 底下换成哪家模型都照跑，压根不关心（与模型无关的）。
+  examples:
+  - The protocol is model-agnostic, so you can swap providers.
+  note: |-
+    vs model-independent：意思接近，但 agnostic 字面是"不可知论"，那股"我根本不管你用的是谁"的味道正是技术圈选它的原因，也更常用。
+    -agnostic 是能套的后缀：platform-agnostic、vendor-agnostic、cloud-agnostic。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: the primitives of sth
+  kind: phrase
+  meaning: 不能再拆的最小构件，上层能力都由它们拼出来（原语）。
+  examples:
+  - Let's dive into some of the primitives, the fundamental pieces of the protocol.
+  note: |-
+    vs building blocks / basics：building blocks 是口语比喻；basics 是"基础知识"；primitives 是术语，重点在"不可再拆"——像乐高里最小的那块积木。
+    常见：the primitives of the protocol、a set of primitives、language primitives。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: network instability
+  kind: phrase
+  meaning: 网络不稳定
+  examples:
+  - There's network instability in the region right now.
+  note: 事故通报的标准委婉说法，比 the network is broken 中性。相关词：packet loss、latency spike、intermittent failures。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: as a workaround
+  kind: phrase
+  meaning: 绕开问题先把事办成的临时法子，问题本身还在（变通办法）。
+  examples:
+  - As a workaround, we restarted the service. / We're working around this issue while investigating.
+  note: |-
+    vs fix：fix 是问题没了；workaround 是问题还在、只是绕过去了。事故复盘里这两个词必须分开写，不然会被理解成已经修好。
+    名词连写 workaround，动词分开写 work around：We're working around this issue while investigating.
+    常见：as a workaround、a temporary workaround。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: the production switchover
+  kind: phrase
+  meaning: 有计划地把流量从一套系统整体切到另一套（切换）。
+  examples:
+  - We're preparing for the production switchover.
+  note: |-
+    vs failover：failover 是出故障时自动切走，被动、来不及准备；switchover 是提前排期、人主动切的，所以有演练、有回滚方案。
+    动词分开写：switch over to the new system。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: the evaluation comes through
+  kind: phrase
+  meaning: 跑一次评估、审核这个动作本身（一次评估调用）。
+  examples:
+  - If we see the evaluation come through without a date of birth, we reject it.
+  note: |-
+    vs assessment：assessment 偏人做出的判断、带结论；在系统语境里 evaluation 就是一次调用、一条记录，能自动跑、能审计，所以风控系统里说 the evaluation comes through。
+    AI 语境里还有 evals（模型评测）和 self-evaluation（让 AI 自己跑测试判断做对没有）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: API endpoint
+  kind: phrase
+  meaning: 接口地址
+  examples:
+  - You are calling different API endpoints.
+  note: endpoint 指具体某个 URL 路径，API 是整套接口。所以是"调用不同的 endpoint"，不是"不同的 API"。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: run a campaign
+  kind: phrase
+  meaning: 战役、有目标分阶段推进的一整轮行动
+  examples:
+  - One engineer, one prompt, one task — versus campaigns, which persist all the context.
+  - how you're going to create a new campaign is that you're going to give a very simple title（真实转录）
+  note: 日常义是 marketing / political / military campaign，共同点是"有一个目标，要打好几仗才拿得下，中间有计划、有协作、持续一段时间"，和 task 的一次性正相反。AI agent 工具借的就是这层意思：一个 campaign 是"一件要打完的事"，规划、实现、评审都挂在它下面，上下文跨 session 保留。发起用 launch / run a campaign。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: the deliverable for this phase
+  kind: phrase
+  meaning: 这一阶段最后要交到别人手上、能被验收的那个东西（交付物）。
+  examples:
+  - The deliverable for this phase is a working prototype, not production code.
+  note: |-
+    vs output / result：output、result 是干活自然产生的东西；deliverable 是事先讲好、到点要交的，所以"设计文档"算，"想清楚了"不算。
+    可数名词，常用复数 deliverables。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: downsell sb to a cheaper tier
+  kind: phrase
+  meaning: 主推方案被拒之后，改推更便宜、更简单的那一档（降级销售）。
+  examples:
+  - If they decline the premium plan, we downsell them to the standard tier.
+  note: |-
+    对应词是 upsell（追加销售）。
+    工程语境里的 downsell scenario 相当于 fallback —— 主路径走不通时的次优路径。
+    常见：downsell sb to sth。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: burnt out / burnout
+  kind: phrase
+  meaning: 精疲力竭（长期过劳导致）
+  examples:
+  - I'm feeling a bit burnt out lately.
+  note: 形容词是 burnt out（英式）/ burned out（美式），名词是 burnout：He's heading for burnout. 指长期耗竭，不是一天累。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: developer enablement
+  kind: phrase
+  meaning: 给工具、给培训，让别人自己干得成（赋能）。
+  examples:
+  - The team focuses on developer enablement.
+  note: |-
+    vs support / training：support 是别人有事来找你帮忙，你还在环里；training 只是教一次；enablement 是"授人以渔"——把门槛降到对方能自助，所以平台团队用它写目标。
+    动词 enable：This unblocks and enables other teams.
+  source: Notion · Work
+  added: "2026-07-29"
+- term: build sth in-house
+  kind: phrase
+  meaning: 自己团队做的，不外包也不买（内部的、自研的）。
+  examples:
+  - We built it in-house instead of buying a vendor solution.
+  note: |-
+    vs internal：internal 只说"公司内部的"（an internal doc）；in-house 特指"这活是我们自己做的"，所以总和 outsourced / third-party 对着说。
+    形容词副词同形：an in-house tool / built in-house。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: productivity gains
+  kind: phrase
+  meaning: 生产力提升、效率收益
+  examples:
+  - There are some individual productivity gains, but there's no institutional velocity.
+  note: gains 是"收益、增量"，不是 games——语速快时两个词几乎同音，靠搭配判断：跟 productivity / efficiency / cost 连用的一定是 gains。个人层面说 individual gains，全公司层面说 organization-wide gains。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: institutional velocity
+  kind: phrase
+  meaning: 组织级速度（整个机构作为一个整体前进的快慢）
+  examples:
+  - There are some individual productivity gains, but there's no institutional velocity.
+  note: institutional 指"机构/制度层面的"，永远是和 individual 对着说的。velocity 借自敏捷开发的"团队速度"，比 speed 多一层"单位时间内交付多少"的含义。这句的潜台词是：个体提效没有汇总成组织提效。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: the fragmentation will follow
+  kind: phrase
+  meaning: 摔成一地碎片，各自为政、互不打通（碎片化）。
+  examples:
+  - And then, of course, the fragmentation will follow.
+  note: |-
+    vs inconsistency：inconsistency 只说不一致；fragmentation 是散成了许多互不相通的小块，每块自己内部还挺自洽——所以更难收拾。
+    动词 fragment，形容词 fragmented：a fragmented toolchain。
+    上面那句里的 the … will follow 是"随之而来"，常用来断言一个必然的后果。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: coordination overhead
+  kind: phrase
+  meaning: 协调成本、对接开销
+  examples:
+  - The third problem is coordination overhead — after you develop, you need to do code review; after code review, you need to remember to deploy.
+  note: overhead 是"不直接产出价值、但为了让事情转起来必须付的额外代价"。coordination overhead 特指卡在环节之间的那部分：记得通知谁、等谁批、手动把产物搬到下一步。同类搭配：communication overhead、operational overhead、the overhead of doing sth。注意它不可数，不说 an overhead（英式偶尔例外）。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: a discrepancy between A and B
+  kind: phrase
+  meaning: 两边本该对得上却对不上的那点差（不一致）。
+  examples:
+  - There's a time discrepancy between the two logs.
+  note: |-
+    vs difference：difference 是中性的"不一样"，本来就该不一样也算；discrepancy 一定隐含"本应一致"，所以对账、核数据的语境几乎只用它。
+    常见：a discrepancy between A and B、reconcile the discrepancy。
+  source: Notion · Work
+  added: "2026-07-29"
+- term: Did you find anything to eat?
+  kind: pattern
+  meaning: 你找到吃的了吗？中文的「什么」在是非问句里要翻成 anything，不是 what——用 anything 是因为这是个不预设答案的中性提问（"有没有找到，不知道"）；换成 something 就变成预设"你应该找到了点什么"。
+  examples:
+  - Did you find anything to eat?
+  note: 「刚才」通常不用译出来。日常里 get 比 find 更常用：Did you get anything to eat?
+  source: English Teacher · 中文日常问句的英文表达
+  added: "2026-07-26"
+- term: Have you found … yet?
+  kind: pattern
+  meaning: 现在完成时版本，暗示「到现在还没找到」。
+  examples:
+  - Have you found anything to eat yet?
+  note: ❌ 不能和 just now / earlier 这类明确的过去时间词连用。
+  source: English Teacher · 中文日常问句的英文表达
+  added: "2026-07-26"
+- term: never feels cramped
+  kind: phrase
+  meaning: 一点都不挤。描述场地空间的地道说法。
+  examples:
+  - Loads of room around each table — never feels cramped, even with a few people playing.
+  note: |-
+    「地板减弱弹力」：the flooring softens / dampens the bounce。
+    和 crowded 的区别：crowded 说人多；cramped 说空间小、伸展不开。
+  source: English Teacher · 乒乓球场地描写修改
+  added: "2026-07-26"
+- term: a big idea
+  kind: phrase
+  meaning: 重大的、有分量的核心构想。商业和广告里 the big idea = 核心创意。
+  examples:
+  - So that is a big idea.
+  note: 语气看上下文，也可能是反讽：「哦，这就算大创意了？」
+  source: English Teacher · 理解"So that is a big idea"
+  added: "2026-07-24"
+- term: author a standard
+  pos: v.
+  kind: phrase
+  meaning: 这东西是你写出来的，署你的名、由你拍板（主导制定）。author（作者）直接当动词用。
+  examples:
+  - authoring MySQL development standards
+  note: |-
+    vs writing：write 谁都能写，可能只是别人定了内容你来落笔；author 把「作者」身份点出来 —— 内容是你的主张，责任也在你。简历里差别很大。
+    vs codifying：codify 是把已有的做法整理成条文，强调「成文化」这个动作，不含原创。
+    多用于成果物：author a standard / a spec / a paper / an RFC。
+  source: English Teacher · Condensing slow SQL optimization
+  added: "2026-07-20"
+- term: enforce sth through a lint tool
+  pos: v.
+  kind: phrase
+  meaning: 在关口架个机制守着，不合规的直接拦下（强制执行）。force（力）在里面 —— 不靠自觉，靠挡。
+  examples:
+  - enforcing them through a lint tool
+  note: |-
+    区分两件事：写出规范 ≠ 规范被遵守。
+    和 implementing 的区别：implement 是把规范落地、做出来；enforce 强调有机制保证大家必须遵守，不遵守会被拦下（比如 lint 报错）。
+  source: English Teacher · Condensing slow SQL optimization
+  added: "2026-07-20"
+- term: prevent recurrence
+  kind: phrase
+  meaning: 防止问题再次发生。简历里描述「治本」的标准说法。
+  examples:
+  - prevented recurrence by establishing development standards
+  note: 和 prevent it from happening again 的区别：意思一样，但 recurrence 是名词，短而书面，适合简历这种要求紧凑的地方；口语里还是说 happen again。
+  source: English Teacher · Condensing slow SQL optimization
+  added: "2026-07-20"
+- term: conduct a search
+  pos: v.
+  kind: phrase
+  meaning: 进行、开展（有组织地做某件事）。
+  examples:
+  - Claude conducts multiple searches before answering.
+  note: |-
+    常搭配 research / a survey / an interview / an experiment。
+    和 do 的区别：do 太泛；conduct 正式，强调有组织、按方法进行，所以常搭 research、survey 这类有流程的事。
+  source: English Teacher · Understanding "instead"
+  added: "2026-04-04"
+- term: pay off
+  pos: v.
+  kind: phrase
+  meaning: 有回报、值得。
+  examples:
+  - Investing time in crafting your prompt pays off.
+  note: 和 be worth it 的区别：worth it 是事后判断「值得」；pay off 的画面是之前投入的时间、钱终于「还清、有了回报」，强调先投入、后回报。
+  source: English Teacher · Understanding "instead"
+  added: "2026-04-04"
