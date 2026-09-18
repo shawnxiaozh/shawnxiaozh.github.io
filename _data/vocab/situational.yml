@@ -57,15 +57,6 @@
   note: 和 cc / include 的区别：cc 只是把人加进邮件抄送；loop in 是让对方进入讨论圈，之后持续知情、参与。
   source: English Teacher · 改进英语听力的方法
   added: "2026-09-06"
-- term: sync up / align on
-  pos: v.
-  kind: phrase
-  meaning: 碰一下 / 就某事达成一致。
-  examples:
-  - Let's sync up Friday and align on the rollout plan.
-  note: 和 meet / agree 的区别：meet 是开会；sync up 强调同步彼此的进度和信息，通常是短会。agree 是同意某个观点；align on 强调各方方向一致，可以一起往前推。
-  source: English Teacher · 改进英语听力的方法
-  added: "2026-09-06"
 - term: bump the PR
   kind: phrase
   meaning: 顶一下 PR，提醒别人来审。
@@ -403,7 +394,7 @@
   note: 说"没听懂"最礼貌的方式，把责任放在自己身上。比 I don't understand 柔和很多。
   source: Notion · Work
   added: "2026-07-29"
-- term: achieve / hit the milestone
+- term: hit the milestone
   kind: phrase
   meaning: 达成里程碑
   examples:
@@ -427,14 +418,16 @@
   note: be measured on sth 指"被拿这个指标考核"。问这句其实是在问优先级。
   source: Notion · Work
   added: "2026-07-29"
-- term: be aligned on sth
+- term: be aligned on the scope
   kind: phrase
   meaning: 在某事上达成一致
   examples:
   - We're aligned on the scope; the timeline is still open.
+  - Let's sync up Friday and align on the rollout plan.
   note: |-
     align 是职场高频词。想推动对齐说 let's align on…；确认是否一致说 are we aligned?
     和 agree 的区别：agree 是同意某个观点；aligned 强调各方方向一致，后续可以一起推进。
+    sync up 是另一回事：强调同步彼此的进度和信息，通常是短会（vs meet 只是「开会」），所以常连着说 let's sync up and align on…。
   source: Notion · Work
   added: "2026-07-29"
 - term: disseminate down
@@ -580,20 +573,12 @@
   note: 进度正常。落后是 behind schedule / slipping，有风险是 at risk，提前是 ahead of schedule。
   source: Notion · Work
   added: "2026-07-29"
-- term: I have high hopes / high expectations for you
+- term: have high hopes for sb
   kind: pattern
-  meaning: 我对你期望很高
+  meaning: 很看好某人、对某人期待很高。
   examples:
   - I have high hopes for you on this project.
   note: hopes 侧重"看好、期待你做成"，expectations 侧重"我要求你做到"。后者压力更大，注意场合。
-  source: Notion · Work
-  added: "2026-07-29"
-- term: move forward with sth
-  kind: phrase
-  meaning: 推进某件事
-  examples:
-  - Are we moving forward with the vendor proposal?
-  note: 注意和 going forward（今后）区分：move forward with 是推进具体某事，going forward 是时间上的"从此之后"。
   source: Notion · Work
   added: "2026-07-29"
 - term: be on the same page
@@ -638,9 +623,9 @@
   note: 汇报收尾的软性说法，a bit of 是自谦。更利落的收尾：that's all from us。
   source: Notion · Work
   added: "2026-07-29"
-- term: from my / that perspective
+- term: from my perspective
   kind: phrase
-  meaning: 从我的 / 这个角度看
+  meaning: 从我站的位置看到的样子（在我看来）。
   examples:
   - From my perspective, the risk is acceptable.
   - From our perspective, the data looks clean.

@@ -2,6 +2,34 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: it never occurred to me that …
+  kind: pattern
+  meaning: 我从来没想到过…… —— 这个念头从没自己冒进我脑子里。
+  examples:
+  - That aspect of handwriting had never occurred to me before.
+  note: |-
+    主语是「想法」不是人，所以是 it occurred to me，❌ 不能说 I never occurred that…。
+    和 I never thought 的区别：I never thought 是我没这么认为过；it never occurred to me 强调这个念头压根没冒出来，带一点恍然大悟的味道。
+  source: Notion · Daily
+  added: "2026-09-16"
+- term: address sb directly
+  kind: phrase
+  meaning: 直接对着某人说话（而不是对着全场）。
+  examples:
+  - I didn't listen to much other than when she was addressing me directly.
+  note: |-
+    address 的本义是「把东西朝某个对象送过去」：对人是向某人讲话，对事是处理某件事（见 address sth）。
+    和 talk to sb 的区别：talk to 就是聊天；address sb 更正式，常指在有其他人在场的场合专门冲着某个人讲。
+  source: Notion · Daily
+  added: "2026-09-16"
+- term: down there
+  kind: phrase
+  meaning: 在下面那边（比说话人低的某处）。
+  examples:
+  - We gotta go help fix a toddler issue down there now.
+  note: down / up / over + there 用来给方位加个方向感，比单说 there 具体。楼下是 downstairs，楼上是 upstairs。
+  source: Notion · Daily
+  added: "2026-09-16"
 - term: plan out
   pos: v.
   kind: phrase
@@ -22,12 +50,14 @@
   meaning: 从某个角度看一件事时看到的那一面（方面、层面）。
   examples:
   - So one aspect of this agentic workflow is that there is a clear process to follow.
+  - That aspect of handwriting had never occurred to me before.
   note: |-
     vs part：part 是把东西切下来的一块（组成部分）；aspect 不切，是换个角度看整体，看到的是一个特点。所以说 "one aspect of this workflow is that…"，后面接的是特点，不是某一步骤。
     vs side：side 偏口语，常暗示正反两面（the good side / on the other side）；aspect 暗示有很多面，更书面、更有分析感。
     常见搭配：an important aspect of sth / in every aspect / the technical aspects。
     ❌ from this aspect / in this aspect → ✅ from this perspective / in this respect。
     ❌ as for my aspect（真实转录）→ ✅ on my side / for my part。
+    指回已经提过的那一面时说 that aspect of sth。
   source: Claude Code · aspect
   added: "2026-09-15"
 - term: for the LLM to ingest
@@ -250,7 +280,7 @@
   ipa: /ˈdʒɜːrni/
   pos: n.
   kind: phrase
-  meaning: ①（比喻）过程、经历、摸索的整个路径 ②旅行、旅程（尤指较长的路途）。
+  meaning: 只把结论拿到手，中间那段摸索全省了 —— journey 是找到答案之前读文件、搜索、追调用的那整条路（过程、历程；本义是旅程）。
   examples:
   - With a subagent, you get the answer without the journey.
   - Learning a language is a long journey.
@@ -627,7 +657,7 @@
     常见：an agentic workflow / system、agentic to different degrees。
   source: English Teacher · Agentic as a spectrum
   added: "2026-09-10"
-- term: a degree of autonomy / fully autonomous
+- term: a degree of autonomy
   ipa: /ɔːˈtɑːnəmi/
   pos: n. / adj.
   kind: phrase
@@ -743,7 +773,7 @@
     别混：leave it to me 是「交给我」，那是真的托付，没有贬义。
   source: English Teacher · Code Review meaning explained
   added: "2026-09-08"
-- term: a plain warning / plain English
+- term: a plain warning
   pos: adj.
   kind: phrase
   meaning: 什么都没往上加 —— 不加修饰、不加包装（直白的、大白话的）。不是「普通」。
@@ -1260,7 +1290,7 @@
   note: 顺序不能反。同类动词：check / validate / match / reconcile / cross-reference。
   source: English Teacher · Upstream service verification
   added: "2026-08-06"
-- term: a standalone / single-node system
+- term: a standalone system
   kind: phrase
   meaning: 在一台机器上跑完、不依赖其他节点的系统（单机系统）。
   examples:
@@ -1373,17 +1403,12 @@
   meaning: 除此之外
   examples:
   - The room was small. Other than that, the hotel was great.
+  - I didn't listen to much other than when she was addressing me directly.
   note: |-
     用来把一个例外圈出来，剩下的一概肯定。近义 apart from that（英式）、besides that。放句首要加逗号。
     和 besides that 的区别：besides that 是「另外还有」，往上叠加；other than that 是先把例外圈出来，再对其余部分表示肯定。
-  source: Notion · Daily
-  added: "2026-07-29"
-- term: these things
-  kind: phrase
-  meaning: 这些事情
-  examples:
-  - These things take time.
-  note: 原笔记记成 these think，是听音误记。These things take time 是很好用的安慰句，意思是"这种事急不来"。
+    放在句中就等于 except，此时也说 apart from：I didn't listen to much other than when she was addressing me directly.
+    和 except 的区别：except 是严格地排除；other than / apart from 更口语，还可以表示「除了……之外还有」。
   source: Notion · Daily
   added: "2026-07-29"
 - term: be sick of sth
@@ -1586,10 +1611,7 @@
   meaning: 从……里面（拿走）
   examples:
   - I had some things stolen out of my bag yesterday.
-  - They're a practical way to get more out of longer Claude Code sessions.
-  note: |-
-    强调"从容器内部取出"，比单用 from 更具体。报案的标准说法：I want to report a theft.
-    引申：从某样东西里得到价值——get more / the most / a lot out of sth（见 tech 场景的 get more out of）。
+  note: 强调"从容器内部取出"，比单用 from 更具体。报案的标准说法：I want to report a theft.
   source: Notion · Daily
   added: "2026-07-29"
 - term: come over
@@ -1751,16 +1773,6 @@
     只用于非正式口语，别写进邮件。
   source: Notion · Daily
   added: "2026-07-29"
-- term: other than / apart from
-  kind: phrase
-  meaning: 除了（= except）
-  examples:
-  - I didn't listen to much other than when she was addressing me directly.
-  note: |-
-    address 的本义是"把东西朝某个对象送过去"：对人是"向某人讲话"，对事是"处理某件事"。这里 addressing me 指"直接对我说话"。
-    和 except 的区别：except 是严格地排除；other than / apart from 更口语，还可以表示「除了……之外还有」。
-  source: Notion · Daily
-  added: "2026-07-29"
 - term: side hustle
   kind: phrase
   meaning: 副业
@@ -1848,12 +1860,12 @@
     对应 upstairs。楼下邻居是 the people downstairs（后置）。
   source: Notion · Daily
   added: "2026-07-29"
-- term: gotta / down there
+- term: we gotta go
   kind: phrase
-  meaning: 得去…… / 在下面那边
+  meaning: 得去…… —— have got to 的口语缩写。
   examples:
   - We gotta go help fix a toddler issue down there now.
-  note: gotta 是 have got to 的口语缩写，只用于说话和聊天，不写进正式文字。down there 指"下面某个地方"。
+  note: gotta 是 have got to 的口语缩写，只用于说话和聊天，不写进正式文字。
   source: Notion · Daily
   added: "2026-07-29"
 - term: catch up on sleep
@@ -1861,7 +1873,10 @@
   meaning: 补觉
   examples:
   - I'm catching up on sleep this weekend.
-  note: catch up on 用于补落下的东西：sleep、work、emails、a TV show。补觉也说 sleep in（睡懒觉）。
+  - I need to work overtime to catch up on my tasks.
+  note: |-
+    catch up on 用于补落下的东西：sleep、work、emails、a TV show。补觉也说 sleep in（睡懒觉）。
+    追上某人或某进度用 catch up with sb；和人叙旧也是 catch up：Let's catch up next week.
   source: Notion · Daily
   added: "2026-07-29"
 - term: stay up late
@@ -2203,14 +2218,6 @@
   note: still 在这里是形容词"静止的"，不是副词"仍然"。同类：stand still、hold still（别动，拍照或打针时说）。
   source: Notion · Daily
   added: "2026-07-29"
-- term: that aspect of sth
-  kind: phrase
-  meaning: ……的那个方面
-  examples:
-  - That aspect of handwriting had never occurred to me before.
-  note: occur to sb 是"（想法）突然进入某人脑中"，主语是想法不是人：It never occurred to me that…
-  source: Notion · Daily
-  added: "2026-07-29"
 - term: associate A with B
   kind: phrase
   meaning: 把 A 和 B 联系起来
@@ -2221,9 +2228,9 @@
     和 connect / link 的区别：connect、link 说的是事物之间客观存在的联系；associate 是脑子里的联想，不一定真有关系。
   source: Notion · Daily
   added: "2026-07-29"
-- term: more to do with / in relation to
+- term: more to do with sth
   kind: pattern
-  meaning: 更多是关于…… / 相对于……而言
+  meaning: 更多是和……有关 —— 用来把对方理解的侧重点往旁边挪一挪，很委婉。
   examples:
   - I thought spatial awareness was more to do with knowing where you are in relation to objects or other people.
   note: in relation to 用于比较两者的大小、状态或位置关系。more to do with 用来纠正对方的理解侧重点，很委婉。
@@ -2250,7 +2257,12 @@
   meaning: 有特定的某个人吗
   examples:
   - So is there anyone in particular I should speak to there?
-  note: in particular 放在名词后表示"特指的"。同类：anything in particular（有什么特别的吗）。
+  - Is there any particular reason?
+  - The latency increased, P99 in particular.
+  note: |-
+    in particular 放在名词后表示"特指的"。同类：anything in particular（有什么特别的吗）。
+    particular 作形容词是「特定的」：Is there any particular reason？in particular 作副词短语放句末是「尤其是」：P99 in particular。
+    挑剔的人也叫 particular：He's very particular about naming.
   source: Notion · Daily
   added: "2026-07-29"
 - term: what are you up to?
@@ -2360,12 +2372,14 @@
   note: 几乎总是和 long term 对着说。注意固定搭配是 in the short term，不是 in short term。
   source: Notion · Work
   added: "2026-07-29"
-- term: so in this / that case
+- term: so in that case
   kind: pattern
   meaning: 那这样的话
   examples:
   - So in that case, we don't need the feature flag at all.
-  note: 用来承接对方刚说的前提，顺着往下推结论。会上很好的过渡词。
+  note: |-
+    用来承接对方刚说的前提，顺着往下推结论。会上很好的过渡词。
+    也说 so in this case，指代刚说的前提时两个都行。
   source: Notion · Work
   added: "2026-07-29"
 - term: leverage the existing sth
@@ -2384,7 +2398,10 @@
   meaning: 把事情往前推进
   examples:
   - Let's set a decision date so we can move it forward.
-  note: 隐含"目前卡住了"。近义 push it forward（更用力）、take it forward（英式，接手往下做）。
+  - Are we moving forward with the vendor proposal?
+  note: |-
+    隐含"目前卡住了"。近义 push it forward（更用力）、take it forward（英式，接手往下做）。
+    接具体某件事时说 move forward with sth。注意和 going forward（今后）区分：那个是时间上的「从此之后」，不是推进。
   source: Notion · Work
   added: "2026-07-29"
 - term: consolidate A and B into C
@@ -2405,14 +2422,17 @@
     常见：a holistic view / approach。
   source: Notion · Work
   added: "2026-07-29"
-- term: in terms of
+- term: in terms of sth
   kind: phrase
-  meaning: 从……的角度看、就……而言
+  meaning: 换一把尺子来量 —— 后面跟的是衡量的维度、单位，不是话题（就……而言、按……来说）。
   examples:
   - For most projects, I like to think in terms of an MVP, then one or two versions of improvements.
+  - It's cheap in terms of money, but expensive in terms of time.
+  - In terms of headcount, that's two engineers.
   note: |-
-    用来指定讨论的维度：in terms of cost / risk / effort。口语里也常用来换算：In terms of headcount, that's two engineers.
-    和 regarding / about 的区别：regarding 只是「关于」；in terms of 是「按……这个维度来衡量」，后面接的是衡量标准。
+    抓手是 term 的本义「项、单位、说法」：数学里 express y in terms of x 就是「用 x 把 y 表示出来」。所以 in terms of 后面跟的是那把尺子（cost / risk / effort / headcount），句子里一定有个东西正在被它量。
+    和 about / regarding 的区别：about、regarding 只是引出话题，后面接什么都行；in terms of 引出的是衡量标准，接不上标准就用错了。❌ In terms of the meeting, it's at 3 pm（会议不是一把尺子）→ ✅ As for the meeting, it's at 3 pm。
+    真实会议录音里常被当填充词随口垫在句子中间，听到不用深究；自己写别学，写进文档要它真的带出一个维度。
   source: Notion · Work
   added: "2026-07-29"
 - term: the requirements are fuzzy
@@ -2456,14 +2476,6 @@
     上面那句例句是玩笑式的反讽——夸对方"把问题绕过去绕得很漂亮"。
   source: Notion · Work
   added: "2026-07-29"
-- term: bounce ideas back and forth
-  kind: phrase
-  meaning: 来回讨论、互相碰想法
-  examples:
-  - Let's get on a call and bounce ideas back and forth.
-  note: 强调轻松的双向交流，还没有要结论。也说 bounce an idea off someone（找某人参谋）。
-  source: Notion · Work
-  added: "2026-07-29"
 - term: set in stone
   kind: phrase
   meaning: 板上钉钉、定死了
@@ -2477,7 +2489,10 @@
   meaning: 来回往返、反复沟通
   examples:
   - There was a lot of back and forth between the client and the server.
-  note: 既指消息往返，也指人之间反复讨论：We went back and forth on the design. 名词化也行：after a lot of back and forth。
+  - Let's get on a call and bounce ideas back and forth.
+  note: |-
+    既指消息往返，也指人之间反复讨论：We went back and forth on the design. 名词化也行：after a lot of back and forth。
+    bounce ideas back and forth = 打电话互相碰想法，强调轻松的双向交流、还没要结论；找某人单独参谋是 bounce an idea off sb。
   source: Notion · Work
   added: "2026-07-29"
 - term: land on my lap
@@ -2498,20 +2513,14 @@
     和 but / however 的区别：but 是直接转折；that said 先承认前面说的成立，再补充另一面，语气更平衡、客观。
   source: Notion · Work
   added: "2026-07-29"
-- term: going / moving forward
+- term: going forward
   kind: phrase
   meaning: 从此之后、今后
   examples:
   - Going forward, all schema changes need a review.
-  note: 等于 from now on，但更职场。注意它指未来，不是"推进某事"——那个是 move sth forward。
-  source: Notion · Work
-  added: "2026-07-29"
-- term: catch up with / on sth
-  kind: phrase
-  meaning: 赶上进度、补上落下的
-  examples:
-  - I need to work overtime to catch up on my tasks.
-  note: 补落下的工作用 catch up on；追上某人或某进度用 catch up with。和人叙旧也是 catch up：Let's catch up next week.
+  note: |-
+    等于 from now on，但更职场。注意它指未来，不是"推进某事"——那个是 move sth forward。
+    也说 moving forward，完全同义。
   source: Notion · Work
   added: "2026-07-29"
 - term: dedicate time to sth
@@ -2547,14 +2556,6 @@
   examples:
   - Let's get to the bottom of this before we ship anything else.
   note: 强调"不止于止血，要找到真正原因"。近义 root-cause it（动词化，很常见）。
-  source: Notion · Work
-  added: "2026-07-29"
-- term: particular / in particular
-  kind: phrase
-  meaning: 特定的；in particular — 尤其
-  examples:
-  - Is there any particular reason? / The latency increased, P99 in particular.
-  note: 作形容词是"特定的"，in particular 作副词短语放句末表示"尤其是"。挑剔的人也叫 particular：He's very particular about naming.
   source: Notion · Work
   added: "2026-07-29"
 - term: mitigate the impact
@@ -2667,11 +2668,12 @@
   note: 词根是"送货"，所以隐含"交到谁手上"——写完不算 delivery，交出去才算。已抽象成领域词：code delivery、delivery date、a delivery team、continuous delivery。最值得练的是不及物的 deliver（兑现、做到）：Can he deliver? / The team delivered. 中文没有对应说法，绩效语境高频。第三义指讲话的表达方式：His delivery was flat（内容也许不错，但讲得很平）。和 ship 的分工：ship 更口语、强调"发出去了"，delivery 更正式、强调"承诺的东西兑现了"。
   source: Notion · Work
   added: "2026-07-29"
-- term: promote sth / be promoted to sth
+- term: be promoted to sth
   kind: phrase
   meaning: 本质就是把某个东西往前、往上推——对人是晋升，对产品是推广，对抽象状态是促进。
   examples:
-  - We want to promote the new platform at this point. / He was promoted to staff engineer.
+  - He was promoted to staff engineer.
+  - We want to promote the new platform at this point.
   note: 词源是 pro-（向前）+ movere（移动），本质就是"把某个东西往前/往上推"，中文拆成了三个词但英文是同一个动作，只看对象：对人是晋升（多用被动），对产品/工具是内部推广，对抽象状态是促进（This policy promotes collaboration）。"推广"别译成 popularize，那个词很生硬、基本只用于学术。名词 promotion 同样一词多义：既是晋升（I got a promotion），也是促销（it's on promotion）。近义 drive adoption（最中性的管理说法）、champion sth（当推手、力挺）、evangelize（布道，语气最重）。注意 promote 不表示"打折"，打折是 discount。
   source: Notion · Work
   added: "2026-07-29"
@@ -3018,7 +3020,7 @@
     常见：downsell sb to sth。
   source: Notion · Work
   added: "2026-07-29"
-- term: burnt out / burnout
+- term: feel a bit burnt out
   kind: phrase
   meaning: 精疲力竭（长期过劳导致）
   examples:
