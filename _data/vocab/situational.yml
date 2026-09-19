@@ -766,8 +766,8 @@
   kind: pattern
   meaning: 借此、由此（= by which）
   examples:
-  - It has this concept of campaigns, whereby it will persist all the context.（真实转录）
-  - engineers usually use AI as engine, whereby you just do a question and answer, one task at a time（真实转录）
+  - It has this concept of campaigns, whereby it will persist all the context.
+  - engineers usually use AI as engine, whereby you just do a question and answer, one task at a time
   note: |-
     where（在那里）+ by（凭借）= 凭借这个东西，于是……。所以它引出的永远是「这个机制带来的结果」：a process whereby every change is reviewed。
     vs where / in which：意思接近，但 whereby 专门强调"靠它运作"这层因果，不只是定位；书面感也重得多。
