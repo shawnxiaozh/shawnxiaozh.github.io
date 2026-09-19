@@ -2,6 +2,58 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: steps for the workflow to follow
+  kind: pattern
+  meaning: 名词 + for sb + to do：「给某人去做的名词」——不定式放在名词后面修饰它，for 引出谁来做（供…去…的）。
+  examples:
+  - break it down into discrete steps for the agentic workflow to follow
+  - web search engines designed for LLMs to use
+  note: |-
+    follow steps = 按步骤走（follow instructions / a plan / a recipe 同理），这里 steps 挪到前面当被修饰的名词，所以 to follow 后面不再带宾语：❌ steps for the workflow to follow them。
+    为什么不说 steps that the workflow follows：that 从句只陈述事实；for … to do 带「专门给它用、让它去做」的目的感，更贴「拆步骤是为了让工作流执行」这个意思。
+    同样的形状：a book for kids to read、a problem for you to solve。
+  source: Claude Code · AI 课程转录
+  added: "2026-09-20"
+- term: take sth and break it down
+  kind: pattern
+  meaning: 「把某个东西拿过来，然后对它做某个处理」——take 只是拿起材料，真正的动作在 and 后面（拿…来…、把…）。
+  examples:
+  - How do you take this useful stuff that we do and break it down into discrete steps for the agentic workflow to follow
+  - if I then take this critique and feed it back to the model
+  note: |-
+    为什么不直接说 break this stuff down：take X and do Y 把「先拿住这个东西，再加工它」拆成两步，讲流程、讲方法时很自然，也能把很长的宾语（this useful stuff that we do）放在 take 后面，不至于把后面的动词压扁。
+    中文的「把」字句大多可以这么说：把这个评审意见反馈给模型 = take this critique and feed it back to the model。
+    take 在这里没有实际的「拿走、花费」意思，别翻成「拿走」。
+  source: Claude Code · AI 课程转录
+  added: "2026-09-20"
+- term: do a lot of stuff
+  kind: phrase
+  meaning: 口语里的「东西、事情」万能词——懒得或没必要说清具体是什么时，一把抓地指一堆东西/事（东西、事儿、玩意儿）。
+  examples:
+  - People and businesses do a lot of stuff
+  - where I wanted to explore is the domain knowledge stuff
+  - it tends to forget stuff
+  note: |-
+    为什么不用 things：stuff 更随意、更一团——不可数，不强调一件一件，像中文的「这些东西」「一堆事儿」；things 可数、稍正式一点。书面和正式文档里换成 tasks / work / content / material 这类具体词。
+    不可数：❌ a stuff / ❌ stuffs，要说 a lot of stuff、some stuff、this stuff。
+    X stuff = 「跟 X 相关的那些东西」（the domain knowledge stuff、audit stuff、manual stuff）。
+    句尾 and stuff = 「之类的」（等于 and so on，更口语）。
+  source: Claude Code · AI 课程转录
+  added: "2026-09-20"
+- term: write an essay on a certain topic
+  kind: phrase
+  meaning: 「某个（具体的，但这里不点名）」——说话人心里有个具体的，只是现在不说是哪个（某个、特定的）。
+  examples:
+  - write an essay on a certain topic
+  - write an essay for us on a certain topic X
+  - an LLM prompted to take on a certain persona
+  note: |-
+    为什么不用 some topic：a certain 强调「确定的那一个，只是先不说」，像填空的占位符；some topic 更随便，「随便什么话题」「某个我也说不清的话题」。
+    和 a specific topic 比：specific 把「具体」说出声来，a certain 更轻、更像顺口带过。
+    注意位置：a certain + 名词 = 某个；放在 be 后面（I'm certain）= 确定的，是另一个意思。
+    ❌ a certain criteria —— criteria 是复数，应为 a certain criterion / certain criteria。
+  source: Claude Code · AI 课程转录
+  added: "2026-09-19"
 - term: break sth down into discrete steps
   kind: phrase
   meaning: 把一整坨事切成一步一步、边界清楚、能单独拎出来的步骤（拆解成独立步骤）。
