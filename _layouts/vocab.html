@@ -80,7 +80,12 @@ layout: default
             {%- if e.examples %}
             <div class="vocab-examples">
               {%- for ex in e.examples %}
+              {%- if ex.en %}
+              <p lang="en">{{ ex.en | escape }}</p>
+              {%- if ex.zh %}<p class="vocab-ex-zh" lang="zh">{{ ex.zh | escape }}</p>{% endif %}
+              {%- else %}
               <p lang="en">{{ ex | escape }}</p>
+              {%- endif %}
               {%- endfor %}
             </div>
             {%- endif %}

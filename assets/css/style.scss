@@ -591,6 +591,14 @@ $vocab-mono: "SFMono-Regular", Menlo, Consolas, monospace;
     font-style: italic;
     color: $vocab-ink;
   }
+
+  // 例句译文紧跟在英文下面，和下一句例句之间留出间隔，方便逐句对照
+  p.vocab-ex-zh {
+    margin: 0 0 0.45rem;
+    font-size: 0.9rem;
+    font-style: normal;
+    color: $vocab-muted;
+  }
 }
 
 .vocab-app .vocab-note {

@@ -2,6 +2,410 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: having a good understanding of … will allow you to better envision …
+  kind: pattern
+  meaning: 把……摸清楚，会让你更能具体地设想出……（拿事情本身当主语 + allow you to do）。
+  examples:
+  - en: And this is why having a good understanding of what building blocks are available, which I hope you have a better sense of by the end of this course as well, will allow you to better envision what agentic workflows you can build by combining these building blocks together.
+    zh: 这就是为什么，把有哪些现成构件可用摸清楚——我也希望你上完这门课能更有数——会让你更能具体地设想出：把这些构件组合起来，你能搭出什么样的 agentic workflow。
+  - en: I think the one biggest benefit of agentic workflows is that it allows you to do many tasks effectively that just previously were not possible.
+    zh: 我觉得 agentic workflow 最大的好处，就是它让你能高效地做成很多以前根本做不了的事。
+  - en: '...parallelism that lets you do certain things quite fast, as well as modularity that lets you combine the best of three components from many different...'
+    zh: ……并行能让你把某些事做得很快，模块化能让你把来自不同地方的几个最好的组件拼到一起……
+  note: |-
+    卡人的不是生词，是主谓被插进来的定语从句隔开了二十多个词：主语 having a good understanding of…，谓语要到 will allow 才出现。
+    核心是「无生命主语 + allow/let you to do」——中文习惯说「你如果懂了 X，你就能…」，主语是人；英语高频拿事情本身当主语：Understanding X will allow you to better envision Y。这门课里满地都是（上面第二、三句例句）。allow / let / enable / help 都能这么用，注意 allow 带 to、let 不带，见 [[have an LLM write the first draft]]。
+    to better envision：副词插在 to 和动词之间，英语里极常见且被接受——to better understand / to better serve you / to fully appreciate。
+    envision = vision（视觉）+ en-（使进入），关键是有画面：imagine 是想象、可能纯属虚构；envision 是设想出一个具体、可实现的未来图景，有蓝图感，商业和产品语境高频；口语版是 picture it。
+  source: Claude Code · Agentic AI 课程（构件积木）
+  added: "2026-09-21"
+- term: sequence the steps together
+  pos: v.
+  kind: phrase
+  meaning: 把若干步骤排出先后、串成一条链（动词用法）。
+  examples:
+  - en: '...trying to figure out with these building blocks, how can I sequence these building blocks together in order to carry out the tasks that I want my system to carry out.'
+    zh: ……琢磨用这些基础构件，我怎么把它们按顺序串起来，去完成我想让系统完成的那些任务。
+  - en: We build agentic workflows by taking building blocks and putting them together to sequence out these complex workflows.
+    zh: 我们做 agentic workflow，就是把这些基础构件拿过来拼到一起，排出这些复杂的工作流。
+  note: |-
+    听力盲点：脑子里只有名词「序列」，听到它当动词用就卡住。英语里名词直接拿来当动词（零转换）极其常见。
+    和 put together / combine 的区别：那两个是拼到一起、不管谁先谁后；connect 强调接得上；sequence 强调排先后，顺序本身就是重点。讲话人在讲「有哪些构件可选」时用的是 combining these building blocks together，讲「怎么搭工作流」时才换成 sequence——同一段里分工很清楚。
+    sequence out 里的 out 是「铺开、排出来」，和 [[plan out]] 的 out 同源。
+    名词用法更常见：a sequence of steps / the sequence of API calls，见 [[a deterministic sequence of steps]]。
+  source: Claude Code · Agentic AI 课程（构件积木）
+  added: "2026-09-21"
+- term: highly specialized tasks
+  pos: adj.
+  kind: phrase
+  meaning: 特别专门的活——窄领域、要专门本事才干得了的任务。
+  examples:
+  - en: For some highly specialized tasks, I might also use some other AI models, such as an AI model for converting a PDF to text or for text-to-speech or for image analysis.
+    zh: 碰上一些特别专门的活，我可能还会用上别的 AI 模型，比如专门把 PDF 转成文本的、做文字转语音的、或者做图像分析的模型。
+  note: |-
+    highly 不是「高高地」，是表程度的「高度、非常」，而且只配抽象、能分等级的形容词：highly specialized / autonomous / recommended / likely / skilled / effective / motivated。❌ highly big / highly hot。
+    和 very 的区别：very 通用；highly 更正式书面，只跟一小批带专业色彩的词搭。highly autonomous agents 是同一门课的高频搭档，出现 4 次。
+    specialized ≠ special，这是中文母语者大坑：special 是「特别的、与众不同的」（a special offer 特惠）；specialized 是「专门化的、只针对某一窄领域的」，强调分工。a special task 是一件不寻常的任务，a specialized task 是一件要专门技能才干得了的任务。
+    上面例句的下半句正好证实这个意思——PDF 转文本、文字转语音、图像分析，全是单项专用模型。
+    同词根：specialize in sth（动词，专攻）、a specialist（人，专才，对 generalist）、specialization（抽象名词，专长方向）。
+  source: Claude Code · Agentic AI 课程（构件积木）
+  added: "2026-09-21"
+- term: the building blocks of sth
+  pos: n.
+  kind: phrase
+  meaning: 构成某样东西的最基础构件（基本组成单元）——本义是积木，实际几乎都用比喻义。
+  examples:
+  - en: One important building block would be large language models or maybe large multimodal models.
+    zh: 一个重要的基础构件就是大语言模型，或者多模态大模型。
+  - en: We build agentic workflows by taking building blocks and putting them together.
+    zh: 我们做 agentic workflow，就是把这些基础构件拿过来拼到一起。
+  - en: '...trying to figure out with these building blocks, how can I sequence these building blocks together in order to carry out the tasks.'
+    zh: ……琢磨用这些基础构件，怎么把它们串成一条链，去完成我想做的任务。
+  note: |-
+    和 component / part / module 的区别：component、part 中性，就是「一个零件」；module 工程味，边界清楚可替换；building block 强调最底层、不可再分的那一层，而且暗含「能自由拼搭出各种东西」——积木的画面还在。所以说的不是「我有几个零件」，是「我手上有一套可以随便组合的基础件」。
+    高频搭配：sequence these building blocks together（串起来）、combine / put them together（拼起来）、what building blocks are available（有哪些现成构件可用）。
+    几乎总是复数，单数只在 one important building block 这种点名时用。
+    ⚠️ 真要讲小孩玩的积木，英语更常说 blocks 或 Lego——building blocks 在现代英语里主要活在比喻义上。另一个经典搭配：the building blocks of life（生命的基本组成单元，指 DNA、细胞）。
+  source: Claude Code · Agentic AI 课程（构件积木）
+  added: "2026-09-21"
+- term: I think of myself as having …
+  kind: pattern
+  meaning: 我把自己看成是……（think of A as B = 把 A 当成 B，给它一个定位或比喻）。
+  examples:
+  - en: When building agentic workflows, I think of myself as having a number of building blocks.
+    zh: 做 agentic workflow 的时候，我会把自己看成是手上有一堆积木。
+  - en: And I think of that as akin to going to a human, or in this case, going to an AI and asking it to please type out an essay for me...
+    zh: 我觉得那就好比去找个人——这里是找个 AI——跟它说，请给我打一篇文章出来……
+  note: |-
+    关键在 as：think ABOUT sth 是思考、琢磨某事；think OF A AS B 是把 A 看成 B。
+    为什么不直接说 I have a number of building blocks：那是陈述事实，而 I think of myself as having… 把话标记成「我是这么建模的」，讲方法论时既表明立场又留余地。讲课的人几乎人人都用：I think of X as… / You can think of it as…。
+    ⚠️ as 是介词，后面接名词、形容词或 -ing，绝不跟 to do：✅ as having… ❌ as to have…。见 [[have an LLM write the first draft]] 里那张「看前面挨着什么」的表。
+    解释新概念时最常用祈使句版：Think of it as a set of Lego bricks.（你就把它当成一盒乐高）
+    第二句里的 akin to（类似于、就好比）是同一套路的正式版，常连用：think of A as akin to B。
+  source: Claude Code · Agentic AI 课程（构件积木）
+  added: "2026-09-21"
+- term: the amount due
+  pos: n.
+  kind: phrase
+  meaning: 应付金额、该付的那笔钱（due 后置，相当于 the amount that is due）。
+  examples:
+  - en: '...the biller address, the amount due, which is $3,000, and the due date, which looks like it is August 20th, 2025.'
+    zh: ……开票方地址、应付金额（3000 美元），还有到期日，看着是 2025 年 8 月 20 日。
+  note: |-
+    同一句里 due 一前一后出现，意思不一样：the due DATE（前置）是「到期的、预定的」；the amount DUE（后置）是「欠着的、该付的」。
+    后置的 due 相当于省掉了 that is：the amount due = the amount that is due。
+    英语有一小批形容词，放名词后表示「此刻处于什么状态」，放名词前表示「属于哪一类」：the people present（在场的人）/ the present situation（当前局势）；the money available（能动用的钱）/ available options；the person responsible（负责这事的人）/ a responsible person（负责任的人）——最后一组说错意思全变。
+    工作里更常用的是 be due 当表语：The payment is due on the 15th. / The report is due Friday. / Rent is due.
+    ⚠️ 别和 due to（由于、因为）混。
+    顺带：past due / overdue = 逾期，the balance due = 应付余额。
+  source: Claude Code · Agentic AI 课程（发票处理例子）
+  added: "2026-09-21"
+- term: pull out the required information
+  pos: v.
+  kind: phrase
+  meaning: 把埋在一大坨内容里的信息一块块摘出来（抽取）。
+  examples:
+  - en: After a PDF invoice has been converted to text, the first step is to pull out the required information, the name of the biller, the address, the due date, the amount due, and so on.
+    zh: PDF 发票转成文本之后，第一步是把需要的信息摘出来：开票方名称、地址、到期日、应付金额等等。
+  note: |-
+    和 pull up 的区别在「东西原来在哪」，不在取这个动作：
+    pull OUT——东西埋在一大坨里（整段发票文本），要一块块抠出来，out 是从里面出来，等于口语版的 extract；
+    pull UP——已经是一条现成的记录（数据库里的 customer record），只是没显示，up 是调到你眼前，等于 retrieve / display。见 [[pull up the customer record]]。
+    最硬的证据：讲话人下一句自己换了正式词——if I want to check that the information was extracted。
+    ⚠️ 别当硬规则：同一位讲话人在另一集讲同一个发票任务时说的是 pull up the required fields。口语里两者有重叠，母语者不严格区分。自己用时按「东西原来在哪」选。
+    pull out 的另外两个常用义：pull out of the driveway（把车倒出来）、pull out of the deal（退出交易）。
+  source: Claude Code · Agentic AI 课程（任务分解·发票例子）
+  added: "2026-09-21"
+- term: give sb the option to do sth
+  kind: pattern
+  meaning: 给某人/某个东西一个「可做可不做」的口子——重点是选择权，做不做由它自己定。
+  examples:
+  - en: '...this third step is also doable with an LLM if I give the option to call an API to send an email.'
+    zh: ……第三步用 LLM 也做得了，只要我给它一个调 API 发邮件的口子。
+  - en: '...you may even add a human in the loop step where the LM has the option to request human review.'
+    zh: ……你甚至可以加一个人工介入的环节，让模型可以选择请人来审一下。
+  note: |-
+    option 给的不是能力，是选择权。同一门课里三个说法分得很清楚：
+    give it the ABILITY to send an email = 技术上做得到；
+    give it the OPTION to send an email = 动作摆在它面前，调不调它自己决定；
+    give it ACCESS to the orders database = 有权限用上这个资源。
+    讲话人强调的是 LLM 自己判断要不要发这封邮件，这正是 agentic 的核心，所以只能用 option。
+    冠词是 the 不是 an：后面跟 to do sth 把这个选项说死了（发邮件这一个特定选项）。give them an option 也说得通，但那是泛指「给一个选择」，语感不同。
+    换视角：给予方用 give sb the option，拥有方用 have the option（第二句例句）。
+    ⚠️ 第一句口语里省了间接宾语，完整该是 if I give it the option to…，自己写别漏。
+    关联：optional（可选、不强制）、keep your options open（先别把路堵死）。
+  source: Claude Code · Agentic AI 课程（任务分解·客服例子）
+  added: "2026-09-21"
+- term: have an LLM write the first draft
+  kind: pattern
+  meaning: 让某人/某个东西去做某事——have + 宾语 + 动词原形，中间不带 to。
+  examples:
+  - en: You can feed the downloaded web pages into an LM to have it write the first draft.
+    zh: 你可以把下载下来的网页喂给模型，让它先写个初稿。
+  - en: '...can actually let it do certain tasks much faster than the non-parallel sequential way.'
+    zh: ……其实能让它把某些任务做得比一步步串行快得多。
+  - en: By having two simulated agents... you can have them go back and forth to iterate to get a better output.
+    zh: 让两个模拟出来的 agent……你可以让它们来回过几轮，迭代出更好的结果。
+  note: |-
+    have / let / make 后面接宾语 + 动词原形，不带 to。❌ have it to write / let it to do。
+    同样是「让它做」，换成 get / ask / prompt 就必须带 to，这组对比最容易错：
+    have an LLM write the draft（原形）
+    get an LLM to write the draft（带 to）
+    ask it to write the draft（带 to）
+    prompt it to write the draft（带 to）见 [[prompt the LLM to do sth]]
+    have 的语气最中性、最像「安排它去做」，get 隐含「费了点劲让它做」，ask / prompt 是「发指令」。
+  source: Claude Code · Agentic AI 课程
+  added: "2026-09-21"
+- term: The second step would be to do sth
+  kind: pattern
+  meaning: 第二步就是做某事（主语是「步骤、目标、职责」这类指一件事的词时，后面用不定式说明内容）。
+  examples:
+  - en: The second step would be to then find the relevant customer records.
+    zh: 第二步就是去找出对应的客户记录。
+  - en: The first step that a human customer service specialist might carry out might be to first extract the key information.
+    zh: 人工客服专员会做的第一步，可能是先把关键信息抽出来。
+  note: |-
+    「名词 + be + to do sth」是讲流程的固定套路：The first step is to… / The goal here is to… / My job is to…。
+    为什么不用 doing：两个语法都对，但 The step is TO find 指向待执行的动作（讲 workflow 的默认选择），The step is findING 更像静态下定义。
+    讲话人接着说的 So to write and generate the relevant database queries… 是个残句——省掉了重复的 The second step would be，直接从 to 接着讲，把上一句换个更具体的说法重说一遍。
+    ⚠️ 那个 So 不是「所以」，是「也就是说、具体来讲」，没有因果关系。中文母语者容易默认读成因果。
+    to then find 是不定式中间插词（split infinitive），学校语法说不该拆，口语里天天这么说，不用纠结。
+  source: Claude Code · Agentic AI 课程（任务分解·客服例子）
+  added: "2026-09-21"
+- term: pull up the customer record
+  pos: v.
+  kind: phrase
+  meaning: 把存着的记录、数据调出来摆在眼前看（调出、拉出来）。
+  examples:
+  - en: So to write and generate the relevant database queries to pull up the order of what the customer had ordered and when it shipped and so on.
+    zh: 也就是写出相应的数据库查询语句，把这个订单调出来——客户订了什么、什么时候发的货，等等。
+  - en: And I might also have tools to retrieve information, to pull up data from a database.
+    zh: 我还可能配一些工具去取信息，比如从数据库里把数据调出来。
+  - en: And lastly, having pulled up the customer record or the customer order record, I might then write and send a response back to the customer.
+    zh: 最后，把客户记录、也就是那条订单记录调出来之后，我就可以写一封回信发回给客户了。
+  note: |-
+    画面：东西存在库里、文件里，pull up 是从底下拽上来、摆到你眼前的屏幕上。
+    和更正式的 retrieve 的区别（上面第二句例句里两个并排出现）：retrieve 是书面、技术文档用词；pull up 是口语，而且特指「调出来看」，潜台词是眼前有块屏幕。find / query 只是找到、查询，不强调结果摆在眼前。
+    客服、技术支持打电话时的高频词：Let me pull up your account.（我调一下您的账户）、pull up the dashboard、pull up the file。
+    第一句例句的结构别读岔：并列的是 write and generate（都挂在前一个 to 上），后面的 to pull up 是目的——查询语句用来干什么。write and generate 是口语里的同义叠用，就是「写出来」一个意思。
+  source: Claude Code · Agentic AI 课程（任务分解·客服例子）
+  added: "2026-09-21"
+- term: decide that sth isn't good enough
+  kind: pattern
+  meaning: 看过之后判断、认定某样东西还不够好（decide 在这里是「断定」，不是「决定」）。
+  examples:
+  - en: '...and then maybe decided that still isn''t good enough, and took one of the steps and further decomposed it into three more steps.'
+    zh: ……然后可能又判断这样还是不够好，于是挑出其中一步，再往下拆成三步。
+  - en: I started off with direct generation, just one step, decided it wasn't good enough, and so broke that down into three steps.
+    zh: 我一开始是直接生成，就一步，判断这样不够好，于是把它拆成了三步。
+  note: |-
+    中文母语者最容易读岔的义项：decide TO do sth 才是「决定去做」；decide (that) + 从句是「得出结论、断定」。
+    和更朴素的 think 的区别：think it isn't good enough 是觉得、可能随口说；decided it wasn't good enough 是看过之后下了判断，而且要照这个判断行动——所以后面几乎总跟着一个动作（上面例句里就是 and so broke that down）。conclude 意思接近但书面得多。
+    讲自己怎么一步步迭代时特别好用。
+    口语里基本都省掉 that：decided it wasn't good enough。
+    ⚠️ 第一句例句按语法该是 that still wasn't good enough（和前半句时态对齐），讲着讲着切回现在时是真实口语的滑动，别学。
+  source: Claude Code · Agentic AI 课程（任务分解）
+  added: "2026-09-20"
+- term: a critique of sth
+  ipa: /krɪˈtiːk/
+  pos: n.
+  kind: phrase
+  meaning: 对某样东西摆事实讲理由地评一遍：哪儿好、哪儿不行、为什么（评点、评析）。
+  examples:
+  - en: And then based on my own critique of my own essay, I'll revise the draft.
+    zh: 然后根据我自己对自己文章的评点，我再去改稿。
+  - en: And if I then take this critique and feed it back to the model...
+    zh: 然后我把这份评点拿去喂回给模型……
+  - en: '...instead of having the same model critique itself, you can imagine having a critique agent.'
+    zh: ……与其让同一个模型自己评自己，你也可以设一个专门做评点的 agent。
+  note: |-
+    读音重音在后：/krɪˈtiːk/，尾音 -teek。别读成 /ˈkrɪtɪk/——那是 critic（评论家）。
+    和 criticism 的区别是关键：criticism 默认偏负面，就是批评、指责，要中性得加词（constructive criticism）；critique 中性偏专业，自带「有分析、成体系」的意思，不用加 constructive。影评、论文评审、code review 给的都是 critique。
+    上面例句的讲话人把这个区别演得很清楚：prompt 里要求 LLM 时说 give constructive criticism，回头指代那份结果时直接说 take this critique。
+    也能当动词：critique sth（评点、审视）；作定语：a critique agent。
+    ⚠️ 别和 critical 混：技术语境里 critical 几乎都是「关键的、要命的」（mission-critical），不是「批评的」。
+  source: Claude Code · Agentic AI 课程（反思模式）
+  added: "2026-09-20"
+- term: read sth over
+  pos: v.
+  kind: phrase
+  meaning: 把写好的东西回头通读一遍，目的是找出该改的地方（过一遍、检查）。
+  examples:
+  - en: '...but write the first draft and then read over it, which is another step that the LLM is pretty decent at.'
+    zh: ……而是先写个初稿，然后回头通读一遍——这也是 LLM 做得挺不错的一步。
+  note: |-
+    over 是「从头到尾把表面扫一遍」的 over，像手掌从纸面抹过去：重点不是逐字精读，是快速完整地过一遍看哪儿不对。
+    和光说 read it 的区别：read it over 读的是已经写好的东西，而且带着检查的目的，自带「回头看、挑毛病」的意味——上面那句之后接的就是 based on my own critique, I'll revise the draft，read over 是为了改而读。
+    近邻：read through 强调整篇从头读到尾（read through the specs）；go over 范围最广，可读可讨论可复习，还常是跟人一起过一遍，见 [[go over]]；proofread 专挑错别字语法。
+    词序：read it over 更常见（代词夹中间），read over it 也听得到，上面例句就是。
+  source: Claude Code · Agentic AI 课程（任务分解）
+  added: "2026-09-20"
+- term: do sth in one go
+  kind: phrase
+  meaning: 一口气做完，不分次、中间不停。
+  examples:
+  - en: Asking it to please type out an essay for me by writing from the first word to the last word all in one go and without ever using backspace.
+    zh: 就好比让它给我打一篇文章，从第一个字写到最后一个字一口气写完，中间一次退格都不许按。
+  - en: So, instead of writing the essay in one go, you might instead have it write the first draft...
+    zh: 所以，与其一口气把整篇写完，不如让它先出个初稿……
+  note: |-
+    go 在这里是「一次尝试、一个回合」（have a go at sth = 试一把），in one go = 在一个回合里做完。
+    和更常用的 all at once 的区别：all at once 侧重「同时、一下子全部」（也能表示突然）；in one go 侧重「不分次、中间不中断」——强调没拆成几轮。
+    常加 all 加强：all in one go。近义：in one sitting（一次坐下来做完，多用于读/写）、in one shot（美式口语）。
+    ❌ on one go / at one shot——介词一律是 in：in one go / in one shot / in one sitting。
+  source: Claude Code · Agentic AI 课程（任务分解）
+  added: "2026-09-20"
+- term: decompose sth into steps
+  ipa: /ˌdiːkəmˈpəʊz/
+  pos: v.
+  kind: phrase
+  meaning: 把一个整块的任务按结构卸成能单独执行的小步骤（分解）。
+  examples:
+  - en: Let's look at the second example of how to decompose complex tasks into smaller steps.
+    zh: 我们来看第二个例子，看看怎么把复杂任务拆成更小的步骤。
+  - en: And is it possible to decompose this further or break this down into even smaller steps?
+    zh: 那这个还能不能再往下拆、拆成更小的步骤？
+  - en: As I take a task and decompose it into steps...
+    zh: 当我拿到一个任务、把它拆成一步步的时候……
+  note: |-
+    compose 是把零件拼成整体，de- 反过来：整体卸回零件。重点是拆出来的每一块本身要能单独执行，不是砸碎。
+    和更常用的 break sth down 的区别（上面第二句例句里两个并排出现）：break down 是日常口语、什么都能用；decompose 正式、工程味重，是技术文档、讲课、论文里的说法。
+    ⚠️ 口语里少用——decompose 还有个日常义是腐烂、分解（落叶、尸体），跟同事随口说 let me decompose this problem 有点学究气，说 let me break it down 才自然。
+    名词 decomposition 更常见：task decomposition（任务分解）。
+    常见搭配：decompose sth further（在已经拆过的基础上再拆一层）。
+  source: Claude Code · Agentic AI 课程（任务分解）
+  added: "2026-09-20"
+- term: be consistent with sth
+  ipa: /kənˈsɪstənt/
+  pos: adj.
+  kind: phrase
+  meaning: ①（和另一样东西）对得上、不打架、不矛盾。②（表现、质量）稳定、始终如一。
+  examples:
+  - en: You know, the start of the article didn't feel completely consistent with the middle, didn't feel completely consistent with the end.
+    zh: 就是那种感觉——文章开头跟中间不太对得上，跟结尾也不太对得上。
+  note: |-
+    con-（一起）+ sistere（站立）：两样东西站在一起不打架。
+    和 the same as 的区别是关键，也是中文「一致」最容易带偏的地方：the same as 是完全一样，consistent with 是可以不一样、但不矛盾、接得上。文章开头和中间本来就不该一样，问题在于对不上——这正是上面那句例句里 disjointed 的病根，见 [[sth feels a bit disjointed]]。
+    not completely consistent =「不太」对得上（留余地）；completely not consistent =「完全」对不上（说死了）。抱怨时几乎都用前者，听着不冲。
+    义项②别和 constant 混：consistent 是每次都一样好，constant 是一直不停。
+  source: Claude Code · Agentic AI 课程（任务分解）
+  added: "2026-09-20"
+- term: This has actually happened to me.
+  kind: pattern
+  meaning: 这事我还真遇到过（用来说明刚讲的不是假设，是亲身经历）。
+  examples:
+  - en: This has actually happened to me.
+    zh: 这事我还真遇到过。
+  note: |-
+    actually 在这里不是「其实」，是把假设拽回现实的「还真」：前一句刚说「你可能会发现文章有点接不上」，这句表态——不是我编的例子，我亲身踩过。
+    用现在完成时 has happened 而不是 happened：不指哪一次、什么时候，只说「我有过这段经历」；说 This actually happened to me 听着像在指某一次具体的事。
+    说自己经历的标准顺序：先完成时铺「我经历过」，再切一般过去时讲那一次（原文下一句就是 I once built a research agent…）。
+    换主语直接能用：This has actually happened to us.
+    ❌ happen on me / happen with me——固定是 happen to sb。
+  source: Claude Code · Agentic AI 课程（任务分解）
+  added: "2026-09-20"
+- term: sth feels a bit disjointed
+  ipa: /dɪsˈdʒɔɪntɪd/
+  pos: adj.
+  kind: phrase
+  meaning: 东一块西一块、各部分接不上，拼不成一个整体（不连贯、割裂）。
+  examples:
+  - en: Maybe the essays feel a little bit disjointed.
+    zh: 可能你会觉得，那些文章读起来有点东一块西一块、接不上。
+  - en: I once built a research agent using this workflow, but when I read the output, it felt a bit disjointed.
+    zh: 我以前用这套流程做过一个研究 agent，但我读它输出的东西时，觉得有点前后接不上。
+  - en: Reflect on how you would change the workflow if you as a human found that the essay is a little bit disjointed.
+    zh: 想一想：如果你自己作为人来读，发现这篇文章有点接不上，你会怎么改这套流程。
+  note: |-
+    joint 是关节、接缝，dis- 把它拆掉 → 各块之间的接缝断了。
+    比更常用的 not coherent / doesn't flow 更具体：不是逻辑错，是开头、中间、结尾各说各的，像拼贴出来的。上面那句例句的下一句就是它的定义——the start didn't feel consistent with the middle。
+    常配感受类动词：feel / sound / seem disjointed，说的是读者的观感，不是客观判定。
+    也能说人：disjointed thinking（思路跳跃）、a disjointed conversation（聊得东一句西一句）。
+  source: Claude Code · Agentic AI 课程（任务分解）
+  added: "2026-09-20"
+- term: first vs firstly
+  kind: contrast
+  meaning: first 能给动作排先后（first do sth, then …），也能在句首列论点；firstly 只在句首列论点（Firstly, … Secondly, …），不插在动词前排步骤。
+  examples:
+  - en: such as first write an essay outline, and then search the web
+    zh: 比如先写一份文章大纲，然后上网搜索。
+  - en: Firstly, we never expose internals.
+    zh: 第一，我们绝不暴露内部实现。
+  - en: we need to firstly think about what kind of knowledge base we should maintain
+    zh: 我们需要先想清楚该维护什么样的知识库。
+  note: |-
+    第一句是给动作排顺序，只能用 first。
+    第二句是在列论点，firstly 放句首加逗号，没问题；换成 First, 也对，而且美式英语更常用 First。
+    第三句是非母语者常见的用法：firstly 插在 to 和动词中间（to firstly think），母语者会说 need to first think about。
+    记法：分不清就一律用 first —— 它两种位置都能用；firstly 只能用在句首列论点，还带点英式、偏书面的味道。
+  source: Claude Code · Agentic AI 课程
+  added: "2026-09-20"
+- term: first do sth, and then do sth
+  kind: pattern
+  meaning: 先做这个、再做那个 —— first 是副词，放在动词原形前面给步骤排号（首先、先）。
+  examples:
+  - en: would you take multiple steps, such as first write an essay outline, and then search the web, and then based on the input from the web search, write the essay
+    zh: 你会分几步走吗？比如先写一份文章大纲，然后上网搜索，再根据搜索结果把文章写出来。
+  - en: You may ask it to first write an essay outline on a certain topic, then ask if it needs to do any web research.
+    zh: 你可以让它先就某个主题写一份文章大纲，然后问它需不需要上网查资料。
+  note: |-
+    为什么不用 write ... first：first 放句尾是『先做完这件再说』，强调顺序上的优先；放动词前是在列步骤，后面自然接 then / and then，读起来像一份清单。
+    结构：such as 后面直接跟 first write（省略主语的动词原形），与 take multiple steps 并列，不是 first 修饰名词 —— ❌ 别理解成『第一篇写作』。
+    也常见 ask sb to first do sth（分裂不定式，口语里很自然）。
+  source: Claude Code · Agentic AI 课程
+  added: "2026-09-20"
+- term: doesn't go as deep into sth as you want it to
+  kind: pattern
+  meaning: 没挖到你想要的那个深度（不够深入）。
+  examples:
+  - en: you may find that the LLM output covers only the surface level points, or maybe covers only the obvious facts, but doesn't go as deep into the subject as you want it to.
+    zh: 你可能会发现 LLM 的输出只讲了表面的要点、或者只讲了显而易见的事实，没有像你希望的那样，深入到这个主题里去。
+  note: |-
+    拆开是三层：go deep into sth（深入某个主题）+ not as … as …（没达到……的程度）+ want it to（后面省了 go，英语里 to 结尾省掉重复动词很常见）。
+    比 isn't detailed enough 多了「深度」的画面：detailed 是细节多不多，go deep 是往下挖得够不够。
+    常见：go deeper into sth、dig deeper into sth。
+  source: Claude Code · Agentic AI 课程
+  added: "2026-09-20"
+- term: cover only the surface level points
+  kind: phrase
+  meaning: 只讲到表面那一层的要点、没往深处挖——像只在水面上划了一下（浅层的、流于表面的）。
+  examples:
+  - the LLM output covers only the surface level points
+  note: |-
+    为什么不用 shallow / simple points：surface-level 自带「底下还有更深的东西没碰到」的画面，是在评价深度不够；shallow 贬义更重，像在说肤浅；simple 只说简单，没有「没挖深」的意思。
+    书面常加连字符：surface-level points / a surface-level analysis。
+    相关说法：scratch the surface（只触及皮毛）；反义：go deeper / in-depth analysis。
+    常和 cover 搭：cover the surface-level points（覆盖的只是表层要点）。
+  source: Claude Code · AI 课程转录
+  added: "2026-09-20"
+- term: prompt the LLM to do sth
+  kind: pattern
+  meaning: 给大模型发指令、让它去做某事——prompt 当动词，本义是「提词、推一把让人开口/行动」（提示、驱使）。
+  examples:
+  - one thing you could do is prompt an LLM to have it generate an output directly
+  - you can prompt the LLM to read the essay
+  - the same LLM model prompted this way may be able to point out some problems
+  note: |-
+    为什么不说 ask the LLM to：ask 是日常说法，完全能用；prompt 是这个领域的术语，暗含「精心写一段输入去引导模型」，还能说 prompted this way（用这种方式提示）、prompting a single time 这类 ask 说不顺的话。
+    句型同 ask / tell：prompt sb to do sth。
+    动名词 prompting = 写提示词这件事；名词 a prompt = 那段提示词（enter a prompt）。
+    日常义：The error prompted a review（那个错误促使我们复查）——「引发、促使」，主语常是事件。
+  source: Claude Code · AI 课程转录
+  added: "2026-09-20"
+- term: take the example of doing sth
+  kind: pattern
+  meaning: 「拿…来举例」——讲完一个道理，挑一个具体情况摆到桌上细讲（以…为例）。
+  examples:
+  - So take the example of writing an essay about black holes
+  - Take the example of building a research agent
+  - Take the example of responding to basic customer order inquiries
+  note: |-
+    为什么不用 for example：for example 只是顺手插一个例子，说完就过去；take the example of 是祈使句，像在说「来，咱们拿这个当例子好好看看」，后面通常要展开讲一大段。讲课、演讲里用来切换到案例。
+    这里的 take = 取来当作（take X as Y 的意思），和 take sth and break it down 里只是「拿起材料」的 take 不一样。
+    同义：take X as an example（更常见、更书面）；Let's say …（更口语，偏假设）。
+    of 后面接名词或 doing：❌ take the example of write an essay。
+  source: Claude Code · AI 课程转录
+  added: "2026-09-20"
 - term: steps for the workflow to follow
   kind: pattern
   meaning: 名词 + for sb + to do：「给某人去做的名词」——不定式放在名词后面修饰它，for 引出谁来做（供…去…的）。
@@ -174,7 +578,8 @@
   kind: pattern
   meaning: 我从来没想到过…… —— 这个念头从没自己冒进我脑子里。
   examples:
-  - That aspect of handwriting had never occurred to me before.
+  - en: That aspect of handwriting had never occurred to me before.
+    zh: 手写的那一面，我之前从来没想到过。
   note: |-
     主语是「想法」不是人，所以是 it occurred to me，❌ 不能说 I never occurred that…。
     和 I never thought 的区别：I never thought 是我没这么认为过；it never occurred to me 强调这个念头压根没冒出来，带一点恍然大悟的味道。
@@ -184,7 +589,8 @@
   kind: phrase
   meaning: 直接对着某人说话（而不是对着全场）。
   examples:
-  - I didn't listen to much other than when she was addressing me directly.
+  - en: I didn't listen to much other than when she was addressing me directly.
+    zh: 除了她直接冲我说话的时候，别的我基本没听。
   note: |-
     address 的本义是「把东西朝某个对象送过去」：对人是向某人讲话，对事是处理某件事（见 address sth）。
     和 talk to sb 的区别：talk to 就是聊天；address sb 更正式，常指在有其他人在场的场合专门冲着某个人讲。
@@ -194,7 +600,8 @@
   kind: phrase
   meaning: 在下面那边（比说话人低的某处）。
   examples:
-  - We gotta go help fix a toddler issue down there now.
+  - en: We gotta go help fix a toddler issue down there now.
+    zh: 我们现在得去下面那边，帮忙处理一下小孩的事。
   note: down / up / over + there 用来给方位加个方向感，比单说 there 具体。楼下是 downstairs，楼上是 upstairs。
   source: Notion · Daily
   added: "2026-09-16"
@@ -768,8 +1175,12 @@
   kind: phrase
   meaning: 非此即彼的二元判断。
   examples:
-  - …as an adjective rather than a binary.
-  note: 和 either-or / yes-or-no 的区别：binary 借自计算机的 0 / 1，听起来像术语；拿来当名词说 a binary，常带着批评「把连续的东西硬分成两类」的意味。
+  - en: I thought if we use it as an adjective rather than a binary, it's either an agent or not, then we're going to have to acknowledge that systems can be agentic to different degrees.
+    zh: 我当时想，如果我们把它当成一个形容词、而不是非此即彼的二选一——要么是 agent、要么就不是——那我们就不得不承认：系统可以在不同程度上是 agentic 的。
+  note: |-
+    和 either-or / yes-or-no 的区别：binary 借自计算机的 0 / 1，听起来像术语；拿来当名词说 a binary，常带着批评「把本来连续的东西硬切成两类」的意味。
+    句式是「X rather than a binary」，X 一定是能分程度的东西：an adjective / a spectrum / a matter of degree。单独否定时说 it's not a binary（这事不是非黑即白），见 [[sit anywhere on the spectrum]]。
+    注意 binary 在技术语境里的另一个意思是「编译出来的可执行文件」（ship a binary），那个是具体的东西，和这里的二元对立无关，靠上下文分。
   source: English Teacher · Agentic as a spectrum
   added: "2026-09-10"
 - term: carry out
@@ -805,8 +1216,10 @@
   kind: phrase
   meaning: 同样的输入必定给出同样的输出，不掷骰子（确定性的）。
   examples:
-  - The retry order isn't deterministic, which is why the test is flaky.
-  - a fully deterministic sequence of steps
+  - en: The retry order isn't deterministic, which is why the test is flaky.
+    zh: 重试的顺序不是确定的，所以这个测试才会时好时坏。
+  - en: a fully deterministic sequence of steps
+    zh: 一串完全确定的步骤。
   note: |-
     vs predictable / consistent：predictable 是大致能猜到；consistent 是表现一贯；deterministic 是严格的术语——给定输入，输出必然唯一，出现一次反例就不成立。
     反面是 non-deterministic / flaky。LLM 相关讨论里高频。
@@ -855,8 +1268,10 @@
   kind: phrase
   meaning: 像扣扳机一样，条件一到就瞬间打出去（规则、告警被触发）。
   examples:
-  - The rule fired on every transaction over $500.
-  - Claude Code fires around 30 hook events over the course of a session.
+  - en: The rule fired on every transaction over $500.
+    zh: 只要交易超过 500 美元，这条规则就会被触发。
+  - en: Claude Code fires around 30 hook events over the course of a session.
+    zh: 一次会话下来，Claude Code 大约会打出 30 个 hook 事件。
   note: |-
     比喻来源是「发射」—— 一次性的瞬时信号，打完就结束，不是持续状态。
     vs trigger：意思一样，但在风控、监控、事件系统里 a rule fires 比 a rule is triggered 地道 —— 用主动态，规则自己打出来，不强调「谁触发了它」。近义还有 emit（抛出）、dispatch（派发），文档里 fire 最自然。
@@ -891,8 +1306,10 @@
   kind: phrase
   meaning: 像两条船并排靠在一起，各走各的、谁也不挡谁（在……旁边、与……同时进行）。
   examples:
-  - Claude creates in a dedicated window alongside your conversation.
-  - Components run alongside yours.
+  - en: Claude creates in a dedicated window alongside your conversation.
+    zh: Claude 在一个独立的窗口里创作，和你的对话并排放着。
+  - en: Components run alongside yours.
+    zh: 这些组件和你自己的组件并排跑着，互不干扰。
   note: |-
     本义是船并排靠岸（along + side），所以画面是平级共存 —— 说 runs alongside yours 等于排除了两种想象：既不是关在隔离沙箱里，也不是把你原来的替换掉。
     vs next to：next to 只说位置挨着，不含"同时在进行"。
@@ -905,8 +1322,10 @@
   kind: phrase
   meaning: 主角走的时候顺手把它也带上（连同、随附）。重点在前面那个，后面是捎带的。
   examples:
-  - I sent an email along with the spreadsheet.
-  - …along with a plain warning that Anthropic doesn't control third-party plugins.
+  - en: I sent an email along with the spreadsheet.
+    zh: 我发了封邮件，顺带把表格一起附上了。
+  - en: …along with a plain warning that Anthropic doesn't control third-party plugins.
+    zh: ……同时附上一句明白话的提醒：Anthropic 管不着第三方插件。
   note: |-
     vs and：and 是并列，两边一样重；along with 明确有主次 —— 邮件是主角，表格是附件。
     vs alongside：alongside 两边平级、各自独立进行；along with 是捎带关系。
@@ -1060,8 +1479,10 @@
   kind: phrase
   meaning: 手扶着舵给方向，中途还能随时纠偏（引导、把方向）。
   examples:
-  - Steer the approach before work begins and while it runs.
-  - Steering long sessions — keeping a long task from drifting off course.
+  - en: Steer the approach before work begins and while it runs.
+    zh: 开工之前先把方向定下来，干的过程中也随时把着舵。
+  - en: Steering long sessions — keeping a long task from drifting off course.
+    zh: 把控长会话——别让一个长任务跑偏。
   note: |-
     vs direct / instruct：这两个是下指令，把事情交代死；steer 只给方向、随时微调，不替对方决定每一步——管理和 AI 协作语境偏爱它就是因为这层分寸。
     原意是掌舵。常见：steer the conversation / the approach、steer sb away from sth。
@@ -1094,9 +1515,12 @@
   kind: pattern
   meaning: 把两样东西摆在一起比，重点是「是这个，而不是那个」（= as opposed to），不是「A 对决 B」。
   examples:
-  - One engineer, one prompt, one task — versus in the new platform, it actually has campaigns.
-  - you can see that the individual versus institutional
-  - It is all real dollars flowing versus speculative utilization.
+  - en: One engineer, one prompt, one task — versus in the new platform, it actually has campaigns.
+    zh: 一个工程师、一条提示词、一个任务——而在新平台上，它其实是有 campaign 这个概念的。
+  - en: you can see that the individual versus institutional
+    zh: 你可以看出来，个人那边和机构那边是不一样的。
+  - en: It is all real dollars flowing versus speculative utilization.
+    zh: 这些全是真金白银在流动，而不是投机性的用量。
   note: |-
     为什么值得刻意练：中文使用者一般只会写 vs、不会说。但英语会议里 versus 是当连词用的 —— 后面可以直接跟一整个从句（versus in the new platform, it has…），语法上不严谨，会上却极常见。能顺口说出来，对比就讲得又快又清楚。
     vs rather than：rather than 更书面、两边结构要对称；versus 口语，两边可以一长一短、不对称。
@@ -1279,10 +1703,12 @@
   kind: phrase
   meaning: 不含糊地把具体的那一项、那个值点出来（明确指定）。specific（具体的）的动词形式。
   examples:
-  - This is where we specify the protocol.
-  - Each policy specifies a set of trigger conditions.
-  - in GCP Secrets Manager, you can specify like, oh, when does the key expire
-  - AI will figure out how to construct test cases to satisfy the requirements I specified in the skills
+  - en: This is where we specify the protocol.
+    zh: 协议就是在这里指定的。
+  - en: in GCP Secrets Manager, you can specify like, oh, when does the key expire
+    zh: 在 GCP Secrets Manager 里，你可以指定比如这个密钥什么时候过期。
+  - en: AI will figure out how to construct test cases to satisfy the requirements I specified in the skills
+    zh: AI 会自己想办法构造测试用例，来满足我在 skill 里指定的那些要求。
   note: |-
     vs say / tell：说话式的词，听起来像随口讲的；specify 暗示这是写下来的、有约束力的取值，别人照着做就行。
     vs define：define 是下定义、划出边界（什么算 X）；specify 是在边界内填上具体的值（X 取 3）。describe 只是描述，不带规定性。
@@ -1439,10 +1865,12 @@
   kind: pattern
   meaning: 把表面那些细节都剥掉之后，它其实就是……（本质上、说白了）。
   examples:
-  - Essentially, it's the same code path with a different config.
-  - It's essentially a static analyzer — it parses the SQL and flags queries that would miss an index.
-  - I essentially didn't have to keep repeating myself to Claude
-  - for every capability that we built, we essentially had to follow like a specific workflow
+  - en: It's essentially a static analyzer — it parses the SQL and flags queries that would miss an index.
+    zh: 它本质上就是个静态分析器——解析 SQL，然后把那些会漏掉索引的查询标出来。
+  - en: I essentially didn't have to keep repeating myself to Claude
+    zh: 基本上我就不用再对着 Claude 一遍遍重复自己了。
+  - en: for every capability that we built, we essentially had to follow like a specific workflow
+    zh: 我们做的每一个能力，基本上都得照着一套固定的流程走。
   note: |-
     vs basically：两个都是"说白了"，但 basically 更随意，口头禅味重；essentially 沉稳一点，暗示"我这是在给你一个准确的概括"，讲技术时更站得住。
     比它重的：fundamentally（根本上，常用于反驳）；比它书面的：in essence。
@@ -1542,67 +1970,92 @@
   note: n² = n squared · n³ = n cubed · n! = n factorial · C(n,k) = n choose k
   source: English Teacher · DFS英文含义
   added: "2026-08-04"
-- term: I knew I would regret it if I didn't speak to her
+- term: I knew I would regret it if I didn't …
   kind: pattern
-  meaning: 我知道不跟她说话我会后悔
+  meaning: 我当时就清楚，这事不做我会后悔 —— 用来讲一个当场做出的、顶着犹豫的决定。
   examples:
-  - I knew I would regret it if I didn't speak to her.
-  note: 原笔记写的 if I wouldn't have spoken 是常见错句：if 从句里不用 would。虚拟语气正确写法是 if I hadn't spoken to her, I would have regretted it。
+  - en: I knew I would regret it if I didn't speak to her.
+    zh: 我当时就知道，不去跟她说话我会后悔。
+  note: |-
+    前半截 I knew I would regret it 是要背下来的部分，整句一口气念出来就行；if 后面换成你自己的事（if I didn't take it / if I didn't ask）。
+    从句用一般过去时 didn't，不是虚拟语气 —— 因为是回到当时那个时间点，讲当时的判断。
+    ❌ if I wouldn't have spoken to her —— if 从句里不放 would，这是最常见的错法。
+    事后回看、假设一件已经没发生的事，才用虚拟语气：If I hadn't spoken to her, I would have regretted it.（语气更远，像在感叹）。
   source: Notion · Daily
   added: "2026-07-29"
 - term: all of them
   kind: pattern
-  meaning: 全部、所有这些
+  meaning: 前面提到的那一整批，一个不落（全部、所有这些）。
   examples:
-  - Which ones do you want? — All of them.
-  note: 注意 all of them 后面必须是代词或带限定词的名词（all of the files），直接说 all files 时不加 of。
+  - en: because all of them have been migrated already
+    zh: 因为它们已经全都迁移过去了。
+  - en: Which ones do you want? — All of them.
+    zh: 你要哪几个？——全都要。
+  note: |-
+    of 后面必须是代词，或带限定词的名词（all of the files）。直接说 all files 时不加 of。
+    和 everything 的区别：everything 是笼统的「一切」；all of them 指的是前面刚点过名的那一批，范围是明确的。
   source: Notion · Daily
   added: "2026-07-29"
 - term: it was ready
   kind: phrase
-  meaning: 已经准备好了
+  meaning: 该准备的都备齐了，随时可以上（已经准备好了）。
   examples:
-  - By the time we arrived, dinner was ready.
-  note: ready 描述状态而非动作。人也可以 ready：Are you ready to go? 强调"随时可以"用 ready to go。
+  - en: By the time we arrived, dinner was ready.
+    zh: 等我们到的时候，晚饭已经做好了。
+  note: |-
+    ready 说的是状态，不是动作 —— 不是「准备了」，是「处于备好的状态」。
+    人也可以 ready：Are you ready to go? 强调「随时能出发」用 ready to go。
+    和 be prepared 的区别：prepared 侧重事先做过功课、有心理准备；ready 只说当下这一刻可以开始了。
   source: Notion · Daily
   added: "2026-07-29"
 - term: other than that
   kind: phrase
-  meaning: 除此之外
+  meaning: 先把一个例外圈出来，剩下的一概肯定（除此之外）。
   examples:
-  - The room was small. Other than that, the hotel was great.
-  - I didn't listen to much other than when she was addressing me directly.
+  - en: And other than that, users also need to learn how to build the workflow.
+    zh: 除此之外，用户还得学会怎么把这套工作流搭起来。
+  - en: The room was small. Other than that, the hotel was great.
+    zh: 房间小了点。除此之外，这家酒店挺好的。
+  - en: I didn't listen to much other than when she was addressing me directly.
+    zh: 除了她直接冲我说话的时候，别的我基本没听。
   note: |-
-    用来把一个例外圈出来，剩下的一概肯定。近义 apart from that（英式）、besides that。放句首要加逗号。
+    近义 apart from that（英式）、besides that。放句首要加逗号。
     和 besides that 的区别：besides that 是「另外还有」，往上叠加；other than that 是先把例外圈出来，再对其余部分表示肯定。
-    放在句中就等于 except，此时也说 apart from：I didn't listen to much other than when she was addressing me directly.
+    放在句中就等于 except，此时也说 apart from —— 见上面第三句例句。
     和 except 的区别：except 是严格地排除；other than / apart from 更口语，还可以表示「除了……之外还有」。
   source: Notion · Daily
   added: "2026-07-29"
 - term: be sick of sth
   kind: phrase
-  meaning: 厌倦、受够了
+  meaning: 同一件事重复到让人生理性反胃，再也不想碰（厌倦、受够了）。
   examples:
-  - I'm sick of eating the same thing every day.
-  note: 后接名词或动名词。程度递增：tired of（有点烦）< sick of（受够了）< sick and tired of（忍无可忍）。
+  - en: I'm sick of eating the same thing every day.
+    zh: 天天吃一样的东西，我真是受够了。
+  note: |-
+    后接名词或动名词。
+    程度递增：tired of（有点烦）< sick of（受够了）< sick and tired of（忍无可忍）。
+    和 bored with 的区别：bored 是无聊、提不起劲；sick of 带着火气，是被烦到了。
   source: Notion · Daily
   added: "2026-07-29"
 - term: it's never-ending
   kind: phrase
-  meaning: 没完没了
+  meaning: 刚清完一轮又冒出来一轮，根本到不了头（没完没了）。
   examples:
-  - The laundry is never-ending.
+  - en: The laundry is never-ending.
+    zh: 衣服永远洗不完。
   note: |-
-    形容词写作 never-ending。抱怨重复性琐事时最常用。近义 it never stops / there's no end to it。
-    和 endless 的区别：endless 偏书面，可褒可贬（endless possibilities）；never-ending 口语，多用于抱怨。
+    形容词写作 never-ending，带连字符。抱怨重复性琐事时最常用。近义 it never stops / there's no end to it。
+    和 endless 的区别：endless 偏书面，可褒可贬（endless possibilities）；never-ending 口语，基本只用来抱怨。
   source: Notion · Daily
   added: "2026-07-29"
 - term: A and B are intertwined
   kind: phrase
   meaning: 两股东西缠成一团，抽不开了（交织、密不可分）。
   examples:
-  - Their lives have been intertwined since childhood.
-  - Billing and entitlements are so intertwined that we can't ship them separately.
+  - en: Their lives have been intertwined since childhood.
+    zh: 他们俩的人生从小就缠在了一起。
+  - en: Billing and entitlements are so intertwined that we can't ship them separately.
+    zh: 计费和权限缠得太深，没法拆开分别发布。
   note: |-
     vs connected / coupled：connected 只是连着，剪一刀就断；coupled 是工程说法，指互相依赖；intertwined 更重，是缠到理不清、分不出哪根是哪根。
     常见：tightly coupled（工程里更常说这个）、their lives are intertwined（人）。
@@ -1610,53 +2063,72 @@
   added: "2026-07-29"
 - term: vicious cycle
   kind: phrase
-  meaning: 恶性循环
+  meaning: 一环推着一环往坏里走，自己把自己越拖越深（恶性循环）。
   examples:
-  - I sleep badly, so I drink more coffee, so I sleep badly — a vicious cycle.
-  note: 反面是 virtuous cycle（良性循环）。注意别拼成 viscous（黏稠的），这两个词长得很像。
+  - en: I sleep badly, so I drink more coffee, so I sleep badly — a vicious cycle.
+    zh: 睡不好就多喝咖啡，喝了又更睡不好——恶性循环。
+  note: |-
+    反面是 virtuous cycle（良性循环）。
+    ❌ 别拼成 viscous（黏稠的），这两个词长得很像。
+    和 downward spiral 的区别：spiral 强调一路往下滑、越来越糟；vicious cycle 强调的是转回原点、循环本身在自我加强。
   source: Notion · Daily
   added: "2026-07-29"
 - term: try it out
   kind: phrase
-  meaning: 试一试
+  meaning: 真拿来用一次，看看到底行不行（试一试）。
   examples:
-  - The new place opened downstairs — let's try it out.
-  note: out 强调"实际用一次看看效果"。试穿衣服是 try it on，两者别混。
+  - en: The new place opened downstairs — let's try it out.
+    zh: 楼下新开了一家，我们去试试。
+  note: |-
+    out 是「拿出来实际走一遍」，所以 try it out 比光说 try it 更强调亲自上手验证效果。
+    ❌ 试穿衣服是 try it on，别和 try it out 混。
   source: Notion · Daily
   added: "2026-07-29"
 - term: distribute vs disturb
   kind: contrast
-  meaning: 分发 vs 打扰
+  meaning: distribute 是把东西分发下去（dis- 分开 + tribute 分配）；disturb 是打搅、惊动（dis- + turb 搅动）。两个词只是长得像，意思毫无关系。
   examples:
-  - Could you distribute the handouts? / Sorry to disturb you.
-  note: 两个词只是长得像，意思毫无关系。酒店门牌上的 Do not disturb 就是这个 disturb。
+  - en: Could you distribute the handouts?
+    zh: 你能把讲义发一下吗？
+  - en: Sorry to disturb you.
+    zh: 抱歉打扰你了。
+  note: |-
+    记法看词根：tribute 是「分配」（tribute 进贡也是往外给），turb 是「搅动」（turbulence 湍流同源）。
+    酒店门牌上的 Do not disturb 就是这个 disturb。
+    distribute 重音在第二音节 /dɪˈstrɪbjuːt/。
   source: Notion · Daily
   added: "2026-07-29"
 - term: more of
   kind: phrase
-  meaning: 更偏向于、更像是
+  meaning: 与其说是 B，不如说更接近 A —— 用来重新定性，不是直接否定（更偏向于、更像是）。
   examples:
-  - It's more of a hobby than a job.
-  note: more of a A than a B 是很好用的句型，用来修正对方的定性，而不是直接否定。
+  - en: It's more of a hobby than a job.
+    zh: 这与其说是份工作，不如说是个爱好。
+  note: |-
+    more of a A than a B 好用就好用在它不伤人：不说「你说错了」，只说「我换个说法更准确」。
+    和 rather than 的区别：rather than 是排他的二选一；more of 是程度上的偏移，两边都沾一点，只是某一边更多。
   source: Notion · Daily
   added: "2026-07-29"
 - term: by the time
   kind: phrase
-  meaning: 等到……的时候
+  meaning: 以某个时间点为界回看，那之前某件事已经发生完了（等到……的时候）。
   examples:
-  - By the time we got there, the kitchen had closed.
-  - By the time we got there, it was around 6 or 7 in the morning.
+  - en: By the time we got there, the kitchen had closed.
+    zh: 等我们到的时候，厨房已经关了。
+  - en: By the time we got there, it was around 6 or 7 in the morning.
+    zh: 等我们到那儿的时候，差不多早上六七点了。
   note: |-
-    后面接从句且不用将来时（By the time you arrive, I'll have finished）。主句常配完成时，因为强调"在那之前已经发生"。
-    后接从句，主句常用完成时表示"在那之前已发生"。注意 by the time 后不用将来时。
-    和 when 的区别：when 只标一个时间点；by the time 强调「到那个时候，某件事已经发生了」，所以常配完成时。
+    后面接从句，且不用将来时：By the time you arrive, I'll have finished（❌ By the time you will arrive）。
+    主句常配完成时，因为强调「到那个时候，某件事已经发生了」。
+    和 when 的区别：when 只标一个时间点；by the time 自带「那之前已经发生完」的意思。
   source: Notion · Daily
   added: "2026-07-29"
 - term: the number of sth is dwindling
   kind: phrase
   meaning: 一点一点少下去，越来越少（逐渐减少）。
   examples:
-  - Might I also add, the number of drinking friends has been dwindling.
+  - en: Might I also add, the number of drinking friends has been dwindling.
+    zh: 我还想补一句，能一起喝酒的朋友是越来越少了。
   note: |-
     vs decrease / drop：decrease 中性地说变少；drop 是猛地掉下去；dwindle 是缓慢流失的过程，常用进行时，还常带一点失落感。
     近义 shrink（体积缩小）、taper off（逐渐停下来）。
@@ -1664,49 +2136,65 @@
   added: "2026-07-29"
 - term: ignorance is bliss
   kind: phrase
-  meaning: 不知道反而幸福
+  meaning: 有些事不知道，日子反而过得舒坦（不知道反而幸福）。
   examples:
-  - I didn't read the reviews before going. Ignorance is bliss.
-  note: 固定谚语，多用于自嘲。完整原句是 where ignorance is bliss, 'tis folly to be wise。
+  - en: I didn't read the reviews before going. Ignorance is bliss.
+    zh: 去之前我没看评价。不知道反而开心。
+  note: |-
+    固定谚语，多用于自嘲，不用于劝别人别去了解。
+    完整原句是 where ignorance is bliss, 'tis folly to be wise。
   source: Notion · Daily
   added: "2026-07-29"
 - term: it doesn't sit right with me
   kind: phrase
-  meaning: 我总觉得这样不太对
+  meaning: 这事儿在心里放不平、总硌得慌，但说不出具体哪儿不对（我总觉得不太对劲）。
   examples:
-  - Something about that deal doesn't sit right with me.
-  note: 表达直觉上的不适，说不出具体理由。比 I disagree 柔和，适合提出模糊但真实的顾虑。
+  - en: Something about that deal doesn't sit right with me.
+    zh: 那笔交易总有哪里让我觉得不对劲。
+  note: |-
+    sit 是「在心里放着」的画面 —— 放不安稳，就是直觉上的不适。
+    和 I disagree 的区别：I disagree 要求你拿出理由；doesn't sit right 恰恰是理由还说不清的时候用的，柔和得多，适合提模糊但真实的顾虑。
   source: Notion · Daily
   added: "2026-07-29"
 - term: I'm still around
   kind: phrase
-  meaning: 我还在（没走）
+  meaning: 我人还在、随时能找到（没走、还在线）。
   examples:
-  - I'm still around if you need anything.
-  note: around 指"在附近、还在线"。下班道别常说 I'm around tomorrow if you need me。
+  - en: I'm still around if you need anything.
+    zh: 我还在，有事随时找我。
+  note: |-
+    around 指「在附近、还在线上」，不指具体位置。
+    和 I'm still here 的区别：here 指此刻这个地方；around 松一些，是「我没下班、还能联系上」，下班道别时常说 I'm around tomorrow if you need me。
   source: Notion · Daily
   added: "2026-07-29"
 - term: come across sth
   kind: phrase
-  meaning: 偶然发现、无意中看到
+  meaning: 不是去找的，走着走着撞上了（偶然发现、无意中看到）。
   examples:
-  - I went into the library this afternoon to have a look at a newspaper and I came across something really interesting.
-  note: 强调"不是刻意找的"。come across as 是另一个意思：给人留下某种印象（He comes across as shy）。
+  - en: I went into the library this afternoon to have a look at a newspaper and I came across something really interesting.
+    zh: 今天下午我进图书馆本来是想看份报纸，结果无意中碰到了一样特别有意思的东西。
+  note: |-
+    和 find 的区别：find 不区分是不是刻意找的；come across 明确说「不是刻意找的」，所以讲故事时特别有味道。
+    come across as 是另一个意思：给人留下某种印象（He comes across as shy）。
   source: Notion · Daily
   added: "2026-07-29"
 - term: shall we … then?
   kind: pattern
-  meaning: 那我们就……吧？
+  meaning: 事情谈完了，顺势提议动身（那我们就……吧？）。
   examples:
-  - So everything is ready — shall we go then?
-  note: 句末的 then 承接前面的结论，起推进作用，相当于"那就……"。英式口语高频。
+  - en: So everything is ready — shall we go then?
+    zh: 那都准备好了——我们这就走？
+  note: |-
+    句末的 then 承接前面的结论，起推进作用，相当于「那就……」。
+    和 should we 的区别：should we 是在征求意见、还没定；shall we … then 基本已经定了，只是走个过场。英式口语高频，美式更常说 ready to go?
   source: Notion · Daily
   added: "2026-07-29"
 - term: spoil ourselves
   kind: phrase
   meaning: 犒劳一下自己、享受一下
   examples:
-  - We've been working hard — let's spoil ourselves this weekend.
+  - en: We've been working hard — let's spoil ourselves this weekend.
+    zh: 这阵子够拼的了——这周末我们好好犒劳一下自己。
   note: |-
     也说 treat ourselves（更常用）。注意 spoil a child 是"宠坏孩子"，spoil the ending 是"剧透"。
     和 treat ourselves 的区别：treat 是奖励一下自己；spoil 程度更重，有「宠一下、放纵一把」的意味。
@@ -1714,17 +2202,21 @@
   added: "2026-07-29"
 - term: that sounds like a bargain
   kind: phrase
-  meaning: 听起来很划算
+  meaning: 这价钱比东西本身值的少，赚到了（听起来很划算）。
   examples:
-  - Twenty dollars for all that? That sounds like a bargain to me.
-  note: bargain 作名词是"划算的买卖"。近义 a good deal、a steal（便宜得离谱）。
+  - en: Twenty dollars for all that? That sounds like a bargain to me.
+    zh: 这么一堆才二十块？我看是挺划算的。
+  note: |-
+    bargain 作名词是「划算的买卖」，不是「讨价还价」那个动词义。
+    近义 a good deal（中性）、a steal（便宜得离谱，语气最夸张）。
   source: Notion · Daily
   added: "2026-07-29"
 - term: keen on sth
   kind: phrase
   meaning: 对某件事来劲、跃跃欲试（有兴趣的、热衷的）。
   examples:
-  - So what else? I'm feeling quite keen now.
+  - en: So what else? I'm feeling quite keen now.
+    zh: 那还有什么？我这会儿挺来劲的。
   note: |-
     vs interested：interested 只是"有兴趣"，中性；keen 带劲头，是想马上动手。
     英式常用，美式更爱说 excited / eager。
@@ -1736,7 +2228,8 @@
   kind: pattern
   meaning: 要是……就好了——比 I wish… 语气更强烈、更带遗憾/无奈，专门用来叹一件改变不了的事。
   examples:
-  - If only I had more time.
+  - en: If only I had more time.
+    zh: 要是我时间多一点就好了。
   note: 表达不能实现的愿望，后面用过去式（现在）或过去完成时（过去）。也可以单独说一句 If only. 表示"要是能这样就好了"。I wish 更中性，可以只是"希望"；if only 自带一声叹气。
   source: Notion · Daily
   added: "2026-07-29"
@@ -1744,57 +2237,76 @@
   kind: phrase
   meaning: 强烈到占据全部心思的热爱
   examples:
-  - My consuming passion for cycling keeps me training every day.
+  - en: My consuming passion for cycling keeps me training every day.
+    zh: 我对骑行那股子痴迷，让我每天都去训练。
   note: consuming 字面是"吞噬性的"，形容爱好几乎占满生活。近义 all-consuming。
   source: Notion · Daily
   added: "2026-07-29"
 - term: go for sth
   kind: phrase
-  meaning: 选择、决定要
+  meaning: 在几个选项里拍板要这个（就它了）。
   examples:
-  - So I think we'll go for the Main Hall. How much would that cost?
+  - en: So I think we'll go for the Main Hall. How much would that cost?
+    zh: 那我们就要主厅吧。这个多少钱？
   note: |-
-    点餐、选方案都能用：I'll go for the fish. 这里用 would 而不是 does，因为还没最终决定，是假设性询问。
-    和 choose 的区别：choose 偏正式；go for 口语，带「就它了」的决定感。
+    点餐、选方案都能用：I'll go for the fish.
+    和 choose 的区别：choose 偏正式、像在做决策；go for 是口语，带一股「不纠结了，就它」的劲儿。
+    上面那句用 would 而不是 does，因为还没最终敲定，是假设性询问。
   source: Notion · Daily
   added: "2026-07-29"
 - term: it's got
   kind: pattern
-  meaning: 它有（英式口语）
+  meaning: 它带有、配有（英式口语里代替 it has）。
   examples:
-  - It's got very good facilities — good quality cookers and fridges and so on.
-  note: have got 在英式口语里比 have 更常用，强调现在拥有的状态。美式更常直接说 it has。
+  - en: It's got very good facilities — good quality cookers and fridges and so on.
+    zh: 它设施很好——炉子、冰箱这些都是好货。
+  note: |-
+    have got 在英式口语里比 have 更常用，强调此刻拥有的状态，不用于习惯性动作（❌ I've got a coffee every morning）。
+    美式更常直接说 it has。缩写 it's got 里的 's 是 has，不是 is。
   source: Notion · Daily
   added: "2026-07-29"
 - term: sort sth out
   kind: phrase
-  meaning: 处理好、搞定
+  meaning: 把乱着的一摊理顺、办妥（处理好、搞定）。
   examples:
-  - That's Mr Evans — he'll sort that out with you.
-  note: 英式高频动词短语，涵盖"安排、解决、整理"。美式更常说 take care of it / figure it out。
+  - en: That's Mr Evans — he'll sort that out with you.
+    zh: 那位是 Evans 先生——他会跟你一起把这事办妥。
+  note: |-
+    sort 本义是「分类归位」，所以画面是把一堆乱的东西各归各位 —— 涵盖安排、解决、整理。
+    英式高频；美式更常说 take care of it / figure it out。
+    和 fix 的区别：fix 是修一个坏掉的东西；sort out 是理顺一摊本来就乱的事，未必有「坏」。
   source: Notion · Daily
   added: "2026-07-29"
 - term: out of
   kind: phrase
-  meaning: 从……里面（拿走）
+  meaning: 从一个容器、空间的里面出来（从……里面拿走 / 离开）。
   examples:
-  - I had some things stolen out of my bag yesterday.
-  note: 强调"从容器内部取出"，比单用 from 更具体。报案的标准说法：I want to report a theft.
+  - en: I had some things stolen out of my bag yesterday.
+    zh: 昨天我包里有些东西被偷了。
+  note: |-
+    和 from 的区别：from 只说起点在哪；out of 多了「原先在里面」这层画面，所以说包里被偷用 out of 更准。
+    报案的标准说法：I want to report a theft.
   source: Notion · Daily
   added: "2026-07-29"
 - term: come over
   kind: phrase
-  meaning: 过来（到我这里）
+  meaning: 到我这边来（通常指来家里）。
   examples:
-  - Do you want to come over tonight? / Come over when you're free.
-  note: 特指来说话人所在的地方，通常是家里。去别人那儿用 go over；随便逛过去用 drop by / pop over。
+  - en: Do you want to come over tonight?
+    zh: 今晚要不要过来？
+  - en: Come over when you're free.
+    zh: 你有空就过来。
+  note: |-
+    方向是关键：come over 是来说话人所在的地方；去别人那儿要说 go over。
+    和 drop by / pop over 的区别：那两个是顺路、短暂地晃过去；come over 是正经邀请，会待上一阵。
   source: Notion · Daily
   added: "2026-07-29"
 - term: get out to somewhere
   kind: phrase
   meaning: （特意）跑到较远的地方去
   examples:
-  - There are some really lovely things around here, but you need to get out to the small towns.
+  - en: There are some really lovely things around here, but you need to get out to the small towns.
+    zh: 这一带是有些很不错的东西，不过你得专门跑一趟那些小镇才行。
   note: out 强调"离开市区、路途不近"。近义 venture out。语气上暗示"值得专门跑一趟"。
   source: Notion · Daily
   added: "2026-07-29"

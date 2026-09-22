@@ -7,8 +7,10 @@
 #     pos: v.                     # 可选：词性
 #     kind: phrase                # 必填：下面 kinds 里的 id
 #     meaning: 催进度、追结果。     # 必填：中文释义
-#     examples:                   # 可选：原句，一行一句
-#       - I'll chase, but there's some backlog on their end.
+#     examples:                   # 可选：原句，最多三条
+#       - en: I'll chase, but there's some backlog on their end.
+#         zh: 我会去催，不过他们那边积压了一些活。   # 译文，页面上紧跟在原句下面
+#       - Some older sentence.    # 没有译文的旧条目可以直接写字符串
 #     note: 用法 / 语气 / 近义辨析   # 可选；多段用 |- 块写法
 #     source: English Teacher · 某段对话标题
 #     added: "2026-08-13"         # 加引号，按日期倒序放
