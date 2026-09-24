@@ -2,6 +2,118 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: we make returns easy
+  pos: n.
+  kind: phrase
+  meaning: 我们退货很省事（returns = 退货这件事 / 退回来的货，复数）。
+  examples:
+  - en: Unlike RivalCo, we make returns easy.
+    zh: 不像 RivalCo，我们退货很省事。
+  - en: Maybe our store allows returns only 30 days within the date of purchase, and only if the towel was unused.
+    zh: 也许我们店只允许在购买日起 30 天内退货，而且毛巾得是没用过的。
+  - en: If a return is allowed, then have the agent issue a return packing slip.
+    zh: 如果允许退货，就让 agent 出一张退货装箱单。
+  note: |-
+    returns 在电商语境里是个独立的名词，指「退货」这件事或退回来的那些货，**默认用复数**说制度和政策：make returns easy、free returns、our returns policy、handle returns。单件具体的那一次退货才用单数 a return（a return packing slip、if a return is allowed）。
+    和 refund 的区别：return 是把东西寄回去（货的流向），refund 是把钱退给你（钱的流向）——一次退货通常是 return 之后才 refund，广告里说 free returns 只承诺寄回去不要钱，没承诺退款快。
+    句子结构是 make + 宾语 + 形容词（使役）：make sth easy / simple / clear / possible，中文的「让……变得……」。宾语长时形容词还是紧跟在后面：make the process easy，❌ make easy the process。商业文案的万能句式：we make X easy = 我们把 X 这件麻烦事变简单了。
+    开头的 Unlike RivalCo 是暗踩同行的标准起手式——也正是这段课程里说的、你不希望自家 agent 说出口的那种话，见 [[do sth more than it should]]。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-23"
+- term: do sth more than it should
+  pos: adv.
+  kind: pattern
+  meaning: 做某事做得比它「该有的量」多（多到不合适、该收敛了）。
+  examples:
+  - en: Maybe you read a lot of outputs and find that it is unexpectedly mentioning your competitors more than it should.
+    zh: 你可能读了一大堆输出，结果发现它老是冷不丁提到你的竞争对手，提的次数比它该提的要多。
+  - en: Many businesses don't want their agents to mention competitors because it just creates an awkward situation.
+    zh: 很多企业不希望自家的 agent 提到竞争对手，因为那只会把场面搞得很尴尬。
+  note: |-
+    卡人的是省略：than it should 后面把 mention your competitors 整个省掉了，完整是 more than it should mention them。英语里 should / could / would / does 后面的重复动词一律省掉，只留助动词——比较从句里这是默认写法，不是口误。同型：It costs more than it used to、He knows more than he lets on。
+    注意它不是说「完全不该做」，而是「做得过量了」——该提也能提，但提太多。要说压根不该做，用 when it shouldn't / it shouldn't be doing that at all。
+    同句里的现在进行时 it is mentioning 也不是「此刻正在提」：进行时配 always / constantly / unexpectedly 这类副词，表示「反复出现的毛病」，天然带抱怨、看不顺眼的语气（He's always interrupting me）。一般现在时 it mentions your competitors 只是陈述事实，没有这层不满。
+    句型全貌：find that sth is doing X more than it should = 发现它有 X 这个过头的毛病——写 eval、提 bug、给反馈时的标准句式。前一句的 things that you wish it was doing better 是同一路数，见 [[what are the things that …]]。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-23"
+- term: And so, …
+  pos: conj.
+  kind: pattern
+  meaning: 所以说、于是——口语里承上启下，把前面铺垫的事收束成结论或下一步。
+  examples:
+  - en: And so, rather than trying to build evaluations in advance, what I recommend is you just look for the outputs and manually look for things that you wish it was doing better.
+    zh: 所以说，与其一开始就把评估都建好，我的建议是：你就先去看输出，人工找出那些你希望它做得更好的地方。
+  - en: And so to implement this, we implement an agentic workflow to carry out basically these two steps.
+    zh: 那么要把这个做出来，我们就搭一个 agentic workflow，基本上就是执行这两步。
+  - en: And so with that, I hope you have a sense of what agentic workflows can do.
+    zh: 那就到这儿，希望你对 agentic workflow 能做什么有点感觉了。
+  note: |-
+    and + so 连起来说，重音在 so。它不总是真在讲因果——很多时候只是讲者的节奏标记：一段铺垫讲完了，用它把话头收一收、转进结论或下一个动作。听的时候不必每次都译成「所以」，译成「那么」「于是」甚至不译都行。
+    vs so / therefore / that's why：单说 so 就够，and so 多一层「顺着刚才这条线往下」，语气更缓、更像在讲台上说话；therefore、as a result 是书面正式词，口语里说出来发硬；that's why 把因果明确指回前一句，指向性最强。
+    写作里句首的 And so 显得随意，正式文档、邮件少用；讲课、演示、录播里则满地都是——上面三句例句来自同一门课的三个视频。
+    固定收尾套路：And so with that, …（那就到这儿，接下来…），讲完一节课、一个 demo 时用。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-23"
+- term: what are the things that …
+  pos: n.
+  kind: pattern
+  meaning: 有哪些（东西 / 情况）会……——把答案当成一张可以一条条数的清单来问。
+  examples:
+  - en: It turns out that it's very difficult to know in advance what are the things that could go wrong.
+    zh: 事实证明，事先很难知道有哪些地方会出问题。
+  - en: Maybe I want to just quickly jump through some of the things that I mentioned, just to show you guys what it looks like.
+    zh: 要不我快速过一遍我刚提到的那几点，给你们看看大概长什么样。
+  note: |-
+    the things 不是废话：它把问题从「会出什么问题」变成「有哪些条」，暗示答案是若干条、可以一条条列。开会提问、访谈里高频，还顺带给自己半秒组织语言的时间。
+    vs 直接说 what could go wrong：后者更短、更自然，书面首选；加了 the things 更口语、更像在要一张清单。都想要时说 what are some of the things that…（更松，不要求穷尽），这是访谈里最常听到的形式。
+    语序要注意：嵌在 know / figure out / tell me 后面时，语法上该用陈述语序——know what things could go wrong / know what the things that could go wrong are。上面那句 know in advance what are the things… 保留了疑问语序，口语里极常见，但自己写别这么写。
+    同一段里的近亲：things that you wish it was doing better（你希望它做得更好的那些地方）、jump through some of the things（快速过一遍那几点）。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-23"
+- term: go into sth
+  pos: v.
+  kind: phrase
+  meaning: （把一个话题）展开来讲、讲进去（深入到细节里）。
+  examples:
+  - en: This is a subject that we'll actually go into much deeper in a later module in this course.
+    zh: 这个话题，我们在课程后面的一个模块里其实会讲得深得多。
+  note: |-
+    画面就是「走进去」——话题在外面看是个题目，go into 是走进它内部去看细节。讲课、汇报里预告「后面展开讲」几乎都用它。
+    vs [[dive deeper into]]：dive 是一头扎进水里往深处潜，生动、随意，强调深度；go into 更中性，强调「进去讲、展开讲」，讲不讲得深由后面的词决定。vs explain / discuss in detail：那两个偏书面。
+    加「多深」的标准说法有两种，别混：go into sth in more depth / in great detail（深度挂在 into 后面），或者 go much deeper into sth（deeper 紧跟动词）。上面那句 go into much deeper 是口语里把两种说法搅在一起了——听到很正常，自己写别照抄。
+    常搭配的名词：go into the details、go into the specifics、go into the weeds（钻进细枝末节，略带贬义）。否定形式极常用：I won't go into that here（这里就不展开了）。
+    另外两个常见义项，靠上下文分：① 字面进入某个系统/界面（you go into GCP and you can see…、go into Terraform）；② 进入某个行业（go into consulting）；③ go into effect = 开始生效。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-23"
+- term: a disciplined evaluation process
+  pos: adj.
+  kind: phrase
+  meaning: 有章法、不走样地照着做的（严谨、自律、不图省事）。
+  examples:
+  - en: One of the biggest predictors … is whether or not they're able to drive a really disciplined evaluation process.
+    zh: 最能看出差别的因素之一，就是他能不能把一套严谨的评估流程认真推起来、一直照着做。
+  note: |-
+    重点不在「这套流程设计得多严密」，而在「人有没有坚持照着做、不偷懒、不跑偏」。discipline 本义是纪律、训练（和 disciple 门徒同源），形容词就把这股「管得住自己」的劲带进了被修饰的名词。
+    vs rigorous / strict / careful：rigorous 说方法本身严密、经得起推敲（学术味）；strict 是对别人严格、规矩硬；careful 只是小心别出错；disciplined 说的是执行上的自律——该做的每次都做，不因为赶时间就跳过。夸一个团队、一套流程时它最常用。
+    常见搭配：a disciplined approach to sth、stay disciplined、be disciplined about sth（be disciplined about writing tests）。
+    同一句里的 drive a process 也别按「驾驶」理解：drive 在职场里指「牵头把一件事推起来并推下去」，drive the project / the discussion / the change。
+    另一个常见义项：discipline 作名词还指「学科、专业领域」（researchers from a different discipline），和纪律无关，靠上下文分。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-23"
+- term: one of the biggest predictors of sth is …
+  pos: n.
+  kind: pattern
+  meaning: 最能提前看出……结果的因素之一（最说明问题的一个指标）。
+  examples:
+  - en: I've found that one of the biggest predictors for whether someone is able to do it really well versus be less efficient at it is whether or not they're able to drive a really disciplined evaluation process.
+    zh: 我发现，最能看出一个人是能把这事做得特别好、还是效率偏低的因素之一，就是他能不能把一套严谨的评估流程推起来。
+  note: |-
+    predictor 不是「预言家」，是 predict 派生的名词：一个能提前指示结果的因素、指标。几乎只用复数 predictors，且几乎只出现在 one of the biggest / strongest predictors of sth 这个句型里。
+    vs the most important factor / the key to sth：factor 和 key 直说因果（是它导致的）；predictor 只说「它和结果高度相关，看它就能提前判断」，不声称因果——带一点数据、研究的克制口吻，说服力反而更强。
+    搭配：a predictor of success / of performance / of retention。后面接从句时标准写法是 of whether…，口语里常听成 for whether…（上面那句例句就是），两种都有人说。
+    句子容易听岔：主语 one of the biggest predictors… 后面挂了一长串 whether 从句，真正的谓语 is 要等到很后面才出现，和 [[having a good understanding of sth allows you to do sth]] 是同一类长主语句。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-23"
 - term: having a good understanding of … will allow you to better envision …
   kind: pattern
   meaning: 把……摸清楚，会让你更能具体地设想出……（拿事情本身当主语 + allow you to do）。
@@ -534,7 +646,7 @@
     ❌ how to approach to this problem（动词 approach 直接跟宾语，不加 to；名词才是 an approach to sth）。
     宾语不限于 problem：approach a task / a redesign / a conversation / a negotiation。
     this type of problem 里单数名词不加冠词：❌ this type of a problem。
-    名词 the approach = 做法、方向，见 steer the approach 那条。
+    名词 an approach = 一套做法、一条路子（an approach to sth），不是「方向」，见 [[steer the approach]]。
     第一条例句整句的意思：「不过，针对这类问题该从哪儿下手，课程里也会讲到目前最新的一些研究进展。」——work 在这里是不可数名词，指某个课题上做出来的成果，课题用 on 引出。
   source: Claude Code · 英文表达提问
   added: "2026-09-19"
@@ -1477,15 +1589,16 @@
 - term: steer the approach
   pos: v.
   kind: phrase
-  meaning: 手扶着舵给方向，中途还能随时纠偏（引导、把方向）。
+  meaning: 给「做法」把方向——手扶着舵，中途随时纠偏（引导、把着方向走）。
   examples:
   - en: Steer the approach before work begins and while it runs.
     zh: 开工之前先把方向定下来，干的过程中也随时把着舵。
   - en: Steering long sessions — keeping a long task from drifting off course.
     zh: 把控长会话——别让一个长任务跑偏。
   note: |-
+    approach 在这里是名词「做法、路子」——做这件事打算怎么下手、用什么方式，回答的是 how，不是 where。❌ 别理解成「方向」：方向感全在 steer（掌舵）这个动词上，steer 负责给方向，approach 是被把方向的那个东西。见 [[how to approach the problem]]。
     vs direct / instruct：这两个是下指令，把事情交代死；steer 只给方向、随时微调，不替对方决定每一步——管理和 AI 协作语境偏爱它就是因为这层分寸。
-    原意是掌舵。常见：steer the conversation / the approach、steer sb away from sth。
+    原意是掌舵（a ship / a car）。常见：steer the conversation、steer the discussion、steer sb away from sth。
   source: Notion · Work + English Teacher · Steering long sessions meaning
   added: "2026-09-07"
 - term: put off
@@ -3106,13 +3219,17 @@
   kind: phrase
   meaning: 换一把尺子来量 —— 后面跟的是衡量的维度、单位，不是话题（就……而言、按……来说）。
   examples:
-  - For most projects, I like to think in terms of an MVP, then one or two versions of improvements.
-  - It's cheap in terms of money, but expensive in terms of time.
-  - In terms of headcount, that's two engineers.
+  - en: In terms of notational convention, throughout this course, I'll use the red color, as you see here.
+    zh: 记号约定方面，这门课里我会像你现在看到的这样用红色。
+  - en: For most projects, I like to think in terms of an MVP, then one or two versions of improvements.
+    zh: 大多数项目我习惯按「先一个 MVP，再来一两轮改进」这个尺度去想。
+  - en: I would love to understand, what was your biggest obstacle to get comfortable in terms of where you're — what was the biggest obstacle you had to go through?
+    zh: 我很想知道，你要上手到现在这个状态，最大的障碍是什么——你当时得迈过去的最大那道坎是什么？
   note: |-
-    抓手是 term 的本义「项、单位、说法」：数学里 express y in terms of x 就是「用 x 把 y 表示出来」。所以 in terms of 后面跟的是那把尺子（cost / risk / effort / headcount），句子里一定有个东西正在被它量。
+    记的时候只念一句话：**「按……这把尺子来量」**。抓手是 term 的本义「项、单位、说法」——数学里 express y in terms of x 就是「用 x 把 y 表示出来」。所以 in terms of 后面跟的是那把尺子（cost / risk / effort / headcount / notational convention），句子里一定有个东西正在被它量。
     和 about / regarding 的区别：about、regarding 只是引出话题，后面接什么都行；in terms of 引出的是衡量标准，接不上标准就用错了。❌ In terms of the meeting, it's at 3 pm（会议不是一把尺子）→ ✅ As for the meeting, it's at 3 pm。
-    真实会议录音里常被当填充词随口垫在句子中间，听到不用深究；自己写别学，写进文档要它真的带出一个维度。
+    最容易混的是 when it comes to：那个才是「说到、谈到某个话题」（When it comes to pricing, we're still deciding）；in terms of 是「按某个维度衡量」。一句话分：**换话题用 when it comes to，换尺子用 in terms of**。
+    真实会议录音里常被当填充词随口垫在句子中间——上面第三条例句就是这种，in terms of where you're 其实没带出任何维度，听到不用深究；自己写别学，写进文档要它真的带出一个维度。
   source: Notion · Work
   added: "2026-07-29"
 - term: the requirements are fuzzy
