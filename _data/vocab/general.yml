@@ -2,6 +2,376 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: sequence out these workflows
+  pos: v.
+  kind: phrase
+  meaning: 把这些流程一步步排开、铺成完整的先后顺序。
+  examples:
+  - en: We build agentic workflows by taking building blocks and putting them together to sequence out these complex workflows.
+    zh: 我们搭 agentic workflow 的方式，就是拿一块块积木拼起来，把这些复杂的流程一步步排开。
+  note: |-
+    **词典里查不到 sequence out** —— 这是说话人按 out 的语感临时造的。out 这个小品词在英语里是「活」的，母语者会往各种动词后面加，只要意思对得上，听的人立刻就懂。看懂 out 的三层语感，这类现造的词就都不用查了：
+    ① **向外**（原始空间义）：take out、pull out、go out。
+    ② **摊开、铺成看得见的完整形态** ← sequence out 属于这层：lay out、map out、spell out（掰开揉碎讲）、write out（完整写出来）、spread out、[[plan out]]。所以 sequence out these workflows = 把流程像摊地图一样一步步铺出来。
+    ③ **到底、彻底完成**：[[carry out]]、figure out、sort out、work out、find out；引申到「耗尽」就是 run out、sell out、burn out、wear out。
+    ② 和 ③ 常常同时在：sequence out 既是「铺开」也含「排完整」。
+    vs 不加 out 的 sequence：光说 sequence these steps 是「给它们排个序」（见 [[sequence the steps together]]）；加了 out 多一层「完整地摊开来、让人看得见全貌」。
+  source: Claude Code · Agentic AI 课程（design patterns）
+  added: "2026-09-26"
+- term: there are also going to be …
+  pos: conj.
+  kind: pattern
+  meaning: （接下来）还会有……（there be 句型的将来式）。
+  examples:
+  - en: But because LLMs output free text, there are also going to be criteria by which you want to evaluate this output that may be more subjective.
+    zh: 但因为 LLM 输出的是自由文本，所以还会有一些评判标准，是你想拿来评估输出、但又比较主观的。
+  - en: Once that is done, there will be an additional step which is what we call promote to production.
+    zh: 那一步做完之后，还会多出一步，就是我们说的「推到生产环境」。
+  note: |-
+    结构是 there + are going to + **be** + 名词。**第二个 be 千万别漏**：there are going to be criteria ✅。
+    ❌ there are going to **have** criteria／there will **have** criteria —— 中文「会有」直译成 have 是最高频的错。英语表示「存在」一律用 there be，have 是「某人拥有」。
+    vs there will be：意思几乎一样，there will be 更中性、偏书面（第二条例句那种讲流程的场合）；there are going to be 更口语，带一点「照现在的情况看，必然会冒出来」的味道，讲课、聊天里更常见。
+    also 插在**第一个助动词后面**：there are also going to be ✅ ❌ there also are going to be。
+    主谓一致看后面那个名词：there **are** going to be criteria（复数）/ there **is** going to be a problem（单数）。口语里常听到 there's going to be 后面跟复数，那是口语容忍，写作别学。
+    顺带一个陷阱词：criteria 本身就是**复数**，单数是 criterion，所以这里只能用 are。同族的还有 data/datum、phenomena/phenomenon、media/medium、bacteria/bacterium。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-26"
+- term: spot opportunities for improvement
+  pos: v.
+  kind: phrase
+  meaning: （眼尖地）看出哪些地方还能改进。
+  examples:
+  - en: We just read through the intermediate outputs of every single step to try to spot opportunities for improvement.
+    zh: 我们就是把每一步的中间输出通读一遍，看能不能发现哪些地方还能改进。
+  note: |-
+    spot 是**眼力活**：从一堆东西里扫过去，一眼认出那个值得注意的。上面例句正是这个场景——通读每一步的输出，边扫边挑。
+    vs find / notice / identify / detect：find 是「找到」（可能费劲找了半天）；notice 是「注意到」（被动地察觉）；**spot 是主动扫视 + 一眼抓住**，带一点「眼尖」的夸奖意味；identify 偏正式的「识别出是什么」；detect 多指仪器或系统「检测到」。说人厉害就说 she's good at spotting patterns。
+    常见搭配：spot a mistake、spot a pattern、spot the difference（找不同游戏）、hard to spot（不容易发现）、I spotted him in the crowd。
+    opportunities for improvement 是职场**委婉语**，字面「可以改进的机会」，实际就是「问题、不足」——绩效评估里拿它代替 weaknesses，听着不伤人。同族还有 areas for improvement、room for improvement（还有提升空间）。
+    名词 spot 的义项另有一串，别混：a parking spot（车位）、a spot on the team（名额）、on the spot（当场）、hit the spot（正合胃口）、in a tight spot（处境艰难）、a blind spot（盲区、盲点）。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-26"
+- term: fall short of my expectations
+  pos: v.
+  kind: phrase
+  meaning: 达不到我的预期、差那么一截（不是「短」）。
+  examples:
+  - en: One thing I do a lot as well is just examine the intermediate outputs … in order to understand where it is falling short of my expectations.
+    zh: 我还经常做的一件事，就是去看那些中间输出……好搞清楚它到底在哪些地方没达到我的预期。
+  note: |-
+    画面是**射箭没射到靶子就落地**：fall short = 落在目标前面，差一截。short 在这里是「不够、不足」，和长度无关，一串搭配都是同一个意象。
+    vs fail / miss：说 it fails 是判了死刑；fall short 只说「差一截」，**留了余地、也更客气**——职场评价里这个分寸很重要。miss the mark 更偏「打偏了、没说到点子上」（方向错），fall short 是方向对但量不够。not live up to sth 则用在承诺、名声上（the sequel didn't live up to the hype）。
+    后面接 of + 被没达到的那个标准：fall short of expectations / the target / the standard / the mark。也可以单用：The results fell short.
+    short 这一族一起收着：be short of sth（缺，we're short of time）、be short on sth（同义，short on details）、run short of sth（快用完了）、cut sth short（提前结束，cut the meeting short）、in short（简言之）、sell sb short（低估某人）。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-26"
+- term: give a preview of sth
+  pos: v.
+  kind: phrase
+  meaning: 先透个底、带大家提前看一眼（后面才会细讲的东西）。
+  examples:
+  - en: Just to give a preview of some of the agentic AI evals you'll learn about later in this course, …
+    zh: 先给你们提前看一眼这门课后面会学到的一些 agentic AI 评估方法，……
+  - en: To give a preview of tool use, if you're able to run the code and see where the code fails, then …
+    zh: 先提前带一下工具调用：如果你能把代码跑起来、看到它在哪儿挂了，那么……
+  note: |-
+    vs overview：这两个最容易混。**preview 是时间上的提前**——现在只露一角，后面会详讲；**overview 是范围上的概览**——把全貌大致说一遍，不预设后面还有下文。同一课开头说 we'll take a quick overview of how to build evals（这一节就讲个大概），这里说 give a preview of（后面的模块才展开），用词分得很清楚。
+    句首的 Just to give a preview of …, 是**目的状语**，等于「我说这段只是为了先带一下」。just 在软化：只是提一嘴，不展开。讲东西时想先甩个钩子又不想跑题，这句开场白直接拿来用。
+    同族的轻动词结构一串，口语里都比单个动词随意：give a quick introduction（简单介绍一下）、give a brief rundown（快速过一遍）、give a sense of sth（让你有个感觉）、give a sneak peek（提前偷看一眼，更俏皮）、give a taste of sth（先尝个鲜）。
+    preview 也能直接当动词：let me preview the agenda。名词可数：a preview。美式英语里 previews 还指影院正片前放的那些预告片（单部预告片通常叫 a trailer）。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-26"
+- term: at an initial cut
+  pos: n.
+  kind: phrase
+  meaning: 作为初步的第一版（粗糙但先弄出来的那一版）。
+  examples:
+  - en: Although some people will do this, maybe at an initial cut as an LLM as judge type of eval.
+    zh: 不过有些人还是会这么干——可能是在最初那一版，拿它当一个「LLM 当裁判」式的评估先用着。
+  note: |-
+    cut 在这里是名词「**一版**」，来自剪辑行话：the first cut of a film 就是初剪版。所以 a first cut / an initial cut = 粗糙的第一版，心里清楚它还要改。
+    职场高频的是动词说法 **take a cut at sth**：I'll take a first cut at the doc = 我先起一版草稿。比 draft 更随意，强调「先弄个能看的出来，不求完美」。
+    近义：a first pass（过第一遍）、a rough draft、a starting point。first pass 和 first cut 基本同义——pass 强调「过一遍」，cut 强调「切出一版」。
+    ❌ 别往「削减、砍掉」上想。同形的 cut 确实有 budget cuts、cut costs 这类义项，靠有没有冠词和 first / initial 这种修饰来分。
+    介词用 at 表示所处的阶段（at an initial cut），也可以说 as a first cut、for a first pass。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-26"
+- term: don't use it that much
+  pos: adv.
+  kind: phrase
+  meaning: 没那么常用它（that = 「那么」，指向一个心照不宣的程度）。
+  examples:
+  - en: You can give it a shot, but I personally tend not to use this technique that much myself.
+    zh: 你可以试试，但我自己一般不太用这个方法。
+  - en: It turns out, by the way, that LLMs are actually not that good at these 1 to 5 scale ratings.
+    zh: 顺便说一句，事实证明 LLM 其实不太擅长这种 1 到 5 分的打分。
+  - en: You don't need to do that much.
+    zh: 你不用做那么多。
+  note: |-
+    这里的 that 是**副词**「那么」，修饰程度，既不是代词也不是连词：that much（那么多、那么频繁）、that good（那么好）、that hard、that far、that many。
+    **它天然长在否定句里**：not that much / not that good / not that hard。肯定句里基本只出现在问句或惊讶语气中：Is it that bad? / I didn't know it was that expensive. 平铺直叙地说 It's that good 反而怪。
+    vs so：so much 是强调、带感叹（Thank you so much）；that much 带**回指**——「没有（你以为的、刚提过的）那么多」，所以它总是在回应某个预期。上面第一条例句正是这样：刚讲完这个技巧，马上补一句「但我自己不太用」。vs very：not very much 也对，但更中性、少了那层「没到你以为的程度」。
+    固定说法：not that much of a X（I'm not that much of a coffee person 我不算多爱喝咖啡）、this much（比划着说的量：I only need this much）、I'll give you that much（这一点我认）。
+    第一条例句里 tend not to do sth 和句尾多余的 myself 也都是**减弱语气**的手段，和 that much 三件套叠在一起，把「我不用这招」说得非常客气。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-26"
+- term: these 1 to 5 scale ratings
+  pos: n.
+  kind: phrase
+  meaning: 按 1 到 5 分这个标度打出来的分（scale = 评分的刻度范围，rating = 打出的那个分）。
+  examples:
+  - en: It turns out, by the way, that LLMs are actually not that good at these 1 to 5 scale ratings.
+    zh: 顺便说一句，事实证明 LLM 其实不太擅长这种 1 到 5 分的打分。
+  - en: You'll learn some better techniques to have an LLM output more accurate scores than asking it to output scores on a 1 to 5 scale.
+    zh: 你会学到一些更好的办法，让 LLM 给出比「按 1 到 5 分打分」更准的分数。
+  note: |-
+    拆开看：scale 是**刻度、标度**（评分的范围），rating 是**打出来的那个分**，可数。1 to 5 整串当定语修饰 ratings——名词前面塞一串数字和名词是英语的常规操作，书面上该写连字符：a 1-to-5-scale rating，口语听不出来。
+    更常用、更该张口的是介词形式：**on a scale of 1 to 5** / on a 1 to 5 scale（第二条例句就是）。日常最高频的那句问法就是 On a scale of 1 to 10, how confident are you? 也说 rate it on a scale from 1 to 10。
+    rating / score / grade / rank 分工别混：rating 是**主观评价**打出的分（user ratings、a 4-star rating）；score 是考试或测量的**得分**（a score of 3）；grade 是**等级**（A/B/C）；rank 是**排名**（第几）。同一课里 assign a score 和 scale ratings 混着用，因为讲的就是同一件事的两面。
+    小心 scale 的另一个义项：技术语境里它多半指**规模**（at scale、scale up、scaling issues），和「刻度」无关，靠上下文分。还有天平、鱼鳞两个义项，日常少见。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-26"
+- term: three quarters of the total
+  pos: n.
+  kind: phrase
+  meaning: 四分之三。
+  examples:
+  - en: About three quarters of the responses were fine; the rest mentioned a competitor.
+    zh: 大约四分之三的回复没问题，剩下的都提到了竞争对手。
+  note: |-
+    读法规则：**分子用基数词，分母用序数词，分子大于 1 时分母加 s**。1/3 = a third / one third，2/3 = two thirds，3/4 = three quarters，3/5 = three fifths。
+    1/2 和 1/4 有专名，别硬套序数词：a half ✅（❌ a second）、a quarter ✅（英式几乎只说 quarter；美式数学课上会说 one fourth，日常仍是 quarter）。所以 3/4 说 three quarters 最稳，three fourths 只在美式数学语境里听得到。
+    后面接 **of + 限定词 + 名词**：three quarters of the responses ✅ ❌ three quarters of responses（泛指才不加 the，但这时通常改说百分比）。
+    主谓一致跟 of 后面的名词走，不看 quarters 的复数：three quarters of the budget **is** gone（budget 单数）/ three quarters of the team **are** new（team 视作人）。
+    连字符：单独作名词时写不写都行（three quarters ≈ three-quarters）；放在名词前作定语必须连：a three-quarter-length sleeve。
+    口语里嫌麻烦就直接说 75 percent——讲指标、报数据时反而更常见，见 [[as a fraction of sth]]。
+    复杂分数用 over 读：7/32 = seven over thirty-two。
+  source: Claude Code · 数字表达
+  added: "2026-09-26"
+- term: use robots to harvest fruit
+  pos: v.
+  kind: phrase
+  meaning: 用机器人采摘水果（harvest = 把成熟的农作物收上来）。
+  examples:
+  - en: Then I'm going to ask the research agent to write a number of different research reports, for example, on recent developments in black hole science or using robots to harvest fruit.
+    zh: 然后我会让这个研究 agent 写几份不同的研究报告，比如写黑洞科学的最新进展，或者写用机器人采摘水果。
+  note: |-
+    harvest 是「**收割、采收**」——把长熟的东西收上来，涵盖整个收成过程，机器人机器都能当主语。名词同形：a good harvest（好收成）、harvest season（收获季）。
+    vs pick：pick fruit 更口语，指用手一个个摘（go apple picking 周末去摘苹果）；harvest 更正式、偏农业生产。想说「周末去果园玩」用 pick，说「农业自动化」用 harvest。reap 基本只用在引申义（reap the benefits 收获好处），字面收割已经很文学了。
+    技术语境里的引申义很常用：harvest data（采集数据）、harvest solar energy（采集太阳能）、harvest credentials（窃取凭据，安全领域的贬义用法）。核心意象都是「把散落各处的东西收拢起来」。
+    fruit 泛指水果时**不可数**：harvest fruit ✅、eat more fruit ✅。指不同**种类**时才可数：tropical fruits、five a day of fruits and vegetables。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-26"
+- term: I'm using X to mean …
+  pos: v.
+  kind: pattern
+  meaning: 我这里拿 X 来表示……（说明自己的写法、记号代表什么意思）。
+  examples:
+  - en: Here, I'm using a Python expression to mean copy-paste the generated essay into this.
+    zh: 这里我用一个 Python 表达式来表示「把生成的那篇 essay 复制粘贴到这个位置」。
+  note: |-
+    mean 在这里是「**表示、代表**」，不是「意味着某种后果」。use A to mean B = 拿 A 当 B 的意思来用。讲自己的幻灯片、代码、记号时解释约定，用的就是这句：I'm using X to mean Y / By X I mean Y / X here means Y。
+    to mean 后面可以直接跟一个动词短语，效果相当于给它加了引号：to mean 「copy-paste the essay into this」。所以 copy-paste 是原形、不带主语——别费劲去找它的主语，那就是被引用的一句话。
+    ❌ I'm using it to means …／for meaning …。
+    兄弟句型 `, meaning …` = 「也就是说、即」，给刚说的词轻轻补一句解释，比 which means 更口语：LLMs can be given tools, meaning functions that they can call。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-26"
+- term: the problem of competitor mentions
+  pos: n.
+  kind: phrase
+  meaning: 「提到竞品」这个问题（mention 作可数名词 = 提及的那一次、那一处）。
+  examples:
+  - en: One nice thing about the problem of competitor mentions is it's an objective metric, meaning either the competitor was mentioned or not.
+    zh: 提及竞品这个问题有个好处：它是个客观指标——要么提了，要么没提。
+  note: |-
+    mention 不只是动词。作名词是**可数**的，指「提到它的那一次、那一处」，所以能加 s、能数、能被动词处理：these competitor mentions、a mention of our pricing、the report got a mention in the news。上下文正是要数它出现多少次，必须先把这个动作变成可数的东西。
+    **名词化是这里真正值得学的思路**：中文说「它提到竞争对手这件事」得铺一个句子，英文直接压成 competitor mentions 两个词。一旦成了名词，就能 eliminate them、track them、count how many。
+    名词 + 名词堆叠时前一个一般用单数：competitor mentions ✅（不是 competitors mentions）、error rate、customer inquiries。
+    the problem **of** X 里的 of 不是「……的」，是**同位**——problem 就是 X 本身，不是「X 所拥有的问题」。同款：the issue of cost、the city of Singapore。中文翻成「X 这个问题」最顺。
+    固定说法：worth a mention（值得一提）、make no mention of sth（只字未提）、not to mention …（更别说）、an honorable mention（提名奖）。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-26"
+- term: as a fraction of sth
+  pos: n.
+  kind: phrase
+  meaning: 算成占……的比例（as = 以……的形式）。
+  examples:
+  - en: … and count up as a number, as a fraction of the overall responses, how frequently it mistakenly mentions competitors.
+    zh: ……然后把它统计成一个数字——占全部回复的百分比——看它误提竞品的频率有多高。
+  note: |-
+    这里的 as 是「**以……的形式、算成……**」，既不是「作为身份」也不是「因为」：express it as a fraction、report it as a percentage、count it as a win。
+    fraction 本义是数学上的分数（1/4 就是 a fraction），引申成「占整体的一小块」。**坑在于单独用时默认暗示「小得多」**：at a fraction of the cost = 只花零头的钱、in a fraction of the time = 用极短的时间。想中性地说比例，就得像例句那样把参照物补全（a fraction of the overall responses）。
+    四个近义词的分工：fraction 是比值、单独用常暗示很小；percentage 是百分比，中性精确；proportion 是占比，正式书面（a large proportion of users）；share 是份额，带「谁占多少」的所有权味（market share）；ratio 是两个量之比（3:1），不是占总体的比例。讲指标时 fraction / percentage 常互换，写报告用 percentage 更具体。
+    参见 [[count it up as a number]]。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-26"
+- term: count it up as a number
+  pos: v.
+  kind: phrase
+  meaning: 把它逐个加总，算成一个数字。
+  examples:
+  - en: … and count up as a number, as a fraction of the overall responses, how frequently it mistakenly mentions competitors.
+    zh: ……然后把它统计成一个数字——占全部回复的百分比——看它误提竞品的频率有多高。
+  note: |-
+    count 是「数」，**up 是「累加出一个总数」**——数完还要给出结果。count the votes 是数票（过程），count up the votes 是加总算出总共多少（要结果）。同族的 up 都是这个「到头、成一个完整的量」：add up、tally up、sum up、use up、eat up。
+    它是**可分离**短语动词，代词必须插在中间：count them up ✅ ❌ count up them。名词放哪边都行：count up the responses / count the responses up。源句里说 count it up 就是这个规矩。
+    as a number 的 as = 以……的形式、算成……（详见 [[as a fraction of sth]]）。
+    count 的其他搭配意思各不相同，别混：count on sb（指望某人）、count for nothing（不算数、白搭）、count towards sth（算进……里，this counts towards your grade）、lose count（数着数着数不清了）。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-26"
+- term: search in your own output for sth
+  pos: v.
+  kind: phrase
+  meaning: 在你自己的输出里搜某个东西（search 在哪儿 + for 找什么）。
+  examples:
+  - en: … just search in your own output for how often it mentions these competitors by name.
+    zh: ……直接在你自己的输出里搜一下，它有多少次直接点名提到这些竞争对手。
+  note: |-
+    两个介词各管一头：**in / through 管「在哪儿找」，for 管「找什么」**。漏掉 for 是中文母语者的高频错误——中文「搜输出里的 X」是一个动宾就完事，英文 search 的直接宾语却是**被搜的那个地方**，不是要找的东西。
+    · search sth = 搜查某地、某人（they searched the house / searched him）
+    · search for sth = 找某样东西（search for the file）
+    · search sth for sth = 在某处找某物（the police searched the house for drugs）← 最完整的形态，in 可加可不加，加了更口语
+    ❌ search the competitors in the output（意思变成「在输出里搜查竞争对手本人」）。
+    程序员口语里 grep 用法完全一样：grep the log for errors、look through the output for X。
+    同句里的 by name = 直接点名、指名道姓；mention them by name 比单说 mention them 多一层「真把名字念出来了」。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-25"
+- term: as you work on doing sth
+  pos: conj.
+  kind: pattern
+  meaning: 在你着手弄某事的过程中（随着这件事推进，另一件事也同步发生）。
+  examples:
+  - en: Then as you work on eliminating these competitor mentions, one way to track progress is to add an eval.
+    zh: 那么在你着手清掉这些提到竞品的地方的过程中，跟踪进展的一个办法就是加一个 eval。
+  - en: As you work on improving your research agent, hopefully you see these scores go up over time.
+    zh: 随着你不断改进这个研究 agent，理想情况下你会看到这些分数慢慢涨上去。
+  note: |-
+    这里的 as 既不是「因为」也不是「作为」，而是**「随着……」**：引出一个正在推进的背景动作，主句的事在这段时间里同步发生。
+    vs while / when：多数情况下 as 和 while 可以互换，第一条例句换成 while 毫无问题，别硬找区别。差别只在语气——while 最中性，就是「这段时间里」；as 带一点「随着进展」的前倾感，给建议时最常用；when 偏「每当、一旦开始」。只有第二条例句那种「一个随另一个变化」的联动（改得越多分越高）才非 as 不可。
+    怎么分 as 是「随着」还是「因为」：看从句说的是**正在进行的动作**还是**一个理由**。As you work on eliminating them（动作）= 随着；As it was raining, we stayed in（理由）= 因为。后面跟 you work / we build 这类进行中的活动，基本不会是「因为」。
+    这半句在句子里的活是**给后面的建议划时间范围**：去掉它，one way to track progress 就悬空了——track 什么的 progress？
+    work on sth / doing sth = **着手弄、持续在弄**，强调过程，不保证做完。职场高频的 I'm working on it = 我在弄了（潜台词：还没好）。想说完成得用 finish / ship。
+    ❌ work on to eliminate sth。on 是介词，后面只能跟名词或动名词：work on evals ✅ / work on eliminating them ✅。
+    同款还有 as you go（一边做一边……）、as you build agentic workflows（随着你搭得多了）。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-25"
+- term: consider it an error to do sth
+  pos: v.
+  kind: pattern
+  meaning: 认为做某事是个错误（it 只是占位，真正说的内容在后面的 to do）。
+  examples:
+  - en: Your business considers it an error or a mistake to mention competitors in this way.
+    zh: 你的公司认为，这样提到竞争对手是个错误、是不该发生的。
+  - en: This makes it easier for users to understand.
+    zh: 这让用户更容易看懂。
+  note: |-
+    it 是**形式宾语**，本身没意思，只是先占着宾语的位子，好让补语（an error）紧跟动词说出来；真正的宾语是后面那串 to mention competitors in this way。
+    为什么英语非要这么绕：**重的成分往后放**。补语只有两个词，宾语却是一长串，把长的夹在中间会头重脚轻，听的人得吊很久才等到「是个错误」这个结论。用 it 占位，就能先甩结论、再补内容。中文没有这个问题——「把 X 当成 Y」里 X 再长也塞得进去，所以中文母语者想不到要用 it，这正是要专门练的地方。
+    同一个框架换动词就能到处用，补语可以是名词也可以是形容词：find it hard to do sth、make it easier (for sb) to do sth、think it strange to do sth、take it for granted that…。上面第二条例句就是 make 版。
+    ❌ consider to mention competitors an error（consider 不能直接接 to do 作宾语）。
+    短的时候也可以用动名词直接作宾语：consider mentioning competitors a mistake ✅。区别是 -ing 偏泛指「这种行为」，it … to do 偏「在这个情况下去做这件事」；而且宾语一长，就只能走 it 这条路。
+    that 从句同理：consider it a mistake that we shipped without evals。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-25"
+- term: evaluate as well as improve sth
+  pos: conj.
+  kind: pattern
+  meaning: 做 A，同时也做 B（重心在前一个，后一个是顺带补上的）。
+  examples:
+  - en: … and then to find ways to evaluate as well as improve the system.
+    zh: ……然后去想办法评估、同时也改进这套系统。
+  - en: If it is an invoice, then it will pull up the required fields as well as use an API.
+    zh: 如果这是张发票，它就会把需要的字段提出来，同时还会调一个 API。
+  - en: One is end-to-end, where you measure the output quality of the entire agent, as well as component quality.
+    zh: 一种是端到端的，你衡量的是整个 agent 的输出质量，另外也衡量各个组件的质量。
+  note: |-
+    vs and：and 是两边平等地并列；as well as 把后一项当**附加信息**——「A，而且 B 也一并」，重心落在**前面**那个。所以 He can play the piano as well as the guitar 的新消息是「他还会钢琴」。
+    vs not only A but also B：这个正好反过来，重心在**后**一个（强调 B）。想突出哪件事，就决定用哪个句型。in addition to 意思接近 as well as，但更书面。
+    接动词时分两种位置：
+    · 前面已经有 to 的，后面直接跟**原形、不再加 to**：to evaluate as well as improve ❌ to evaluate as well as to improve（加了也不算错，但口语都省）。
+    · 单独起头作状语，跟 **-ing**：As well as running the company, he writes books.
+    主谓一致别被带偏：动词只跟 as well as **前面**的主语走。The manager, as well as his staff, **is** coming. ❌ are coming。这点和 and 完全不同（and 会让主语变复数）。
+    小心同形异义：[[might not work as well (as …)]] 里的 as well as 是「和……一样好」（well 是副词），This doesn't work as well as that one = 这个没那个好用，跟「以及」无关，靠前面有没有动词修饰对象来分。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-25"
+- term: find ways to do sth
+  pos: v.
+  kind: phrase
+  meaning: 想办法把某事做成（去琢磨出可行的路子，而且不止一条）。
+  examples:
+  - en: … and then to find ways to evaluate as well as improve the system to eliminate the ways that it is still not yet satisfactory.
+    zh: ……然后去想办法评估、同时改进这套系统，把它还不够好的那些地方消掉。
+  note: |-
+    vs try to do sth：try 只说「试一下」，可能成也可能不成；find ways to 的重点在**去把路子找出来**，暗含「办法总是有的，只是还没找到」，语气积极、主动。开会时说 let's find ways to cut the cost 比 let's try to cut the cost 听着更像要动真格。
+    单复数是有讲究的：find **a** way to = 找到一条出路，常带「终于」或「无论如何得办到」（I'll find a way）；find **ways** to = 多管齐下、招不止一个。上面例句用复数，因为要评估和改进的地方本来就有好几处。
+    后面接不定式：find ways **to** evaluate。❌ find ways how to evaluate（中文「找到怎么做的办法」直译过来的错法）。ways of doing sth 也对，但偏书面，口语默认 ways to do。
+    同句里还有个 the ways that it is still not yet satisfactory——这个 ways 是名词「地方、方面」（它还不够好的那些方面），和 find ways 里的「办法」不是一个意思，别混。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-25"
+- term: the best practice is to do sth
+  pos: n.
+  kind: pattern
+  meaning: 公认最靠谱的做法是……（业内经验证明这么做最好）。
+  examples:
+  - en: So, the best practice is really to build it first and then examine it to figure out where it is not yet satisfactory.
+    zh: 所以公认最靠谱的做法，其实是先把东西搭出来，再去检查它哪些地方还不够好。
+  - en: They have their own best practice in leveraging cloud.
+    zh: 他们自己有一套用云的成熟做法。
+  note: |-
+    practice 在这里不是「练习」，是**长期做事的方式、惯常做法**（同 practise 做事那层意思）。best practice = 大家试下来公认最好的那套做法。
+    可数性是中文母语者最容易翻车的地方：
+    · the best practice is to do sth —— 点名**某一个**具体推荐做法，单数加 the（上面例句就是）。
+    · follow industry best practices —— 泛指**一整套**公认做法，美式英语几乎都用复数。❌ follow industry best practice（美式听着怪）。
+    · in line with best practice —— 英式常把它当不可数，不加冠词也不加 s。跟着对方的说法走就行。
+    vs convention / standard / [[rule of thumb]]：convention 只说「大家都这么做」，没评价好坏；standard 是硬性标准、不照做算违规；rule of thumb 是粗略的经验判断，不保证最优；best practice 带**推荐、背书**的意味——「经验证明这么做最好，建议你也这么做」。
+    语气不强制：说 the best practice is … 是在给建议，不是下命令；要硬性要求得说 you must / it's mandatory。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-25"
+- term: in advance of sth vs ahead of sth
+  pos: prep.
+  kind: contrast
+  meaning: 都表示「在……之前」；ahead of 是日常通用的那个，in advance of 是公文腔、只用于时间。
+  examples:
+  - en: This is an example of a problem that is really hard to anticipate in advance of building this agentic workflow.
+    zh: 这就是那种典型的问题——在你把这套 agentic workflow 真正搭起来之前，是很难提前想到的。
+  - en: Multi-agent workflows are more difficult to control since you don't always know ahead of time what the agents will do.
+    zh: 多 agent 的工作流更难控制，因为你没法总是事先知道这些 agent 会做什么。
+  note: |-
+    语域是主要区别：ahead of 口语书面都能用；in advance of 一听就是通知、邮件、合同里的措辞（Please submit questions in advance of the meeting），日常说话用它会显得端着——嘴上说 before 最自然。
+    ahead of 的地盘大得多，这几个义项 in advance of 都没有：空间（the car ahead of us）、领先（ahead of the competition）、进度（ahead of schedule 比计划提前 ❌ in advance of schedule）。in advance of 基本只管时间。
+    语气上 in advance of 自带「为了有准备而提前」的意味（advance 本身就是提前动作），ahead of 只是中性地说时间靠前。所以上面例句里配 anticipate 用的是 in advance of。
+    后面都接名词或动名词：in advance of building ❌ in advance of build。
+    单说副词时各有固定搭配：two weeks in advance（带时长）、know ahead of time（事先知道）。参见 [[be known ahead of time]]、[[hard to anticipate in advance]]。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-25"
+- term: hard to anticipate in advance
+  pos: adj.
+  kind: phrase
+  meaning: 很难提前料到的（事先想不到会出这问题）。
+  examples:
+  - en: This is an example of a problem that is really hard to anticipate in advance of building this agentic workflow.
+    zh: 这就是那种典型的问题——在你把这套 agentic workflow 真正搭起来之前，是很难提前想到的。
+  note: |-
+    anticipate 不是「期待」，是**预先料到并因此做准备**：脑子里先把事情往后推演一步，看会冒出什么。expect 只是「觉得会发生」，anticipate 多一层「所以我提前防着」。❌ 把 I anticipate the trip 当「我很期待这次旅行」——那是 look forward to。
+    句型是 tough-movement：**hard / easy / difficult + to do，主动形式表被动**。a problem that is hard to anticipate = 这问题很难**被**料到，anticipate 后面不再跟宾语（宾语就是前面的 problem）。❌ a problem that is hard to anticipate it。同类：hard to explain、easy to miss、difficult to reproduce。
+    in advance of doing sth = 在做某事之前（比 before 正式一点，强调「赶在前头」）。后面接动名词：in advance of building this workflow ❌ in advance of build。单独的 in advance 作副词就够用：know in advance、build evals in advance。
+    参见 [[than anticipated]]（比预期的……）。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-25"
+- term: things that you wish it was doing better
+  pos: n.
+  kind: pattern
+  meaning: 你觉得它本可以做得更好的那些地方（凭感觉挑出的不满意之处）。
+  examples:
+  - en: Rather than trying to build evaluations in advance, what I recommend is you just look for the outputs and manually look for things that you wish it was doing better.
+    zh: 与其提前把评估标准定好，我建议你就直接去看输出，人工找那些你觉得它本可以做得更好的地方。
+  note: |-
+    vs problems / things it does wrong / what needs improvement：后面几个都是在下判断「这是错的」，得先有标准才说得出口；wish it was doing better 软得多，只是「我希望它更好」——还没有明确对错标准、纯凭感觉挑刺的阶段用它最合适。上面那句例句正是这个意思：evals 还没定，先读输出找不顺眼的地方。
+    语法是 wish 的虚拟语气：wish + 过去进行（was doing）表示对**当下现状**的不满，不是 wish it does / will do。❌ things that you wish it to do better（wish sb to do 是很正式的「希望某人做」，语气完全不一样）。
+    关系从句的空位在 wish 从句里面：things [that you wish it was doing __ better]。中文母语者容易漏掉 that 后面的 you wish，说成 things it was doing better，意思就变成「它当时在做的那些事」了。
+    换主语就能到处用：things I wish we were doing better、the one thing I wish this tool was doing better。
+  source: Claude Code · Agentic AI 课程（evals）
+  added: "2026-09-25"
 - term: we make returns easy
   pos: n.
   kind: phrase
@@ -669,8 +1039,10 @@
   kind: phrase
   meaning: 事先就知道、预先能确定（在事情真正发生之前）。
   examples:
-  - if the required steps to process the customer requests are not known ahead of time
-  - you don't always know ahead of time what the agents will do
+  - en: if the required steps to process the customer requests are not known ahead of time
+    zh: 如果处理客户请求需要哪些步骤事先并不知道
+  - en: you don't always know ahead of time what the agents will do
+    zh: 你没法总是事先知道这些 agent 会做什么
   note: |-
     ahead of time 里的 time 不是"预定的截止时间"，而是"那件事发生的那一刻"——走在那一刻前面。所以 finish ahead of time 是提前完工，be known ahead of time 是事先知道。
     比 in advance / beforehand 更口语；in advance 偏书面、常带具体时长（book two weeks in advance）。同一段转录里两者混用：predetermined in advance = known ahead of time。
