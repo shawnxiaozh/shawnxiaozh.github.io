@@ -2,6 +2,101 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: in addition to the handful of … you saw
+  kind: pattern
+  meaning: 在你已经见过的那几个……之外，还……（先认下已有的那一点，再往上加新东西）。
+  examples:
+  - en: We'll build on this to talk about tool use, where in addition to the handful of tool examples you saw, you learn how to systematically get your own to call different functions.
+    zh: 我们会在这个基础上讲工具调用：除了你之前看到的那几个工具示例之外，你还会学到怎么系统地让你自己的（模型/应用）去调用各种函数。
+  - en: In addition to reflection pattern, the second important design pattern is tool use.
+    zh: 除了反思模式之外，第二个重要的设计模式是工具调用。
+  - en: In addition to AI models, I also have access to a number of software tools, including different APIs.
+    zh: 除了 AI 模型，我手上还有一些软件工具可以用，包括各种 API。
+  note: |-
+    比 besides / apart from 更正式、更像讲课和写作；语气是「那些不算，这还有更多」，前面的东西是被认可的、不是被排除的。
+    口语里常整句开头：In addition to that, …（除此之外）。
+    后面接名词或动名词：in addition to doing sth，❌ in addition to do sth。
+    a handful of = 一小把、几个（比 a few 更带「数量不多、不成体系」的意味）。
+  source: Claude Code · Agentic AI 课程
+  added: "2026-10-06"
+- term: It does not result in everything working 100% of the time.
+  pos: v.
+  kind: pattern
+  meaning: 它并不能保证每次都完全奏效（有用，但别指望万能）。
+  examples:
+  - en: And this design pattern isn't magic. It does not result in everything working 100% of the time. But sometimes it can be a nice bump in the performance of your system.
+    zh: 这个设计模式不是什么魔法。它并不能让所有东西每次都跑得好好的。但有时候它确实能给系统性能带来不小的提升。
+  - en: Research has shown that they can result in better outcomes for many complex tasks.
+    zh: 研究表明，在很多复杂任务上它们确实能带来更好的结果。
+  note: |-
+    整句最值得借鉴的是**给期望降温但不否定价值**的分寸：not + [everything … 100% of the time] 是**部分否定**——否定的是「次次都成」，不是「完全没用」。所以下一句能接 But sometimes it can be a nice bump。评价一个工具或方法时这句可以直接套用。前一句的 X isn't magic 也是同一路数。
+    result in = 导致、带来（某个结果）。后面接**名词或动名词，不接 to do**：❌ result in to improve。注意和 result **from** 方向正好相反：A results in B（A 导致 B）／A results from B（A 源于 B）。
+    everything working 是「名词 + -ing」的**复合结构**，everything 是 working 的逻辑主语。中文得拆成从句「让所有东西都能正常工作」，英文压成两个词直接挂在 in 后面。同款：result in costs going up、end up with him doing all the work、I don't want you worrying about it。
+    100% of the time = 每一次、无一例外。同族的频率说法：all the time、most of the time、half the time、nine times out of ten。
+    把 100% of the time 再拆一次：这里的 **time 是「次数、场合」，不是「时间长度」**。of the time = 在所有发生的场合里占多少。所以 it works 90% of the time = 跑十次成九次，不是「一天里有 90% 的时间在工作」。梯度：100% of the time（每次都）→ most of the time（通常）→ half the time（一半，half 后面不加 of）→ some of the time → none of the time。
+    vs all the time：all the time 偏「时长」或「老是」（he complains all the time）；X% of the time 偏**统计成功率**。讲可靠性用后者。口语里 nine times out of ten = 90% of the time，更随意。
+  source: Claude Code · Agentic AI 课程（design patterns）
+  added: "2026-09-27"
+- term: cause it to do sth
+  pos: v.
+  kind: pattern
+  meaning: 使得它做某事（导致某个结果发生）。
+  examples:
+  - en: If you're able to run the code and see where the code fails, then feeding that back to the LLM can also cause it to be able to iterate and generate a much better, say, v3 of the code.
+    zh: 如果你能把代码跑起来、看到它在哪儿挂了，那把这个反馈给 LLM，也能让它反复迭代，最后生成好得多的、比方说第 3 版代码。
+  note: |-
+    值得借鉴的其实是**整句的骨架**：拿一个动名词短语当主语，让「做某事」直接变成原因——feeding that back to the LLM can cause it to iterate。中文习惯说「你把结果反馈给它，它就能……」，两个小句；英文压成一个 A causes B，主语就是那个动作。这一步是中文母语者最不容易主动写出来的。
+    使役动词后面接什么，英语分得很细，中文一个「让」字全包了：
+    · make sb **do**（不带 to，强制、致使）
+    · let sb **do**（允许）
+    · have sb **do**（安排、使唤）
+    · get sb **to do**（说服、设法让）
+    · cause sth **to do**（导致，书面中性，强调因果链）
+    · enable / allow sth **to do**（使其能够）
+    ❌ cause it do sth（cause 必须带 to）。
+    **借鉴时把 cause it to be able to 改成 enable it to**：原句是讲课时临时组装的，多绕了一层。而且 cause 在英语里习惯搭配**坏结果**（cause problems / damage / delays / confusion），用来说好事略显别扭。说好事优先 enable、allow、let。
+  source: Claude Code · Agentic AI 课程（design patterns）
+  added: "2026-09-27"
+- term: go through sth in depth
+  pos: adv.
+  kind: phrase
+  meaning: 深入地、详细地把某样东西讲透（相对于只讲个大概）。
+  examples:
+  - en: Let me briefly go over what they mean, and then we'll actually go through most of these in depth later in the course as well.
+    zh: 我先简单过一下它们各自是什么意思，之后在课程里我们还会把其中大部分展开细讲。
+  note: |-
+    **不带连字符的 in depth 是副词**，放在动词后面：go through it in depth、cover the topic in depth、study sth in depth。
+    **带连字符的 in-depth 是形容词**，放在名词前面：an in-depth analysis、an in-depth interview。两个位置别写反：❌ we'll go through it in-depth／❌ an in depth analysis。
+    vs in detail：in detail 说的是「把细节一条条说全」；in depth 说的是「往下挖得深、讲到原理和成因」。讲流程步骤用 in detail，讲机制原理用 in depth。
+    反面的说法：at a high level（只讲个大概）、briefly（简单地）、skim over sth（草草带过）。上面例句里 briefly go over 和 go through … in depth 正好前后对着用。
+    口语里也说 go deep on sth（在某个话题上深挖）、do a deep dive into sth（做一次深入研究）。
+  source: Claude Code · Agentic AI 课程（design patterns）
+  added: "2026-09-27"
+- term: go over vs go through
+  pos: v.
+  kind: contrast
+  meaning: 都能表示「过一遍」；go over 是在表面**扫一遍复查**，go through 是**从头到尾穿过去**、一项不落。
+  examples:
+  - en: I'm not gonna go through that because it's pretty lengthy.
+    zh: 这部分我就不一条条过了，太长了。
+  - en: I'm not going to go through all the details today.
+    zh: 细节我今天就不一个个讲了。
+  - en: What was the biggest obstacle you had to go through?
+    zh: 你当时得熬过去的最大障碍是什么？
+  - en: Let me briefly go over what they mean, and then we'll actually go through most of these in depth later in the course as well.
+    zh: 我先简单过一下它们各自是什么意思，之后在课程里我们还会把其中大部分展开细讲。
+  note: |-
+    看介词的本义就分清了：**over 是从上方扫过**（复查、再来一遍），**through 是从一头穿到另一头**（完整走完）。
+    · 重叠的那块：检查清单、讲解材料时两个都行——go over the slides ≈ go through the slides。硬要说差别，go over 偏「再来一遍、核对有没有错」（over 本身就有「再一次」的意思，do it over = 重做），go through 偏「一项不落地走完」，强调覆盖完整。
+    · 讲给别人听，习惯用 go over：let me go over the plan with you。自己逐项处理一堆东西，习惯用 go through：I went through 200 emails。
+    · **只有 go through 能表示「经历（尤其是难熬的事）」**：go through a divorce、go through a rough patch，上面第三条例句就是这个意思。❌ go over a divorce。
+    · 只有 go through 能表示「（流程）走完、获批」：the deal went through、go through security。
+    · 只有 go over 能表示「超出」：go over budget / go over time（见 [[go over]]）。
+    · 各自的固定说法：go over well = 反响好（the joke didn't go over well）；go over sb's head = 越级找上级，或「这话太深听不懂」。
+    参见 [[get through vs go through]]（get through 重结果「熬完、处理完」，go through 重过程）。
+    一句话里两个都用上的真实例子（见例句）：briefly go over = 先扫一遍讲个大概，go through … in depth = 后面再逐个走完、讲透。分工一目了然。
+  source: Claude Code · 词义辨析
+  added: "2026-09-26"
 - term: sequence out these workflows
   pos: v.
   kind: phrase
@@ -1265,9 +1360,12 @@
   kind: phrase
   meaning: ①把（外部的信息、数据）引进来、拉进来 ②请来、引入（人、专家、新方法）③带来（收入、客户）。
   examples:
-  - For example, if your team is using Linear as their project management software, you can add a Linear MCP server to bring in the details of your specific issues.
-  - We brought in a consultant to review the design.
-  - The new feature brought in more users.
+  - en: Reflection is a common design pattern where you can ask the LLM to examine its own outputs or maybe bring in some external sources of information.
+    zh: 反思是个常见的设计模式——你可以让 LLM 检查它自己的输出，或者引入一些外部的信息来源。
+  - en: For example, if your team is using Linear as their project management software, you can add a Linear MCP server to bring in the details of your specific issues.
+    zh: 举个例子，如果你的团队用 Linear 做项目管理，你可以加一个 Linear MCP server，把你那些具体 issue 的细节拉进来。
+  - en: We brought in a consultant to review the design.
+    zh: 我们请了个顾问来评审这个设计。
   note: |-
     核心意思：把外面的东西带到当前这个范围里。技术语境里常指把外部数据导入、接入进来。
     结构：bring in + 名词，或 bring it in（代词放中间，❌ bring in it）。
@@ -3589,7 +3687,7 @@
   added: "2026-07-29"
 - term: in terms of sth
   kind: phrase
-  meaning: 换一把尺子来量 —— 后面跟的是衡量的维度、单位，不是话题（就……而言、按……来说）。
+  meaning: 用 x 把 y 表示出来 —— 后面跟的是拿来表示、衡量 y 的那个 x，不是话题（就……而言、按……来说）。
   examples:
   - en: In terms of notational convention, throughout this course, I'll use the red color, as you see here.
     zh: 记号约定方面，这门课里我会像你现在看到的这样用红色。
@@ -3598,7 +3696,7 @@
   - en: I would love to understand, what was your biggest obstacle to get comfortable in terms of where you're — what was the biggest obstacle you had to go through?
     zh: 我很想知道，你要上手到现在这个状态，最大的障碍是什么——你当时得迈过去的最大那道坎是什么？
   note: |-
-    记的时候只念一句话：**「按……这把尺子来量」**。抓手是 term 的本义「项、单位、说法」——数学里 express y in terms of x 就是「用 x 把 y 表示出来」。所以 in terms of 后面跟的是那把尺子（cost / risk / effort / headcount / notational convention），句子里一定有个东西正在被它量。
+    记的时候只念一句话：**「用 x 把 y 表示出来」** —— 这就是数学里 express y in terms of x 的原话，term 的本义是「项、单位、说法」，y = 3x + 1 就是把 y 用 x 这个单位表示出来。日常句子完全照搬这个结构：in terms of 后面跟的是那个 x（cost / risk / effort / headcount / notational convention），句子里一定有个 y 正在被它表示、被它衡量。换个说法就是「按 x 这把尺子来量 y」。
     和 about / regarding 的区别：about、regarding 只是引出话题，后面接什么都行；in terms of 引出的是衡量标准，接不上标准就用错了。❌ In terms of the meeting, it's at 3 pm（会议不是一把尺子）→ ✅ As for the meeting, it's at 3 pm。
     最容易混的是 when it comes to：那个才是「说到、谈到某个话题」（When it comes to pricing, we're still deciding）；in terms of 是「按某个维度衡量」。一句话分：**换话题用 when it comes to，换尺子用 in terms of**。
     真实会议录音里常被当填充词随口垫在句子中间——上面第三条例句就是这种，in terms of where you're 其实没带出任何维度，听到不用深究；自己写别学，写进文档要它真的带出一个维度。
