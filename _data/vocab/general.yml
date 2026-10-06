@@ -2,6 +2,97 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: spot bugs
+  kind: phrase
+  meaning: 一眼看出、揪出 bug（发现）。
+  examples:
+  - en: If you have more complex structured outputs, like maybe a JSON data structure with a lot of nesting, then reflection may be more likely to spot bugs.
+    zh: 如果输出的结构更复杂，比如嵌套很多层的 JSON，反思就更有可能把 bug 揪出来。
+  note: |-
+    spot 是「瞄到、察觉到」，比 find 更强调眼睛一扫就发现，不是费劲去找。
+    也说 spot an error / spot a typo / Good spot!（眼尖！）
+  source: Claude Code · Agentic AI 课程（reflection）
+  added: "2026-10-06"
+- term: improve on sth
+  kind: phrase
+  meaning: 在某个现成的东西基础上做得更好，超过它。
+  examples:
+  - en: Reflection improves on the performance of direct generation on a variety of tasks.
+    zh: 在各种任务上，反思的效果都比直接生成要好。
+  note: |-
+    和 improve sth 的区别：improve sth 是把它本身变好；improve on sth 是拿它当基准，拿出一个比它更好的东西，带「超过」的意思。
+    常见：improve on the previous version / improve on last year's results。
+  source: Claude Code · Agentic AI 课程（reflection）
+  added: "2026-10-06"
+- term: your mileage may vary
+  kind: phrase
+  meaning: 效果因人、因场景而异，不保证你也这样（缩写 YMMV）。
+  examples:
+  - en: But of course, your mileage may vary depending on your specific application.
+    zh: 当然，具体效果还得看你的应用场景，不一定都这样。
+  note: |-
+    源自汽车广告「实际油耗以个人驾驶为准」。比 results may differ 轻松、口语，常在分享经验、给建议后加一句免责。
+    课程转录把它听成了 your knowledge may vary，上面例句已改回原话。
+  source: Claude Code · Agentic AI 课程（reflection）
+  added: "2026-10-06"
+- term: It turns out that …
+  kind: pattern
+  meaning: 结果发现……/其实……（引出一个查了、试了之后才知道的、有点出人意料的事实）。
+  examples:
+  - en: It turns out that multiple studies have shown that reflection improves on the performance of direct generation on a variety of tasks.
+    zh: 结果发现，好几项研究都表明，在各种任务上，反思的效果都比直接生成要好。
+  - en: It turns out, by the way, that LLMs are actually not that good at these 1 to 5 scale ratings.
+    zh: 顺便说一句，其实 LLM 并不太擅长这种 1 到 5 分的打分。
+  - en: With this iterative process, it turns out that an agentic workflow can take longer, but it delivers a much better work product.
+    zh: 用这种迭代的流程，你会发现 agentic 工作流虽然可能更慢，但交出来的东西要好得多。
+  note: |-
+    比 Actually / In fact 多了「这是验证出来的结论」的味道：turn out = 事情最后翻出来是这样。
+    可以省 that：It turns out reflection helps.
+    也能接 to do：It turned out to be a bug in the cache.
+  source: Claude Code · Agentic AI 课程（reflection）
+  added: "2026-10-06"
+- term: … and be done with it
+  kind: pattern
+  meaning: ……就完事了，就此打住不再管（图省事、一次了结）。
+  examples:
+  - en: Why we might prefer to use a reflection workflow rather than just prompting an LLM once and having it directly generate the answer and be done with it.
+    zh: 为什么我们可能更愿意用反思工作流，而不是只给 LLM 发一次提示词、让它直接把答案吐出来就完事了。
+  note: |-
+    挂在句尾，前面是一个动作。比 and finish / and that's it 多一层「草草了结、懒得再折腾」的口气，常带点不以为然。
+    日常：Just sign it and be done with it.（签了算了，别磨叽了。）
+  source: Claude Code · Agentic AI 课程（reflection）
+  added: "2026-10-06"
+- term: this is called zero-shot prompting
+  pos: n.
+  kind: phrase
+  meaning: 零样本提示：prompt 里一个示例都不给，直接让模型一次生成答案（直接生成）。
+  examples:
+  - en: The prompt examples you see here are also called zero-shot prompting.
+    zh: 这里你看到的这些 prompt 示例，也叫零样本提示。
+  - en: …using reflection versus direct generation or something we sometimes call zero-shot prompting.
+    zh: ……用反思，对比直接生成，也就是我们有时说的零样本提示。
+  - en: And so zero-shot prompting refers to if you include zero examples.
+    zh: 所以零样本提示指的就是一个例子都不放进去。
+  note: |-
+    shot = 一次示范 / 一个样例。成组概念：zero-shot（0 个）/ one-shot（1 个“输入→输出”样例）/ few-shot（几个）。
+    不可数名词，不加冠词：❌ a zero-shot prompting。当形容词用可以说 a zero-shot prompt、in a zero-shot setting。
+    别和口语的 in one shot（一次搞定）混淆，那里 shot 是“一次尝试”。
+  source: Claude Code · Agentic AI 课程（why not just direct generation）
+  added: "2026-10-06"
+- term: what dates sb might be free for dinner
+  kind: pattern
+  meaning: 哪几天某人可能有空吃晚饭。用「what + 名词」开头的间接问句，当一个名词块嵌进句子里用（哪些日子……）。
+  examples:
+  - en: And if I read over it, I might say, huh, next month isn't that clear for what dates Tommy might be free for dinner.
+    zh: 如果我通读一遍，可能会说：“嗯，下个月哪几天 Tommy 有空吃晚饭，这里写得不太清楚。”
+  note: |-
+    三个点：
+    ① 间接问句用陈述语序：what dates Tommy might be free，❌ what dates might Tommy be free。
+    ② what dates 比 which dates 随意，口语里不强调“从给定选项里挑”时更常用 what。
+    ③ be free for dinner：free 后接 for + 活动（for lunch / for a call / for a quick chat）；接动词用 be free to do sth。might 让语气留有余地，只是“可能有空”，不替对方打包票。
+    比 when Tommy is available 口语、具体，available 更偏正式和日程安排。
+  source: Claude Code · Agentic AI 课程（reflection 一节）
+  added: "2026-10-06"
 - term: in addition to the handful of … you saw
   kind: pattern
   meaning: 在你已经见过的那几个……之外，还……（先认下已有的那一点，再往上加新东西）。
