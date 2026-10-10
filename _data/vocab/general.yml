@@ -2,6 +2,425 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: act accordingly
+  pos: adv.
+  kind: phrase
+  meaning: 照着刚才说的那个情况，做出对应的反应（相应地、据此）。
+  examples:
+  - en: you need to take it accordingly
+    zh: 你得根据情况相应地去处理它。
+  note: |-
+    accordingly = according to + 刚才说的那件事。它总是回指前文：情况变了，你就跟着变。所以一般放在句尾，修饰前面的动词。
+    比 according to sth 省事：according to 后面必须接东西，accordingly 把「刚才说的那件事」打包进去了，不用再重复。
+    最常配的动词：act accordingly（照情况办）、adjust accordingly（相应调整）、plan accordingly（据此安排）、be priced accordingly（价格随之定）。
+    上面那句例句里的 take it accordingly 不太地道：take 本身没有「处理、应对」的意思，母语者会说 handle it accordingly 或 adjust accordingly；如果想说「把这点考虑进去」，用 take it into account。
+    另一义：放句首当连接词，= 因此、所以（Accordingly, we postponed the launch.），比 so 正式得多。
+  source: Claude Code · 用户自造句
+  added: "2026-10-10"
+- term: make tools available to the LLM
+  kind: phrase
+  meaning: 把东西摆到对方够得着的地方，让对方能拿来用（提供、开放给……使用）。
+  examples:
+  - en: we might make available to the LLM a tool or a function to make an appointment, that is to send a calendar invite
+    zh: 我们可以给 LLM 提供一个用来约时间的工具或函数，也就是发日历邀请。
+  - en: depending on your application, you may have to implement and make different tools available to your LLM.
+    zh: 看你做的是什么应用，你可能得自己实现一些不同的工具，再把它们提供给你的 LLM。
+  - en: you have to create tools and make them available one at a time to your LLM.
+    zh: 你得自己一个个地写工具，再一个个地开放给你的 LLM 用。
+  note: |-
+    正常语序是 make + 东西 + available + to 某人（上面第二、三句）。第一句是 make available to the LLM + 东西，把东西挪到了最后：因为那个东西太长（a tool or a function to make an appointment, that is …），放中间会把 make … available 隔得太远，听的人记不住前面说了什么。英语习惯把又长又重的部分放到句尾。
+    为什么不直接说 give the LLM a tool：give 是一次性递过去；make available 是「摆在那儿，你需要时自己拿」，用不用由对方决定。这正好贴合 tool use：工具只是开放给 LLM，它自己挑着用。
+    常见：make sth available to the public（向公众开放）、be made available on GitHub（在 GitHub 上公开）。
+  source: Claude Code · Agentic AI 课程 tool use
+  added: "2026-10-10"
+- term: fulfill a request
+  kind: phrase
+  meaning: 把别人要的东西完完整整地办到位，让对方的要求得到满足（满足、完成、履行）。
+  examples:
+  - en: you might then want it to be able to fulfill requests like, please find a free slot on Thursday in my calendar and make an appointment with Alice.
+    zh: 你可能会希望它能办成这样的请求：帮我在日历里找个周四的空档，跟 Alice 约个时间。
+  - en: LLM decides to go and take action in the world, go and get more information to fulfill your requests.
+    zh: LLM 自己决定去真实世界里动手做事、去多找些信息，把你要的事给办了。
+  note: |-
+    fulfill 字面是 fill + full，「填满」：对方的要求像一个空着的单子，你把它填满了，对方要的全都到手了。
+    比 complete / do 多了「对方有要求、你去满足」的意味，宾语总是别人提出来的东西：fulfill a request、fulfill an order（电商「履约、发货」）、fulfill a promise（兑现承诺）、fulfill the requirements（满足条件）。和 handle a request 的区别：handle 只是处理了，结果不一定如愿；fulfill 是真的给到了对方要的。
+    拼写：美式 fulfill，英式 fulfil。名词 fulfillment 另有「成就感」的意思，见 find fulfillment in sth。
+  source: Claude Code · Agentic AI 课程 tool use
+  added: "2026-10-10"
+- term: elect to call a web search engine
+  kind: phrase
+  meaning: 在几个选项里自己挑了做这件事：主动、有意识地选择去做（选择、决定做）。
+  examples:
+  - en: If it has a web search tool, then an LLM might elect to call a web search engine for a query, restaurants near Mountain View, California
+    zh: 如果它有网页搜索工具，LLM 就可能选择去调用搜索引擎，查一个问题，比如「加州山景城附近的餐厅」。
+  note: |-
+    elect 最熟的意思是「选举」（elect a president），本义就是「从几个里挑一个」。elect to do sth 是把这个「挑」用在自己身上：在能做的几件事里，选了做这个。
+    比 choose to / decide to 正式，带一点「这是可选项、你有权选」的味道，常见于合同、保险、税务（elect to receive a lump sum、elect not to participate）。放在这里呼应前文：工具是可选的，用不用由 LLM 自己挑，和 when it deems appropriate 是同一个意思的不同说法。
+    口语里一般说 choose to 或 decide to；elect to 多见于讲义、文档。否定是 elect not to …。
+  source: Claude Code · Agentic AI 课程 tool use
+  added: "2026-10-10"
+- term: this is as opposed to …
+  kind: pattern
+  meaning: 把正在说的东西和另一样摆在一起对照，突出两者不一样（和……相对、而不是……）。
+  examples:
+  - en: This is as opposed to some examples you saw in earlier videos, where I, as a developer, had hard-coded in, for example, that I will always do a web search at this point in the research agent.
+    zh: 这跟你在前面视频里看到的一些例子不一样：那些例子里，是我作为开发者把它写死的，比如在 research agent 的这一步一定会去做一次网页搜索。
+  note: |-
+    opposed 是「对立的」，as opposed to X 字面就是「站在 X 的对面」，用来划清界线：我说的是这个，不是那个。
+    比 instead of 多了「对比」的味道：instead of 是「不做 X，改做 Y」，讲替换；as opposed to 是把两样东西摆在一起比，讲区别。比 unlike 更口语，句中句首都能插，常用来顺手澄清：I mean the data, as opposed to the code.（我说的是数据，不是代码。）
+    this is as opposed to … 整句用来开一个对比段落，后面常接 in contrast 把对比说完，上面那句例句的下一句就是 In contrast, …。
+    ❌ as opposed to 后面接名词或动名词，不接动词原形：as opposed to doing it by hand，不是 as opposed to do。
+  source: Claude Code · Agentic AI 课程 tool use
+  added: "2026-10-10"
+- term: when it deems appropriate
+  kind: phrase
+  meaning: 等它自己判断合适的时候：做不做、什么时候做，交给对方自己拿主意（在其认为合适时、酌情）。
+  examples:
+  - en: we're providing a set of tools to the LLM for the LLM to choose to use when it deems appropriate.
+    zh: 我们给 LLM 提供一组工具，让 LLM 在它自己觉得合适的时候，选择去用。
+  note: |-
+    deem = 经过判断后认为（consider / judge 的正式版），常用结构是 deem sth + 形容词：deem it necessary、be deemed unsafe。这里 deems appropriate 省掉了宾语，完整是 when it deems it appropriate，作为固定说法省掉 it 很常见。
+    为什么不说 when it thinks it's appropriate：deem 更正式，而且带着「有权判断、由你说了算」的意味，像规则里授予的裁量权。放在这里正好强调：用不用工具，是 LLM 自己决定，不是我们写死的。
+    口语里更常说 when it sees fit 或 whenever it makes sense；deem 多见于文档、规章、正式说明。同类：as you deem appropriate（你看着办）、if deemed necessary（必要时）。
+  source: Claude Code · Agentic AI 课程 tool use
+  added: "2026-10-10"
+- term: request to call a function
+  kind: phrase
+  meaning: 正式地提出要做某事、申请做某事（请求、要求）：request to do sth = 我提出：我想做 X，等对方批准或执行。
+  examples:
+  - en: letting your LLM decide when it might want to request to have a function called to take some action, or gather some information
+    zh: 让你的 LLM 自己决定什么时候需要请求调用某个函数，去执行某个操作，或者去获取一些信息
+  - en: When we let LLMs call functions, or more precisely, let an LLM request to call functions, that's what we mean by tool use
+    zh: 我们说让 LLM 调用函数，更准确地说是让 LLM 请求调用函数，这就是我们说的 tool use。
+  - en: if the LLM requests to call the get current time function, AISuite or this client, it will call the get current time for you
+    zh: 如果 LLM 请求调用获取当前时间的那个函数，AISuite，也就是这个客户端，会替你去调用它。
+  note: |-
+    request 是动词，request to do sth 和 ask to do sth 一个意思，只是更正式、更像走流程：提出申请，等别人批准或替你执行。口语里更常说 ask to …。
+    关键在于「提出请求」和「真正去做」是两件事。上面第二句的 call functions vs request to call functions 就是在纠正这一点：LLM 不能自己调用，只能提出请求，客户端才是真正调用的那一方（第三句）。
+    第一句是 request to + have a function called（让函数被调用），和 request to call a function 意思差不多，只是更强调动手的是别人。
+    request 后面的三种接法：request sth（request a refund）、request to do sth（自己想做）、request that sb do sth（要别人做，常用原形：We request that you reply by Friday）。
+    ❌ request for sth 作动词时不加 for：request a meeting，不是 request for a meeting；a request for sth 名词才带 for。
+  source: Claude Code · Agentic AI 课程 tool use
+  added: "2026-10-10"
+- term: wash the living daylights out of sth
+  kind: phrase
+  meaning: 把东西的魂都洗出来了：往死里洗，使出全身力气洗得锃亮（夸张说法：拼命地、狠狠地做）。
+  examples:
+  - en: I planned my work. I was organized, you know, I was mise en place, and then I washed the living daylights out of the dishes.
+    zh: 我会先把活儿规划好。我做事很有条理，你懂的，开工前东西全都摆到位，然后就把那些盘子往死里洗，洗得锃亮。
+  note: |-
+    字面画面：把盘子的魂都洗出来了。结构和 wash the dirt off the dishes 一样，只是被洗掉的不是污渍，而是夸张的「盘子的命」。
+    living daylights：人的命、魂、五脏六腑。daylights 是 18 世纪老俚语，最早指眼睛（让日光照进来的地方），后来泛指要命的部分，演变细节词源上没定论；living 只是加强语气，和 a living hell 里的 living 一样。这个词组基本只活在 … the living daylights out of … 这个句型里。
+    为什么用 out of：把人或东西当成容器，动作狠到把里面的「命」打出来、吓出来、洗出来，和 get out of the car 的「从容器里出来」是同一个 out of。
+    原型是 scare the living daylights out of sb（吓得魂都飞了，最常用：You scared the living daylights out of me!）和 beat the living daylights out of sb（往死里打）。同一个模子：beat the hell out of sb、scare the life out of sb、knock the wind out of sb（把人打得喘不上气）。
+    上面那句例句里，前面 planned、organized、mise en place 都是冷静的方法论，then 一转，突然换成打架、吓人用的狠话来形容洗碗。用大词说小事，制造反差和自嘲式幽默，也藏着「再小的活也全力以赴」的意思，为下一句「我是 Denny's 史上最好的 busboy」做铺垫。
+    比 wash the dishes really well 生动得多，带着那股「卯足了劲」的狠劲。换动词就能套：clean the living daylights out of the kitchen。只用于口语、轻松场合，别进正式文档。
+  source: Claude Code · Jensen Huang 演讲转录
+  added: "2026-10-09"
+- term: I'm organized
+  pos: adj.
+  kind: phrase
+  meaning: 形容人做事有条理：东西放哪、先做什么后做什么，心里都安排得清清楚楚（有条理、有规划）。
+  examples:
+  - en: I planned my work. I was organized, you know, I was mise en place, and then I washed the living daylights out of the dishes.
+    zh: 我会先把活儿规划好。我做事很有条理，你懂的，开工前东西全都摆到位，然后就把那些盘子洗得锃亮。
+  note: |-
+    organized 在这里是形容词，描述人的特质，不是被动语态「被组织」。I was organized ≈ 我那时做事很有条理，不是「我被组织了」。
+    比 tidy、neat 范围大：tidy 只管东西摆得整齐，organized 还包括时间、步骤、计划安排得井井有条。
+    常见：a very organized person、get organized（开始收拾、理顺）、stay organized。反义词 disorganized（乱糟糟、没条理）。
+  source: Claude Code · Jensen Huang 演讲转录
+  added: "2026-10-09"
+- term: be formed out of sth
+  kind: phrase
+  meaning: 拿某样东西当原料，从它里面长出来、做出来（由……形成、源于……）。
+  examples:
+  - en: Character isn't formed out of smart people. It's formed out of people who suffered.
+    zh: 品格不是从聪明人身上长出来的，是从吃过苦的人身上长出来的。
+  note: |-
+    out of 在这里表示「原料、来源」：make a table out of wood 用木头做桌子。
+    比 be formed by 多了「从……里面来」的画面感：by 只说谁造成的，out of 说的是拿什么原料捏出来的。
+    这句其实是口语上的压缩，严格说是 formed out of suffering；out of people who suffered 等于说「品格出在吃过苦的人身上」。
+    别和 out of 的「从容器里出来」（get out of the car）、「出于某种动机」（out of goodwill）混：看后面接的是原料还是地方、动机。
+  source: Claude Code · Jensen Huang 演讲转录
+  added: "2026-10-09"
+- term: I suppose fortune favors the bold
+  pos: phr.
+  kind: phrase
+  meaning: 好运偏爱敢冒险的人（天佑勇者、富贵险中求）；I suppose 把语气放软成「我想这就是……吧」。
+  examples:
+  - en: But I suppose fortune favors the bold, and in your case everything fell into place.
+    zh: 不过我想这就是「好运偏爱勇者」吧，在您这儿，一切都恰好水到渠成了。
+  note: |-
+    常用来接别人的「我们只是运气好」：把运气说成勇气换来的，是很得体的恭维。
+    I suppose 让它从「讲道理、下断言」变成「我是这么理解的」，对话里更谦和。
+    the bold = the + 形容词表一类人（同 the rich / the young）；谚语固定，❌ fortune favors bold people。英式拼写 favours。
+    源自拉丁语 Fortes fortuna adiuvat。有格言感，偶尔用效果好，用多了像念鸡汤。
+    后半句 in your case everything fell into place：
+    · fall into place = 拼图碎片一块块「落」进该在的位置，整幅图就成了（水到渠成、一切都对上了）。fall 自带「顺其自然、刚好就成」的语感，不是硬塞进去的。
+    · everything 指 Halzen 前面列的那串难关（冰的光学性质未知、热水钻探、背景噪声、拿不拿得到经费），每一关都过了。
+    · 和 everything went well（只说结果顺利）、everything worked out（经历波折、最后解决了）比，fell into place 强调「本来散乱、充满变数的东西恰好拼成了完整的样子」，和前半句的「好运」呼应。
+    · 常见：It all fell into place. / Things started to fall into place.（事情开始理顺了）；另一义：Suddenly it all fell into place.（一下子全想通了）。❌ fell in place，要用 into。
+    · in your case = 就您的情况而言，把前半句的普遍道理落到眼前这个人身上（道理 → 具体到你）；工作里常说 in our case（就我们这边来说）。
+  source: Claude Code · 诺奖得主 Francis Halzen 电话采访
+  added: "2026-10-09"
+- term: I'll come through this one as well
+  pos: v.
+  kind: phrase
+  meaning: 从一段难关里穿过去、完好地出来（挺过来、熬过去）。
+  examples:
+  - en: I have talented collaborators, so they always help me survive. I'll come through this one as well.
+    zh: 我有很能干的合作者，他们总能帮我撑过去。这次我也能挺过来。
+  note: |-
+    through =「从一头穿到另一头」。比 I'll finish this one（只说做完）和 I'll get through this one（熬完这段过程）多一层「经受考验、最后没事」的意思，带点「放心」的乐观。
+    本来多用于挺过疾病、手术、危机（come through the surgery），例句里拿来说写一份经费申请书，是故意大词小用，有幽默感；和前一句 help me survive 呼应。
+    别混：come through for sb（关键时刻靠得住）；come through as … / come through garbled（消息、数据传过来），这两条另有词条。
+  source: Claude Code · 诺奖得主 Francis Halzen 电话采访
+  added: "2026-10-09"
+- term: As I joked in one of the meetings, …
+  pos: conj.
+  kind: pattern
+  meaning: 正如我（之前）……那样：把现在要说的话挂回之前说过的话上（正如、就像我说的）。
+  examples:
+  - en: As I joked in one of the meetings, I hope it helps to get it funded.
+    zh: 就像我在一次会上开玩笑说的那样，希望（得诺奖）能帮这份申请书拿到经费。
+  - en: As I said, at every step my reaction was surprise rather than pride.
+    zh: 我说过了，每一步我的反应都是惊讶，而不是自豪。
+  - en: As I mentioned, maybe we should explore how we can use secret managers.
+    zh: 我之前提过，也许我们应该研究一下怎么用 secret manager。
+  note: |-
+    比 I joked that … 多一层「呼应」：不只是陈述一件事，而是告诉对方「这话我之前说过，现在再提一遍」。口头讲话、开会、做分享时最常用的衔接手段之一。
+    语法：as 自己顶替了「我说的那件事」，所以动词后面空着，❌ As I said it / ❌ As I joked it。
+    可替换动词：as I said / mentioned / joked / explained，as you know / can see / saw。
+    别混：as you work on …（随着、在……过程中）、As it's late, …（因为）。判断法：as 后面的从句缺宾语，基本就是「正如」。
+  source: Claude Code · 诺奖得主 Francis Halzen 电话采访
+  added: "2026-10-09"
+- term: I hope it helps to get it funded
+  pos: v.
+  kind: pattern
+  meaning: help 不带「帮谁」，直接接要做成的事：sth helps (to) do sth = 对做成某事出一份力、推一把（有助于）。
+  examples:
+  - en: As I joked in one of the meetings, I hope it helps to get it funded.
+    zh: 我在会上开玩笑说，希望（得诺奖）能帮这份申请书拿到经费。
+  - en: You can write a piece of code to help find additional facts.
+    zh: 你可以写一段代码，帮忙找出更多事实。
+  note: |-
+    中文「帮助」习惯说出帮谁；英文 help 可以不带人，语感是「间接起作用」而不是「替谁干活」——诺奖不会替他写申请书，只是让它更容易被批。
+    to 可省：help to do 和 help do 都对，美式口语多省 to（第二句就是 help find），help to do 略正式、偏英式。
+    第一句里两个 it 不是一回事：前一个指得诺奖这件事，后一个指那份 proposal；get it funded = get + 宾语 + 过去分词，「让它被资助」。
+    别和形式主语句型 It helps to do sth（做某事会有用）混：那里的 it 没有实指，真主语是后面的 to do。判断法：it 能换成具体的东西（the prize helps to …）就是本条。
+  source: Claude Code · 诺奖得主 Francis Halzen 电话采访
+  added: "2026-10-09"
+- term: write a proposal
+  pos: n.
+  kind: phrase
+  meaning: 写一份「提出来、等别人批」的方案（申请书、提案、方案）；科研语境里专指向基金会申请经费的项目申请书。
+  examples:
+  - en: I was sitting in my hotel room writing a proposal.
+    zh: 我当时正坐在酒店房间里写一份经费申请书。
+  - en: We always have to create a design proposal 1st and then after that we have to get it review and approved by our leads.
+    zh: 我们总是得先写一份设计方案，然后拿去给 lead 审、等他们批。
+  - en: Then we can make a proposal, see that if it's useful for the whole.
+    zh: 然后我们可以提个方案，看看对整体有没有用。
+  note: |-
+    和 plan 的区别：plan 是自己的打算，不用谁同意；proposal 一定有个审批方（基金会、领导、客户、评审），潜台词是「请批准」。
+    第一句能确定是经费申请书，靠的是下一句 I hope it helps to get it funded（希望得奖能帮它拿到经费）。
+    常见搭配：write / submit a proposal（写 / 提交），make a proposal（提个方案，口语），a design proposal（设计方案），a grant proposal / research proposal（基金 / 科研申请书），the proposal gets approved / funded / rejected。
+    可数名词，别漏冠词：❌ I'm writing proposal。
+  source: Claude Code · 诺奖得主 Francis Halzen 电话采访
+  added: "2026-10-09"
+- term: Thank you very much indeed
+  pos: phr.
+  kind: phrase
+  meaning: 在 very much 后面再加一层「真的、确实」，把谢意再往上推一级（非常非常感谢、由衷感谢）。英式、偏正式。
+  examples:
+  - en: I'm very glad to talk to you. Thank you very much indeed.
+    zh: 能和您通话我也非常高兴，真的太感谢了。
+  - en: It's been a joy speaking to you. Thank you very much indeed.
+    zh: 和您聊天很愉快，由衷感谢。
+  note: |-
+    为什么不止说 Thank you very much：very much 用得太多已经被磨平，几乎等于客套；indeed 放在句末再盖一个章，意思是「我是认真的，不是客气话」，听起来更郑重、更诚恳。
+    用法：indeed 只能跟在 very + 形容词/副词 后面加强，❌ Thank you indeed / ❌ Thanks indeed（不成立）；同样的结构：very good indeed、very kind of you indeed。
+    语气：典型英式，BBC 采访、正式电话、致谢场合常听到；美式口语更常说 Thank you so much / I really appreciate it。日常和朋友说会显得太郑重。
+  source: Claude Code · 诺奖得主 Francis Halzen 电话采访
+  added: "2026-10-09"
+- term: put sth in bold
+  kind: phrase
+  meaning: 把文字设成粗体、加粗（bold）。
+  examples:
+  - en: I put the speaker names in bold so it's easier to follow who's talking.
+    zh: 我把说话人的名字加粗了，这样更容易看出是谁在说话。
+  note: |-
+    bold 本身是形容词/名词，所以要说 in bold（用粗体），❌ put sth bold。
+    也可以直接当动词：bold the speaker names；做完了说 the names are bolded。
+    Markdown 里两边的 ** 叫 double asterisks（单个是 asterisk，注意读音 /ˈæstərɪsk/，别读成 asterix）。
+    斜体同理：put sth in italics / italicize sth。
+    中文的「着重号」严格说是字下面的小圆点，英文叫 emphasis dots，西文排版里基本不用，日常说加粗就是 bold。
+  source: Claude Code · 整理 Nobel 访谈转录
+  added: "2026-10-09"
+- term: Why might a developer choose different LLMs for … versus …?
+  kind: pattern
+  meaning: 「为什么有人会在 A 和 B 上选不同的……？」：Why might sb do 问的是「可能出于什么考虑」，different X for A versus B 把两个环节摆在一起对比。
+  examples:
+  - en: Why might a developer choose different LLMs for the initial code generation versus the reflection step?
+    zh: 为什么开发者可能会在「初次生成代码」和「反思」这两步上，选用不同的大模型？
+  note: |-
+    Why might … 比 Why does … 软：不是问「他为什么这么做」（默认真有人这么做、要一个确定答案），而是问「有哪些可能的理由」，答案可以有好几条。出题、面试、设计评审里抛开放问题很常用：Why might this approach fail?
+    different X for A versus B：一个 different 统领两边，for A versus B 说清在哪两处不同。比 use one LLM for A and another for B 紧凑得多。versus 本身见 A versus B 那一条。
+    换掉 … 就能直接套：Why might a team choose different databases for reads versus writes?
+  source: Claude Code · Agentic AI 课程（reflection 测验）
+  added: "2026-10-08"
+- term: grade sth with a rubric
+  ipa: /ˈruːbrɪk/
+  pos: n.
+  kind: phrase
+  meaning: 按一张逐条列好、每条对应分值的评分表来打分（评分细则、评分量表）。
+  examples:
+  - en: Instead of asking an LLM to compare a pair of inputs, grading with a rubric can give more consistent results.
+    zh: 与其让大模型比较两份输入，不如按评分细则打分，结果会更稳定。
+  - en: assess the attached image against the quality rubric, and the rubric or grading criteria may have clear criteria like, does the plot have a clear title
+    zh: 对照质量评分表评估附上的这张图，评分表（或者说评分标准）里可以有很明确的条目，比如：图有没有清楚的标题
+  - en: see if, say, updating one of your prompts allows the system to generate images that scores more points according to this rubric.
+    zh: 看看比如改了某个提示词之后，系统生成的图按这张评分表能不能拿到更高分。
+  note: |-
+    来自教育场景：老师批作文前先发的那张表——「论点清楚 2 分、有例证 2 分……」。比 criteria / standard 多一层「结构化」：不只是标准，而是逐条列出、每条怎么给分都写死的一张表，所以不同人（或不同次调用的大模型）打出来的分更一致。
+    可数名词，常带冠词：a rubric、the rubric、use a rubric like this。
+    介词常配：grade / score sth with a rubric，assess sth against the rubric（对照着评），according to the rubric（按这张表算）。
+    词源：拉丁 rubrica「红土」，中世纪手抄本里用红字写的标题和说明，后来引申为「写在前面的规则说明」。
+  source: Claude Code · Agentic AI 课程（reflection 评估）
+  added: "2026-10-08"
+- term: incorporate vs merge
+  kind: contrast
+  meaning: incorporate：把 A 吸收进 B，B 还是 B，A 成了它的一部分（有主有次）；merge：两个对等的东西合成一个，原来各自的边界消失（合并）。
+  examples:
+  - en: for every conflict, it should try to merge the changes first
+    zh: 每遇到一个冲突，它都应该先试着把两边的改动合并起来
+  - en: the GitFlow pipeline actually just merges the code and calls the main pipeline.
+    zh: GitFlow 那条流水线其实就是把代码合并，然后调用主流水线。
+  note: |-
+    incorporate = in + corpus（身体）：把东西「收进身体里」。句式是 incorporate A into B，B 是主体：incorporate feedback into the design（把反馈吸收进设计）、incorporate reflection into the workflow（在工作流里加入反思这一步）。改完之后你看到的还是那个设计、那个工作流。
+    merge 是双方平起平坐：merge two branches / two companies merge / merge A with B。合完之后是一个新整体，分不出谁是主体。
+    判断法：能说「把 A 加进 B 里」→ incorporate；只能说「把 A 和 B 合成一个」→ merge。
+    上面两句例句都是 merge；incorporate 在你的真实对话里暂时没有读得通的例句。
+  source: Claude Code · Agentic AI 课程
+  added: "2026-10-08"
+- term: some criteria by which to evaluate sth
+  kind: pattern
+  meaning: 「拿来衡量某物的标准」：介词 + which + to do，把「凭什么去做」这层关系压进名词后面（据以……的……）。
+  examples:
+  - en: But one thing you could do might be to also give it some criteria by which to evaluate the two plots, such as clarity, how nice looking they are, and so on.
+    zh: 不过你可以做的一件事是，再给它一些用来评判这两张图的标准，比如清晰度、好不好看，等等。
+  - en: there are also going to be criteria by which you want to evaluate this output that may be more subjective
+    zh: 也会有一些你想拿来评估这个输出的标准，可能更主观一些
+  note: |-
+    by 从哪来：evaluate sth by criteria（按标准来评判）。把 criteria 提到前面当先行词，by 就跟着 which 一起提上来：criteria + by which + to evaluate the plots。第二句例句是完整从句版（by which you want to evaluate …）。
+    传神在哪：by 点明了标准和评判的关系——是「依据」。只说 criteria to evaluate the plots 也能懂，但关系是模糊的；口语里更随意的说法是 criteria to evaluate the plots by（介词留在句尾）。
+    同一个骨架换介词：a tool with which to … / a reason for which … / the degree to which …，介词由后面那个动词或名词的搭配决定。
+    语气偏正式、书面，讲课、写文档很合适；日常闲聊用 criteria to judge it by 更自然。
+  source: Claude Code · Agentic AI 课程（reflection 评估）
+  added: "2026-10-08"
+- term: I'll share an even better idea in a second.
+  kind: pattern
+  meaning: in a second：等一下、马上（就在接下来这一小会儿里），不是真的「一秒」。
+  examples:
+  - en: I'll share an even better idea in a second.
+    zh: 我等下马上讲一个更好的办法。
+  note: |-
+    比 later 近得多：later 可能是几小时后、改天；in a second 是「就在眼前这段话/这件事之后」。讲课、开会、演示时用来预告「先别急，后面马上讲到」，最常用。
+    同类按时间由近到远：in a sec（更口语）/ in a second / in a moment / in a minute / in a bit / later。
+    也用来让人稍等：I'll be with you in a second.（我马上过来）
+    顺带：an even better idea 里 even 修饰比较级，表示「还要更……」，暗示前面那个已经不错了；同类还有 much / way / far better。
+  source: Claude Code · Agentic AI 课程（reflection 评估）
+  added: "2026-10-08"
+- term: It turns out this doesn't work that well.
+  kind: pattern
+  meaning: 试了才发现「这招不太好使」：not that + 形容词/副词 = 没那么……、不怎么……（委婉的否定）。
+  examples:
+  - en: It turns out this doesn't work that well.
+    zh: 结果发现这招效果不怎么样。
+  - en: It turns out, by the way, that LLMs are actually not that good at these 1 to 5 scale ratings.
+    zh: 顺便说一句，其实大模型并不太擅长这种 1 到 5 分的打分。
+  note: |-
+    that 在这里是副词「那么」，不是代词。not that well 比 doesn't work well 软：不是说完全没用，而是「没你以为的那么好」——暗含一个预期被打了折扣，正好配 it turns out 的「试了才知道」。
+    比 doesn't work 委婉得多，评价方案、给反馈时很好用，不得罪人。
+    加强版 not all that …（没那么……）：It's not all that hard.
+    it turns out 本身见 It turns out that … 那一条。
+  source: Claude Code · Agentic AI 课程（reflection 评估）
+  added: "2026-10-08"
+- term: put evals in place
+  pos: v.
+  kind: phrase
+  meaning: 把一套机制搭好、让它就位并开始运转（建立、落实、设立）。
+  examples:
+  - en: Once you put in place evals like this, you can quickly try out different ideas for these prompts
+    zh: 一旦你把这样的评估体系搭起来，就能很快试各种不同的提示词思路
+  - en: when this was created, the cap wasn't in place yet.
+    zh: 这个东西刚建的时候，额度上限还没设上呢。
+  note: |-
+    字面是「放到该放的位置上」，摆好就能用。比 set up / build 多一层「从此一直在那儿起作用」，所以对象常是规则、流程、检查、限制这类机制：put a process / a policy / safeguards in place。
+    动作是 put sth in place，结果状态是 be in place（第二句例句：上限当时还没生效）。
+    原句 put in place evals like this 是倒装：evals like this 比较长，挪到了句尾，正常语序是 put evals like this in place。和 add to the prompt an instruction to … 是同一个道理。
+    in place 本身的画面是「在它该在的那个位置上」，下面三种用法都从这个画面来：
+    ① 机制就位、生效：have sth in place（本条）。
+    ② 待在原地不动：stay in place、hold sth in place（固定住）。
+    ③ 算法里的 in-place：原地修改，不另开数组，如 sort the array in place。
+    别和 in place of sth（代替）混：多一个 of，意思完全不同。
+  source: Claude Code · Agentic AI 课程（reflection 评估）
+  added: "2026-10-08"
+- term: add to the prompt an instruction to …
+  kind: pattern
+  meaning: add A to B（把 A 加到 B 里）的倒装：A 太长，就先说「加到哪」，把长长的「加什么」挪到句尾。
+  examples:
+  - en: So for example, do you want to add to reflection prompt an instruction to make the database query run faster or make it clearer?
+    zh: 比如说，你要不要往 reflection 提示词里加一条指令，让数据库查询跑得更快，或者写得更清楚？
+  - en: to send a calendar invite to Alice, as well as to add it to my calendar.
+    zh: 给 Alice 发个日历邀请，同时也把它加到我自己的日历上。
+  note: |-
+    to 是 add A to B 里的 to，表示「加到……里」，不是不定式。正常语序是 add an instruction to the prompt（第二句例句 add it to my calendar 就是正常语序）。
+    为什么倒过来：英语习惯把又长又重的部分放句尾（end weight）。an instruction to make the query run faster or make it clearer 太长，放中间的话 to the prompt 会被挤到最后，听的人早忘了在加什么。A 很短（it、this、a line）时别倒装：❌ add to my calendar it。
+    原句 add to reflection prompt 漏了 the，是口语随口说的，自己说要用 add to the reflection prompt。
+  source: Claude Code · Agentic AI 课程（reflection 评估）
+  added: "2026-10-08"
+- term: that would mean …ing
+  kind: pattern
+  meaning: 把一个选项落到实处：「真这么做的话，具体就是要……」（意味着、等于要）。
+  examples:
+  - en: So without reflection would mean to take the SQL query generated by the first LM and to just see what answer it gives.
+    zh: 所以「不加 reflection」的意思就是：直接拿第一个大模型生成的 SQL 查询，看它给出什么答案。
+  - en: And with reflection would mean to take the database query generated after the second LM has reflected on it to see what answer that fetches from the database.
+    zh: 而「加 reflection」的意思就是：拿第二个大模型反思修改过之后的查询，看它从数据库里取回什么答案。
+  note: |-
+    would 表示「假设真这么做」，所以语气比 means 软：在摆选项、讨论方案时用，不是陈述既成事实。
+    标准写法是 mean + -ing（mean doing = 意味着要做）；上面两句例句是口语里的 mean to do，听得懂但别学——mean to do 通常是「打算、故意」：I didn't mean to hurt you（我不是故意的）。
+    日常：That would mean leaving earlier. / Moving the meeting would mean pushing back the release.
+    也可接 that 从句：That would mean (that) we miss the deadline.
+  source: Claude Code · Agentic AI 课程（reflection 评估）
+  added: "2026-10-08"
+- term: a store carries sth
+  pos: v.
+  kind: phrase
+  meaning: 店里「备着、卖着」某类货——货架上常年有这样东西（经营、有货）。
+  examples:
+  - en: How many styles are carried in my store?
+    zh: 我店里一共卖着多少种款式？
+  note: |-
+    比 sell 多一层「长期在货架上、属于店里的经营范围」：We don't carry that brand = 我们店不进这个牌子（不是暂时卖完）。暂时没货用 out of stock。
+    常见：Do you carry …? 你们店卖……吗？（问店员最地道的说法）
+    和 carry out「把事办完」是两个义项。
+  source: Claude Code · Agentic AI 课程（reflection 评估）
+  added: "2026-10-08"
+- term: and this would suggest that …
+  kind: pattern
+  meaning: 顺着刚摆出来的现象，谨慎地往下推一个结论：「这大概说明……」（表明、意味着）。
+  examples:
+  - en: In this example, no reflection gets the answers right 87% of the time, with reflection gets it right 95% of the time. And this would suggest that reflection is meaningfully improving the quality of the database queries.
+    zh: 在这个例子里，不加反思有 87% 的时候答对，加了反思是 95%。这大概说明，反思确实让数据库查询的质量有了实打实的提升。
+  note: |-
+    suggest 在这里是「表明、暗示」，不是「建议」；主语是事实/数据（this、the data），不是人。
+    比 this means / this shows 软：shows 是证据坐实了，would suggest 是「按理推应该是这样，但我不打包票」，讲课、论文、复盘里很常见。
+    would 不是过去时也不是虚拟，是给推断再降一档语气。
+    表「表明」时 that 从句用正常陈述语气 —— ❌ this suggests that it be wrong；只有「建议」才用 (should) do。
+  source: Claude Code · Agentic AI 反思课
+  added: "2026-10-07"
 - term: spot bugs
   kind: phrase
   meaning: 一眼看出、揪出 bug（发现）。
@@ -2753,9 +3172,15 @@
   examples:
   - en: The new place opened downstairs — let's try it out.
     zh: 楼下新开了一家，我们去试试。
+  - en: I hope you have a sense of how to write a basic reflection prompt and that maybe you even try it out in your own work to see if it helps give you better performance.
+    zh: 希望你对怎么写一个基础的反思提示词心里有数了，甚至可以在自己的工作里试一试，看看能不能帮你拿到更好的效果。
+  - en: I will often try out different large language models and maybe try out different LLM providers to see which one gives the best result.
+    zh: 我经常会换几个不同的大模型试试，也可能试试不同的 LLM 厂商，看哪个效果最好。
   note: |-
     out 是「拿出来实际走一遍」，所以 try it out 比光说 try it 更强调亲自上手验证效果。
     ❌ 试穿衣服是 try it on，别和 try it out 混。
+    可拆分：try out sth / try sth out 都行，但宾语是代词时只能夹中间 —— ❌ try out it。
+    常跟 to see if / to see which … 连用，交代「试了是为了验证什么」。
   source: Notion · Daily
   added: "2026-07-29"
 - term: distribute vs disturb
@@ -4231,11 +4656,15 @@
   meaning: 两边一个对一个、位置能对上（对应于）。co-（共同）+ respond（回应）—— 这边动一下，那边跟着有个对得上的。
   examples:
   - The shared logs correspond to this second call.
+  - en: sometimes the rank ordering doesn't correspond that well to human expert judgment.
+    zh: 有时候它排出来的先后顺序，和人类专家的判断对不太上。
   note: |-
     vs match：match 强调两个东西一样、能配对；correspond to 强调的是「对应关系」本身 —— 这条日志属于那次调用，两者不是一个东西，但有固定的对位。排查问题时要说的正是这层。
     vs relate to：relate to 只说有关系，松得多。
     介词分两种意思，别混：correspond to sth = 对应于某物；correspond with sb = 与某人通信（书信往来）。
     形容词 corresponding 很好用：the corresponding KYC journey（与之对应的那条）。
+    中间能插程度副词：correspond well / closely / roughly to sth = 吻合得好 / 紧密 / 大致对得上。上面那句是 correspond [that well] to，that well = 那么好，整体是「没那么吻合」，不是 correspond that（that 不是宾语）。
+    拿评估结果和人工判断比对时常用：the scores correspond closely to human ratings。
   source: Notion · Work
   added: "2026-07-29"
 - term: decommission the legacy sth
