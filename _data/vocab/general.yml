@@ -2,6 +2,71 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: functions to provide to the application
+  kind: pattern
+  meaning: 名词 + to do 修饰名词，表示「拿来做……的那个东西」；名词本身就是后面那个动词的宾语（可以提供给应用的函数）。
+  examples:
+  - en: They might have to write code to wrap around Slack APIs to have functions to provide to the application.
+    zh: 他们可能得写代码把 Slack 的 API 包一层，封装成函数交给应用去调用。
+  note: |-
+    还原成正常语序就是 provide functions to the application —— functions 被挪到前面，所以 provide 后面空着，不再接宾语。
+    同类结构：a book to read、something to eat、tools to give to the LLM。
+    两个 to 不一样：第一个是不定式标记（to provide），第二个是介词，属于 provide sth to sb 里的「给谁」。
+    上面那句例句里还有个 to have，表示目的（为了得到），和修饰名词的 to provide 不是一回事，连在一起读容易乱。
+  source: Claude Code · Agentic AI 课程 · MCP
+  added: "2026-10-12"
+- term: wrap around the API
+  kind: phrase
+  meaning: 在现成的东西外面包一层，对外换一个更好用的接口，里面还是调用原来那个东西（封装、包一层）。
+  examples:
+  - en: They might have to write code to wrap around Slack APIs to have functions to provide to the application.
+    zh: 他们可能得写代码把 Slack 的 API 包一层，封装成函数交给应用去调用。
+  - en: We wrapped around the internal tool, calling the exact same endpoints the UI would.
+    zh: 我们把那个内部工具包了一层，调用的就是 UI 本来会调的那些接口。
+  - en: So many developers were all building custom wrappers around these types of data sources.
+    zh: 很多开发者都在给这类数据源各自写定制的封装层。
+  note: |-
+    比 encapsulate 口语得多，工程师日常聊天就说 wrap / wrapper；encapsulate 偏教科书、偏面向对象的「封装」概念。
+    wrap around sth 和 wrap sth 都能说（wrap the Slack API）；名词说 a wrapper around sth，介词用 around（❌ a wrapper of sth）。
+    画面：把一个东西用纸裹起来，外面看到的是新包装，里面还是原来的东西。
+  source: Claude Code · Agentic AI 课程 · MCP
+  added: "2026-10-12"
+- term: a first attempt at sth
+  ipa: /əˈtempt/
+  pos: n. / v.
+  kind: phrase
+  meaning: 试着做一件没把握成功的事，强调「试一把，不一定成」（尝试、试图）。
+  examples:
+  - en: This would be a reasonable first attempt at an agentic workflow for writing an essay.
+    zh: 作为写文章的 agentic 工作流，这算是一个挺合理的初版尝试。
+  - en: This is the pain points that MCP attempts to solve.
+    zh: 这就是 MCP 想要解决的痛点。
+  - en: Agents will attempt to use a web browser and read a web page.
+    zh: agent 会尝试用浏览器去读网页。
+  note: |-
+    和 try 的区别：try 是日常口语；attempt 更正式，而且暗含「不一定成功」，常用在描述机制、写文档、讲课里。口语里跟同事说话用 try 就行。
+    名词接 at：an attempt at sth（❌ an attempt of / for sth）；动词接 to do：attempt to do sth（❌ attempt doing）。
+    常见：a first attempt、in an attempt to do sth（为了……）、a failed attempt、on the first attempt（第一次就……）。
+    读音：/əˈtempt/，重音在第二音节。
+  source: Claude Code · Agentic AI 课程
+  added: "2026-10-12"
+- term: a set of instructions
+  kind: phrase
+  meaning: 把几样同类的东西打包成一组、当成一个整体来说（一组、一套）。
+  examples:
+  - en: It's just a set of instructions because every single step is repetitive.
+    zh: 它就是一套指令而已，因为每一步都是重复的。
+  - en: We're providing a set of tools to the LLM for the LLM to choose to use when it deems appropriate.
+    zh: 我们给 LLM 提供一组工具，让它在觉得合适的时候自己挑着用。
+  - en: Once you've built up a set of evals like this, …
+    zh: 一旦你像这样攒起了一套评测，……
+  note: |-
+    和 some / several 的区别：some instructions 只是“一些”，散的；a set of 强调这些东西配套、成体系，是一个整体（一套工具、一组测试）。
+    后面接复数名词：a set of tools，❌ a set of tool。
+    主语时谓语一般跟 set 走用单数：A set of rules is defined…；口语里跟复数也常听到。
+    常见搭配：a set of tools / rules / questions / steps / evals；build up a set of sth（慢慢攒出一套）。
+  source: Claude Code · Agentic AI 课程 / 同事分享
+  added: "2026-10-12"
 - term: five sevenths vs five out of seven vs five over seven
   kind: contrast
   meaning: 「七分之五」的三种说法：five sevenths 说比例，five out of seven 数个数，five over seven 念算式。
