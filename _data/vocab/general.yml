@@ -2,6 +2,22 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: five sevenths vs five out of seven vs five over seven
+  kind: contrast
+  meaning: 「七分之五」的三种说法：five sevenths 说比例，five out of seven 数个数，five over seven 念算式。
+  examples:
+  - en: We've already spent five sevenths of the budget.
+    zh: 预算我们已经花掉七分之五了。
+  - en: Five out of seven tests passed on the first run.
+    zh: 第一次跑，7 个测试里过了 5 个。
+  - en: So the probability is five over seven.
+    zh: 所以概率是 7 分之 5。
+  note: |-
+    ① five sevenths —— 把一个整体切成比例，适合不可数的整体（five sevenths of the budget）。英语先说分子、再说分母（与中文相反）：分子用基数词，分母用序数词；分子 ≥ 2 时分母加 s（one seventh、two sevenths）。特例：1/2 = a half（不说 one second），1/4 = a quarter（也说 one fourth），3/4 = three quarters。后接名词用 of，动词单复数跟着 of 后面的名词走（Five sevenths of the cake is gone / of the users are …）。sevenths 读 /ˈsevənθs/，结尾 θs 连着发，别丢掉 θ。
+    ② five out of seven —— 一个个数过来的计数感，适合测试用例、人、次数；日常口语最常用。打分也这么说：I'd give it a seven out of ten.（满分十分我给七分）。这里的 out of 是「从总数里」，和「从容器里出来」那个 out of 不是一个义项。
+    ③ five over seven —— over 就是那条分数线（5 在上，7 在下），用于数学、统计、编程里念分数或除法；分母大时尤其好用：three over twenty-seven 比 three twenty-sevenths 好念得多。也用来念代数式：x over y。日常说比例时别用，听着像在念题目。
+  source: Claude Code · 分数表达
+  added: "2026-10-11"
 - term: which you sort of saw in …
   kind: pattern
   meaning: 放在动词前，把话说软一点：「算是、有点、某种程度上」（不完全是，但差不多）。
@@ -4536,14 +4552,18 @@
   note: lap 是坐下时的大腿。隐含"我没主动接，是它掉下来的"，带一点无奈。也说 land on my plate。
   source: Notion · Work
   added: "2026-07-29"
-- term: that said
-  kind: phrase
-  meaning: 话虽如此
+- term: That said, …
+  kind: pattern
+  meaning: 「刚才那句我认，不收回；但还有另一面要说」：先把前一句放下，再转向相反的一面（话虽如此、不过）。
   examples:
-  - The rollout was messy. That said, we learned a lot.
+  - en: The rollout was messy. That said, we learned a lot.
+    zh: 这次上线搞得挺乱的。话虽如此，我们也学到了很多。
   note: |-
-    典型用法是先自我否定、再给积极信息（或反过来）。近义 having said that / then again。
-    和 but / however 的区别：but 是直接转折；that said 先承认前面说的成立，再补充另一面，语气更平衡、客观。
+    字面是 that (being) said ——「那句话已经说出来了」。that 指的就是上一句。整句的意思是：上一句说出口就算数，我不收回，但是……
+    它总在两句话之间，放在第二句开头，后面跟逗号。前一句和后一句方向相反：上面那句例句，前一句是坏消息（上线乱），That said 之后是好的一面（学到很多）。反过来也行：The new design looks great. That said, it's slower.（新设计很好看。不过它更慢。）
+    为什么不直接用 but：but 是硬转，听起来像前一句不重要了、后一句才是重点。That said 先给前一句一个「我认」，再转，两边都算数，所以显得公允，常用于给反馈、做评审、写总结。
+    它只用在句与句之间，前一句说完、停一拍再说；同一句里的小转折还是用 but（It's slow but stable）。
+    同义：having said that（更正式一点）、that being said（完整形式）。
   source: Notion · Work
   added: "2026-07-29"
 - term: going forward
