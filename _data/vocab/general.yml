@@ -2,6 +2,147 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: gain inspiration as to what to work on next
+  kind: phrase
+  meaning: as to = 「关于……这个问题」：前面一个名词，后面挂一个 what / how / whether 的问题，说明这个名词是针对哪个问题的（关于、至于）。
+  examples:
+  - en: And lastly, in terms of using evals to gain inspiration as to what to work on next, a lot of agentic workflows are being used to automate tasks that, say, humans can do.
+    zh: 最后，说到用 eval 来启发你下一步该做什么——很多 agentic workflow 是拿来自动化那些人本来能做的任务的。
+  - en: change the way you evaluate the output to make it correspond better to your judgment as to what system is actually working better
+    zh: 改一改评估输出的方式，让它更贴近你自己对「到底哪个系统更好」的判断。
+  - en: then you'll be able to make better decisions as to what models to use
+    zh: 那你在「该用哪个模型」这件事上就能做出更好的决定。
+  note: |-
+    结构固定：抽象名词 + as to + 疑问词从句。常搭的名词：decision / judgment / question / doubt / inspiration / advice / guidance as to what / how / whether …。
+    为什么不用 about：about 也能用，但 as to 更明确地表示「后面是一个问题」，读起来正式一点、利落一点；about 更随意。很多时候直接删掉也通：decide what to use = make a decision as to what to use，只是后者多了个名词，语气更正式。
+    别和 as for 混：As for X, … 放句首换话题（至于 X 嘛）；as to 一般跟在名词后面，挂问题。
+    ❌ 别和 as well as to（以及去做）混，那是 as well as + to do，跟 as to 无关。
+  source: Claude Code · Agentic AI 课程 Module 4 evals
+  added: "2026-10-14"
+- term: In terms of doing sth, …
+  kind: pattern
+  meaning: 开头先亮出「接下来说的是哪一方面」，再往下讲（至于……方面、说到……）。
+  examples:
+  - en: And lastly, in terms of using evals to gain inspiration as to what to work on next, a lot of agentic workflows are being used to automate tasks that, say, humans can do.
+    zh: 最后，说到用 eval 来启发你下一步该做什么——很多 agentic workflow 是拿来自动化那些人本来能做的任务的。
+  - en: In terms of optimizing costs, a similar calculation where you calculate the cost of each step would also let you benchmark and decide which steps to focus on.
+    zh: 至于优化成本，也可以做类似的计算：把每一步的成本算出来，同样能让你做基准对比，决定该盯哪几步。
+  - en: I'll often use this type of error analysis to tell me where to focus my attention in terms of what to work on next.
+    zh: 我经常用这种 error analysis 来告诉我，在下一步做什么这件事上，注意力该放在哪。
+  note: |-
+    和另一条 in terms of sth（按某个维度衡量：in terms of cost / latency）是同一个短语的另一种用法：这里不是在找一把尺子，而是像路标一样宣布「下面换到这一块了」，口语里尤其是讲稿、汇报里非常常见。
+    比 about / regarding 更口语、更顺嘴；和 when it comes to、as for 意思差不多，但 in terms of 后面接的通常是当前话题里的「某一个方面」（成本、延迟、下一步做什么），而不是一个毫不相干的新话题。
+    后面常接 doing sth 或 what / how 从句：in terms of what to work on next。
+  source: Claude Code · Agentic AI 课程 Module 4 evals
+  added: "2026-10-14"
+- term: hone in on sth
+  kind: phrase
+  meaning: 把注意力一步步收拢、锁定到某个点上（聚焦、锁定、找准）。
+  examples:
+  - en: there's a method of evals that helps you hone in of your entire agentic system. What are the components most worth focusing your attention on?
+    zh: 有一种 eval 的方法能帮你在整个 agentic 系统里锁定：哪些组件最值得你花精力？
+  note: |-
+    比 focus on 多一层「从一大片里逐步缩小范围、最后对准」的过程感，像导弹寻的；focus on 只说注意力放在哪。
+    来源：本来是 home in on（像信鸽 / 导弹归巢、自动寻向目标），因为 home 和 hone 读音相近被混成 hone in on。母语者口语里两种都很常见，正式写作里更稳的是 home in on。
+    后面要接 on：hone in on the problem。上面那句例句里的 of 是转录错误，原话应是 hone in on。
+    别和 hone your intuition（磨炼直觉）混：单独的 hone 是磨刀，引申为打磨技能，不带 in。
+  source: Claude Code · Agentic AI 课程 Module 4 evals
+  added: "2026-10-14"
+- term: tweak a prompt
+  ipa: /twiːk/
+  pos: v.
+  kind: phrase
+  meaning: 在已经能用的东西上拧一拧、小幅微调（微调、调整）。
+  examples:
+  - en: I build and make changes to see if the percentage of time that it gets the extracted date correct is hopefully going up as I tweak my prompts or tweak other parts of my system.
+    zh: 我一边搭一边改，看随着我微调 prompt、或者调系统别的部分，日期抽对的比例是不是能往上走。
+  - en: rather than needing to read over hundreds of outputs every time you tweak a prompt somewhere
+    zh: 而不用每次在哪儿改了一下 prompt，就得把几百条输出从头读一遍。
+  note: |-
+    比 change / adjust 多一层「改动很小、东西本身已经能用」的意思：change 可以是推倒重来，tweak 只是这儿拧一下那儿调一下。
+    本义是捏、拧（tweak sb's nose），引申成拧旋钮式的微调。
+    也能当名词：a small tweak、make a few tweaks to sth。
+    ❌ tweak 不用于大改：重写整个系统要说 rewrite / overhaul。
+  source: Claude Code · Agentic AI 课程 Module 4 evals
+  added: "2026-10-14"
+- term: escalate it to my manager
+  ipa: /ˈeskəleɪt/
+  pos: v.
+  kind: phrase
+  meaning: 把事情往上推一级，交给更高一层的人处理（升级、上报）；不及物时指事态越闹越大（恶化）。
+  examples:
+  - en: If the customer is still unhappy, escalate it to the on-call manager.
+    zh: 如果客户还是不满意，就把问题升级给值班经理。
+  note: |-
+    画面就是 escalator（自动扶梯）：一级一级往上走。
+    比 report it to sb 多了一层「这事在我这层解决不了、得往上交」的意思；report 只是告知，escalate 是把处理权往上移。
+    搭配：escalate sth to sb（升级给谁）；the issue escalated（不及物，事态恶化）；名词 an escalation、an escalation path（升级流程）。
+    重音在第一音节：ES-ca-late。
+    别和 evaluate（评估）混：evaluate 里藏着 value，是「把价值估出来」。
+  source: Claude Code · 问题升级
+  added: "2026-10-14"
+- term: This in turn causes sth to do …
+  kind: pattern
+  meaning: 链条往下传一环：上一件事引出这件事，这件事又接着引出下一件（进而、接着又）。
+  examples:
+  - en: This in turn causes the LMS to use the MCP server to make a different request, to list the pull request.
+    zh: 这一步接着又让 LLM 去调用 MCP server，发一个不同的请求，把 pull request 列出来。
+  note: |-
+    比 then / so 多了「一环扣一环」的因果链感：A 导致 B，B 再 in turn 导致 C，强调 B 既是结果、又成了下一步的原因。只说 then 只有时间先后，so 只有一层因果。
+    位置：放在主语后、动词前（This in turn causes …），或句首 In turn, …。
+    另一个义项是「轮流、依次」：Each of them spoke in turn.（他们依次发言）。
+    例句里的 LMS 是语音转录把 LLMs 听错了。
+  source: Claude Code · Agentic AI 课程 · MCP
+  added: "2026-10-12"
+- term: there are N tools out there
+  kind: phrase
+  meaning: 「外面那个大世界里现有的」——泛指市面上、世界上已经存在的东西，不指具体在哪（市面上、现有的）。
+  examples:
+  - en: And so if there are M applications being developed and there are N tools out there, …
+    zh: 所以如果有 M 个应用在开发，市面上又有 N 个工具，……
+  note: |-
+    比 there are N tools 多了一层「放眼整个外部世界、数不过来」的感觉，口语里非常高频；换成 in the world / on the market 都偏正式，也没这么随意。
+    放在名词后面或句末：there are lots of options out there、it's a jungle out there。
+    另一个义项是字面的「在外面那儿」（He's waiting out there）。
+    常见：Is there anything like that out there?（市面上有没有现成的？）
+  source: Claude Code · Agentic AI 课程 · MCP
+  added: "2026-10-12"
+- term: build a custom wrapper
+  ipa: /ˈkʌstəm/
+  pos: adj.
+  kind: phrase
+  meaning: 不是现成通用的，而是按自己的需求专门做的（定制的、自己做的）。
+  examples:
+  - en: So many developers were all building custom wrappers around these types of data sources.
+    zh: 很多开发者都在给这类数据源各自写自己定制的封装层。
+  - en: Because this is a custom app, we don't exactly have FTs on it.
+    zh: 因为这是个定制的应用，我们其实没给它写功能测试。
+  - en: It'll be useful to you if you ever need to build a custom research agent yourself.
+    zh: 哪天你要自己做一个定制的研究 agent，这个就用得上。
+  note: |-
+    和 standard / off-the-shelf / generic（现成的、通用的）相对。说 custom 时言外之意常带「每家都自己搞一套、没法复用」，上面第一句例句正是在铺垫 MCP 要解决这个重复造轮子的问题。
+    比 customized 口语、常用：customized 强调「在现成的基础上改过」，custom 是「一开始就专门做」。
+    这里 custom 是形容词。名词 custom 是「习俗」，customs 是「海关」，customer 是「客户」，别混。
+    常见搭配：a custom app / build / pipeline / domain / field；custom-built、custom-made。
+  source: Claude Code · Agentic AI 课程 · MCP
+  added: "2026-10-12"
+- term: What has been happening in … is …
+  kind: pattern
+  meaning: 先抛出「发生了什么」吊一下胃口，再在 is 后面把事情摊开讲；用来讲一个现象、一段经过或一套机制怎么运作（实际情况是……）。
+  examples:
+  - en: Then what has been happening in the developer community is if a different team is building a different application, then they too will integrate by themselves with Slack and Google Drive and GitHub and so on.
+    zh: 然后开发者社区里一直以来的情况是：换一个团队做另一个应用，他们也得自己再去对接一遍 Slack、Google Drive、GitHub 这些。
+  - en: So what happens is I went to write a skill for it.
+    zh: 所以后来我就干脆给它写了个 skill。
+  - en: So what happens is that all the conversation, all the things that you have done before in the platform persists inside the memory DB.
+    zh: 它的机制是，你之前所有的对话、做过的所有事情，都会存在 memory DB 里。
+  note: |-
+    比直接说 Developers have been integrating … 多了一层铺垫：先告诉听众「我要讲一个现象了」，再讲内容，听起来像在带着人往下看，讲课、做分享、演示时特别顺口。
+    时态跟着要表达的意思换：what has been happening（一直以来持续的现象）/ what happens is（讲机制、讲每次都会怎样，口语里最高频）/ what happened was（讲过去某一次的经过）。
+    is 后面接完整的句子，that 可有可无：what happens is (that) it will call …。
+    口语里常在前面带个 So：So what happens is …，用来接着往下讲。
+  source: Claude Code · Agentic AI 课程 · MCP
+  added: "2026-10-12"
 - term: functions to provide to the application
   kind: pattern
   meaning: 名词 + to do 修饰名词，表示「拿来做……的那个东西」；名词本身就是后面那个动词的宾语（可以提供给应用的函数）。
@@ -4545,7 +4686,7 @@
   note: |-
     记的时候只念一句话：**「用 x 把 y 表示出来」** —— 这就是数学里 express y in terms of x 的原话，term 的本义是「项、单位、说法」，y = 3x + 1 就是把 y 用 x 这个单位表示出来。日常句子完全照搬这个结构：in terms of 后面跟的是那个 x（cost / risk / effort / headcount / notational convention），句子里一定有个 y 正在被它表示、被它衡量。换个说法就是「按 x 这把尺子来量 y」。
     和 about / regarding 的区别：about、regarding 只是引出话题，后面接什么都行；in terms of 引出的是衡量标准，接不上标准就用错了。❌ In terms of the meeting, it's at 3 pm（会议不是一把尺子）→ ✅ As for the meeting, it's at 3 pm。
-    最容易混的是 when it comes to：那个才是「说到、谈到某个话题」（When it comes to pricing, we're still deciding）；in terms of 是「按某个维度衡量」。一句话分：**换话题用 when it comes to，换尺子用 in terms of**。
+    最容易混的是 when it comes to：那个才是「说到、谈到某个话题」（When it comes to pricing, we're still deciding）；in terms of 是「按某个维度衡量」。一句话分：**换话题用 when it comes to，换尺子用 in terms of**。（例外：句首的 In terms of doing sth, … 在讲稿里常当路标，宣布「下面说这一方面」，见那一条。）
     真实会议录音里常被当填充词随口垫在句子中间——上面第三条例句就是这种，in terms of where you're 其实没带出任何维度，听到不用深究；自己写别学，写进文档要它真的带出一个维度。
   source: Notion · Work
   added: "2026-07-29"
