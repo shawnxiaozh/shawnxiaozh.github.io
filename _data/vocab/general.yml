@@ -2,6 +2,126 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: dump the web pages into the LLM
+  pos: v.
+  kind: phrase
+  meaning: 不加整理、一股脑地整个倒进去（一股脑塞进、倒进）。
+  examples:
+  - en: But after dumping the web pages in LLM, maybe the LLM is ignoring some of the points in the documents we had fetched.
+    zh: 但把网页一股脑塞进 LLM 之后，LLM 可能会忽略我们抓回来的文档里的某些要点。
+  note: |-
+    dump 本义是倾倒（垃圾）：dump the trash、a garbage dump（垃圾场）。所以它的画面是「哗啦一下整个倒进去」，不挑、不整理。
+    比 put / pass / feed into 多了「量大、没筛选」的意思：Ng 在这里正是在说——网页原样整篇塞给模型，模型就可能漏看重点。put 只是放进去，feed 是喂、偏中性。
+    介词标准是 dump sth into sth；上面那句例句里的 in 是口语随口说的。
+    技术里常见：dump the logs（把日志整个导出来）、a core dump / heap dump（内存转储）、dump the database。
+    日常：dump sb = 甩了某人（分手）；dump all the work on sb = 把活全甩给某人。
+  source: Claude Code · Agentic AI 课程 Module 4 error analysis
+  added: "2026-10-14"
+- term: choose the best handful to download
+  kind: phrase
+  meaning: 从一大堆里挑出最好的那几个（一小撮、少数几个）；handful 后面的 of sth 上下文清楚时直接省掉。
+  examples:
+  - en: Or maybe web search was just fine, but when we gave the list of web search results to the LLM, maybe it didn't do a good job choosing the best handful to download.
+    zh: 也可能网页搜索本身没问题，但我们把搜索结果列表交给 LLM 之后，它没挑好该下载的那几篇最好的。
+  - en: one thing you might do is find a handful of invoices, maybe 10 or 20 invoices, and go through them and just take a look at their output
+    zh: 你可以做的一件事是，找一小批发票，比如 10 张或 20 张，一张张过一遍，看看输出。
+  - en: So again, I would look through a handful of emails where the final output was unsatisfactory and try to figure out what had gone wrong.
+    zh: 所以还是一样，我会翻几封最终输出不理想的邮件，试着搞清楚哪儿出了错。
+  note: |-
+    handful 本义是「一把」，一只手抓得住的量 → 引申为「少数几个」。
+    平时多见 a handful of sth；这里 the best handful 是把 handful 当名词直接用，of search results 因为前文已经说了就省掉了，类似 pick the best few / the top five。
+    它不是精确数字，而是在强调「相对总量，只是一小撮」：上面第二句 Ng 说 a handful of invoices 是 10 到 20 张——对整个发票库来说就是一小撮。所以别把 handful 死记成「三五个」。
+    比 a few 多一层「从一大堆里抓出来一把」的画面，常用于挑样本、挑候选：a handful of examples / users / candidates。
+    口语里还有 sb is a handful：某人（常指小孩）很难管、让人头疼。
+  source: Claude Code · Agentic AI 课程 Module 4 error analysis
+  added: "2026-10-14"
+- term: How do you know what to work on?
+  kind: pattern
+  meaning: 这么多事，你怎么知道该先在哪件上下功夫？（work on = 把精力投到某件事上去改它、做它）
+  examples:
+  - en: So now you've spotted this problem that it is sometimes missing key points, how do you know what to work on?
+    zh: 好，现在你已经发现它有时会漏掉关键点了，那你怎么知道该从哪儿下手去改？
+  - en: I'll often use this type of error analysis to tell me where to focus my attention in terms of what to work on next.
+    zh: 我经常用这种 error analysis 来告诉我，在下一步做什么这件事上，注意力该放在哪。
+  note: |-
+    两个点：
+    ① work on sth ≠「在……上工作」，而是「花功夫去弄、去改进某个东西」：work on the search component（去改搜索那块）、I'm working on it（在弄了）。中文母语者容易只想到 work = 上班。
+    ② what to work on 是「疑问词 + to do」，把一个问题压缩成名词短语：what to work on = 该做什么，where to focus = 该把精力放哪，how to fix it = 该怎么修。比写成 what I should work on 短，口语里非常常见。
+    比 how do you decide what to do 更具体：work on 暗含「要投入时间精力去改」，正是 Ng 想说的「资源有限、该押在哪个组件上」。
+  source: Claude Code · Agentic AI 课程 Module 4 error analysis
+  added: "2026-10-14"
+- term: the most problematic components
+  ipa: /ˌprɒbləˈmætɪk/
+  pos: adj.
+  kind: phrase
+  meaning: 老出问题、让人头疼的那部分（有问题的、麻烦的）。
+  examples:
+  - en: So by reading the traces, you start to get an informal sense of where might be the most problematic components.
+    zh: 所以读着 trace，你会开始隐约感觉到，最有问题的组件可能在哪儿。
+  - en: So maybe a component is problematic but I don't have any ideas for improving it, so that would suggest maybe not prioritizing that as high.
+    zh: 比如某个组件确实有问题，但我想不出任何改进办法，那就说明也许不该把它排得那么靠前。
+  - en: putting in some evals to track the potentially problematic aspects of the system
+    zh: 加一些 eval，盯住系统里那些可能会出问题的地方。
+  note: |-
+    和 have problems / has issues 意思接近，但 problematic 是一个形容词，能直接放在名词前面：the problematic component 比 the component that has problems 紧凑得多，写报告、做分析时很顺手。
+    比 bad / broken 克制：broken 是已经坏了，problematic 只是说「这里有麻烦、值得注意」，程度可轻可重，potentially problematic（可能有问题）也很常用。
+    另一个义项：（说法、内容）不妥、容易引起争议或冒犯。module2 里 problematic connotations（不好的联想）就是这个意思；社会话题里 That's problematic 常指「这话 / 这做法有点政治不正确」。
+    读音：重音在 -MAT-，prob-lem-MAT-ic。
+  source: Claude Code · Agentic AI 课程 Module 4 error analysis
+  added: "2026-10-14"
+- term: a more rigorous analysis
+  ipa: /ˈrɪɡərəs/
+  pos: adj.
+  kind: phrase
+  meaning: 每一步都讲依据、按规矩来，经得起推敲（严谨的、严格的）。
+  examples:
+  - en: In order to make this more rigorous, rather than reading and getting an informal sense, you might actually build up a spreadsheet to more explicitly count up where the errors are.
+    zh: 要让这件事更严谨一点，就别光是读一读、心里有个大概，而是真的建一张表格，把错误出在哪儿明明白白地数出来。
+  - en: And this doesn't look like the most rigorous peer-reviewed article.
+    zh: 而这篇看起来可不像什么严谨的同行评审文章。
+  - en: And this more rigorous analysis then lets me be even more focused in deciding what components to work on next.
+    zh: 而这种更严谨的分析，能让我在决定下一步改哪个组件时更有针对性。
+  note: |-
+    词根 rigor 和 rigid（僵硬）同源，本义是「硬、不打折扣」。
+    比 careful 重：careful 只是小心，rigorous 是方法上有章法、有证据、能复核。第一句里 Ng 正好给了反面：rather than getting an informal sense（凭印象）。所以 rigorous 的反义在这里是 informal / by gut，不是 careless。
+    常配：rigorous analysis / testing / process / review / research。说人：a rigorous engineer（做事严谨的工程师）。
+    读音：重音在第一个音节 RIG-，g 发 /ɡ/，不是 /dʒ/。
+  source: Claude Code · Agentic AI 课程 Module 4 error analysis
+  added: "2026-10-14"
+- term: the performance is subpar
+  ipa: /ˌsʌbˈpɑːr/
+  pos: adj.
+  kind: phrase
+  meaning: 没达到该有的水准、低于标准线（不达标、欠佳）。
+  examples:
+  - en: I'll often examine the traces, that means the intermediate output after each step, in order to understand which component's performance is subpar, meaning, say, much worse than what a human expert would do
+    zh: 我经常去看 trace，也就是每一步之后的中间输出，好弄清楚是哪个组件表现不达标——比如说，比人类专家做得差很多。
+  - en: it's useful to focus on the examples where the performance is subpar to try to figure out what went wrong with those examples
+    zh: 重点看那些表现不达标的样本会很有用，去搞清楚它们到底哪儿出了问题。
+  - en: try to count up how frequently individual components led to subpar outputs
+    zh: 试着统计一下，各个组件分别有多少次导致了不达标的输出。
+  note: |-
+    sub（低于）+ par（标准）。par 来自高尔夫的「标准杆」：on par = 刚好达标，above par = 超出标准，below par / subpar = 没达标。
+    比 bad / poor 委婉、更客观：bad 是在评判，subpar 只是说「拿标准一比，不够」，所以评价工作、表现、输出时很常用，听起来不像在骂人。
+    前面一般有个参照标准，上面第一句里 Ng 自己补了：much worse than what a human expert would do。
+    两种写法都有：subpar / sub-par。相关：be on par with sth（和……不相上下）。
+  source: Claude Code · Agentic AI 课程 Module 4 error analysis
+  added: "2026-10-14"
+- term: go by gut to pick sth
+  kind: phrase
+  meaning: 不看数据、不做分析，凭直觉拍板（凭感觉、拍脑袋）。
+  examples:
+  - en: there are teams that sometimes look at this and go by gut to pick one of these components to work on, and sometimes that works and sometimes that leads to many months of work with very low progress
+    zh: 有些团队看了一眼，就凭感觉挑一个组件去改，有时候管用，有时候就是好几个月下来几乎没进展。
+  - en: So rather than going by gut to decide which of these many components to work on, I think it's much better to carry out an error analysis to better understand each step in the workflow.
+    zh: 所以与其拍脑袋决定这么多组件里先改哪个，我觉得更好的做法是做一次 error analysis，把 workflow 里每一步都摸清楚。
+  note: |-
+    go by = 按照……来（go by the book 照章办事、go by the numbers 按数据来）；gut = 肚子，引申为直觉（英语里直觉在肚子里，中文说「拍脑袋」）。
+    比 use intuition 口语得多，而且常带一点贬义：在这段里和 error analysis 对着说，暗示「没依据」。中性的说法是 trust your gut（相信直觉）、go with your gut（跟着感觉走，偏正面）。
+    完整形式是 go by your gut / go by gut feeling，口语里常省成 go by gut。
+    相关：a gut sense / gut feeling of sth（直觉上的判断），07 里有 give me a gut sense of which components I might want to improve。
+  source: Claude Code · Agentic AI 课程 Module 4 error analysis
+  added: "2026-10-14"
 - term: gain inspiration as to what to work on next
   kind: phrase
   meaning: as to = 「关于……这个问题」：前面一个名词，后面挂一个 what / how / whether 的问题，说明这个名词是针对哪个问题的（关于、至于）。
@@ -96,11 +216,17 @@
   added: "2026-10-12"
 - term: there are N tools out there
   kind: phrase
-  meaning: 「外面那个大世界里现有的」——泛指市面上、世界上已经存在的东西，不指具体在哪（市面上、现有的）。
+  meaning: 不在我手边，而是在外面那个世界里已经有、去找就能找到的（市面上、现有的）。
   examples:
   - en: And so if there are M applications being developed and there are N tools out there, …
     zh: 所以如果有 M 个应用在开发，市面上又有 N 个工具，……
+  - en: There are multiple web search engines out there, in fact actually quite a few that I tend to use for my own applications, and some are better than others.
+    zh: 外面的网页搜索引擎有好几个，其实我自己的应用里就用了不少，有的就是比别的好。
+  - en: There are actually quite a few tools out there to help with monitoring traces, logging runtime, computing costs, and so on.
+    zh: 市面上其实有不少工具，能帮你监控 trace、记运行时间、算成本之类的。
   note: |-
+    画面：here 是「我这儿」（我的项目、我手上、这门课），out there 是「出了我这儿，外面那一大片」。所以 out there 不指具体地点，指的是「在外面那个世界里已经存在、你去找就能找到」。
+    这三条例句都是同一个套路：there are + 一类东西 + out there = 这类东西外面已经有一堆了（暗示：不用自己造，去挑就行）。翻成中文通常就是「市面上有」「现在已经有」，或者干脆不译。
     比 there are N tools 多了一层「放眼整个外部世界、数不过来」的感觉，口语里非常高频；换成 in the world / on the market 都偏正式，也没这么随意。
     放在名词后面或句末：there are lots of options out there、it's a jungle out there。
     另一个义项是字面的「在外面那儿」（He's waiting out there）。
