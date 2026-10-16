@@ -2,6 +2,204 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: solve vs resolve
+  kind: contrast
+  meaning: solve = 找到答案，把一道题、一个难题解开；resolve = 把一件卡住、有分歧的事处理掉，让它了结（解决冲突、问题、工单）。
+  examples:
+  - en: This is the pain points that MCP attempts to solve.
+    zh: 这就是 MCP 想要解决的痛点。
+  - en: building an application that can input math word problems and solve them for you.
+    zh: 做一个应用，能读入数学应用题，帮你把它们解出来。
+  - en: because there was so much conflicts, and they resolve it by removing the changes from develop.
+    zh: 因为冲突太多了，结果它的解决办法是把 develop 上的改动直接删掉。
+  note: |-
+    solve 像解题：有一个正确答案等你找出来，重点在想出办法。常配：solve a problem / puzzle / equation / a math problem / a case（破案）。
+    resolve = re-（回到）+ solve（松开），把纠缠在一起的东西解开，让事情回到平静、了结的状态。重点不是「答对」，而是「事情处理完了、不再挂着」。常配：resolve a conflict / dispute / issue / ticket / merge conflict。
+    所以 Git 里永远说 resolve conflicts（冲突没有标准答案，只要处理掉）；客服、工单说 the issue has been resolved。上面第三句恰好说明了这一点：把一边的改动删掉也算 resolve 了冲突（了结了），只是了结得很糟。
+    problem 两个词都能接：solve a problem 偏「想出办法、解开它」；resolve a problem 偏「把这事处理掉、平息了」，更正式。
+    resolve 另有两个义项：下决心（resolve to do sth；New Year's resolution）；技术里的解析（DNS resolves a hostname；resolve a dependency）。
+  source: Claude Code · 词义辨析
+  added: "2026-10-15"
+- term: few-shot prompting is a technique that …
+  kind: phrase
+  meaning: 在 prompt 里先给模型看几个「输入 → 期望输出」的示范，让它照着葫芦画瓢（少样本提示）。shot = 一个示例。
+  examples:
+  - en: Or if you know what few-shot prompting is, that refers to adding one or more concrete examples of an input and a desired output.
+    zh: 或者，如果你知道 few-shot prompting 是什么，它指的是在提示里加一个或几个具体例子，展示输入和期望的输出。
+  - en: And so few-shot prompting, which you can learn about from some deep learning short courses as well, is a technique that can give your LLM some examples to hopefully help it get better performing outputs
+    zh: 所以 few-shot prompting（在一些 deep learning 短课程里也能学到）是一种技巧，给 LLM 几个例子，希望帮它产出效果更好的输出。
+  - en: And this is known as one-shot prompting, if in the prompt you include one example of a desired input-output pair, or two-shot or few-shot prompting, depending on how many such examples you include in your prompt.
+    zh: 如果你在提示里放一个期望的输入输出示例，这就叫 one-shot prompting；放两个、几个，就叫 two-shot 或 few-shot prompting，看你放了多少个。
+  note: |-
+    shot 在这里是「一次尝试、一个样本」（have a shot at sth = 试一把）。数字加 -shot 就是给了几个示例：zero-shot = 一个不给，直接让它做；one-shot = 给一个；few-shot = 给几个（通常 2～5 个）。
+    是术语，没有更朴素的同义说法，日常解释可以说 give it a few examples first。
+    用法：few-shot prompting 当不可数名词，不加冠词（use few-shot prompting）；few-shot 也可单独作形容词或副词：a few-shot prompt、it works well few-shot。
+    读音：few-SHOT，连字符要写（few-shot，不是 few shot）。
+  source: Claude Code · Agentic AI 课程 · how to address problems
+  added: "2026-10-15"
+- term: an input and a desired output
+  ipa: /dɪˈzaɪərd/
+  pos: adj.
+  kind: phrase
+  meaning: 「你想要得到的那个」结果：心里预设好的目标、标准答案（期望的、理想的、目标）。
+  examples:
+  - en: that refers to adding one or more concrete examples of an input and a desired output.
+    zh: 它指的是加一个或几个具体例子，展示一个输入和对应的期望输出。
+  - en: And so zero-shot prompting refers to if you include zero examples and if you don't include any examples of the desired outputs that you want.
+    zh: 所以 zero-shot prompting 指的是你一个例子都不给，完全不展示你想要的输出长什么样。
+  - en: Then this helps it to more accurately hit the desired length of the output you wanted to generate.
+    zh: 这样它就能更准确地达到你想要生成的那个长度。
+  note: |-
+    desire = 渴望、想要；desired 是过去分词当形容词用，意思是「被想要的」，所以 desired output = 被期望的那个输出。
+    为什么不说 the output you want / a good output？desired 把「想要」压成一个前置形容词，句子更紧凑，是技术文档、机器学习里的标准说法：desired output / result / behavior / outcome / state。和 a good output 的区别：good 是事后评价好坏；desired 是事先定好的目标，用来对照。上面第二句 the desired outputs that you want 其实是口语里的重复，desired 本身就有 want 的意思。
+    冠词：泛指一个例子时用 a desired output，指定的目标用 the desired length。
+    常配动词：hit / achieve / get the desired result。
+  source: Claude Code · Agentic AI 课程 · how to address problems
+  added: "2026-10-15"
+- term: that refers to adding …
+  pos: v.
+  kind: pattern
+  meaning: 这个词「指的是」……：先抛出一个术语，再用 refers to 把它落到具体做法或东西上（指、是说）。
+  examples:
+  - en: Or if you know what few-shot prompting is, that refers to adding one or more concrete examples of an input and a desired output.
+    zh: 或者，如果你知道 few-shot prompting 是什么，它指的是在提示里加一个或几个具体例子，展示输入和期望的输出。
+  - en: And so zero-shot prompting refers to if you include zero examples
+    zh: 所以 zero-shot prompting 指的是你一个例子都不给的情况。
+  note: |-
+    refer 本义是「把人引向某处」（refer a patient to a specialist = 转诊给专科医生）。X refers to Y 就是：说 X 的时候，你的注意力该被引到 Y 那里，也就是 X 指的是 Y。
+    为什么不用 X means Y？means 偏解释字面意思；refers to 偏「这个名字对应的是哪个东西 / 哪种做法」，讲术语、讲指代时更准，带一点下定义的味道。日常口语说 What I mean is … / When I say X, I mean … 更自然。
+    后面接名词或动名词：refers to adding examples。❌ refers to add examples。
+    变体：refer to A as B = 把 A 称为 B（the MCP documentation refers to these as resources = MCP 文档把这些叫作 resources）。refer to sth 还有「提到、查阅」的意思：refer to the docs = 去查文档。
+  source: Claude Code · Agentic AI 课程 · how to address problems
+  added: "2026-10-15"
+- term: add more explicit instructions
+  ipa: /ɪkˈsplɪsɪt/
+  pos: adj.
+  kind: phrase
+  meaning: 把话明明白白摊开说出来，不留给对方去猜、去意会（明确的、清楚写明的）。
+  examples:
+  - en: One would be to try to improve your prompts, so maybe try to add more explicit instructions.
+    zh: 一个办法是改进你的提示词，比如加一些更明确的指令。
+  - en: the instructions in it explicitly says that for every conflict, it should try to merge the changes first
+    zh: 里面的指令明确写着：遇到每一个冲突，都应该先尝试把两边的改动合并
+  - en: Claude should propose a resolution every time, and like I need to give the explicit approval
+    zh: 每次都得让 Claude 先提一个解决方案，然后我得明确点头同意才行
+  note: |-
+    ex-（向外）+ plic（折叠）= 把折起来的东西展开，意思全摊在明面上。反义词 implicit（隐含的、默认的）是折在里面、要你自己体会。
+    为什么不用 clear？clear 说的是好不好懂；explicit 说的是有没有被明说出来。一条指令可以很 clear 却依然 implicit，比如没写「冲突要先 merge」，指望模型自己领会。给 LLM 写 prompt 时，问题常常不在不清楚，而在没明说，所以说 explicit。
+    常配：explicit instructions / approval / consent；副词 explicitly say / tell sb / ask for sth。
+    另一个义项：explicit content / lyrics = 露骨的、限制级内容。
+  source: Claude Code · Agentic AI 课程 · how to address problems
+  added: "2026-10-15"
+- term: vary the parameters
+  ipa: /ˈveri/
+  pos: v.
+  kind: phrase
+  meaning: 有意地把一个变量拧到不同的值上，一档一档地换着试，看结果怎么变（调整、改变、变动）。
+  examples:
+  - en: And so as you vary the parameters or hyperparameters of how you carry out web search
+    zh: 所以当你调整网页搜索的各种参数、超参数时
+  - en: or as you vary the number of results or as you vary the date range that you ask the web search engines to search over
+    zh: 或者换着调返回结果的条数，或者换着调让搜索引擎搜索的时间范围
+  note: |-
+    vary 和 various / variable 同根，核心是「让它不一样」。及物用法 vary sth 是做实验的语言：把某个旋钮当自变量，轮流取不同的值，其他条件不动，观察效果。
+    为什么不用 change？change sth 只是改一次（从 A 改成 B）；vary sth 是在一个范围里来回换着试，自带「对比、实验」的意味。tweak 是微调一下；adjust 是往对的方向校正；vary 不预设方向，就是系统地换着试。
+    常配：vary the number of …、vary the date range、vary the temperature、vary the prompt。
+    另一个用法是不及物的「因……而不同」：Prices vary by region。your mileage may vary 就是这个用法，和这里的「主动去调」不是一个义项。
+  source: Claude Code · Agentic AI 课程 · component-level evals
+  added: "2026-10-15"
+- term: Moreover, this is a pretty complicated workflow
+  ipa: /mɔːrˈoʊvər/
+  pos: adv.
+  kind: pattern
+  meaning: 「而且还有一条」：前面已经给了一个理由，再往上加一条同方向、分量更重的理由（此外、而且、再者）。
+  examples:
+  - en: that type of eval is expensive. Moreover, this is a pretty complicated workflow, so even if web search made things a little bit better, maybe noise introduced by the randomness of other components would make it harder to see little improvements
+    zh: 那种评估很贵。而且，这是个相当复杂的工作流，所以就算网页搜索让结果稍微好了一点，其他组件的随机性带来的噪声，也可能让这点小改进很难看出来。
+  note: |-
+    more（更多）+ over（在上面）= 在已有的上面再加一层。它不是简单地并列，而是「论证加码」：第一条理由已经成立，再补一条让结论更站得住。上面那句例句的结构就是：端到端评估很贵 → Moreover 还不准 → 所以要做组件级评估。
+    和更常用说法的区别：also / plus / on top of that 是口语里的加码，what's more 介于两者之间；moreover 偏正式、偏书面，像在讲课、写报告、摆论点。日常聊天说 moreover 会显得端着，用 Plus, … 或 On top of that, … 更自然。
+    位置：几乎总在句首，后面加逗号。❌ 不能当连词连两个句子：It's slow moreover it's expensive。要么两句分开，要么用 and。
+  source: Claude Code · Agentic AI 课程 · component-level evals
+  added: "2026-10-15"
+- term: a database query, say a SQL query
+  kind: pattern
+  meaning: 插在句子中间的「比如说、打个比方」：先说一个泛的东西，再用 say 随手举一个具体例子或数字（比如、假设、大概）。
+  examples:
+  - en: the most common error is in the way the LLM is writing a database query, say a SQL query, in order to fetch the relevant information.
+    zh: 最常见的错误出在 LLM 写数据库查询的方式上，比如说写 SQL 查询，用来取相关信息。
+  - en: if I'm still at, say, 90% performance or 95% performance and I really need to eke out those last few percentage points of improvement
+    zh: 如果我还停在大概 90% 或 95% 的效果，又确实得把最后那几个百分点挤出来
+  - en: So with an eval set of, say, 20 or so invoices, I build and make changes
+    zh: 所以拿一个大约 20 张发票的评估集，我一边搭一边改
+  note: |-
+    这个 say 是祈使语气的「你就说……吧」，相当于 let's say，被压缩成了一个词，插进句子里当副词用。书面写作通常前后都加逗号：…, say, a SQL query, …
+    为什么不用 for example / such as？say 更轻、更随口，带着「随手挑一个，不是唯一答案」的感觉。尤其放在数字前面（say, 20 invoices、say, 90%）时意思是「大概、假设是这个数」，for example 放在数字前就很别扭。
+    句首版本：Say you have 20 invoices… = Let's say… = 假设你有 20 张发票。
+    ❌ 别和后面跟 that 从句的 say（说）混：这个 say 后面直接跟名词或数字，拿掉以后句子照样成立。
+  source: Claude Code · Agentic AI 课程 · error analysis
+  added: "2026-10-15"
+- term: the most common error is in the way sb does sth
+  kind: pattern
+  meaning: 问题出在某人「做这件事的方式」上（毛病在于……的做法）。in 是「位于」，the way 后面直接跟一个从句，说明是哪种做法。
+  examples:
+  - en: maybe I find that the most common error is in the way the LLM is writing a database query
+    zh: 也许我会发现，最常见的错误出在 LLM 写数据库查询的方式上。
+  - en: And the way the LLM writes the email also has some errors.
+    zh: 而 LLM 写邮件的方式也有一些错误。
+  note: |-
+    拆开看：the error is in X（错误在 X 里）+ X = the way the LLM is writing a query（LLM 写查询的方式）。the way 后面省掉了 that / in which，直接接完整的句子：the way I see it、the way she talks。
+    为什么不说 the error is that the LLM writes queries wrongly？in the way 把问题定位到「做法」上，意思是事情本身该做，只是做的方式有毛病。所以上面那句的潜台词是：去改它写 query 的方式（prompt、示例），而不是换掉这一步。
+    ❌ 别和习语 be in the way（挡路、碍事）搞混：Your bag is in the way. 那里 the way 是「路」，后面不接句子。判断方法：in the way 后面紧跟主语加动词，就是「……的方式」。
+  source: Claude Code · Agentic AI 课程 · error analysis
+  added: "2026-10-15"
+- term: wrote a suboptimal email
+  ipa: /ˌsʌbˈɒptɪməl/
+  pos: adj.
+  kind: phrase
+  meaning: 能用、没错，但离最好还差一截（不够理想、欠佳）。
+  examples:
+  - en: And maybe given that input, the LLM somehow wrote a suboptimal email as well, and so on.
+    zh: 而且可能拿到这个输入之后，LLM 写出来的邮件也不太理想，诸如此类。
+  note: |-
+    sub-（低于）+ optimal（最优）= 低于最优。它的分寸在于：不是 wrong / bad，东西能用，只是不够好。
+    比 not good / bad 委婉、克制，是工程师、技术文档里很常见的「客气地说不好」：a suboptimal solution / approach / query plan。前文的 an email that was somehow not quite right 说的是同一个意思。
+    上面那句例句在自动转录稿里被识别成了 subalternate（不存在这个说法），按上下文还原成 suboptimal。
+    读音：重音在 op 上，sub-OP-ti-mal。
+  source: Claude Code · Agentic AI 课程 · error analysis
+  added: "2026-10-15"
+- term: these errors are not mutually exclusive
+  pos: adj.
+  kind: phrase
+  meaning: 几样东西「你有我就不能有」，一个成立另一个就必然不成立（互斥、不能同时成立）。最常用的是否定式 not mutually exclusive：可以同时成立，不是二选一。
+  examples:
+  - en: these percentages here at the bottom can add up not to 100% because these errors are not mutually exclusive.
+    zh: 底下这些百分比加起来不一定是 100%，因为这些错误不是互斥的（一个样本可能同时犯好几种错）。
+  note: |-
+    mutually = 彼此之间，exclusive = 排除别人；合起来就是「互相排斥」。
+    口语里多半用否定式，用来反驳「非此即彼」的想法：Speed and quality aren't mutually exclusive.（快和好可以兼得）。比 can both be true / can happen at the same time 更利落，带点讲逻辑、讲道理的味道。
+    主语通常是复数或 A and B；也可以说 A is not mutually exclusive with B。
+    统计里的固定搭配：mutually exclusive categories / outcomes（互斥事件）。互斥的分类加起来正好 100%，不互斥的就可能超过 100%，上面那句例句说的就是这个。
+  source: Claude Code · Agentic AI 课程 · error analysis
+  added: "2026-10-15"
+- term: hone your intuition about sth
+  pos: v.
+  kind: phrase
+  meaning: 像在磨刀石上一遍遍磨刀那样，靠反复实践把直觉磨得越来越准（磨练、培养、锤炼）。
+  examples:
+  - en: it's only by seeing multiple examples that you can then get practice and hone your intuitions about how to carry out error analysis.
+    zh: 只有看过很多个例子，你才能练手，把「怎么做错误分析」的直觉磨出来。
+  - en: as I work with different models, I start to hone intuitions about which models work best for what types of tasks.
+    zh: 我用的模型多了，就慢慢磨出了一种直觉：哪类任务用哪个模型最好。
+  - en: this will hone your intuition about what types of instructions models are good at following
+    zh: 这能磨练你的直觉，让你知道模型擅长遵循哪些类型的指令。
+  note: |-
+    hone 本义是「在磨刀石上磨」，所以它不是从零培养，而是把已有的东西反复打磨、越磨越锋利。
+    比 develop / build your intuition 多一层「靠反复练、一点点变准」的过程感；develop 只说「长出来了」。
+    常配：hone your skills / hone your craft / hone your instincts。intuition 单复数都行：hone your intuition 更常见，hone intuitions about … 指「关于多件事的各种直觉」。
+    ❌ 别和 hone in on sth（聚焦、锁定，其实是 home in on 的误用变体）混：hone 后面直接跟宾语 = 磨练；hone in on = 锁定目标。
+  source: Claude Code · Agentic AI 课程 · error analysis
+  added: "2026-10-15"
 - term: dump the web pages into the LLM
   pos: v.
   kind: phrase
@@ -4809,11 +5007,21 @@
     zh: 大多数项目我习惯按「先一个 MVP，再来一两轮改进」这个尺度去想。
   - en: I would love to understand, what was your biggest obstacle to get comfortable in terms of where you're — what was the biggest obstacle you had to go through?
     zh: 我很想知道，你要上手到现在这个状态，最大的障碍是什么——你当时得迈过去的最大那道坎是什么？
+  - en: The Model Context Protocol, or MCP, is an open protocol that standardizes how your LLM applications can get access to context in terms of tools and data resources based on the client-server architecture.
+    zh: MCP（模型上下文协议）是一个开放协议，它基于客户端-服务器架构，统一了 LLM 应用获取上下文的方式——这里的上下文，具体就是以工具和数据资源的形式来提供。
+  - en: It can be quite a bit more expensive as well in terms of developer time to implement.
+    zh: 按开发者实现要花的时间来算，它也会贵不少。
+  - en: You'll be well ahead of the vast majority of developers in terms of your sophistication at implementing agentic workflows.
+    zh: 论实现 agentic 工作流的熟练程度，你会远远领先绝大多数开发者。
+  - en: This type of timing analysis can give you a sense of which components to focus on in terms of reducing latency.
+    zh: 这种耗时分析能让你知道，要降低延迟的话，该把精力放在哪些组件上。
   note: |-
     记的时候只念一句话：**「用 x 把 y 表示出来」** —— 这就是数学里 express y in terms of x 的原话，term 的本义是「项、单位、说法」，y = 3x + 1 就是把 y 用 x 这个单位表示出来。日常句子完全照搬这个结构：in terms of 后面跟的是那个 x（cost / risk / effort / headcount / notational convention），句子里一定有个 y 正在被它表示、被它衡量。换个说法就是「按 x 这把尺子来量 y」。
     和 about / regarding 的区别：about、regarding 只是引出话题，后面接什么都行；in terms of 引出的是衡量标准，接不上标准就用错了。❌ In terms of the meeting, it's at 3 pm（会议不是一把尺子）→ ✅ As for the meeting, it's at 3 pm。
     最容易混的是 when it comes to：那个才是「说到、谈到某个话题」（When it comes to pricing, we're still deciding）；in terms of 是「按某个维度衡量」。一句话分：**换话题用 when it comes to，换尺子用 in terms of**。（例外：句首的 In terms of doing sth, … 在讲稿里常当路标，宣布「下面说这一方面」，见那一条。）
-    真实会议录音里常被当填充词随口垫在句子中间——上面第三条例句就是这种，in terms of where you're 其实没带出任何维度，听到不用深究；自己写别学，写进文档要它真的带出一个维度。
+    上面第四条（MCP 那句）是「把一个抽象的词拆成具体单位」的用法：context 太虚，in terms of tools and data resources 告诉你这个 context 是按什么单位给的——y 是 context，x 是 tools / data resources。读到 X in terms of Y，就在心里换成「X，具体落到 Y 上」/「X，以 Y 的形式」。
+    真实会议录音里也常被当填充词随口垫在句子中间——上面第三条例句就是这种，in terms of where you're 其实没带出任何维度，听到不用深究；自己写别学，写进文档要它真的带出一个维度。
+    第五到七条是最该模仿的形状：先说一个评价（expensive / well ahead / focus on），再用 in terms of 交代「按哪把尺子量」——developer time、sophistication、reducing latency。
   source: Notion · Work
   added: "2026-07-29"
 - term: the requirements are fuzzy
