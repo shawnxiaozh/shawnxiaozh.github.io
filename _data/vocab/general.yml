@@ -2,6 +2,49 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: the reference servers you used
+  pos: n.
+  kind: phrase
+  meaning: 官方做出来给大家当样板的那份实现，照着它就知道「标准的做法长什么样」（参考实现、官方示范）。
+  examples:
+  - en: The MCP server you built and the reference servers you used can also be used with any other MCP compliant application.
+    zh: 你自己搭的 MCP server 和用过的那些参考 server，也都能拿到其他任何支持 MCP 标准的应用里去用。
+  - en: There are reference servers that we can use or servers that we can even build internally.
+    zh: 有现成的参考 server 可以直接拿来用，也可以自己在内部搭 server。
+  - en: … bring in this MCP server alongside a couple other reference servers that we've seen.
+    zh: ……把这个 MCP server 和我们之前见过的另外几个参考 server 一起接进来。
+  note: |-
+    reference 在这里是「参照物、样板」，不是「引用」——❌ 被引用的 server。来自 reference implementation：一份规范发布时，官方顺手写的那份标准实现，别人照着它对答案。
+    vs example / sample：example server 只是演示用；reference server 带着「权威、照这个来准没错」的意思，而且是能直接拿来用的。MCP 里指官方维护的那批 server（文件系统、fetch、git 等）。
+    同类说法：reference architecture（参考架构）、reference design。
+  source: Claude Code · MCP 课程 Connecting to Reference Servers
+  added: "2026-10-17"
+- term: any other MCP-compliant application
+  pos: adj.
+  kind: phrase
+  meaning: 照着某个标准/规范来做、对得上它的要求（符合……标准的、兼容……的）。
+  examples:
+  - en: The MCP server you built and the reference servers you used can also be used with any other MCP compliant application.
+    zh: 你自己搭的 MCP server 和用过的那些参考 server，也都能拿到其他任何支持 MCP 标准的应用里去用。
+  note: |-
+    X-compliant = 照 X 这套规矩实现的。vs compatible：compatible 只说「两边能配合着用」，不管为什么；compliant 说的是「因为它遵守了同一份规范，所以能用」——重点在守规矩。这句的逻辑就是：只要应用遵守 MCP 规范，你的 server 就能插进去。
+    写法：放名词前要加连字符 MCP-compliant application（原句转录没加）；放后面用 with：the app is compliant with MCP。
+    另一大用法是合规：GDPR-compliant、compliance team（合规部）——遵守的是法规而不是技术规范，语感一样。
+  source: Claude Code · MCP 课程 Connecting to Reference Servers
+  added: "2026-10-17"
+- term: be easy to plug into multiple applications
+  pos: v.
+  kind: phrase
+  meaning: 像插头插进插座一样，不用改造就能直接接进去用（接入、集成）。
+  examples:
+  - en: MCP is model agnostic and is designed to be easy to plug into multiple applications.
+    zh: MCP 不绑定任何模型，设计上就是要能轻松接入各种不同的应用。
+  note: |-
+    vs integrate with：integrate 听着像要做一番对接工作；plug into 自带「插上就能用」的画面——接口是标准的、不用改两边，所以常和 easy to / just 连用。
+    方向：被接进去的东西做主语，into 后面是那个更大的系统（插座）——sth plugs into sth bigger。反过来说成 plug sth into sth（把 A 接进 B）。
+    另一义：plug into a community / network = 融入、接上某个圈子的资源。
+  source: Claude Code · MCP 课程 Introduction
+  added: "2026-10-16"
 - term: solve vs resolve
   kind: contrast
   meaning: solve = 找到答案，把一道题、一个难题解开；resolve = 把一件卡住、有分歧的事处理掉，让它了结（解决冲突、问题、工单）。
@@ -5022,6 +5065,7 @@
     上面第四条（MCP 那句）是「把一个抽象的词拆成具体单位」的用法：context 太虚，in terms of tools and data resources 告诉你这个 context 是按什么单位给的——y 是 context，x 是 tools / data resources。读到 X in terms of Y，就在心里换成「X，具体落到 Y 上」/「X，以 Y 的形式」。
     真实会议录音里也常被当填充词随口垫在句子中间——上面第三条例句就是这种，in terms of where you're 其实没带出任何维度，听到不用深究；自己写别学，写进文档要它真的带出一个维度。
     第五到七条是最该模仿的形状：先说一个评价（expensive / well ahead / focus on），再用 in terms of 交代「按哪把尺子量」——developer time、sophistication、reducing latency。
+    能不能直接理解成「在……方面」？读的时候可以，七条例句几乎都套得进去（开发时间方面更贵、熟练程度方面领先、工具和数据资源方面的上下文）。但自己说的时候别反过来用：中文「在……方面」什么都能接，英文 in terms of 后面必须是一个能拿来比较、衡量的维度。判断办法：把句子换成「按……来算/来比」还通不通——通就能用 in terms of，不通（「按会议来算」）就换 as for / regarding。
   source: Notion · Work
   added: "2026-07-29"
 - term: the requirements are fuzzy
@@ -5450,12 +5494,17 @@
     ❌ 别写 with easy（ease 是名词）。
   source: Notion · Work
   added: "2026-07-29"
-- term: take place
+- term: communication takes place between A and B
   kind: phrase
   meaning: 一件安排好的事「占住了它那个位置」，按时按点地进行（举行、发生）。
   examples:
-  - This is how the communication between the client and the server takes place.
+  - en: It defines how communication takes place between an MCP client …
+    zh: 它规定了 MCP 客户端和……之间的通信是怎么进行的。
+  - en: This is how the communication between the client and the server takes place.
+    zh: 客户端和服务器之间的通信就是这样进行的。
   note: |-
+    主语是那件「事」本身（communication / the meeting / the event），不是人 —— ❌ We take place a meeting → ✅ The meeting takes place / We hold a meeting。
+    技术文档里 how X takes place 很常见，就是「X 具体是按什么流程进行的」，比 how X happens 更像在描述一套既定的规矩。
     vs happen：happen 是事情自己撞上来的，可以是意外；take place 里的 place 提示这事有预定的时间地点 —— 是安排好的。所以会议、婚礼、演练、协议交互用 take place，交通事故只能用 happen / occur。
     这层差别反过来也能用：说 the outage took place 会有点怪，因为听起来像事故是计划好的。
     ❌ take place 没有被动式 —— ❌ was taken place → ✅ took place。
