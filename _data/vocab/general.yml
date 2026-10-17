@@ -20,24 +20,6 @@
     替换 a prompt 就能直接套用：paste in the error message / the link / the config that I have here。
   source: Claude Code · MCP 课程录屏
   added: "2026-10-17"
-- term: learn a bit about sth
-  pos: v.
-  kind: phrase
-  meaning: 稍微了解一点、简单讲讲某个东西，不深入（简单介绍、略讲）。
-  examples:
-  - en: And in the last section, you'll learn a bit about sampling and roots, other powerful primitives that are on their way to getting more and more adoption.
-    zh: 最后一节里，你会简单了解一下 sampling 和 roots，这两个同样很强大的原语正在被越来越多地采用。
-  - en: We'll talk a bit about the configuration settings in a later lesson.
-    zh: 配置项我们后面某节课再简单讲讲。
-  - en: Now that we have an idea on some of the primitives, let's talk a little bit about the communication.
-    zh: 既然对几个原语有点概念了，我们来稍微聊聊通信这块。
-  note: |-
-    a bit 在这里是「一点点」，把 learn / talk about 的分量压轻，意思是「不会讲很深，别有压力」。
-    比直接说 learn about / talk about 更随和、更谦虚，是课程开场、预告后面内容时的标准口头禅。加 little 更轻：a little bit about。
-    常配：learn / talk / say / know a bit about sth。
-    第一条例句的原转录把 roots 误识别成了 routes，roots 才是 MCP 的原语之一。
-  source: Claude Code · MCP 课程
-  added: "2026-10-17"
 - term: return a list of sth
   pos: n.
   kind: phrase
