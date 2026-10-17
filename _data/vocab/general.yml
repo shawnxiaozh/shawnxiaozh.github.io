@@ -2,6 +2,19 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: make sth less fragmented
+  pos: adj.
+  kind: phrase
+  meaning: 让原本各自为政、碎成一块块的东西变得更统一（不那么零散、割裂）。
+  examples:
+  - en: In this first lesson, we'll go through how MCP makes AI development less fragmented and how it standardizes connections between AI applications and external data sources.
+    zh: 第一节课里，我们会讲讲 MCP 怎么让 AI 开发不再那么各搞各的、四分五裂，以及它怎么把 AI 应用和外部数据源之间的连接统一成标准。
+  note: |-
+    fragment 是「碎片」，fragmented 的画面是「一整块被打碎成很多片，互相对不上」。
+    和 scattered（零散分布）、messy（乱）的区别：fragmented 强调「本该是一个整体，却被切成了互不兼容的好几套」，比如每家都自己搞一套接口、每个团队一套标准。所以它常和 standardize / unify 成对出现，就像上面那句例句。
+    常见搭配：a fragmented market / ecosystem、fragmented tooling、the landscape is fragmented。反义：unified、consolidated。
+  source: Claude Code · MCP 课程
+  added: "2026-10-17"
 - term: I'm going to paste in a prompt that I have here
   pos: sent.
   kind: pattern
