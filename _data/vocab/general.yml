@@ -2,6 +2,95 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: I'm going to paste in a prompt that I have here
+  pos: sent.
+  kind: pattern
+  meaning: 我把手头准备好的一段东西贴进来（演示、共享屏幕时边做边说）。
+  examples:
+  - en: I'm going to paste in a prompt that I have here to use the fetch tool.
+    zh: 我把我这边准备好的一段 prompt 贴进来，让它去用 fetch 工具。
+  - en: So I'm going to go ahead and paste in that proxy address.
+    zh: 那我直接把那个代理地址贴进来。
+  - en: And inside here, I'm going to paste in our configuration file from before, but with a slight change.
+    zh: 然后在这里面，我把之前那份配置文件贴进来，不过稍微改了一点。
+  note: |-
+    paste in 里的 in 是「贴进（输入框 / 文件）里」，比光说 paste 多了个「放进去」的方向感，是口语里的标准说法。宾语可以放中间：paste it in / paste this in。
+    that I have here 意思是「我手头现成的这个」，暗示是提前准备好的，不是现场写的。共享屏幕、录教程时很顺口，听的人也知道不用看你打字。
+    I'm going to … 在演示里是「我接下来要…」的边做边讲，比 I will 自然；前面加 go ahead and 更像「那我就直接…」。
+    替换 a prompt 就能直接套用：paste in the error message / the link / the config that I have here。
+  source: Claude Code · MCP 课程录屏
+  added: "2026-10-17"
+- term: learn a bit about sth
+  pos: v.
+  kind: phrase
+  meaning: 稍微了解一点、简单讲讲某个东西，不深入（简单介绍、略讲）。
+  examples:
+  - en: And in the last section, you'll learn a bit about sampling and roots, other powerful primitives that are on their way to getting more and more adoption.
+    zh: 最后一节里，你会简单了解一下 sampling 和 roots，这两个同样很强大的原语正在被越来越多地采用。
+  - en: We'll talk a bit about the configuration settings in a later lesson.
+    zh: 配置项我们后面某节课再简单讲讲。
+  - en: Now that we have an idea on some of the primitives, let's talk a little bit about the communication.
+    zh: 既然对几个原语有点概念了，我们来稍微聊聊通信这块。
+  note: |-
+    a bit 在这里是「一点点」，把 learn / talk about 的分量压轻，意思是「不会讲很深，别有压力」。
+    比直接说 learn about / talk about 更随和、更谦虚，是课程开场、预告后面内容时的标准口头禅。加 little 更轻：a little bit about。
+    常配：learn / talk / say / know a bit about sth。
+    第一条例句的原转录把 roots 误识别成了 routes，roots 才是 MCP 的原语之一。
+  source: Claude Code · MCP 课程
+  added: "2026-10-17"
+- term: return a list of sth
+  pos: n.
+  kind: phrase
+  meaning: 一串、一组同类的东西，一条条排开（一系列、若干）。
+  examples:
+  - en: So we're going to search for some papers, and then we're going to return a list of paper IDs.
+    zh: 我们先去搜一些论文，然后返回一串论文 ID。
+  - en: Over here on the Model Context Protocol documentation, we can see a list of applications that support MCP integrations.
+    zh: 在 Model Context Protocol 的文档这里，能看到一份支持 MCP 集成的应用列表。
+  - en: For example, to measure the quality of the web search results, you might create a list of gold standard web resources.
+    zh: 比如说，要衡量网页搜索结果的质量，你可以先整理一份黄金标准的网页资源清单。
+  note: |-
+    画面是「一条一条往下列」，强调的是逐项排开、能一个个数，不只是「很多」。
+    和 a bunch of / some 的区别：a bunch of 只说量多，很随意；a list of 带着「有条理、排成清单」的意思，所以讲代码返回值、文档里的清单、要准备的东西时特别顺口。
+    语法：a list of 后面接复数名词（a list of messages）。主语一般看 list，用单数（A list of tools is passed in），口语里也常有人跟着后面的复数走。
+    常配的动词：return / get / create / make / see a list of。
+  source: Claude Code · 课程录屏口语
+  added: "2026-10-17"
+- term: head over to sth
+  pos: v.
+  kind: phrase
+  meaning: 动身过去、转到某处（去、到）。
+  examples:
+  - en: So I'm going to head over to the browser and hop into that particular inspector.
+    zh: 那我现在切到浏览器，打开那个 inspector 看看。
+  - en: We're going to head over to tools, and we're going to go see what tools we have available.
+    zh: 我们点到 tools 那边，看看有哪些工具可以用。
+  - en: In Claude Desktop, I'll head over to settings.
+    zh: 在 Claude Desktop 里，我先进到设置里面。
+  note: |-
+    head 当动词是「把头朝向某处、往那边走」，over 是「从这边到那边」，所以 head over 的画面就是「转身往那边走过去」。
+    比 go to 更口语、更轻快，自带「现在就动身」的动作感，还能顺便告诉听的人接下来要换地方了。教程、录屏里讲「切到某个页面 / 某个标签页」特别常用。
+    不加地点也能用：I'll head over now.（我这就过去。）近义的 head out 是「出门、离开」，侧重从这儿走，不说去哪儿。
+  source: Claude Code · 课程录屏口语
+  added: "2026-10-17"
+- term: a couple of hours
+  pos: phr.
+  kind: phrase
+  meaning: 两三个、几个，说个大概的少量（几个、一些）。
+  examples:
+  - en: I'm sure I'll be done in like a couple of hours and I can forget about it.
+    zh: 我还以为大概两三个小时就能搞定，然后就不用管了。
+  - en: So you may ask, what's the point of replacing a couple of UI steps?
+    zh: 你可能会问，就替换掉界面上那么几步操作，有什么意义？
+  - en: Before we wrap up, let's answer a couple of common questions you might be having about MCP.
+    zh: 结束之前，我们来回答几个你关于 MCP 可能会有的常见问题。
+  note: |-
+    字面是「一对」，但口语里很少精确等于 2，通常指「两三个」，带一种「不多、没几个」的轻描淡写语气。
+    比 two 随意、不较真；比 a few 数量感略少一点，但日常两者常混用。
+    口语常省掉 of：a couple hours / a couple minutes（美式，书面别这么写）。
+    另一个义项：a couple 指「一对情侣/夫妻」（They're a couple.）。
+  source: Claude Code · 口语数量表达
+  added: "2026-10-17"
 - term: abstract away the challenges of sth
   pos: v.
   kind: phrase
