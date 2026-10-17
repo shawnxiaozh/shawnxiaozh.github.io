@@ -2,6 +2,38 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: abstract away the challenges of sth
+  pos: v.
+  kind: phrase
+  meaning: 把麻烦的底层细节包起来、藏到一层外壳后面，让用的人不用碰它（屏蔽、封装掉）。
+  examples:
+  - en: … abstract away some of the challenges of that lower-level coding.
+    zh: ……把那些底层编码的麻烦事替你包掉一部分。
+  - en: This is all abstracted away from us.
+    zh: 这些全都被封装起来了，我们根本碰不到。
+  - en: What we're going to do now is abstract away the definition of these tools and the schema of these tools.
+    zh: 我们现在要做的，是把这些工具的定义和 schema 封装起来，不用再手写。
+  note: |-
+    away 是关键：不是「抽象出来」，是「藏走、挪开」——东西还在，只是有一层东西替你处理，你看不见、不用管。和 take away、tuck away 的 away 一个画面。
+    vs hide / simplify：hide 只说看不见；simplify 说变简单了；abstract away 说的是「靠加一层抽象，把复杂的部分屏蔽在下面」，技术语境里说「封装」最贴。
+    被动最常听到：sth is abstracted away from sb（第二条）——「这些对我们是透明的」。
+    句子里常配 lower-level / under the hood / boilerplate：被藏掉的总是底层的、重复的那部分。
+  source: Claude Code · MCP 课程 Connecting to Reference Servers
+  added: "2026-10-17"
+- term: … is an example of such an application
+  kind: pattern
+  meaning: 先把一类东西描述清楚，再落一个具体的实例：「……就是这样一种应用」（such = 刚才说的那种）。
+  examples:
+  - en: Claude desktop is an example of such an application.
+    zh: Claude Desktop 就是这样一种应用。
+  note: |-
+    such 往回指：上一句刚描述过一类东西（any other MCP-compliant application），such an application 就是「符合刚才那个描述的应用」，不用把描述再说一遍。
+    vs For example, Claude Desktop：for example 只是举个例子；这个句型把实例放主语、类别放句尾，听起来是在给前面那个抽象定义「验明正身」，讲解、写文档时更有条理。
+    语序：such 在冠词前面——✅ such an application ❌ a such application。复数去掉冠词：… are examples of such tools。
+    ❌ an example of this application：this 指的是某一个具体应用，不是一类。
+    变体：One such application is Claude Desktop.（先说「有一个这样的」，更书面）
+  source: Claude Code · MCP 课程 Connecting to Reference Servers
+  added: "2026-10-17"
 - term: the reference servers you used
   pos: n.
   kind: phrase
@@ -17,6 +49,7 @@
     reference 在这里是「参照物、样板」，不是「引用」——❌ 被引用的 server。来自 reference implementation：一份规范发布时，官方顺手写的那份标准实现，别人照着它对答案。
     vs example / sample：example server 只是演示用；reference server 带着「权威、照这个来准没错」的意思，而且是能直接拿来用的。MCP 里指官方维护的那批 server（文件系统、fetch、git 等）。
     同类说法：reference architecture（参考架构）、reference design。
+    在 MCP 课里具体指：官方开源、现成能用的那批 server，第 7 课接的 fetch（抓网页）和 filesystem（读写本地文件）就是。原句 the MCP server you built and the reference servers you used 是两类对照——you built = 第 5 课自己写的 research server，you used = 官方写好、拿来直接接上的 reference servers。类比：编程语言自带的标准库，既能直接调用，也是写代码的范本。
   source: Claude Code · MCP 课程 Connecting to Reference Servers
   added: "2026-10-17"
 - term: any other MCP-compliant application
