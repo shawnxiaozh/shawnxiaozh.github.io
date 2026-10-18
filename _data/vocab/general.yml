@@ -3379,13 +3379,18 @@
   note: course 本义是「流动的路径」——同 the course of a river、golf course 同源。
   source: English Teacher · Understanding Claude Code hook events
   added: "2026-09-08"
-- term: line up with
+- term: they line up with points in the loop
   pos: v.
   kind: phrase
-  meaning: 与……吻合、对得上。画面是两组东西并排一一对应。
+  meaning: 两组东西并排摆开、一个对一个，正好对得上（吻合、对应）。
   examples:
-  - They line up with points in the agentic loop where you'd want to step in.
-  note: 比 align with 口语，比 correspond to 自然。单独用 line up 是「排队」。
+  - en: They line up with points in the agentic loop where you'd want to step in.
+    zh: 这些 hook 事件正好对应 agent 循环里那些你会想插一手的节点。
+  note: |-
+    line up 本义是「排成一行」，line up with 就是「跟另一排东西并排对齐」—— 画面是两把尺子摆在一起，刻度一格对一格。
+    比 align with 口语、轻松，开会聊天顺口就说；比 correspond to 自然，correspond to 偏书面、偏说明文。
+    主语一般是东西不是人：the numbers line up with the report / that lines up with what I saw（数字对得上 / 跟我看到的一致）。
+    其他义项：单独 line up 是「排队」（line up for tickets）；line up sth 是「安排好、约好」（I've lined up a few interviews）。
   source: English Teacher · Understanding Claude Code hook events
   added: "2026-09-08"
 - term: leave it to trust
