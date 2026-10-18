@@ -2440,16 +2440,22 @@
     of 后面接名词或 doing：❌ take the example of write an essay。
   source: Claude Code · AI 课程转录
   added: "2026-09-20"
-- term: steps for the workflow to follow
+- term: break it down into steps for the workflow to follow
+  pos: sent.
   kind: pattern
-  meaning: 名词 + for sb + to do：「给某人去做的名词」——不定式放在名词后面修饰它，for 引出谁来做（供…去…的）。
+  meaning: 名词 + for 谁 + to do：「准备好给谁去做的东西」，不定式跟在名词后面说明它的用途，for 引出由谁来做（供……去……的）。
   examples:
-  - break it down into discrete steps for the agentic workflow to follow
-  - web search engines designed for LLMs to use
+  - en: How do you take this useful stuff that we do and break it down into discrete steps for the agentic workflow to follow?
+    zh: 我们平时做的这些有用的事，怎么把它拆成一个个独立的步骤，让 agent 工作流照着去走？
+  - en: How to take a complex task like writing an essay and breaking it down into smaller steps for agentic workflows to execute one step at a time.
+    zh: 怎么把写文章这样的复杂任务拆成更小的步骤，让 agent 工作流一步一步去执行。
+  - en: There are actually quite a lot of options for web search engines designed for LLMs to use.
+    zh: 专门给大模型用的网页搜索引擎其实有挺多可选的。
   note: |-
-    follow steps = 按步骤走（follow instructions / a plan / a recipe 同理），这里 steps 挪到前面当被修饰的名词，所以 to follow 后面不再带宾语：❌ steps for the workflow to follow them。
-    为什么不说 steps that the workflow follows：that 从句只陈述事实；for … to do 带「专门给它用、让它去做」的目的感，更贴「拆步骤是为了让工作流执行」这个意思。
-    同样的形状：a book for kids to read、a problem for you to solve。
+    拆开看：steps（步骤）← for the workflow（给谁）← to follow（拿来干什么）。中文习惯把这些都堆在名词前面（「让工作流照着走的步骤」），英文是先说名词，再往后补「给谁、干什么」。
+    follow steps 本来是「按步骤走」，这里 steps 挪到前面当被修饰的名词，所以 to follow 后面不再带宾语：❌ steps for the workflow to follow them。
+    为什么不说 steps that the workflow follows：that 从句只是陈述事实；for … to do 带「专门准备给它、让它去做」的目的感，正好贴合「拆步骤就是为了让工作流去执行」的意思。
+    换掉名词和动词就能到处用：a list of tasks for the team to pick up、tools for LLMs to use、a book for kids to read、a problem for you to solve。
   source: Claude Code · AI 课程转录
   added: "2026-09-20"
 - term: take sth and break it down
