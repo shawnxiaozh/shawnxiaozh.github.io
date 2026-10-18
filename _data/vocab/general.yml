@@ -5575,15 +5575,18 @@
     名词 synthesis（复数 syntheses）；反义 analysis —— 一个拆开，一个合成。
   source: Notion · Work
   added: "2026-07-29"
-- term: reference materials
+- term: hold the reference materials sb needs
+  pos: n.
   kind: phrase
-  meaning: 放在手边随时翻、需要时才去查的材料（参考资料）。refer back to 的那个 reference —— 回头查阅。
+  meaning: 放在手边、用得上时才去翻的材料，没人指望你从头读到尾（参考资料）。
   examples:
-  - They hold the reference materials Claude needs to understand your work — project specs, meeting notes, research documents.
+  - en: They hold the reference materials Claude needs to understand your work — project specs, meeting notes, research documents.
+    zh: 里面放的是 Claude 理解你的工作要用到的参考资料，比如项目需求文档、会议纪要、调研文档。
   note: |-
-    vs documents / reading materials：这两个暗示要读完；reference materials 明确是「供查阅」的，没人指望你从头读到尾。给 AI 喂上下文时说 reference materials，就是在说"用得上再查"。
-    近义 supporting documents（佐证性的）、background material（打底的背景）。
-    ❌ 不可数，别写 a reference material → ✅ reference material / some reference materials。
+    reference 来自 refer to（查阅、翻看），画面是桌边一摞随时伸手去翻的资料，而不是摆在面前要逐页读完的那一本。
+    为什么不说 documents 或 reading materials：documents 只是「文档」，不说用途；reading materials 暗示是要读完的。reference materials 明确是「供查阅」的，给 AI 喂上下文时这么说，意思就是「用得上再查」。
+    可数性：material 当「资料」讲时，单数常当不可数用（some reference material），复数 materials 指「一批资料」，两种都常见。只有一份时别说 ❌ a reference material，改说 a reference doc。
+    常配的动词：hold / provide / upload / attach reference materials。近义 background material（打底的背景资料）、supporting documents（佐证用的材料）。
   source: Notion · Work
   added: "2026-07-29"
 - term: research prospects
