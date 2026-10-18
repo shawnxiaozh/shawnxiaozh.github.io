@@ -1548,7 +1548,7 @@
     · 讲给别人听，习惯用 go over：let me go over the plan with you。自己逐项处理一堆东西，习惯用 go through：I went through 200 emails。
     · **只有 go through 能表示「经历（尤其是难熬的事）」**：go through a divorce、go through a rough patch，上面第三条例句就是这个意思。❌ go over a divorce。
     · 只有 go through 能表示「（流程）走完、获批」：the deal went through、go through security。
-    · 只有 go over 能表示「超出」：go over budget / go over time（见 [[go over]]）。
+    · 只有 go over 能表示「超出」：go over budget / go over time（见 [[go over the context window]]）。
     · 各自的固定说法：go over well = 反响好（the joke didn't go over well）；go over sb's head = 越级找上级，或「这话太深听不懂」。
     参见 [[get through vs go through]]（get through 重结果「熬完、处理完」，go through 重过程）。
     一句话里两个都用上的真实例子（见例句）：briefly go over = 先扫一遍讲个大概，go through … in depth = 后面再逐个走完、讲透。分工一目了然。
@@ -2270,7 +2270,7 @@
   note: |-
     over 是「从头到尾把表面扫一遍」的 over，像手掌从纸面抹过去：重点不是逐字精读，是快速完整地过一遍看哪儿不对。
     和光说 read it 的区别：read it over 读的是已经写好的东西，而且带着检查的目的，自带「回头看、挑毛病」的意味——上面那句之后接的就是 based on my own critique, I'll revise the draft，read over 是为了改而读。
-    近邻：read through 强调整篇从头读到尾（read through the specs）；go over 范围最广，可读可讨论可复习，还常是跟人一起过一遍，见 [[go over]]；proofread 专挑错别字语法。
+    近邻：read through 强调整篇从头读到尾（read through the specs）；go over 范围最广，可读可讨论可复习，还常是跟人一起过一遍，见 [[I want to go over some examples with you]]；proofread 专挑错别字语法。
     词序：read it over 更常见（代词夹中间），read over it 也听得到，上面例句就是。
   source: Claude Code · Agentic AI 课程（任务分解）
   added: "2026-09-20"
@@ -3035,19 +3035,37 @@
     和 in the long term 的区别：in the long term 中性，常用于规划（long-term plan）；in the long run 常带「眼前一套、最终结果却反过来」的转折意味，所以很适合讲这种反直觉的道理。
   source: Claude Code · 写 prompt 要具体
   added: "2026-09-13"
-- term: go over
+- term: go over the context window
   pos: v.
   kind: phrase
-  meaning: ①超过、超出（限额、预算、时间）②仔细检查、过一遍、复习 ③走过去、过去（到某处）。
+  meaning: 越过一条线、超出上限（超过、超出）。
   examples:
-  - A general rule of thumb is when you're working on a specific feature and are going over the context window but need to continue, then compact.
-  - We went over budget by 10%.
-  - Let's go over the plan once more before the meeting.
+  - en: A general rule of thumb is when you're working on a specific feature and are going over the context window but need to continue, then compact.
+    zh: 一个大致的经验是：你在做某个功能、上下文已经快超出窗口了，但还得接着干，这时候就 compact 一下。
   note: |-
-    意思要看后面接什么：接限额、预算、时间，是「超出」（go over the limit / go over time）；接文件、计划、代码，是「过一遍、检查」（go over the code）。
-    表示超出时，等于 exceed，但更口语。
-    名词 over 也常用：over budget（超预算）/ over the limit（超限）。
+    over 是「越过、在上方」，go over sth 的画面是「水位漫过了那条刻度线」，所以宾语都是有上限的东西：go over budget / go over time / go over the limit。
+    和 exceed 意思一样，但 exceed 偏书面（exceed the limit），go over 是口语里的默认说法，开会时说 we're going over time 很自然。
+    也常直接用 over 当形容词：we're over budget / it's over the limit。
+    go over 的另一个意思「过一遍、讲一遍」另记一条，见 [[I want to go over some examples with you]]；走过去、去某处（go over there）一般不用专门记。
   source: Claude Code · /compact 使用时机
+  added: "2026-09-13"
+- term: I want to go over some examples with you
+  pos: v.
+  kind: phrase
+  meaning: 把一样东西从头到尾过一遍、讲一遍，边看边核对（过一遍、讲解、复习）。
+  examples:
+  - en: Error analysis is such an important topic I want to go over some additional examples with you.
+    zh: 错误分析这个话题太重要了，我想再跟你一起过几个例子。
+  - en: In this video we went over error analysis with the research agent example.
+    zh: 这个视频里，我们用 research agent 那个例子把错误分析过了一遍。
+  - en: Let me briefly go over what they mean, and then we'll actually go through most of these in depth later in the course as well.
+    zh: 我先简单过一下它们各自是什么意思，之后在课程里我们还会把其中大部分展开细讲。
+  note: |-
+    over 在这里是「从上面扫过去」，画面是拿着手电筒把整份材料照一遍：不一定钻得很深，但每块都看到了。over 还带「再来一次」的意思（do it over = 重做），所以常用在复查、复习上。
+    为什么不说 explain 或 review：explain 是单方面解释给你听；review 偏正式，像评审、审查。go over sth with sb 是「一起看一遍」，带着陪伴感，讲课、带新人、会前对一下计划都很常用：let me go over the plan with you。
+    with you 可以省：I'll go over the code tonight（今晚我把代码过一遍）。
+    和 go through 的区别见 go over vs go through：go over 偏扫一遍复查，go through 偏一项不落地走完。上面第三条例句里两个正好前后对着用。
+  source: Claude Code · Agentic AI 课程（error analysis）
   added: "2026-09-13"
 - term: rule of thumb
   pos: n.
