@@ -5411,12 +5411,17 @@
   note: 指某个角色在当前局面里开始变得相关。更短的口语版是 that's where X comes in。反过来 out of the picture 是"出局、不在考虑范围内"。
   source: Notion · Work
   added: "2026-07-29"
-- term: pull ahead
+- term: the teams that pull ahead
+  pos: v.
   kind: phrase
-  meaning: 拉开领先身位、跑到前面去
+  meaning: 本来并排跑，一发力就冲到前面、把差距拉开（领先、胜出）。
   examples:
-  - The teams that pull ahead aren't the ones that prompt better.
-  note: 来自赛跑/赛车："从并排的位置超到前面"。强调的是相对差距被拉开，不是绝对的快——所以主语通常是竞争关系中的一方（团队、公司、选手）。近义 get ahead（更泛，指个人上位）、outpace sb（明确说超过谁）。落后是 fall behind。
+  - en: The teams that pull ahead aren't the ones that prompt better.
+    zh: 真正跑到前面去的团队，并不是那些 prompt 写得更好的团队。
+  note: |-
+    来自赛跑、赛车：pull 是「发力往前拽」，ahead 是「到前面」。画面是几辆车原本齐头并进，其中一辆突然往前一冲，身位拉开了。
+    为什么不直接说 win 或 be better：win 是比赛已经结束、分出了胜负；pull ahead 说的是正在拉开差距的过程，比赛还没完，所以特别适合聊行业、公司、团队之间的长期竞争。be better 只是静态比较，没有「甩开别人」的动态感。
+    主语通常是竞争中的一方（团队、公司、选手）。想说超过谁用 pull ahead of sb，或者 outpace sb；get ahead 更泛，多指个人在职场上位。反义是 fall behind。
   source: Notion · Work
   added: "2026-07-29"
 - term: talk a lot but never deliver
