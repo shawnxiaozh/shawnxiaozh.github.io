@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: maybe you can run me through a bit about the project
+  pos: sent.
+  kind: pattern
+  meaning: 请对方带着你把一件事从头到尾快速过一遍、讲一讲（给我介绍一下、带我过一遍）。
+  examples:
+  - en: Maybe you can run me through a bit about the project.
+    zh: 要不你先给我简单讲讲这个项目吧。
+  note: |-
+    run through 的画面是「领着人从头小跑到尾」：不停下来细抠，但每一段都带到。run sb through sth = 带着某人快速过一遍某件事。
+    为什么不说 explain 或 tell me about：explain 偏「把道理讲清楚」，像在要求解释；tell me about 很普通。run me through 带着「你领路、我跟着看」的画面，还暗示「讲个大概就行」，开会、面试、交接时请对方介绍情况很自然。walk me through 意思几乎一样，节奏更慢、更细一点。
+    maybe you can … 是很客气的请求，比 can you … 软；a bit about 把要求压轻，意思是「不用讲很深」。
+    这句原话听起来像 run it through，但 run it through 是另一个意思：把东西送进某道流程处理一下（run it through the tests / run it through a translator），后面接的是工具或流程，不接 about。请人介绍时宾语要放人：run me / run us through。
+  source: Claude Code · 会议口语
+  added: "2026-10-19"
 - term: make sth less fragmented
   pos: adj.
   kind: phrase
