@@ -2532,16 +2532,18 @@
     ❌ It is doable to do X —— 一般说 X is doable。
   source: Claude Code · Agentic AI 课程
   added: "2026-09-19"
-- term: reason over sth
+- term: the agent reasons over the content of the page
   pos: v.
   kind: phrase
-  meaning: 把一份材料整个摊开扫一遍，并在它之上推导出结论（基于……做推理）。
+  meaning: 把一份材料整个摊开扫一遍，在它的基础上一步步推出结论（基于……推理、分析）。
   examples:
-  - As it works, the agent reasons over the content of the page to figure out the actions it needs to take.
+  - en: As it works, the agent reasons over the content of the page to figure out the actions it needs to take to complete the task, and what it should do next.
+    zh: 它一边操作，agent 一边根据页面上的内容推理，弄清楚要完成任务得做哪些操作、下一步该干什么。
   note: |-
-    over 是「覆盖着整片材料扫过去」，和 go over、look over 的 over 同一个意思；所以 reason over 的宾语一定是一份具体的材料（页面内容、检索到的文档、一张表、知识图谱）。
-    vs reason about sth：about 的宾语是要想清楚的「问题」（reason about why it failed / about program behavior），over 的宾语是被处理的「材料」。❌ reason over why it failed。
-    vs think about / analyze：reason 强调一步步推出结论，不只是看过、有想法。AI 语境里几乎是固定说法。
+    over 是「盖在整片材料上扫过去」，和 go over、look over 里的 over 是同一个意思。所以 reason over 的宾语一定是一份具体的材料：页面内容、检索回来的文档、一张表、一张知识图谱。
+    vs reason about sth：about 后面接要想清楚的「问题」（reason about why it failed），over 后面接拿来推理的「材料」。❌ reason over why it failed。
+    为什么不说 read 或 analyze：read 只是看过；analyze 偏「拆开研究」，不强调得出结论。reason 强调一步步推出结论、然后拿去行动（figure out the actions）。AI、agent 语境里这几乎是固定说法：the model reasons over retrieved documents / over the tool results。
+    主语一般是模型或 agent，很少用在人身上；说人用 think through sth 或 work through sth 更自然。
   source: Claude Code · 课程转录 agent 术语
   added: "2026-09-19"
 - term: computer use by agents
