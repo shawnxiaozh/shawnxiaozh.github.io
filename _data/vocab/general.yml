@@ -3527,15 +3527,19 @@
     ❌ 别和 otherwise / likewise 里的 -wise 混——那两个是固定词，不是这个后缀。
   source: English Teacher · Understanding "career-wise"
   added: "2026-09-07"
-- term: wave through
+- term: the classifier waves it through
   pos: v.
   kind: phrase
-  meaning: 挥手放行。画面是关卡上保安看一眼就让你过，常自带「该查没查」的贬义。
+  meaning: 关卡上的人看一眼、挥挥手就让你过去，不拦也不细查（放行）。
   examples:
-  - The classifier waves it through, because broken isn't dangerous.
+  - en: The classifier waves it through, because broken isn't dangerous.
+    zh: 分类器直接就放它过去了，因为代码有 bug 不等于有危险。
   note: |-
-    近义 slip through 更强调「漏过去了」。
-    和 let through / approve 的区别：let through 中性；wave through 的画面是看都没细看就挥手放行，带「审查草率」的意味。
+    画面是边检、停车场门口的保安：车一到，人家手一挥「过吧」。wave 是挥手，through 是「穿过关卡」。
+    为什么不说 let it through 或 approve：let through 只是中性的「让过」；approve 是正式批准，像审过了才签字。wave through 强调「没怎么看就放了」，所以常带一点「该查没查、审得太松」的味道（the bill was waved through Congress）。
+    上面那句例句里却不算贬义：分类器只管「危不危险」，不管「对不对」，有 bug 的代码不在它的职责里，于是很自然地被放过去了。这句话真正在提醒的是：别指望这道关卡帮你抓 bug。
+    语序：代词放中间，wave it through / wave sb through；名词两边都行，wave through the request / wave the request through。
+    近义 slip through 的主语换成了被放过去的东西，强调「从缝里漏过去了」（a bug slipped through code review）。
   source: English Teacher · Intent classification vs code correctness
   added: "2026-09-07"
 - term: steer the approach
