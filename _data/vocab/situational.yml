@@ -293,7 +293,11 @@
   meaning: 逐步放量、逐步提升
   examples:
   - We ramped it up to 20% traffic yesterday.
-  note: 灰度发布的标准词，强调"分阶段慢慢加"。回退是 ramp down / roll back。名词 ramp：the 20% ramp。
+  - en: I'm hoping that there will be some plan as and when they are ramping.
+    zh: 我希望等他们放量的时候，到时候能有个计划。
+  note: |-
+    灰度发布的标准词，强调"分阶段慢慢加"。回退是 ramp down / roll back。名词 ramp：the 20% ramp。
+    口语里常省掉 up，直接说 they are ramping（他们在放量），意思一样。
   source: Notion · Work
   added: "2026-07-29"
 - term: the metrics are not emitted

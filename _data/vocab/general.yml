@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: as and when they are ramping
+  pos: conj.
+  kind: phrase
+  meaning: 等到那件事真发生的时候，就跟着那个时间点来（到时候、随着……的进度）。
+  examples:
+  - en: I'm hoping that there will be some plan as and when they are ramping.
+    zh: 我希望等他们放量的时候，到时候能有个计划。
+  note: |-
+    as and when 是 as（随着）和 when（当……时）叠在一起，画面是「不提前定死，事情走到哪一步，就在那一步跟上」。印度英语、英式英语里很常用，美式少一些。
+    为什么不直接说 when：when 只是指出一个时间点；as and when 多了一层「不确定什么时候、反正到时候再说，随它的进度走」，带点「按需、届时」的味道。所以常用在排期、资源、发布节奏这类说不准的事上：we'll add more people as and when needed（需要的时候再加人）。
+    常见固定说法：as and when needed / as and when required（按需）。
+    美式口语里的对应说法：when the time comes、as they go、once they start ramping。
+  source: Claude Code · 发布计划沟通
+  added: "2026-10-22"
 - term: I recommend we go ahead irrespective of the API
   pos: sent.
   kind: pattern
