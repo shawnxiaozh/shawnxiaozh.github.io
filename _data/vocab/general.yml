@@ -2,6 +2,26 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: I recommend we go ahead irrespective of the API
+  pos: sent.
+  kind: pattern
+  meaning: 给出建议：不管某个条件怎样，都照做。recommend 后面接「人 + 动词原形」或 doing，不能直接接动词原形（我建议……；不管……都……）。
+  examples:
+  - en: I recommend we go ahead irrespective of the API.
+    zh: 我建议不管那个 API 怎么样，我们都先推进。
+  - en: Rather than trying to build evaluations in advance, what I recommend is you just look for the outputs and manually look for things that you wish it was doing better.
+    zh: 与其提前把评测体系搭好，我建议你直接去看输出，手动找出那些你希望它做得更好的地方。
+  note: |-
+    原话是 I recommend go irrespective of the API，错在 recommend 后面直接跟了动词原形 go。recommend 后面能接的是：
+      ✅ I recommend going …（不说谁去，泛泛地建议）
+      ✅ I recommend (that) we go …（说清楚谁去，that 后用动词原形，主语是 he 也说 he go，口语常省 that）
+      ✅ What I recommend is you … （上面第二条例句，口语里很常见）
+      ❌ I recommend go … / ❌ I recommend to go …
+    光说 go 意思也不清楚，去哪？推进项目一般说 go ahead（继续做、先推进）或 proceed。
+    irrespective of = regardless of，「不管、不论」，画面是「不看那一项，不把它考虑进来」：respect 在这里是「顾及」，ir- 是否定。两个意思完全一样，regardless of 口语里更常用，irrespective of 稍正式一点，写邮件、文档里都很自然。后面接名词或 whether …：irrespective of whether the API is ready。
+    想说得更委婉：I'd recommend …（多个 'd，听起来更客气）。
+  source: Claude Code · 工作沟通
+  added: "2026-10-22"
 - term: we put that in the catalog
   pos: n.
   kind: phrase
