@@ -2,6 +2,21 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: get closure on this ticket
+  pos: n.
+  kind: phrase
+  meaning: 让一件悬着的事终于有个了结、画上句号（结掉、有定论）。
+  examples:
+  - en: Okay, so this ticket is getting closure on this end next month.
+    zh: 好，那这个 ticket 我们这边下个月就能结掉了。
+  note: |-
+    closure 来自 close（关上），画面是「一扇一直半开着的门终于关上了」：事情不再悬着，大家心里踏实了。
+    为什么不直接说 close the ticket：close the ticket 只是操作上把单子关掉；get closure on sth 强调「这件拖了很久、悬而未决的事终于有了结论」，带一点「总算」的松口气感。所以它常用在拖了很久、来回扯皮的事上。
+    用法：closure 不可数，不加 a；人做主语，get / reach / bring closure to sth。❌ the ticket is getting closure → ✅ we'll get closure on this ticket next month。只想说单子会被关掉时，直接说 this ticket will be closed out on our end next month 最自然。
+    on this end 一般说成 on our end（我们这边）。
+    另一个常见义项是情感上的「放下、释怀」：I just need some closure.（我只是想要一个了断。）
+  source: Claude Code · 工单沟通
+  added: "2026-10-22"
 - term: We don't have a solution yet, right? — Nope.
   pos: sent.
   kind: pattern
