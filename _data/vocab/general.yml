@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: a really drill-down implementation detail
+  pos: adj.
+  kind: phrase
+  meaning: 要一层层往下钻很深才碰得到的细节，平时不用关心（很底层、很深的细节）。
+  examples:
+  - en: … on the broker as a really drill-down implementation detail.
+    zh: ……放在 broker 上，算是一个很底层、很深的实现细节。
+  note: |-
+    drill 是钻头，drill down 的画面是拿钻头从表层一层层往下钻。最常见的是动词用法 drill down into sth（深挖某个问题）：let's drill down into the latency numbers（我们把延迟数据往下细看一下）。数据看板里点开总数、一层层看明细，也叫 drill down。
+    上面这句把它当形容词，放在名词前面（drill-down detail），意思是「要钻很深才看得到的细节」。写的时候一般加连字符：a drill-down detail。
+    为什么不说 low-level 或 deep：low-level 偏技术分层，指「底层实现」；deep 很泛。drill-down 带着「得专门往下挖才碰得到」的动作感，暗示「这不是现在要关心的层面」，常用来把话题先放一放：that's a drill-down detail, we can skip it for now。
+    类似说法：in the weeds（陷进细节里）、under the hood（在底层、引擎盖下面）。
+  source: Claude Code · 技术视频字幕
+  added: "2026-10-22"
 - term: as and when they are ramping
   pos: conj.
   kind: phrase
