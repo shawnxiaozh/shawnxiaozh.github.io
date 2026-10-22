@@ -2,20 +2,6 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
-- term: this ticket will be closed on our end
-  pos: adv.
-  kind: phrase
-  meaning: 在我们这一头、我们负责的这部分（我们这边、就我们而言）。
-  examples:
-  - en: Okay, so this ticket is getting closure on this end next month.
-    zh: 好，那这个 ticket 我们这边下个月就能结掉了。
-  note: |-
-    end 是「一头、一端」，画面是一根电话线或一条流水线，两头各站着一方：on our end 就是「线的我们这一头」。所以它天然带着「还有另一方」的意思，专门用来划清这边和那边的分工、责任。
-    为什么不说 we / from our side：we 只是指人，不强调分工；from our side、on our side 意思接近，但 on our end 在技术和工单沟通里最常用，比如排查问题时说 it looks fine on my end（我这边看着没问题，暗示问题可能在你那边）。
-    上面那句例句里的 on this end 能听懂，但口语里习惯说 on our end / on my end；打电话时也说 on this end（电话这头）。对方那头是 on your end / on their end。
-    位置：一般放在句末，或者紧跟在动词短语后面：Can you check on your end? / Nothing's changed on our end.
-  source: Claude Code · 工单沟通
-  added: "2026-10-22"
 - term: get closure on this ticket
   pos: n.
   kind: phrase
