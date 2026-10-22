@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: I'll ping you about that
+  pos: sent.
+  kind: pattern
+  meaning: 这事我回头发消息戳你一下（找你、提醒你、跟你说一声）。
+  examples:
+  - en: I'll ping you about that.
+    zh: 这事我回头发消息跟你说。
+  note: |-
+    ping 来自网络命令 ping：往对方机器发一个小包，看它在不在、回不回。用到人身上，画面就是「轻轻戳一下对方」—— 发条短消息，不是正式联系。
+    为什么不说 contact you / let you know：contact 正式、偏邮件和电话；let you know 是「通知你结果」。ping 更轻、更随意，暗示就是 Slack、Teams 上一两句话的事，同事之间说最自然。
+    搭配：ping sb about sth（为某事找某人）、ping sb on Slack（在 Slack 上找）、give sb a ping（名词用法）。也常用于催人：Can you ping him again? He hasn't replied.
+    比 ping 更正式一点的是 reach out to sb；更随意的是 shoot sb a message。
+  source: Claude Code · 工作沟通
+  added: "2026-10-22"
 - term: no occurrence of that issue
   pos: n.
   kind: phrase
