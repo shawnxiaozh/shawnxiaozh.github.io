@@ -2,6 +2,22 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: We don't have a solution yet, right? — Nope.
+  pos: sent.
+  kind: pattern
+  meaning: 回答否定式的确认问句：yes / no 跟着事实走，不跟着对方的问法走。事实是「没有」就说 No，事实是「有」就说 Yes（和中文「对 / 不对」相反）。
+  examples:
+  - en: We don't have a solution yet, right? Nope.
+    zh: 我们还没有解决方案，对吧？——对，还没有。
+  note: |-
+    中文是在回应对方那句话：「还没有，对吧？」「对（你说得对），没有。」英文是在回应事实本身：有没有 solution？没有 → No。所以上面那句的 Nope 译成中文反而是「对」。
+    最常见的错：想说「对，还没有」，张口就是 ❌ Yes。对方会以为你是说「有了」。
+    最保险的办法是 yes / no 后面补半句，意思一下就不会含糊：Nope, not yet. / No, we don't. / Yeah, we do actually.（要是其实已经有了）。
+    不想纠结 yes / no 时，直接说 Right, not yet. / Correct, still nothing. —— right、correct 是在确认对方的说法，这时候就和中文的「对」一样了。
+    同样适用于 isn't it? / aren't you? / didn't you? 这类问句：You didn't get the email? — No, I didn't.（对，我没收到。）
+    nope、yep 是 no、yes 的随口版，同事之间聊天常用，正式场合用 No / Yes。
+  source: Claude Code · 会议口语
+  added: "2026-10-22"
 - term: maybe you can run me through a bit about the project
   pos: sent.
   kind: pattern
