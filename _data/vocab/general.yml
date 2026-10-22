@@ -2,6 +2,21 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: we put that in the catalog
+  pos: n.
+  kind: phrase
+  meaning: 把东西逐项登记进一份分门别类的清单里，供以后查找（目录、清单、登记册）。
+  examples:
+  - en: We put the catalog for that.
+    zh: 那个问题我们已经登记到清单里了。
+  note: |-
+    catalog 的画面是一本分好类的目录册：每样东西一条，写清楚是什么、在哪、怎么用，要找的时候翻目录就行。商品目录、课程目录、数据目录（data catalog）、服务目录（service catalog）都是这个意思。
+    排查问题时说到 catalog，一般是团队维护的一份已知问题、错误码或服务的清单：遇到过的问题登记进去，下次再碰到先翻一下，看有没有现成的原因和处理办法。
+    为什么不说 list：list 只是「一串条目」；catalog 强调分门别类、每条都有说明、是长期维护、拿来查的。
+    用法：catalog 是可数名词，「放进清单」用 put sth in / add sth to the catalog。上面例句的原话 put the catalog for that 能听懂，但更顺的说法是 we put that in the catalog / we added a catalog entry for that。
+    拼写：美式 catalog，英式 catalogue。
+  source: Claude Code · 问题排查
+  added: "2026-10-22"
 - term: it still fails every now and then
   pos: adv.
   kind: phrase
