@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: no occurrence of that issue
+  pos: n.
+  kind: phrase
+  meaning: 那个问题一次都没再冒出来过（没有再出现、没复现）。
+  examples:
+  - en: No occurrence of that issue.
+    zh: 那个问题一次都没再出现过。
+  note: |-
+    occurrence 是 occur（发生、出现）的名词，指「发生了一次」，可数：一次 occurrence、好几次 occurrences。画面是在日志里一行行往下找，看那个错误有没有冒头，结果一条都没有。
+    为什么不说 it didn't happen again：意思一样，那是最口语的说法；no occurrence of sth 是名词结构，短、干、像汇报结论，适合写在 ticket、status update、监控报告里，或者开会时一句话交代结果。
+    口语里同样意思还常说：we haven't seen it since / it hasn't come back / it hasn't reproduced（没复现）。
+    想说次数时：three occurrences of the error in the last 24 hours（过去 24 小时出现了三次）。拼写注意双 c 双 r：occurrence，❌ occurence。
+  source: Claude Code · 工单沟通
+  added: "2026-10-22"
 - term: we need to be watchful of that
   pos: adj.
   kind: phrase
