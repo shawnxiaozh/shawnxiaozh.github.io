@@ -7,7 +7,7 @@ A payments company's PR volume tripled after engineers adopted AI coding tools. 
 1. **Main:** How would you design it?
 2. **Follow-up 1:** A teammate wants to put the whole repo in the prompt. Do you agree?
 3. **Follow-up 2:** It leaves 15 comments per PR and nobody reads them anymore. What's going on?
-4. **Follow-up 3:** You replay last month's bad PR. It gets flagged, but as a minor note. Why, and what do you change? Then: a teammate wants 12 agents.
+4. **Follow-up 3:** You replay last month's bad PR, and it only shows up as a minor note. How do you stop this from happening again?
 5. **Follow-up 4:** A model 40% cheaper looks just as good on three PRs. Do you switch?
 
 > **How to use this note:** the questions only describe what happened, never the fix. If the question names the solution ("how would you split it into specialists?"), it has given the answer away. Let the candidate get there from the symptoms.
@@ -82,9 +82,11 @@ A payments company's PR volume tripled after engineers adopted AI coding tools. 
 
 > You've shipped your fixes. To check them, you replay last month's double-charge PR through the new agent. It does catch the problem, but only as one line inside the folded "minor" summary: *"Consider following the Payments API standards for retry handling."* It's listed next to two docstring nits.
 >
-> **Why did that happen, and what would you change?**
+> **How do you make sure this kind of thing doesn't happen again?**
 
 **What it tests:** can they tell *finding* a bug apart from *classifying it correctly*? Can they see that this is a money bug, not a style or security bug? And do they arrive at domain-specific reviewers on their own?
+
+**Interviewer notes:** don't mention specialists, multiple agents or severity. If they only say "improve the prompt" or "add more rules," ask: *"Would that also have caught it if the Confluence page hadn't been retrieved?"* The specialist follow-up below is only for candidates who bring up splitting the reviewer themselves.
 
 **What a good answer covers:**
 
@@ -93,9 +95,7 @@ A payments company's PR volume tripled after engineers adopted AI coding tools. 
 - **Fix: a dedicated Payment Safety reviewer.** Its checklist says "any change touching charges or retries must keep the idempotency check," and its default severity is high. It catches the bug from domain rules even if retrieval misses the doc, and cites the doc as evidence when retrieval finds it.
 - **Add this PR to the eval set** (see Follow-up 4), with the expected result "high severity, blocks merge," so this exact regression can't come back quietly.
 
-> **Then:** a teammate gets excited and proposes 12 specialist agents: one per OWASP Top 10 category, plus performance and logging.
->
-> **What's your take?**
+> **Only if they proposed splitting the reviewer:** "OK. For this repo, how many would you have, and where do you draw the lines?" If they keep adding categories, push: *"Why not one per OWASP Top 10 category?"*
 
 **What it tests:** do they have a principled rule for where to split, or do they just add agents?
 
