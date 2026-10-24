@@ -2,6 +2,18 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: it gets sent to sth
+  kind: pattern
+  meaning: （东西）被送到某处——get 被动，强调「这一步自动发生了」，不关心是谁送的（被发往、被投递到）。
+  examples:
+  - en: When a user places an order, it gets sent to the matching engine through Kafka.
+    zh: 用户下单之后，这笔订单会经过 Kafka 被送到撮合引擎。
+  note: |-
+    比 is sent to 更口语，带「事情就这么流转过去了」的过程感；讲系统流程时很顺口：it gets sent to / it gets written to / it gets picked up by。
+    比主动句 the system sends it to … 省掉了没人关心的主语。
+    ❌ it sends to the matching engine（订单自己不会发送，要用被动）。
+  source: Claude Code · Kafka 面试题·订单顺序
+  added: "2026-10-24"
 - term: a really drill-down implementation detail
   pos: adj.
   kind: phrase
