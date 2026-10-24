@@ -1,7 +1,5 @@
 # Kafka Interview: Order Sequencing
 
-Oct 23, 2026 · @shawn
-
 ## Main question
 
 > Say you own the order service for Binance Spot. When a user places an order, it gets sent to the matching engine through Kafka.
