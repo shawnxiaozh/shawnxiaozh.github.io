@@ -1,23 +1,18 @@
-# About 页的内容，被 _layouts/about.html 读取。
-# 改内容只改这里，不用碰 HTML。
+# About 页的内容，被 _layouts/about.html 读取。改内容只改这里，不用碰 HTML。
 #
-# 所有 "TODO" 都是占位，填好真实内容之前不要推送上线：
-#   grep -n TODO _data/about.yml
+# profile 里可选再加：headline（职位）、location（城市）、summary（简介），
+# 不写就不显示。
 
 profile:
   name: Shawn Xiao
-  headline: "TODO: Software Engineer"
-  location: "TODO: City, Country"
   avatar: https://github.com/shawnxiaozh.png
-  summary: >-
-    TODO: Two or three sentences about what you build and what you care about.
-    This shows under your name at the top of the page.
 
-# icon 可选值：linkedin / github / email / instagram / tiktok / rss / link
+# icon 可选值：linkedin / github / email / instagram / rss / link
+# url 留空的条目不显示。
 links:
   - label: LinkedIn
     icon: linkedin
-    url: "TODO"
+    url: ""
   - label: GitHub
     icon: github
     url: https://github.com/shawnxiaozh
