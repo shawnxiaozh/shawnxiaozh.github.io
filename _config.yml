@@ -34,10 +34,10 @@ future: true
 permalink: /:title/
 
 navigation:
-  - title: Home
-    url: /
   - title: Articles
-    url: /articles/
+    url: /
+  - title: English
+    url: /english/
   - title: Tags
     url: /tags/
   - title: About

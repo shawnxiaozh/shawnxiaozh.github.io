@@ -16,8 +16,8 @@ layout: default
 
 <article class="vocab-app">
   <header class="vocab-head">
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
-    {% if page.excerpt %}<p class="post-description">{{ page.excerpt | strip_html }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
     <div class="vocab-intro">{{ content }}</div>
     <p class="vocab-stats">
       <span><b>{{ total }}</b> 条</span>
