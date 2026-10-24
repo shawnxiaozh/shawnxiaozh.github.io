@@ -1,0 +1,111 @@
+---
+layout: default
+---
+{%- comment -%}
+  About 页 = 简历。内容全部在 _data/about.yml，这里只负责排版；
+  「On this site」那组卡片的数字是构建时从站点数据里算出来的，不用手动维护。
+{%- endcomment -%}
+{%- assign cv = site.data.about -%}
+{%- assign p = cv.profile -%}
+
+{%- assign vocab_total = 0 -%}
+{%- for scene in site.data.vocab_meta.scenes -%}
+  {%- assign n = site.data.vocab[scene.id] | size -%}
+  {%- assign vocab_total = vocab_total | plus: n -%}
+{%- endfor -%}
+
+<article class="about">
+  <section class="about-card">
+    {%- if p.avatar %}
+    <img class="about-avatar" src="{{ p.avatar | relative_url }}" alt="{{ p.name }}" width="112" height="112">
+    {%- endif %}
+    <div class="about-id">
+      <h1>{{ p.name }}</h1>
+      <p class="about-headline">
+        {{ p.headline }}{% if p.location %}<span class="about-dot">·</span>{{ p.location }}{% endif %}
+      </p>
+      {%- if p.summary %}<p class="about-summary">{{ p.summary }}</p>{% endif %}
+      {%- if cv.links %}
+      <ul class="about-links">
+        {%- for l in cv.links %}
+        {%- assign first_char = l.url | slice: 0 %}
+        <li><a href="{{ l.url | relative_url }}"{% if first_char != '/' %} rel="me noopener" target="_blank"{% endif %}>{% include icon.html name=l.icon %}{{ l.label }}</a></li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+  </section>
+
+  {{ content }}
+
+  {%- if cv.experience %}
+  <section class="about-section">
+    <h2>Experience</h2>
+    <ol class="about-timeline">
+      {%- for job in cv.experience %}
+      <li class="about-job">
+        <header>
+          <h3>{{ job.role }} <span class="about-at">@ {{ job.company }}</span></h3>
+          <p class="about-when">{{ job.period }}{% if job.location %} · {{ job.location }}{% endif %}</p>
+        </header>
+        {%- if job.summary %}<p class="about-job-summary">{{ job.summary }}</p>{% endif %}
+        {%- if job.highlights %}
+        <ul>
+          {%- for h in job.highlights %}<li>{{ h }}</li>{% endfor %}
+        </ul>
+        {%- endif %}
+        {%- if job.stack %}
+        <div class="about-chips">
+          {%- for t in job.stack %}<span class="article-tag">{{ t }}</span>{% endfor %}
+        </div>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+  {%- endif %}
+
+  {%- if cv.skills %}
+  <section class="about-section">
+    <h2>Skills</h2>
+    <dl class="about-skills">
+      {%- for g in cv.skills %}
+      <dt>{{ g.group }}</dt>
+      <dd>{% for t in g.items %}<span class="article-tag">{{ t }}</span>{% endfor %}</dd>
+      {%- endfor %}
+    </dl>
+  </section>
+  {%- endif %}
+
+  {%- if cv.education %}
+  <section class="about-section">
+    <h2>Education</h2>
+    <ul class="about-edu">
+      {%- for e in cv.education %}
+      <li>
+        <div><strong>{{ e.school }}</strong><br><span>{{ e.degree }}</span></div>
+        <span class="about-when">{{ e.period }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  <section class="about-section">
+    <h2>On this site</h2>
+    <div class="about-stats">
+      <a class="about-stat" href="{{ '/' | relative_url }}">
+        <b>{{ site.posts | size }}</b><span>Articles</span><small>Notes, labs and write-ups</small>
+      </a>
+      <a class="about-stat" href="{{ '/tags/#leetcode' | relative_url }}">
+        <b>{{ site.tags.leetcode | size }}</b><span>LeetCode</span><small>Algorithms by topic</small>
+      </a>
+      <a class="about-stat" href="{{ '/tags/#ddia' | relative_url }}">
+        <b>{{ site.tags.ddia | size }}</b><span>DDIA</span><small>Designing Data-Intensive Applications</small>
+      </a>
+      <a class="about-stat" href="{{ '/english/' | relative_url }}">
+        <b>{{ vocab_total }}</b><span>English</span><small>Words and phrases collected</small>
+      </a>
+    </div>
+  </section>
+</article>

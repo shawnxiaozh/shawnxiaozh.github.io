@@ -1,0 +1,61 @@
+# About 页（简历）的内容，被 _layouts/about.html 读取。
+# 改内容只改这里，不用碰 HTML。
+#
+# 所有 "TODO" 都是占位，填好真实内容之前不要推送上线：
+#   grep -n TODO _data/about.yml
+#
+# 任何一段（experience / skills / education / links）删光或注释掉，页面上对应区块就不显示。
+
+profile:
+  name: Shawn Xiao
+  headline: "TODO: Software Engineer"
+  location: "TODO: City, Country"
+  avatar: https://github.com/shawnxiaozh.png
+  summary: >-
+    TODO: Two or three sentences about what you build and what you care about.
+    This shows under your name at the top of the page.
+
+# icon 可选值：linkedin / github / email / instagram / tiktok / rss / link
+links:
+  - label: LinkedIn
+    icon: linkedin
+    url: "TODO"
+  - label: GitHub
+    icon: github
+    url: https://github.com/shawnxiaozh
+  - label: RSS
+    icon: rss
+    url: /feed.xml
+
+# 按时间倒序。highlights 每条一句话，stack 是技术标签。
+experience:
+  - company: "TODO: Company"
+    role: "TODO: Role"
+    period: "TODO: 2024 – Present"
+    location: "TODO: City"
+    summary: "TODO: One line on what the team / product does."
+    highlights:
+      - "TODO: An achievement, ideally with a number."
+      - "TODO: Another achievement."
+    stack: [TODO, Tech, Stack]
+  - company: "TODO: Previous Company"
+    role: "TODO: Role"
+    period: "TODO: 2020 – 2024"
+    location: "TODO: City"
+    summary: "TODO: One line on what the team / product does."
+    highlights:
+      - "TODO: An achievement, ideally with a number."
+    stack: [TODO]
+
+skills:
+  - group: "TODO: Languages"
+    items: [TODO]
+  - group: "TODO: Data & Messaging"
+    items: [TODO]
+  - group: "TODO: Tooling"
+    items: [TODO]
+
+education:
+  - school: "TODO: University"
+    degree: "TODO: Degree, Major"
+    period: "TODO: 2017 – 2020"
