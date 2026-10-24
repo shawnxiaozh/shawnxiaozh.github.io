@@ -120,7 +120,7 @@ A payments company's PR volume tripled after engineers adopted AI coding tools. 
   All of them run in parallel on the same context engine. Their results get merged, deduped and ranked by risk.
 - **Overlap is fine.** Payment Safety flags the idempotency bug; Compatibility may flag it too, because downstream retry logic depends on that key. The dedupe step handles duplicates. For high-risk issues, two agents catching the same thing is redundancy you want.
 - **How many:** start with 2–3 (e.g. Security, Payment Safety and one general agent). Add another only when the eval set shows a category that keeps getting missed. Every extra agent adds tokens, latency and comments. Too many, and you're back to Follow-up 2's noise problem.
-- Red flag: agreeing to all 12 because "more specialists means more coverage."
+- Red flag: one agent per OWASP category, plus performance, logging and so on, because "more specialists means more coverage."
 
 ## Follow-up 4: The cheaper model
 
