@@ -58,7 +58,37 @@
   - **Drop low-confidence findings** before posting. Leaving it out is better than posting a guess.
 - Red flag: "tell the prompt to be more concise." That doesn't change what it thinks is worth flagging.
 
-## Follow-up 3: How do you know it's working?
+## Follow-up 3: Which specialists, and who catches the bug?
+
+> OK, you want specialist agents. For this payments repo, **how many would you have, and how do you decide where to split?** And concretely: the missing Idempotency-Key check from last month — **which agent should catch it?**
+
+**What a good answer covers:**
+
+- **Split by what each agent needs, not by how many you can think of.** A category earns its own agent only if it has a different:
+  1. **checklist** — what it's looking for
+  2. **context source** — where it retrieves from
+  3. **default severity** — block the merge, or just suggest
+
+  If two agents match on all three, merge them.
+- A reasonable split for this repo:
+
+  | Specialist | Looks for | Context it retrieves | Default severity |
+  |---|---|---|---|
+  | **Security** | Injection, broken auth, leaked secrets | Security standards, auth code | High |
+  | **Payment Safety** | Idempotency, double charges, amount precision, payment state transitions, retries | Payments standards, neighboring code like `capture` / `refund` | High |
+  | **Spec Match** | Does the code do what the ticket asked (e.g. return 409 for payments under review) | Jira ticket, acceptance criteria | Medium–High |
+  | **Conventions** | Does it follow how this repo does things (error handling, logging, docstrings) | Similar code chunks | Low |
+  | **Compatibility** | Does it break downstream callers (changed signatures or response shapes) | Caller code in related repos | Medium–High |
+
+  All of them run in parallel on the same context engine; their results get merged, deduped and ranked by risk.
+- **The Idempotency-Key bug is not really a security bug.** Nobody attacked anything — a network retry charged customers twice. It's a **money-correctness** problem.
+  - With only the course's two agents (security + conventions), it would land on **Conventions**, and only if retrieval happened to pull the Confluence rule. That agent's prompt is mostly about style, so the finding would likely be ranked low and buried next to docstring nits.
+  - That's why a payments team should have a dedicated **Payment Safety** agent. Its checklist says "any change touching charges or retries must keep the idempotency check." It catches the bug from domain rules even if the doc isn't retrieved, and cites the doc as evidence when it is.
+- **Overlap is fine.** Payment Safety flags it; Compatibility may flag it too, because downstream retry logic depends on that key. The dedupe step handles duplicates. For high-risk issues, two agents catching the same thing is redundancy you want.
+- **How many:** start with 2–3 (e.g. Security + Payment Safety + one general agent). Add a new one only when the eval set shows a category that keeps getting missed. Every extra agent adds tokens, latency and comments — too many and you're back to Follow-up 2's noise problem.
+- Red flag: "one agent per OWASP category, plus one for performance, one for logging…" — splitting by brainstorm instead of by checklist / context / severity.
+
+## Follow-up 4: How do you know it's working?
 
 > Your VP asks: "Is this thing actually catching bugs, or just generating comments?" And next month you want to switch models.
 >
