@@ -28,19 +28,32 @@ permalink: /tags/
   <p>Choose any tag below to focus on the posts filed under it.</p>
 
   <div class="tag-filter">
+    <button class="tag-chip is-active" data-tag="">All <span>{{ site.posts | size }}</span></button>
     {% for tag_name in sorted_tag_names %}
       {% assign tag_slug = tag_name | slugify %}
-      <button class="tag-chip{% if forloop.first %} is-active{% endif %}" data-tag="{{ tag_slug }}">
+      <button class="tag-chip" data-tag="{{ tag_slug }}">
         {{ tag_name }} <span>{{ site.tags[tag_name] | size }}</span>
       </button>
     {% endfor %}
   </div>
 
   <div class="tag-panels">
+    {%- comment -%} 默认面板：全部文章，每篇只出现一次 {%- endcomment -%}
+    <section class="tag-panel is-active" data-tag="">
+      <h2>All posts <span>({{ site.posts | size }})</span></h2>
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
     {% for tag_name in sorted_tag_names %}
       {% assign tag_slug = tag_name | slugify %}
       {% assign posts_in_tag = site.tags[tag_name] %}
-      <section class="tag-panel{% if forloop.first %} is-active{% endif %}" data-tag="{{ tag_slug }}">
+      <section class="tag-panel" data-tag="{{ tag_slug }}">
         <h2 id="{{ tag_slug }}">{{ tag_name }} <span>({{ posts_in_tag | size }})</span></h2>
         <ul>
           {% for post in posts_in_tag %}
@@ -76,7 +89,8 @@ permalink: /tags/
 
       var initial = window.location.hash ? window.location.hash.replace('#', '') : '';
       var initialMatch = panels.find(function(panel) { return panel.dataset.tag === initial; });
-      var defaultTag = initialMatch ? initial : (chips[0] ? chips[0].dataset.tag : '');
+      // 没有 hash（或 hash 对不上任何 tag）时显示 All
+      var defaultTag = initialMatch ? initial : '';
 
       activate(defaultTag);
 
@@ -84,11 +98,8 @@ permalink: /tags/
         chip.addEventListener('click', function() {
           var targetTag = chip.dataset.tag;
           activate(targetTag);
-          if (history.pushState) {
-            history.replaceState(null, '', '#' + targetTag);
-          } else {
-            window.location.hash = targetTag;
-          }
+          // All 不留 hash，保证 /tags/ 链接干净
+          history.replaceState(null, '', targetTag ? '#' + targetTag : window.location.pathname);
         });
       });
     });
