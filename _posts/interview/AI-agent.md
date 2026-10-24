@@ -1,5 +1,15 @@
 # AI Agent Interview: Building a Code Review Agent
 
+## Summary
+
+A payments company's PR volume tripled after engineers adopted AI coding tools. A PR that dropped the `Idempotency-Key` check got approved and double-charged customers. You're asked to build an AI code review agent.
+
+1. **Main:** How would you design it?
+2. **Follow-up 1:** Why not just put the whole repo in the prompt?
+3. **Follow-up 2:** It leaves 15 comments per PR and engineers ignore it. What's wrong, and how do you fix it?
+4. **Follow-up 3:** How would you split it into specialist agents, and which one catches the missing Idempotency-Key?
+5. **Follow-up 4:** How do you prove it's catching real bugs, and how do you switch models safely?
+
 ## Main question
 
 > You're on the platform team at a payments company. Engineers now write most of their code with Claude Code or Codex, and PR volume has roughly tripled. Reviewers can't keep up: PRs sit for two days, or get approved after a 30-second skim.
