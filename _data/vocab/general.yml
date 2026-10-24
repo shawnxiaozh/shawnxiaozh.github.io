@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: I can't keep up with …
+  kind: pattern
+  meaning: 跟得上、不掉队：对方或事情一直在往前跑，你努力保持在同一速度（跟上、赶得上）。
+  examples:
+  - en: Things change so fast in this field that I can't keep up with all the new tools.
+    zh: 这个领域变得太快了，那么多新工具我根本跟不上。
+  note: |-
+    画面：别人在前面跑，你要一直保持同一速度，up 是"齐平、不落后"。
+    和 catch up with 的区别：catch up 是已经落后了、去追上；keep up 是本来并排、努力别掉队。
+    常见对象：keep up with the news / the work / the class / the pace / sb（跟上某人的速度）。
+    另一义：keep up with sb 也可指「和某人保持联系」（keep up with old friends）。
+    ❌ keep up 后面直接接人或事：要加 with（keep up the good work 是另一个意思：保持下去）。
+  source: Claude Code · 日常短语
+  added: "2026-10-24"
 - term: it gets sent to sth
   kind: pattern
   meaning: （东西）被送到某处——get 被动，强调「这一步自动发生了」，不关心是谁送的（被发往、被投递到）。
