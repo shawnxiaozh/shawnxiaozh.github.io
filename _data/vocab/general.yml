@@ -2,6 +2,23 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: request inference from an LLM
+  kind: phrase
+  meaning: 让模型跑一次、生成结果（推理：模型拿输入算出输出的那一步）。
+  examples:
+  - en: Sampling allows for servers to request inference from a large language model.
+    zh: sampling 让服务器可以向大模型发起推理请求，也就是让模型帮它生成内容。
+  - en: the server can talk back to the client and request inference
+    zh: 服务器可以反过来找客户端，请它调一次模型
+  - en: it's a very powerful way for servers to request inference
+    zh: 这是让服务器调用模型推理的一种很强大的方式
+  note: |-
+    AI 里 inference 是和 training 相对的：training 是把模型练出来，inference 是拿练好的模型来用——喂进 prompt、吐出回答。平时调一次 API、让模型回答一个问题，就是一次 inference。所以 request inference ≈ 请模型生成一次回复，比 call the model 更术语化。
+    日常英语里 inference 是「推断、推论」（make an inference from the evidence = 从证据里推出结论），AI 的用法是从这里来的：模型根据输入「推」出输出。
+    这里不可数，不加冠词：request inference / run inference / inference cost / inference latency。❌ request an inference（日常「推论」义才可数：draw an inference）。
+    动词是 infer（推断）：What can we infer from this?
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: sth is put into context
   kind: phrase
   meaning: （数据）被塞进 / 放进模型的上下文里（put sth into sth = 把东西放进去）。
