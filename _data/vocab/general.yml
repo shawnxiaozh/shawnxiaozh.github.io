@@ -13,7 +13,7 @@
   - en: they add a lot of common libraries that you can adopt easily
     zh: 他们加了很多通用库，你可以很轻松地直接拿来用
   note: |-
-    上面第一句例句里的 adapt 其实是 adopt 的误用（或语音识别错了）：客户端不是去「改造」这个原语，而是「开始支持、采用」它。两个词只差一个字母，发音也近（adapt /əˈdæpt/、adopt /əˈdɑːpt/），母语者也常说混。
+    上面第一句例句里讲师说的确实是 adapt，但按意思是 adopt 的口误：客户端不是去「改造」这个原语，而是「开始支持、采用」它。真要用 adapt，得说 clients adapt to this primitive（客户端调整自己去适配它），不带 to 就成了「改造这个原语」。两个词只差一个字母，发音也近（adapt /əˈdæpt/、adopt /əˈdɑːpt/），母语者也常说混。
     记法：adApt 的 a = Alter（改）；adOpt 的 o = Own（拿来变成自己的），adopt a child 就是领养。
     搭配：adapt sth to/for sth（adapt the code to the new API）、adapt to sth（适应新环境，不及物）；adopt a standard / adopt a tool / adopt a policy，名词 adoption（drive adoption、wide adoption）。
   source: Claude Code · MCP 课程 Conclusion
