@@ -2,6 +2,22 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: a breach of security
+  kind: phrase
+  meaning: 防线被捅破了个口子：本该守住的边界、规则被突破（违反、泄露、破坏）。
+  examples:
+  - en: or potentially any kind of breach of security between the server and the client
+    zh: 或者服务器和客户端之间可能出现的任何安全漏洞
+  - en: When there are concerns from a security standpoint or breaching boundaries.
+    zh: 在有安全方面的顾虑，或者担心越界的时候。
+  note: |-
+    breach 的画面是城墙被撞开一道缺口：先有一道明确的线（安全边界、合同、规则），然后被冲破了。和 break 同源，但 break 只是「坏了」，breach 强调「越过了本不该越过的那条线」。
+    比 security problem / security issue 重：issue 只是有问题，breach 是边界已经被突破、出事了。
+    可数名词，要带冠词：a breach of security / a breach of contract / a breach of trust。更常见的说法是名词作定语：a security breach、a data breach（数据泄露）。
+    也能当动词，直接接宾语：breach the boundary / breach the contract / breach the firewall。
+    ❌ a breach on security —— 用 of。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: have some versatility baked in
   kind: phrase
   meaning: 设计时就内置了一定的灵活性（像烤进面包里的料，天生自带、拿不出来）。
