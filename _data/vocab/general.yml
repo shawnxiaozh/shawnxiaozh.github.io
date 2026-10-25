@@ -2,6 +2,21 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: What this allows for is for … to …
+  kind: pattern
+  meaning: 这么做带来的好处是……（先抛出「它能带来什么」，再揭晓答案）。
+  examples:
+  - en: What this allows for is for clients and servers to authenticate and send authenticated requests to data sources.
+    zh: 这样一来，客户端和服务器就能做认证，并向数据源发送带认证的请求。
+  - en: What this allows us to do is to start creating an architecture …
+    zh: 这让我们可以开始搭一种架构……
+  note: |-
+    比 This allows clients to … 多了一层铺垫：What … is … 是强调句（pseudo-cleft），先吊一下「它能带来什么」，停一拍再给答案，讲解、演示、开会时很常用，听起来有条理、不急。
+    两种接法：What this allows for is for sb to do …（allow for 带 for，答案部分也要 for sb to do）；What this allows us to do is (to) do …（allow sb to do，更常见、更顺口）。
+    同类可替换：What this means is …、What this lets us do is …、What this gives us is …。
+    ❌ What this allows for is clients to … —— 漏了第二个 for。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: as the means of authentication
   kind: phrase
   meaning: 作为（做某事的）那套手段 / 方式（途径、机制）。
