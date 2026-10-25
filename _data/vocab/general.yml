@@ -2,6 +2,19 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: have some versatility baked in
+  kind: phrase
+  meaning: 设计时就内置了一定的灵活性（像烤进面包里的料，天生自带、拿不出来）。
+  examples:
+  - en: Roots also have some versatility baked in, where again, they're useful for file paths, but also can be any valid HTTP URL.
+    zh: roots 本身也设计得挺灵活：它们可以用来表示文件路径，但也可以是任何合法的 HTTP URL。
+  note: |-
+    baked in 的画面：配料是在烤之前就和进面团的，烤好以后就是面包的一部分，不是事后撒上去的。所以 sth is baked in = 从一开始就设计进去、天生自带。
+    比 built in 更口语、更形象：built-in 偏中性的技术描述（built-in functions）；baked in 带「从根上就有、改不掉也拿不掉」的味道，夸设计时常用，讲坏东西也能用（the bias is baked into the data）。
+    常见形状：have sth baked in / sth is baked into sth / bake sth into the design。放名词前时写连字符：a baked-in assumption。
+    versatility = 一样东西能干很多种事的本事（多功能、用途广），比 flexibility 更侧重「用途多」，flexibility 侧重「能调整、能变通」。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: the client declares the roots
   kind: phrase
   meaning: 事先正式摆明、告诉对方「有哪些、是什么」，让对方照着来（声明）。
