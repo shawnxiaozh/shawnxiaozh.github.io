@@ -2,6 +2,19 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: serve data back to the application
+  kind: phrase
+  meaning: 像服务员上菜一样，把对方要的数据端回去（提供、返回给请求方）。
+  examples:
+  - en: it can serve data back to the application
+    zh: 它可以把数据返回给应用
+  note: |-
+    serve 本义是「侍候、上菜」：serve dinner / serve customers。技术里沿用这个画面：有人来要，你按需端出去。server（服务器）就是 serve + er，「负责上菜的那个」，所以这句话里 server serve data 是同一个词根。
+    比 return / send data 多一层「按请求提供、我是提供服务的那一方」的意思：return 只是函数把值交回去，send 是主动发出去，serve 是别人来要、我来供。
+    常见搭配：serve requests / serve traffic / serve static files / serve a model（把模型部署起来对外提供推理）。back 强调「回到请求方那里」，可省。
+    ❌ serve the application with data 也能说但很少见，口语里就说 serve data to sb / serve sb sth。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: this agent happens to be …
   kind: pattern
   meaning: 它刚好也是 / 恰好同时是……（不是特意的，顺带的身份或巧合）。
