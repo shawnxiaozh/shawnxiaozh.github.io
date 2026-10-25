@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: the client declares the roots
+  kind: phrase
+  meaning: 事先正式摆明、告诉对方「有哪些、是什么」，让对方照着来（声明）。
+  examples:
+  - en: When the client connects to a server, it can declare the roots that the server should work with.
+    zh: 客户端连上服务器时，可以声明服务器应该在哪些 roots（目录范围）里干活。
+  - en: the Python MCP SDK, which makes it very easy to declare tools
+    zh: Python 版 MCP SDK 让声明工具变得很容易
+  note: |-
+    比 tell / list / specify 多一层「正式、事先、对方得认」：tell 是随口说，list 只是列出来，specify 是指定细节；declare 是一开始就公开表态、立下规则，像入境时 declare 物品、宣战 declare war —— 说了就作数。所以协议里一方把自己的能力或边界摆给另一方，惯用 declare。
+    编程里 declare a variable / declare a function 也是这个意思：先告诉编译器「有这么个东西」。
+    常见搭配：declare sth（直接接宾语，不加 about）、declare that …、declare sth as …。❌ declare about the roots。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: don't have the need for sth
   kind: phrase
   meaning: 压根用不上某样东西（那种需求根本不存在，不需要）。
