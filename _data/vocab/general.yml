@@ -2,6 +2,34 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: this agent happens to be …
+  kind: pattern
+  meaning: 它刚好也是 / 恰好同时是……（不是特意的，顺带的身份或巧合）。
+  examples:
+  - en: This agent happens to be an MCP client and a server
+    zh: 这个 agent 恰好既是 MCP 客户端，又是服务器
+  - en: agents for analysis, for coding, for research that also happen to be …
+    zh: 分别做分析、写代码、做调研的 agent，它们同时也恰好是……
+  note: |-
+    happen to be 的画面是「碰巧是这样」：说话人把一个事实轻轻带出来，口气不强调、不炫耀。比直接说 This agent is an MCP client 多一层「顺带一提、不是重点却挺关键」的味道，讲架构时常用来点出一个意想不到的双重身份。
+    日常也很常用，而且常带委婉、礼貌：I happen to know him.（我刚好认识他。）Do you happen to have a charger?（你有没有充电器？——比 Do you have 客气）。
+    后面接原形动词：happen to be / happen to know / happen to have；主语是第三人称单数时 happens to。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
+- term: there's a composable and somewhat recursive nature
+  kind: pattern
+  meaning: 它天生带着一种「可以层层拼装、还能自己套自己」的特性（可组合、带点递归味）。
+  examples:
+  - en: What's so powerful about the Model Context Protocol is that there's a composable and somewhat recursive nature, where clients can be servers, and servers can be clients.
+    zh: MCP 厉害的地方在于，它天生可以组合，还有点递归的味道：客户端可以当服务器，服务器也可以当客户端。
+  - en: Through this composable nature, we can start to think about architectures …
+    zh: 正因为它能这样组合，我们就可以开始设想一些架构……
+  note: |-
+    there's a … nature (to sth) 是描述「某物骨子里的特性」的常用句型，比 it is composable 更有分量：nature 是「本性、天性」，说的不是某个功能，而是它从根上就是这样。完整说法常带 to：there's a recursive nature to the problem；也可以说 sth has a composable nature / by its nature。
+    composable = 像乐高一样，小块能拼成大块，拼出来的还能再当一块去拼（compose 组合 + able）。recursive = 自己里面套着自己（这里就是 client 里套 server、server 里又是 client）。
+    somewhat 是「有点、某种程度上」，给 recursive 降一档，不把话说死；比 a little 正式，比 kind of 书面。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: models go off on their own
   kind: phrase
   meaning: 撒手让它自己跑出去干活，不再有人在旁边盯着（自主行动、单飞）。
