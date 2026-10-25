@@ -2,6 +2,18 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: don't have the need for sth
+  kind: phrase
+  meaning: 压根用不上某样东西（那种需求根本不存在，不需要）。
+  examples:
+  - en: With standard IO, we use environment variables and don't have the need for this kind of authentication.
+    zh: 用 standard IO 的话，我们用环境变量就行，根本不需要这种认证。
+  note: |-
+    和直接说 don't need sth 的区别：don't need 是「不需要」，就事论事；don't have the need for 把 need 变成名词，说的是「那个需求本身不存在」——不是我们不想要，而是场景里根本没这个问题。讲方案对比时常用，比如这一种需要、那一种不需要。
+    the 指的是上文刚提到的那个需求（这里是远程服务器要做的认证）；泛指时用 have no need for sth（I have no need for a car）或 there's no need for sth / to do sth，后两种更常见。
+    ❌ don't have the need to sth —— need 当名词时接 for + 名词，或 to do（have no need to worry）。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: highlight sth in some depth
   kind: phrase
   meaning: 把某事稍微展开、讲得有点深度（不是一笔带过，也不是彻底讲透）。
