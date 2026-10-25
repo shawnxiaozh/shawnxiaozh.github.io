@@ -2,6 +2,21 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: models go off on their own
+  kind: phrase
+  meaning: 撒手让它自己跑出去干活，不再有人在旁边盯着（自主行动、单飞）。
+  examples:
+  - en: we're giving more autonomy to models to call different tools and go off on their own
+    zh: 我们给模型更多自主权，让它们去调用各种工具、自己放手去干
+  - en: I never tell it any input anymore, it's going on its own.
+    zh: 我再也没给它任何输入了，它就自己在跑。
+  note: |-
+    拆开看：go off = 离开、出发（走出你的视线），on their own = 靠自己、没人陪。合起来的画面是孩子松开大人的手自己跑开了：带一点「放出去之后你就管不着了」的味道。
+    比 work independently / act autonomously 口语得多，也更有画面；讲 AI agent 时很常见。下面那句 going on its own 少了 off，只是「自己在运行」，没有「离开、跑远」那层。
+    代词跟主语走：the model goes off on its own / the kids went off on their own / I went off on my own。
+    日常也常用：She went off on her own to explore the city.（她自己一个人跑去逛城市了。）注意 go off on sb（冲某人发火）是另一个意思，别混。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: as we start to move towards a world where …
   kind: pattern
   meaning: 随着我们一步步走向……的那种局面（朝某个方向渐进地演变，还没到）。
