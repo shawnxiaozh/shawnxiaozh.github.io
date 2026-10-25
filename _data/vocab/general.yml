@@ -2,6 +2,23 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: you might not want this to be …
+  kind: pattern
+  meaning: 你可能不希望它变成 / 被弄成……（委婉地提醒「这样不太好」）。
+  examples:
+  - en: Or you might not want all that data coming back to be put into context.
+    zh: 或者，你可能不想让返回的那一大堆数据都被塞进上下文里。
+  - en: Since we might not want this to be blocking, we're going to be making use of async and await
+    zh: 因为我们可能不希望它是阻塞的，所以会用上 async 和 await
+  - en: I don't want it to be dragged too long
+    zh: 我不想让它拖太久
+  note: |-
+    骨架是 want + 宾语 + to be + 状态 / 过去分词：want sth to be done = 希望某物被怎样。中文说「不想让数据被塞进去」，英文把「让」省掉，直接 want the data to be put in。
+    第一句例句难读是因为宾语很长：all that data coming back 是一整块，coming back 是修饰 data 的 -ing 短语（= that is coming back，返回回来的那些数据），后面 to be put into context 才是 want 的补足部分。拆开读：you might not want [all that data coming back] [to be put into context]。
+    might not want 比 don't want 软：不是在下结论，而是在提醒对方「你可能不会想这样」，讲课、给建议时很常用。
+    ❌ want that sth is … —— want 后面不接 that 从句，要用 want sth to …。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: diagnose performance issues
   kind: phrase
   meaning: 像医生看病一样，从症状一路查到病根（排查、诊断问题）。
