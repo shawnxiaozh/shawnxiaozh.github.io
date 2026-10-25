@@ -2,6 +2,23 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: diagnose performance issues
+  kind: phrase
+  meaning: 像医生看病一样，从症状一路查到病根（排查、诊断问题）。
+  examples:
+  - en: the server instead can talk directly to the large language model and ask it to diagnose performance issues
+    zh: 服务器可以直接和大模型对话，让它来排查性能问题
+  - en: how to diagnose issues and propose a specific fix, if anything goes wrong
+    zh: 出了问题时，怎么排查原因、再给出具体的修复方案
+  - en: how they actually can diagnose the issue by looking at, for example, task level errors
+    zh: 它们到底怎么通过看比如任务级别的报错，来排查出问题在哪
+  note: |-
+    比 find / check / look into 更像回事：look into 只是「去看看」，check 是「检查一下」，diagnose 是从症状出发、一步步推出根因，带着专业、有方法的味道。工程里说 diagnose 时，一般默认后面还要 fix。
+    直接接宾语，不加介词：diagnose the issue / diagnose the problem / diagnose a slow query。❌ diagnose about the issue
+    名词 diagnosis（复数 diagnoses），形容词 diagnostic：run diagnostics、diagnostic logs。
+    口语里更随意的说法是 troubleshoot / debug；diagnose 偏重「找出原因」这一步，troubleshoot 包括找原因加解决。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: a breach of security
   kind: phrase
   meaning: 防线被捅破了个口子：本该守住的边界、规则被突破（违反、泄露、破坏）。
