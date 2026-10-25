@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: as the means of authentication
+  kind: phrase
+  meaning: 作为（做某事的）那套手段 / 方式（途径、机制）。
+  examples:
+  - en: In the March specification update, OAuth 2.1 was added as the means of authentication with remote servers.
+    zh: 在三月的规范更新里，加入了 OAuth 2.1，作为和远程服务器之间做认证的方式。
+  note: |-
+    比 as the way to authenticate 更正式、更像在讲机制：means 指「拿来实现目的的工具 / 渠道」，常见于规范、文档、说明。
+    the means 用定冠词 = 「指定的那一种」，暗示就是它、官方就用它；a means of … 只是「一种手段」，还有别的。
+    means 单复同形，结尾的 s 不能去掉：a means / the means / several means。❌ a mean of …
+    of 后面接名词或 doing：the means of payment / a means of getting there。
+    别和 by means of sth（借助、通过）混：那是介词短语，放在句子里当状语。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: much of this is …
   kind: pattern
   meaning: 这里头很大一部分都是……（不说全部，留余地的「大部分」）。
