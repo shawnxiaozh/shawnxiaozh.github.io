@@ -2,6 +2,21 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: highlight sth in some depth
+  kind: phrase
+  meaning: 把某事稍微展开、讲得有点深度（不是一笔带过，也不是彻底讲透）。
+  examples:
+  - en: To highlight that in some depth, this is an optional feature of the Model Context Protocol …
+    zh: 稍微展开讲一下：这是 Model Context Protocol 里一个可选的功能……
+  - en: we'll actually go through most of these in-depth
+    zh: 我们后面会把这里面大部分都详细过一遍
+  note: |-
+    some 是关键：in depth 表示「深入、详细」，加上 some 就降一档，变成「有一定深度地」。讲课、开会时用来预告「这块我会多说两句，但不会讲到底」，比 in detail 谦虚、留余地。
+    程度阶梯：briefly（一笔带过）→ in some depth（展开一些）→ in depth / in great depth（深入讲透）。
+    常配的动词其实是 go into / cover / discuss / look at sth in some depth；highlight 本意是「点出重点」，和 in depth 搭着用有点别扭，是原句的口语随意。
+    in depth 是副词短语，放在动词后面；in-depth 带连字符时是形容词，放在名词前面：an in-depth look / an in-depth review。上面第二句例句里写成 in-depth 当副词，严格说应该不带连字符。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: What this allows for is for … to …
   kind: pattern
   meaning: 这么做带来的好处是……（先抛出「它能带来什么」，再揭晓答案）。
