@@ -2,6 +2,19 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: as we start to move towards a world where …
+  kind: pattern
+  meaning: 随着我们一步步走向……的那种局面（朝某个方向渐进地演变，还没到）。
+  examples:
+  - en: As we start to move towards a world where more models are talking to different data sources …
+    zh: 随着我们慢慢走向一个更多模型和各种数据源互相打交道的世界……
+  note: |-
+    move towards 的画面是「朝那个方向挪」：在路上、没到终点，强调的是趋势和过程。比 go to / reach 软：reach a world where … 是已经到了，move towards 是正在往那儿走，讲行业趋势、技术演进时特别常用，听起来有远见又不夸大。
+    start to 再加一层「才刚开始」，整句是讲愿景、做总结时的经典开场。
+    常见搭配：move towards a solution / move towards automation / move towards a more open model。抽象方向用 towards，具体地点才多用 to（move to London）。
+    towards（英式常见）和 toward（美式常见）意思一样，两种都对。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: request inference from an LLM
   kind: phrase
   meaning: 让模型跑一次、生成结果（推理：模型拿输入算出输出的那一步）。
