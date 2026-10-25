@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: sth is put into context
+  kind: phrase
+  meaning: （数据）被塞进 / 放进模型的上下文里（put sth into sth = 把东西放进去）。
+  examples:
+  - en: Or you might not want all that data coming back to be put into context.
+    zh: 或者，你可能不想让返回的那一大堆数据都被塞进上下文里。
+  - en: Instead of the server handing that back to the client, putting everything in the context window …
+    zh: 与其让服务器把这些交回给客户端、把所有东西都塞进上下文窗口……
+  note: |-
+    to be put into 是 put 的被动不定式：put 的过去分词还是 put（put / put / put），所以 be put 看起来和原形一样，容易读不出这是被动。主动是 put the data into context（我们把数据放进去），数据是被放的那个，所以用 to be put。
+    into 强调「从外面放进里面」的动作，in 偏「放在里面」的位置，这里两个都行：put sth in the context window 也很常见。
+    别和习语 put sth in context 混：那是「放到背景里看、结合来龙去脉理解」（Let me put this in context = 我先讲讲背景），和 LLM 的 context window 无关，靠上下文区分。
+  source: Claude Code · MCP 课程 Conclusion
+  added: "2026-10-25"
 - term: you might not want this to be …
   kind: pattern
   meaning: 你可能不希望它变成 / 被弄成……（委婉地提醒「这样不太好」）。
