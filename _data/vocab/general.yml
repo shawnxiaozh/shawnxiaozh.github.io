@@ -6004,9 +6004,16 @@
   meaning: 不能再拆的最小构件，上层能力都由它们拼出来（原语）。
   examples:
   - Let's dive into some of the primitives, the fundamental pieces of the protocol.
+  - en: So while we've explored primitives that to be exposed by the server, tools, resources and prompts, we also have primitives that the clients can expose.
+    zh: 我们已经看过了服务器端暴露的那几种原语——tools、resources 和 prompts，其实客户端也有自己能暴露的原语。
+  - en: The last primitive that we're going to cover is sampling.
+    zh: 我们要讲的最后一个原语是 sampling。
   note: |-
     vs building blocks / basics：building blocks 是口语比喻；basics 是"基础知识"；primitives 是术语，重点在"不可再拆"——像乐高里最小的那块积木。
     常见：the primitives of the protocol、a set of primitives、language primitives。
+    可数名词：a primitive / the last primitive / primitives，一个个数得出来，就是协议里那几类基本能力。
+    在协议、框架里常配 expose：a server exposes primitives（把这几种能力开放给对方用）。
+    日常的 primitive 是形容词「原始的、简陋的」（primitive tools），和这里的名词「原语」不是一回事。
   source: Notion · Work
   added: "2026-07-29"
 - term: network instability
