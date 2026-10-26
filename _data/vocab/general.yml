@@ -2,6 +2,19 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: it's a long-standing issue on our end
+  kind: pattern
+  meaning: 这是我们这边一直存在、拖了很久的老问题（遗留问题、老毛病）。
+  examples:
+  - en: It's a long-standing issue from our end.
+    zh: 这是我们这边一个存在很久的老问题。
+  note: |-
+    听起来像 long ending，其实是 long-standing：standing 是「一直立在那儿、没倒」，long-standing = 立了很久还在 —— 不是刚冒出来的，早就有、一直没解决。放名词前要带连字符：a long-standing issue / bug / relationship。
+    比 an old issue 更准：old 只说「旧」，可能早就修好了；long-standing 强调「到现在还在」，听起来更像在承认问题、表态会处理。
+    from our end / on our end = 我们这边（责任或原因在我们这一方）。on our end 更常见；从我们这边发出去、看过去时也说 from our end（Everything looks fine from our end）。承认锅在自己时这么说很自然、不卑不亢。
+    ❌ It's long-standing issue —— 可数名词要带 a。
+  source: Claude Code · 工作沟通
+  added: "2026-10-27"
 - term: serve data back to the application
   kind: phrase
   meaning: 像服务员上菜一样，把对方要的数据端回去（提供、返回给请求方）。
