@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: no imminent impact on sth
+  ipa: /ˈɪmɪnənt ˈɪmpækt/
+  pos: phr.
+  kind: phrase
+  meaning: 影响「迫在眉睫、马上就要砸下来」；常用否定 no imminent impact = 眼下不会马上受影响（紧迫的、即将发生的影响）。
+  examples:
+  - en: The certificate expires next month, so there's no imminent impact on customers.
+    zh: 证书下个月才过期，所以客户这边暂时不会马上受影响。
+  note: |-
+    imminent 强调「时间上马上就到」，带一点危险逼近的意味（imminent danger / threat）；比 immediate impact 更强调「悬在头上、快落下来」，immediate 只是「立刻、直接」。
+    事故通报里最常见的是否定：no imminent impact / not an imminent risk —— 意思是「有问题，但不急」，用来安抚又不说没事。
+    ❌ 别和 eminent（杰出的）混：imminent 是 /ˈɪmɪnənt/。
+  source: Claude Code · 事故影响评估
+  added: "2026-10-28"
 - term: it's a long-standing issue on our end
   kind: pattern
   meaning: 这是我们这边一直存在、拖了很久的老问题（遗留问题、老毛病）。
