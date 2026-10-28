@@ -2,6 +2,21 @@
 # 绑定特定场合才说的说法和话术，换个场合就不说了。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: an affiliated third party
+  ipa: /əˈfɪlieɪtɪd θɜːrd ˈpɑːrti/
+  pos: n.
+  kind: phrase
+  meaning: 跟我们「沾亲带故」但又不是我们自己的外部方 —— 有关联关系（关联公司、合作方）的第三方。
+  examples:
+  - en: We may share your data with an affiliated third party for payment processing.
+    zh: 我们可能会把你的数据共享给一家有关联的第三方，用来处理支付。
+  note: |-
+    常出现在隐私政策、合同、合规文档里，日常聊天基本不说。
+    affiliated 强调「有挂靠、有正式关联」（an affiliated company 关联公司），third party 强调「不是当事双方」；合起来是在划清法律责任：不是我们，但跟我们有关系。对应的是 an unaffiliated third party（毫无关系的第三方）。
+    可数名词，单数要带 a / an；复数 affiliated third parties。
+    ❌ third patry / third-party 作名词时不加连字符（third-party 只在作定语时用：a third-party library）。
+  source: Claude Code · 合规 / 隐私条款
+  added: "2026-10-28"
 - term: the payment is issued
   pos: v.
   kind: phrase

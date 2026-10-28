@@ -2,6 +2,32 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: I think the chance is quite slim
+  pos: sent.
+  kind: pattern
+  meaning: 我觉得可能性很小（slim = 「细、薄」，机会薄得像一条缝）。
+  examples:
+  - en: I think the chance is quite slim.
+    zh: 我觉得这个可能性挺小的。
+  note: |-
+    比 it's unlikely 更形象、更口语，带一点「别抱太大希望」的语气。
+    母语者更常说复数：the chances are slim / slim chance（There's a slim chance that …）。单数 the chance is slim 也对，只是没那么顺口。
+    常见搭配：slim to none（几乎为零）。❌ the chance is thin / small 也能懂，但 slim 才是固定搭配。
+  source: Claude Code · 口语表达
+  added: "2026-10-28"
+- term: see if sth is legit
+  pos: phr.
+  kind: phrase
+  meaning: 看看某个东西「是不是真的靠谱、没作假」（legit = legitimate 的口语缩写：真实、正当、站得住）。
+  examples:
+  - en: See if the FT run is legit.
+    zh: 看看这次 fine-tuning 跑的结果靠不靠谱。
+  note: |-
+    比 check if sth is correct / valid 更口语，也多一层怀疑：不只是「对不对」，而是「是不是真的、有没有猫腻」—— 比如指标好得可疑、怀疑跑错了数据或有泄漏。
+    legit 读 /ləˈdʒɪt/，重音在后。还能单独当感叹：That's legit! = 真不错 / 真的假不了。
+    see if 后面接陈述语序：see if it is legit，❌ see if is it legit。
+  source: Claude Code · 模型训练结果检查
+  added: "2026-10-28"
 - term: no imminent impact on sth
   ipa: /ˈɪmɪnənt ˈɪmpækt/
   pos: phr.
