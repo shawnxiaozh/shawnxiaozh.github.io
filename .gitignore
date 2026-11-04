@@ -1,0 +1,17 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+_site/
+_tmp/
+
+# 本地材料。这一条只挡住 git；构建那边由「点号开头的目录 Jekyll 默认跳过」兜底，
+# _config.yml 的 exclude 里另有一份显式的。三道都不能删。
+.private/
+
+# 本地知识图谱产物（graphify update 生成，8.9M），随时可重建，不该进仓库
+graphify-out/
+
+# IDE 配置
+.idea/

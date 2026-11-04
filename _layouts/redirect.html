@@ -1,0 +1,18 @@
+{%- comment -%}
+  旧链接的跳转页。GitHub Pages 没法配服务端 301，用 meta refresh 代替；
+  canonical + noindex 让搜索引擎把权重算到新地址上。用法：front matter 写 permalink 和 redirect_to。
+{%- endcomment -%}
+{%- assign target = page.redirect_to | relative_url -%}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Redirecting…</title>
+    <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url={{ target }}">
+  </head>
+  <body>
+    <p>This page has moved to <a href="{{ target }}">{{ page.redirect_to | absolute_url }}</a>.</p>
+  </body>
+</html>

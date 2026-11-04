@@ -1,0 +1,46 @@
+<!--
+  数学公式渲染（MathJax 3）。
+
+  cayman 主题的 default.html 会 include 这个文件，仓库里的同名文件会覆盖主题自带的空文件。
+
+  正文里用 $$...$$ 写公式：独占一段是行间公式，夹在文字中间是行内公式。
+  kramdown 会把它们分别转成 \[...\] 和 \(...\)，正好是 MathJax 3 的默认分隔符，
+  所以不需要在这里再打开 $ 或 $$ 的识别（打开反而会误伤正文里的美元符号）。
+  MathJax 默认跳过 pre/code，代码块里的 $$ 不会被当成公式。
+-->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']]
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!--
+  流程图渲染（Mermaid 11）。
+
+  正文里用 ```mermaid 代码块写图，github.com 原生就认这种写法，
+  这段脚本让它在正式站点上也能渲染，两边保持一致。
+
+  kramdown 把 ```mermaid 渲染成 <pre><code class="language-mermaid">，
+  而 mermaid 找的是 <pre class="mermaid">，所以下面先做一次转换再渲染。
+  MathJax 的 skipHtmlTags 已经跳过 pre/code，两者不会互相干扰。
+-->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+  document.querySelectorAll('pre > code.language-mermaid').forEach(code => {
+    const holder = document.createElement('pre');
+    holder.className = 'mermaid';
+    holder.textContent = code.textContent;
+    code.parentElement.replaceWith(holder);
+  });
+
+  mermaid.initialize({ startOnLoad: false });
+  await mermaid.run({ querySelector: 'pre.mermaid' });
+</script>

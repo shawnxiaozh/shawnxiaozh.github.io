@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{%- comment -%}
+  About 页：个人卡片。内容在 _data/about.yml，这里只负责排版。
+{%- endcomment -%}
+{%- assign cv = site.data.about -%}
+{%- assign p = cv.profile -%}
+
+<article class="about">
+  <section class="about-card">
+    {%- if p.avatar %}
+    <img class="about-avatar" src="{{ p.avatar | relative_url }}" alt="{{ p.name }}" width="112" height="112">
+    {%- endif %}
+    <div class="about-id">
+      <h1>{{ p.name }}</h1>
+      {%- if p.headline or p.location %}
+      <p class="about-headline">
+        {{ p.headline }}{% if p.headline and p.location %}<span class="about-dot">·</span>{% endif %}{{ p.location }}
+      </p>
+      {%- endif %}
+      {%- if p.summary %}<p class="about-summary">{{ p.summary }}</p>{% endif %}
+      {%- if cv.links %}
+      <ul class="about-links">
+        {%- for l in cv.links %}
+        {%- if l.url == nil or l.url == "" %}{% continue %}{% endif %}
+        {%- assign first_char = l.url | slice: 0 %}
+        <li><a href="{{ l.url | relative_url }}"{% if first_char != '/' %} rel="me noopener" target="_blank"{% endif %}>{% include icon.html name=l.icon %}{{ l.label }}</a></li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+  </section>
+
+  {{ content }}
+</article>

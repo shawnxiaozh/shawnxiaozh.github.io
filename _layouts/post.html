@@ -1,0 +1,124 @@
+---
+layout: default
+---
+<div class="post-with-toc">
+  <article class="post">
+    <header>
+      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}</p>
+      <h1>{{ page.title }}</h1>
+      {%- comment -%} 正文里有 .lang-zh / .lang-en 块时才显示，由下方脚本取消 hidden {%- endcomment -%}
+      <button type="button" class="lang-toggle" hidden aria-label="Switch language">EN</button>
+      {% if page.excerpt %}
+        <p class="post-description">{{ page.excerpt | strip_html }}</p>
+      {% endif %}
+    </header>
+
+    {{ content }}
+
+    <nav class="post-navigation">
+      {% if page.previous %}
+        <a class="post-prev" href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next %}
+        <a class="post-next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
+      {% endif %}
+    </nav>
+  </article>
+
+  <aside class="post-toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <nav class="post-toc-list" aria-label="Section navigation"></nav>
+  </aside>
+</div>
+
+<script>
+(function() {
+  function buildTOC() {
+    var toc = document.querySelector('.post-toc');
+    var tocList = document.querySelector('.post-toc-list');
+    var article = document.querySelector('.post-with-toc .post');
+    if (!toc || !tocList || !article) {
+      return;
+    }
+
+    tocList.innerHTML = '';
+    // 双语文章只列当前语言的标题
+    var headings = Array.prototype.filter.call(
+      article.querySelectorAll('h2, h3, h4'),
+      function(h) { return !h.closest('[data-lang-hidden]'); }
+    );
+    if (!headings.length) {
+      toc.hidden = true;
+      return;
+    }
+
+    var list = document.createElement('ul');
+    headings.forEach(function(heading) {
+      if (!heading.id) {
+        heading.id = heading.textContent.trim()
+          .toLowerCase()
+          .replace(/[^a-z0-9\u4e00-\u9fa5\s-]/g, '')
+          .replace(/\s+/g, '-');
+      }
+      var li = document.createElement('li');
+      li.className = 'toc-level-' + heading.tagName.substring(1);
+      var link = document.createElement('a');
+      link.textContent = heading.textContent;
+      link.href = '#' + heading.id;
+      li.appendChild(link);
+      list.appendChild(li);
+    });
+
+    tocList.appendChild(list);
+  }
+
+  // 中英双语切换：正文用 <div class="lang-zh" markdown="1"> / <div class="lang-en" markdown="1"> 包两份内容，
+  // 按钮在两者之间切换，选择记在 localStorage 里，跨文章保持。
+  function setupLangToggle() {
+    var blocks = document.querySelectorAll('.post .lang-zh, .post .lang-en');
+    var button = document.querySelector('.lang-toggle');
+    if (!blocks.length || !button) {
+      return;
+    }
+
+    function apply(lang) {
+      blocks.forEach(function(block) {
+        if (block.classList.contains('lang-' + lang)) {
+          block.removeAttribute('data-lang-hidden');
+        } else {
+          block.setAttribute('data-lang-hidden', '');
+        }
+      });
+      button.textContent = lang === 'zh' ? 'EN' : '中文';
+      button.setAttribute('aria-label', lang === 'zh' ? 'Switch to English' : '切换到中文');
+      buildTOC();
+    }
+
+    var lang = 'zh';
+    try {
+      lang = localStorage.getItem('post-lang') === 'en' ? 'en' : 'zh';
+    } catch (e) {}
+
+    button.hidden = false;
+    button.addEventListener('click', function() {
+      lang = lang === 'zh' ? 'en' : 'zh';
+      try {
+        localStorage.setItem('post-lang', lang);
+      } catch (e) {}
+      apply(lang);
+    });
+    apply(lang);
+  }
+
+  function init() {
+    buildTOC();
+    setupLangToggle();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
