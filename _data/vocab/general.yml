@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: outline the parameters required to do sth
+  ipa: /ˈaʊtlaɪn/
+  pos: v.
+  kind: phrase
+  meaning: 把要点和框架一条条列清楚，但不展开细节（概述、列出要点）。outline 本义是「外轮廓线」：先描出外形，里面的细节不画 —— 就像画画先勾个轮廓。
+  examples:
+  - en: It also then outlines the parameters required to run the tool.
+    zh: 接着它还会列出运行这个工具需要哪些参数。
+  note: |-
+    为什么不说 list 或 describe：list 只是挨个列名字；describe 可以讲得很细；outline 正好在中间 —— 有结构地交代清楚「有哪几块、各是什么」，但点到为止。所以常和 steps / plan / requirements / approach 这类「骨架」型的词搭：outline the steps、outline the plan、outline the approach。
+    工作里很常用：Let me outline the plan first.（我先把计划大概说一下。）
+    名词义是「大纲」，常见 draft an outline、write an essay outline。
+  source: Claude Code · Agentic AI 课程（tool use）
+  added: "2026-11-08"
 - term: more on that later
   kind: pattern
   meaning: 「这个后面再细说」。是个省略句，补全是 (I'll tell you) more on that later —— 先在这儿插个书签，告诉听的人：这个点我看到了，但现在不展开，后面会回来讲。
