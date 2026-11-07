@@ -10,14 +10,22 @@
     zh: 一个办法是转而求助于 hooks。
   - en: So instead of trying to implement one tool after another, a different approach is to let it write and execute code.
     zh: 所以与其一个接一个地实现工具，另一种做法是让它自己写代码、自己执行。
-  - en: The next step is to actually establish that connection and launch the server as a subprocess.
-    zh: 下一步就是真正把连接建起来，并把服务器作为子进程启动。
+  - en: So, the best practice is really to build it first and then examine it to figure out where it is not yet satisfactory.
+    zh: 所以公认最靠谱的做法，其实是先把东西搭出来，再去检查它哪些地方还不够好。
   note: |-
-    怎么认：主语是 strategy / approach / idea / goal / plan / next step / the trick 这类「抽象名词」，is 后面跟 to do，就是在说「这个 X 具体是什么」。
+    怎么认：主语是 strategy / approach / idea / goal / plan / next step / the best practice / the trick 这类「抽象名词」，is 后面跟 to do，就是在说「这个 X 具体是什么」。
     为什么不说 We can turn to hooks：直接说是在给答案；One strategy is to … 先把它摆成「多个选项里的一个」，听的人知道后面可能还有别的方案，口气更开放，讲课、方案讨论里很常用。
     ❌ 别和 be to do 的另一种用法混：You are to report by 9am. 主语是人，意思是「必须、按安排要」，那是另一回事。
+    同一个骨架换个主语就能套：the best practice is to …（公认最好的做法是……）、the goal is to …（目标是……）、the idea is to …（思路是……）、the next step is to …（下一步是……）。
     句里的 turn to sth 是「转向……求助」：turn to hooks = 改用 hooks 来解决。
-    同一个骨架换个主语就能套：[[the best practice is to do sth]]（公认最好的做法是……）、the goal is to …（目标是……）、the idea is to …（思路是……）。
+    —— 关于 best practice 这个词 ——
+    practice 在这里不是「练习」，是**长期做事的方式、惯常做法**。best practice = 大家试下来公认最好的那套做法（They have their own best practice in leveraging cloud. 他们自己有一套用云的成熟做法）。
+    可数性是中文母语者最容易翻车的地方：
+    · the best practice is to do sth —— 点名**某一个**具体推荐做法，单数加 the（上面第三条例句就是）。
+    · follow industry best practices —— 泛指**一整套**公认做法，美式英语几乎都用复数。❌ follow industry best practice（美式听着怪）。
+    · in line with best practice —— 英式常把它当不可数，不加冠词也不加 s。跟着对方的说法走就行。
+    vs convention / standard / [[rule of thumb]]：convention 只说「大家都这么做」，没评价好坏；standard 是硬性标准、不照做算违规；rule of thumb 是粗略的经验判断，不保证最优；best practice 带**推荐、背书**的意味——「经验证明这么做最好，建议你也这么做」。
+    语气不强制：说 the best practice is … 是在给建议，不是下命令；要硬性要求得说 you must / it's mandatory。
   source: Claude Code · Context Engineering 课程（hooks）
   added: "2026-11-08"
 - term: be reflective of the conventions of …
@@ -2690,26 +2698,6 @@
     单复数是有讲究的：find **a** way to = 找到一条出路，常带「终于」或「无论如何得办到」（I'll find a way）；find **ways** to = 多管齐下、招不止一个。上面例句用复数，因为要评估和改进的地方本来就有好几处。
     后面接不定式：find ways **to** evaluate。❌ find ways how to evaluate（中文「找到怎么做的办法」直译过来的错法）。ways of doing sth 也对，但偏书面，口语默认 ways to do。
     同句里还有个 the ways that it is still not yet satisfactory——这个 ways 是名词「地方、方面」（它还不够好的那些方面），和 find ways 里的「办法」不是一个意思，别混。
-  source: Claude Code · Agentic AI 课程（evals）
-  added: "2026-09-25"
-- term: the best practice is to do sth
-  pos: n.
-  kind: pattern
-  meaning: 公认最靠谱的做法是……（业内经验证明这么做最好）。
-  examples:
-  - en: So, the best practice is really to build it first and then examine it to figure out where it is not yet satisfactory.
-    zh: 所以公认最靠谱的做法，其实是先把东西搭出来，再去检查它哪些地方还不够好。
-  - en: They have their own best practice in leveraging cloud.
-    zh: 他们自己有一套用云的成熟做法。
-  note: |-
-    practice 在这里不是「练习」，是**长期做事的方式、惯常做法**（同 practise 做事那层意思）。best practice = 大家试下来公认最好的那套做法。
-    可数性是中文母语者最容易翻车的地方：
-    · the best practice is to do sth —— 点名**某一个**具体推荐做法，单数加 the（上面例句就是）。
-    · follow industry best practices —— 泛指**一整套**公认做法，美式英语几乎都用复数。❌ follow industry best practice（美式听着怪）。
-    · in line with best practice —— 英式常把它当不可数，不加冠词也不加 s。跟着对方的说法走就行。
-    vs convention / standard / [[rule of thumb]]：convention 只说「大家都这么做」，没评价好坏；standard 是硬性标准、不照做算违规；rule of thumb 是粗略的经验判断，不保证最优；best practice 带**推荐、背书**的意味——「经验证明这么做最好，建议你也这么做」。
-    语气不强制：说 the best practice is … 是在给建议，不是下命令；要硬性要求得说 you must / it's mandatory。
-    句子骨架 X is to do 的讲解（is to = 等号，to do 填出 X 的具体内容）见 [[One strategy is to …]]，这条只管 best practice 这个词。
   source: Claude Code · Agentic AI 课程（evals）
   added: "2026-09-25"
 - term: in advance of sth vs ahead of sth
