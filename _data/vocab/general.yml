@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: be reflective of the conventions of …
+  pos: adj.
+  kind: phrase
+  meaning: 「体现了、反映出……」。reflect 本义是镜子「映出」影子：A is reflective of B = 从 A 身上能照见 B，A 是 B 的一个影子（体现、反映）。
+  examples:
+  - en: These are reflective of the conventions of various models.
+    zh: 这些反映的是不同模型各自的惯例（写法）。
+  note: |-
+    为什么不直接说 These reflect …：意思一样，be reflective of 更书面、更「客观描述」的口气，常见于讲课、文档、报告。它暗示「差异不是随便来的，背后有原因」——这里就是：格式长得不一样，是因为各家模型的约定不同。口语里说 These reflect … 或 This comes down to … 就够了。
+    形容词后面固定接 of：be reflective of sth。
+    ❌ 别和「反思」混：reflect on sth 是回头想一想、反思（reflect on my mistakes），和 be reflective of 不是一回事。
+    conventions 在这里是「约定俗成的写法、惯例」，常用复数：naming conventions（命名约定）。
+  source: Claude Code · Agentic AI 课程（tool use）
+  added: "2026-11-08"
 - term: outline the parameters required to do sth
   ipa: /ˈaʊtlaɪn/
   pos: v.
