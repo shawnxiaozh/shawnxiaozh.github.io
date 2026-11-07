@@ -2,6 +2,17 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: more on that later
+  kind: pattern
+  meaning: 「这个后面再细说」。是个省略句，补全是 (I'll tell you) more on that later —— 先在这儿插个书签，告诉听的人：这个点我看到了，但现在不展开，后面会回来讲。
+  examples:
+  - en: But they can live elsewhere, and more on that later.
+    zh: 不过它们也可以放在别的地方，这个后面再细说。
+  note: |-
+    为什么不说 I'll explain it later：意思一样，但 more on that later 只有四个词、没有主语和动词，顺口一带就过去了，不打断正在讲的主线。讲课、演示、做分享时常用来「挂起」一个支线话题。
+    后面的时间可以换：more on that in a bit（等会儿说）、more on that in the next video / section（下个视频 / 下一节再说）。
+  source: Claude Code · Context Engineering 课程
+  added: "2026-11-08"
 - term: step through sth in detail
   kind: phrase
   meaning: 把一件事拆开、凑近了细细地看，不放过每一步（详细地、仔细地）。像拿放大镜看，而不是远远扫一眼。
