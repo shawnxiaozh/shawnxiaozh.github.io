@@ -2,6 +2,23 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: It's what's doing …
+  kind: pattern
+  meaning: 「它就是那个在做……的东西」。what 在这里等于 the thing that，自己带着一个从句当表语：It's [what's doing the reasoning] = It's [the thing that is doing the reasoning]。后面的 what's 是 what is 的缩写，不是所有格。整句像用手指着说「干活的就是它」。
+  examples:
+  - en: It's what's doing the reasoning and making the decisions.
+    zh: 推理、做决定的，就是它。
+  - en: When we give tools, that is, functions, for an LLM to request a call, that's what lets it do a lot more.
+    zh: 我们给 LLM 工具，也就是让它可以请求调用的函数，正是这一点让它能做的事多了很多。
+  - en: Wisconsin was one of the few places which maintained this capability, and that's what made IceCube possible there.
+    zh: 威斯康星是少数还保留着这种能力的地方之一，正是这一点让 IceCube 在那里成为可能。
+  note: |-
+    为什么不说 It does the reasoning：平铺直叙只是在陈述它做什么；It's what's doing … 是在「指认」，强调「干这件事的就是它，不是别的」，口语里用来点明谁是核心、谁是关键。
+    怎么拆：先找第一个 is（It's），后面整块 what's doing … 都是表语；第二个 's 是 what 从句自己的 is。
+    常见变体：that's what makes …（正是这点让……）、that's what I mean（我就是这个意思）、that's what lets sb do …。
+    ❌ 别把 what's 当成 what 的所有格。
+  source: Claude Code · Context Engineering 课程
+  added: "2026-11-07"
 - term: the context window fills up
   kind: phrase
   meaning: 一点一点被装满，直到快没地方了。up 是「到顶、满」—— 像往杯子里倒水，水位一路涨上去（填满、占满）。
