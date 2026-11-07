@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: a quick refresher on sth
+  ipa: /rɪˈfreʃər/
+  pos: n.
+  kind: phrase
+  meaning: 把以前学过、有点生疏的东西快速过一遍，让它重新「新鲜」起来（复习、温习）。refresh 是「刷新」，像网页按一下 F5，内容早就在那儿，只是重新加载一遍。
+  examples:
+  - en: … getting a quick refresher on tool use and on hooks.
+    zh: ……先快速回顾一下工具调用和 hooks。
+  note: |-
+    为什么不说 review：review 可大可小，也可能是第一次细看；refresher 预设「你本来就会，只是有点忘了」，语气更轻、更客气，不会让听的人觉得被当成新手。
+    vs recap：recap 是总结刚刚讲过的内容；refresher 是把以前学过的捡回来。
+    可数名词，带冠词：a quick refresher on sth。也常说 a refresher course（进修课、复训课）。
+  source: Claude Code · Context Engineering 课程
+  added: "2026-11-08"
 - term: It's what's doing …
   kind: pattern
   meaning: 「它就是那个在做……的东西」。what 在这里等于 the thing that，自己带着一个从句当表语：It's [what's doing the reasoning] = It's [the thing that is doing the reasoning]。后面的 what's 是 what is 的缩写，不是所有格。整句像用手指着说「干活的就是它」。
