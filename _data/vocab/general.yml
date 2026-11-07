@@ -2,6 +2,23 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: One strategy is to …
+  kind: pattern
+  meaning: 「其中一个办法是……」。is to do 在这里不是「将要」，是一个等号：前面的 strategy 是个空盒子，to do 那部分把盒子里装的具体做法填进去（策略 = 做某事）。
+  examples:
+  - en: One strategy is to turn to hooks.
+    zh: 一个办法是转而求助于 hooks。
+  - en: So instead of trying to implement one tool after another, a different approach is to let it write and execute code.
+    zh: 所以与其一个接一个地实现工具，另一种做法是让它自己写代码、自己执行。
+  - en: The next step is to actually establish that connection and launch the server as a subprocess.
+    zh: 下一步就是真正把连接建起来，并把服务器作为子进程启动。
+  note: |-
+    怎么认：主语是 strategy / approach / idea / goal / plan / next step / the trick 这类「抽象名词」，is 后面跟 to do，就是在说「这个 X 具体是什么」。
+    为什么不说 We can turn to hooks：直接说是在给答案；One strategy is to … 先把它摆成「多个选项里的一个」，听的人知道后面可能还有别的方案，口气更开放，讲课、方案讨论里很常用。
+    ❌ 别和 be to do 的另一种用法混：You are to report by 9am. 主语是人，意思是「必须、按安排要」，那是另一回事。
+    句里的 turn to sth 是「转向……求助」：turn to hooks = 改用 hooks 来解决。
+  source: Claude Code · Context Engineering 课程（hooks）
+  added: "2026-11-08"
 - term: be reflective of the conventions of …
   pos: adj.
   kind: phrase
