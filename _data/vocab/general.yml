@@ -17,6 +17,7 @@
     为什么不说 We can turn to hooks：直接说是在给答案；One strategy is to … 先把它摆成「多个选项里的一个」，听的人知道后面可能还有别的方案，口气更开放，讲课、方案讨论里很常用。
     ❌ 别和 be to do 的另一种用法混：You are to report by 9am. 主语是人，意思是「必须、按安排要」，那是另一回事。
     句里的 turn to sth 是「转向……求助」：turn to hooks = 改用 hooks 来解决。
+    同一个骨架换个主语就能套：[[the best practice is to do sth]]（公认最好的做法是……）、the goal is to …（目标是……）、the idea is to …（思路是……）。
   source: Claude Code · Context Engineering 课程（hooks）
   added: "2026-11-08"
 - term: be reflective of the conventions of …
@@ -2708,6 +2709,7 @@
     · in line with best practice —— 英式常把它当不可数，不加冠词也不加 s。跟着对方的说法走就行。
     vs convention / standard / [[rule of thumb]]：convention 只说「大家都这么做」，没评价好坏；standard 是硬性标准、不照做算违规；rule of thumb 是粗略的经验判断，不保证最优；best practice 带**推荐、背书**的意味——「经验证明这么做最好，建议你也这么做」。
     语气不强制：说 the best practice is … 是在给建议，不是下命令；要硬性要求得说 you must / it's mandatory。
+    句子骨架 X is to do 的讲解（is to = 等号，to do 填出 X 的具体内容）见 [[One strategy is to …]]，这条只管 best practice 这个词。
   source: Claude Code · Agentic AI 课程（evals）
   added: "2026-09-25"
 - term: in advance of sth vs ahead of sth
