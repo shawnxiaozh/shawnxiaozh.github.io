@@ -2,6 +2,22 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: step through sth in detail
+  kind: phrase
+  meaning: 把一件事拆开、凑近了细细地看，不放过每一步（详细地、仔细地）。像拿放大镜看，而不是远远扫一眼。
+  examples:
+  - en: Let's step through this tool call in detail.
+    zh: 我们来一步一步、仔细地过一遍这次工具调用。
+  - en: Let's head over to the next video to look at this in more detail.
+    zh: 我们到下一个视频里更仔细地看看这个。
+  - en: Behind the scenes, what this will do is create a JSON schema that describes the function in detail.
+    zh: 在背后，它会生成一份 JSON schema，把这个函数详细地描述出来。
+  note: |-
+    in detail 放在动词短语后面，前面的动词可以换：step through / look at / go through / explain / describe sth in detail。想说「再细一点」就用 in more detail，在课程、会议里很常见：Let's look at this in more detail.
+    step through 本身是「一步一步走一遍」，来自调试器里的单步执行（step through the code），和 in detail 搭在一起就是「逐步、细致地过一遍」。
+    ❌ in details —— detail 在这个短语里是不可数的，不加 s，也不加冠词。
+  source: Claude Code · Context Engineering 课程
+  added: "2026-11-08"
 - term: a quick refresher on sth
   ipa: /rɪˈfreʃər/
   pos: n.
