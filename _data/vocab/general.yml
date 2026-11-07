@@ -2,6 +2,21 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: the resulting tool
+  ipa: /rɪˈzʌltɪŋ/
+  pos: adj.
+  kind: phrase
+  meaning: 「（前面那一通操作）最后得到的那个工具」。resulting 是从 result「结果」来的：前面刚讲完一串步骤，the resulting X 就是指着这串步骤的产物说「出来的那个 X」（由此产生的、最终得到的）。
+  examples:
+  - en: The resulting tool …
+    zh: 这样做出来的那个工具……
+  note: |-
+    为什么不说 the new tool / the final tool：new 只说它是新的，final 只说它是最后一个；resulting 往回指，把这个工具和前面刚讲的过程连起来 ——「就是刚才那几步做出来的那个」。讲教程、写文档时一句话就能接上前文，不用再重复一遍过程。
+    位置：放在名词前面当定语，名词随便换：the resulting code / JSON schema / file / output。
+    也可以放到名词后面用 resulting from：the errors resulting from the bad config（由错误配置导致的错误）。
+    ❌ the result tool —— result 是名词，不能直接修饰 tool；要用形容词 resulting。
+  source: Claude Code · Agentic AI 课程（tool use）
+  added: "2026-11-08"
 - term: result in context clash
   ipa: /klæʃ/
   pos: n.
