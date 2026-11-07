@@ -4035,9 +4035,12 @@
     zh: 重试的顺序不是确定的，所以这个测试才会时好时坏。
   - en: a fully deterministic sequence of steps
     zh: 一串完全确定的步骤。
+  - en: … be pieces of code that run deterministically
+    zh: ……是一段段确定性运行的代码（每次跑，结果都一样）
   note: |-
     vs predictable / consistent：predictable 是大致能猜到；consistent 是表现一贯；deterministic 是严格的术语——给定输入，输出必然唯一，出现一次反例就不成立。
     反面是 non-deterministic / flaky。LLM 相关讨论里高频。
+    副词 deterministically 修饰动词，常见搭配 run deterministically（每次运行结果都一样）。在 AI agent 语境里，它专门用来和 LLM 对比：模型每次的输出可能不同，而一段代码 run deterministically，同样的输入每次都走同一条路，所以适合放那些必须每次都做到、不能靠模型「自觉」的事。
   source: Notion · Work + English Teacher · 理解文本中的难点
   added: "2026-09-10"
 - term: agentic to different degrees
