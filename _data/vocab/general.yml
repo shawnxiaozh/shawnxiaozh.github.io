@@ -2,6 +2,25 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: result in context clash
+  ipa: /klæʃ/
+  pos: n.
+  kind: phrase
+  meaning: 上下文里有两条信息「撞」在一起、互相矛盾，模型又看不出该信哪条（上下文冲突）。clash 本义是两把剑「当」一声撞上，有声音、有火星 —— 两条信息正面撞上，谁也不让谁。
+  examples:
+  - en: This is Context Clash. Two pieces of information conflict, but their relationship is not clear.
+    zh: 这就是上下文冲突：两条信息互相矛盾，但它们之间到底是什么关系并不清楚。
+  - en: The inclusion of different policy versions without clear effective dates resulted in conflicting information or context clash.
+    zh: 把不同版本的政策都塞进来，又没写清楚各自的生效日期，结果就是信息互相打架，也就是上下文冲突。
+  - en: A longer history does create more opportunities for issues like Context Clash, because the longer the context, the more chances for two parts to be inconsistent.
+    zh: 历史越长，确实越容易出现上下文冲突这类问题，因为上下文越长，两部分对不上的机会就越多。
+  note: |-
+    为什么用 clash 不用 conflict：conflict 是中性的「有矛盾」；clash 更有画面感，强调两样东西正面撞上、互不相容。日常也常用：the two meetings clash（两个会时间撞了）、the colors clash（颜色不搭、打架）、clash with sb（和某人起冲突）。
+    作为术语名称不可数，不加冠词：lead to / result in context clash、issues like context clash。
+    关键不只是「矛盾」，而是「关系不清楚」：两条记录都像真的，却没说哪条是新版本、哪条在什么时候生效，模型没法判断该信哪个。解法是给信息标上版本 / 生效日期，或把旧的删掉。
+    vs context confusion：confusion 是工具描述重叠、意思模糊，导致选错工具；clash 是两条信息内容直接冲突。
+  source: Claude Code · Context Engineering 课程（Context Failure Modes）
+  added: "2026-11-08"
 - term: One strategy is to …
   kind: pattern
   meaning: 「其中一个办法是……」。is to do 在这里不是「将要」，是一个等号：前面的 strategy 是个空盒子，to do 那部分把盒子里装的具体做法填进去（策略 = 做某事）。
