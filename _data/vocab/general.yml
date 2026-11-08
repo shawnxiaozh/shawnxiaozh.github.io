@@ -2,6 +2,22 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: examine it after the fact
+  pos: adv.
+  kind: phrase
+  meaning: fact 在这里不是「事实」，而是「那件已经发生了的事」（拉丁词源 factum = 已经做成的事）。after the fact 就是「事情都发生完了，再回过头去看」—— 像比赛结束后看录像回放，场上已经改变不了什么，只能复盘（事后、回头看）。
+  examples:
+  - en: So, how do you capture spans and build up a trace so that you can examine it after the fact?
+    zh: 那么，怎么把 span 记下来、拼成一条 trace，好让你事后能回头查看它呢？
+  - en: After the fact, it's totally normal. This is ancient snow that fell on Antarctica 50,000 years ago, and it's ultra-pure
+    zh: 事后回头看，这完全正常。这是五万年前落在南极的古老积雪，纯净得不得了
+  note: |-
+    为什么不直接说 afterwards / later：afterwards 只是时间上的「之后」；after the fact 强调「事已成定局」，你当时没能介入，现在只能回头看 —— 带复盘、事后诸葛的味道。
+    第一条例句：trace 就是把运行过程录下来，方便事后复盘。第二条：当时根本没把握，事后回头看才觉得理所当然（≈ in hindsight）。
+    法律里有 an accessory after the fact（事后从犯：犯罪发生后帮忙掩护的人），fact 也是「那件已发生的事」。
+    常见位置：句末（examine / fix / explain sth after the fact），或句首单独起头（After the fact, …）。
+  source: Claude Code · Context Engineering 课程（trace 与 span）
+  added: "2026-11-08"
 - term: housekeeping actions by the harness
   pos: n.
   kind: phrase
