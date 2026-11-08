@@ -2,6 +2,23 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: We call all the data produced by an agent as it works on a task a trace.
+  kind: pattern
+  meaning: agent 在执行任务过程中产生的所有数据，我们统称为一条 trace。要记的是中间那个 as：as it works on a task = 在它做任务的过程中，as 约等于 while，说的是一段持续的过程，不是一个时间点。
+  examples:
+  - en: We call all the data produced by an agent as it works on a task a trace.
+    zh: agent 在执行任务过程中产生的所有数据，我们统称为一条 trace。
+  note: |-
+    句子骨架是 call A B（把 A 叫作 B）：We call [all the data produced by an agent as it works on a task] [a trace]。A 太长，把 a trace 推到了句尾，读到最后才知道在定义什么。
+    A 内部：all the data ← produced by an agent（由 agent 产生的）← as it works on a task（在它做任务的过程中，修饰 produced）。it 回指前面的 an agent。
+    as ≈ while，不是 when：when 是一个时间点（When it starts, … 它一开始的时候）；while 是一段持续的过程（while it works on a task 它做任务的整个过程中）；as 也是一段过程，再加一点「随着推进、越积越多」的感觉。这里数据是整个干活过程中一路产生的，换成 while 意思完全不变；换成 when 也能懂，但像是在说「那一刻」，少了持续感。讲 trace、日志、进度这类越积越多的东西时 as 特别常见。
+    读法：看到 as + 主语 + 正在做的事，先当 while 读，基本不会错。
+    为什么难习惯：中文把「什么时候」放在动作前面（agent 在做任务的过程中产生的数据），英文把它补在动作后面。读到 produced by an agent 以为说完了，后面又冒出 as it …，得回头把它挂到 produced 上。别当成要翻译的从句，当成一个「边……边……」的尾巴：主要动作在前，as 补一个同时在进行的背景。
+    同一个形状：Take notes as you read.（边读边做笔记）／The logs grow as the job runs.（任务跑着跑着，日志越来越多）／the context window fills up as the agent works（agent 干着干着，上下文就满了）。
+    更顺口的说法：All the data an agent produces while working on a task is called a trace. / A trace is all the data an agent produces as it works on a task.
+    同一个 as 的另一条：[[as you work on doing sth]]（as 在句首）。
+  source: Claude Code · Context Engineering 课程
+  added: "2026-11-08"
 - term: reveal the issues at a glance
   kind: phrase
   meaning: 「扫一眼就能看出问题」。glance 是匆匆一瞥，at a glance = 只用一瞥的工夫，不用细看、不用分析，问题自己就跳到眼前（一眼看出、一目了然）。
@@ -2678,14 +2695,12 @@
 - term: as you work on doing sth
   pos: conj.
   kind: pattern
-  meaning: 在你着手弄某事的过程中（随着这件事推进，另一件事也同步发生）。as 在这里约等于 while：说的是一段持续的过程，不是一个时间点。
+  meaning: 在你着手弄某事的过程中（随着这件事推进，另一件事也同步发生）。
   examples:
   - en: Then as you work on eliminating these competitor mentions, one way to track progress is to add an eval.
     zh: 那么在你着手清掉这些提到竞品的地方的过程中，跟踪进展的一个办法就是加一个 eval。
   - en: As you work on improving your research agent, hopefully you see these scores go up over time.
     zh: 随着你不断改进这个研究 agent，理想情况下你会看到这些分数慢慢涨上去。
-  - en: We call all the data produced by an agent as it works on a task a trace.
-    zh: agent 在执行任务过程中产生的所有数据，我们统称为一条 trace。
   note: |-
     这里的 as 既不是「因为」也不是「作为」，而是**「随着……」**：引出一个正在推进的背景动作，主句的事在这段时间里同步发生。
     vs while / when：多数情况下 as 和 while 可以互换，第一条例句换成 while 毫无问题，别硬找区别。差别只在语气——while 最中性，就是「这段时间里」；as 带一点「随着进展」的前倾感，给建议时最常用；when 偏「每当、一旦开始」。只有第二条例句那种「一个随另一个变化」的联动（改得越多分越高）才非 as 不可。
@@ -2694,14 +2709,6 @@
     work on sth / doing sth = **着手弄、持续在弄**，强调过程，不保证做完。职场高频的 I'm working on it = 我在弄了（潜台词：还没好）。想说完成得用 finish / ship。
     ❌ work on to eliminate sth。on 是介词，后面只能跟名词或动名词：work on evals ✅ / work on eliminating them ✅。
     同款还有 as you go（一边做一边……）、as you build agentic workflows（随着你搭得多了）。
-    难点：as 从句不一定放句首，也可能夹在句子中间，只修饰紧挨着的那个动作。第三条例句里 as it works on a task 挂在 produced 后面：data produced by an agent [as it works on a task] = agent 在做任务的过程中产生的数据。it 回指前面的 an agent。
-    读法：遇到句中的 as + 主语 + 进行中的动作，先在心里补成「在……的过程中」，再把它塞回前面那个动作上，别急着往后读。
-    口语想说得顺，可以换成 while：all the data an agent produces while working on a task —— while + doing 省掉了 it，更好念。
-    as ≈ while，不是 when：when 是一个时间点（When it starts, … 它一开始的时候）；while 是一段持续的过程（while it works on a task 它做任务的整个过程中）；as 也是一段过程，再加一点「随着推进、越积越多」的感觉。第三条例句里数据是整个干活过程中一路产生的，换成 while 意思完全不变；换成 when 也能懂，但像是在说「那一刻」，少了持续感。所以讲 trace、日志、进度这类越积越多的东西时 as 特别常见。
-    读法：看到 as + 主语 + 正在做的事，先当 while 读，基本不会错。
-    为什么难习惯：中文把「什么时候」放在动作前面（agent 在做任务的过程中产生的数据），英文把它补在动作后面（data produced by an agent as it works on a task）。读到 produced by an agent 以为说完了，后面又冒出 as it …，得回头把它挂到 produced 上；it 还要回指前面的 an agent。别当成要翻译的从句，当成一个「边……边……」的尾巴：主要动作在前，as 补一个同时在进行的背景。
-    同一个形状：Take notes as you read.（边读边做笔记）／The logs grow as the job runs.（任务跑着跑着，日志越来越多）／the context window fills up as the agent works（agent 干着干着，上下文就满了）。
-    口语想更顺可以换成 while + doing：all the data an agent produces while working on a task。
   source: Claude Code · Agentic AI 课程（evals）
   added: "2026-09-25"
 - term: consider it an error to do sth
