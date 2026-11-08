@@ -2,6 +2,19 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: housekeeping actions by the harness
+  pos: n.
+  kind: phrase
+  meaning: 本义是「料理家务」—— 扫地、倒垃圾、收拾屋子，不是你在家的正事，但不做家里就乱套。引申到系统里，就是为了让系统保持干净、能继续跑而顺手做的后台杂务，不是任务本身，却必须有人做（维护性操作、内务处理）。
+  examples:
+  - en: the recording of all calls to the model or models powering the agent, and any housekeeping actions by the harness, for example, compaction of long context
+    zh: 所有对驱动这个 agent 的模型的调用记录，以及 harness 做的各种「内务」操作，比如把过长的上下文压缩一下
+  note: |-
+    为什么不说 maintenance tasks / background operations：housekeeping 自带「不起眼、例行、不属于正事但为了保持整洁必须做」的画面，一听就知道是配角操作；maintenance 偏「修、保养」，background 只说在后台跑，不带「收拾」这层意思。
+    housekeeping 本身不可数：do some housekeeping、a bit of housekeeping（❌ a housekeeping）；要可数就加 actions / tasks / items。
+    开会时常说 a few housekeeping items / some housekeeping before we start = 正题前先过几件行政杂事（时间、会议室、通知）。
+  source: Claude Code · Context Engineering 课程（trace 与 harness）
+  added: "2026-11-08"
 - term: We call all the data produced by an agent as it works on a task a trace.
   kind: pattern
   meaning: agent 在执行任务过程中产生的所有数据，我们统称为一条 trace。要记的是中间那个 as：as it works on a task = 在它做任务的过程中，as 约等于 while，说的是一段持续的过程，不是一个时间点。
