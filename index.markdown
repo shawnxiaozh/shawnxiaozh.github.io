@@ -29,7 +29,7 @@ permalink: /
               {% if post.tags.size > 0 %}
                 <div class="article-entry-tags">
                   {% for tag in post.tags %}
-                    <span class="article-tag">{{ tag }}</span>
+                    <a class="article-tag" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>
                   {% endfor %}
                 </div>
               {% endif %}

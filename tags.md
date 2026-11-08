@@ -87,7 +87,9 @@ permalink: /tags/
 
       panelContainer.classList.add('js-ready');
 
-      var initial = window.location.hash ? window.location.hash.replace('#', '') : '';
+      // 中文 tag 在 hash 里是 URL 编码的（#%E5%8A%A8...），先解码再和 data-tag 比对
+      var initial = '';
+      try { initial = decodeURIComponent(window.location.hash.replace('#', '')); } catch (e) {}
       var initialMatch = panels.find(function(panel) { return panel.dataset.tag === initial; });
       // 没有 hash（或 hash 对不上任何 tag）时显示 All
       var defaultTag = initialMatch ? initial : '';
