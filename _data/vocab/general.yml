@@ -2,6 +2,19 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: reveal the issues at a glance
+  kind: phrase
+  meaning: 「扫一眼就能看出问题」。glance 是匆匆一瞥，at a glance = 只用一瞥的工夫，不用细看、不用分析，问题自己就跳到眼前（一眼看出、一目了然）。
+  examples:
+  - en: Looking at your data reveals these issues at a glance, helping you decide what to investigate next in the harness, along with the data sources.
+    zh: 直接看一眼数据，这些问题就一目了然，能帮你决定接下来该去 harness 和数据源里查哪里。
+  note: |-
+    为什么不说 quickly / easily：quickly 说的是「快」，easily 说的是「不费劲」；at a glance 强调「只看一眼就够了」——连仔细看都不需要，问题明摆着。
+    常见搭配：see / tell / spot sth at a glance（一眼看出）、I can tell at a glance that …（我一眼就看出……）。做成名词修饰也常见：an at-a-glance summary / view（一目了然的概要、总览）。
+    句子结构：主语是动名词 Looking at your data（看数据这件事），谓语是 reveals —— 「看数据」这个动作揭示了问题，比 If you look at your data, you'll see … 更紧凑。
+    reveal = 把原本藏着的东西揭开、亮出来，比 show 多一层「本来看不见」的意思。
+  source: Claude Code · Context Engineering 课程（building intuition about good context）
+  added: "2026-11-08"
 - term: the resulting tool
   ipa: /rɪˈzʌltɪŋ/
   pos: adj.
