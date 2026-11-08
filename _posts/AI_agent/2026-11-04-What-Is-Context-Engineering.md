@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Context Engineering · What Is Context Engineering?"
-date: 2026-11-08 09:00:00 +0800
+title: "Context Engineering · Module 1 · 01 What Is Context Engineering?"
+date: 2026-11-04 10:00:00 +0800
 tags: [ai-agent, context-engineering]
 excerpt: "长上下文窗口解决不了一切：在正确的时间，以正确的格式，给 agent 正确的信息 — Right information, right format, right time."
 ---

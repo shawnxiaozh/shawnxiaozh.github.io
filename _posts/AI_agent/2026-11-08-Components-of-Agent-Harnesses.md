@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Context Engineering · Components of Agent Harnesses"
+title: "Context Engineering · Module 1 · 05 Components of Agent Harnesses"
 date: 2026-11-08 11:00:00 +0800
 tags: [ai-agent, context-engineering]
 excerpt: "Harness 的两大组件：模型决定调用的 tool，和 harness 按事件确定性触发的 hook — Tools vs Hooks."

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Context Engineering · Components of Context"
-date: 2026-11-08 10:00:00 +0800
+title: "Context Engineering · Module 1 · 02 Components of Context"
+date: 2026-11-04 11:00:00 +0800
 tags: [ai-agent, context-engineering]
 excerpt: "上下文由哪些部分组成：system prompt、用户输入、memory、推理过程、工具输出与检索数据 — Components of context."
 ---

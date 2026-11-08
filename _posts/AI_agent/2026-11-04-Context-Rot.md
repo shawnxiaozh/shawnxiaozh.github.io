@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Context Engineering · Context Rot"
+title: "Context Engineering · Module 1 · 04 Context Rot"
 date: 2026-11-04 13:00:00 +0800
 tags: [ai-agent, context-engineering]
 excerpt: "上下文越长，模型越用不好：有效上下文长度远小于标称长度 — Context Rot, effective context length, Full vs Focused."

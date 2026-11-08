@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Context Engineering · Building Intuition About Good Context"
+title: "Context Engineering · Module 1 · 06 Building Intuition About Good Context"
 date: 2026-11-08 12:00:00 +0800
 tags: [ai-agent, context-engineering]
 excerpt: "先看数据再修上下文：用 trace 和 span 记录 agent 做了什么、为什么这么做 — Look at your traces."

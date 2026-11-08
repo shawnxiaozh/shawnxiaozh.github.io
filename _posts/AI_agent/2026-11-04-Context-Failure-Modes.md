@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Context Engineering · Context Failure Modes"
+title: "Context Engineering · Module 1 · 03 Context Failure Modes"
 date: 2026-11-04 12:00:00 +0800
 tags: [ai-agent, context-engineering]
 excerpt: "四种上下文失败模式：中毒、冲突、混淆、干扰 — Poisoning, Clash, Confusion, Distraction."

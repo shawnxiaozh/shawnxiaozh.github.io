@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Context Engineering · Guest Speaker Drew Breunig (Part 1)"
+title: "Context Engineering · Module 1 · 07 Guest Speaker Drew Breunig (Part 1)"
 date: 2026-11-08 14:00:00 +0800
 tags: [ai-agent, context-engineering]
 excerpt: "可靠性才是企业 agent 的关键：prompt debt，以及让 AI 像软件一样「无聊」 — Reliability, prompt debt, DSPy."

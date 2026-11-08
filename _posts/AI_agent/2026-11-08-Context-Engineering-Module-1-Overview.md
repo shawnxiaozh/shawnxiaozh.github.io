@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Context Engineering · Module 1 Overview"
+title: "Context Engineering · Module 1 · 00 Overview"
 date: 2026-11-08 15:00:00 +0800
 tags: [ai-agent, context-engineering]
 excerpt: "Module 1 总览：什么是 context engineering、失败模式、harness 的 tool 与 hook、看 trace — Module 1 recap and index."
