@@ -2,6 +2,20 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: drill down into individual steps
+  pos: v.
+  kind: phrase
+  meaning: 本义是拿钻头往下钻，一层一层往深处打。引申为从整体概览往下一层层点进去，看某个局部的细节 —— 就像看报表时先看总数，再点开某个月，再点开那个月里的某一笔（深挖、下钻、逐层细看）。
+  examples:
+  - en: A trace captures everything that happened as the agent worked, and spans let you drill down into individual steps in the process.
+    zh: trace 记录了 agent 工作过程中发生的一切，而 span 让你能深入到这个过程中的每一个具体步骤去看。
+  note: |-
+    为什么不说 look at the details / look closer：drill down 自带「从上往下、逐层深入」的方向感 —— 先有一个整体（trace），再钻进其中某一块（span）。look at the details 只说看细节，没有这个层级结构。
+    搭配：drill down into sth（钻进哪一块），也可以不带宾语单独说 Let's drill down a bit.
+    数据分析和仪表盘里是固定术语：a drill-down report / drill-down view（可下钻的报表），中文常译「下钻」。
+    反方向是 zoom out / roll up（往上汇总、看全局）。
+  source: Claude Code · Context Engineering 课程（trace 与 span）
+  added: "2026-11-08"
 - term: examine it after the fact
   pos: adv.
   kind: phrase
