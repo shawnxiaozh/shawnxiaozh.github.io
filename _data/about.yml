@@ -9,6 +9,11 @@ profile:
 
 # icon 可选值：linkedin / github / email / instagram / rss / link
 # url 留空的条目不显示。
+# 座右铭，显示在个人卡片下方。text 留空的条目不显示。
+mottos:
+  - text: 到最后，人会后悔的只有一件事，那就是活得不够勇敢。
+  - text: You only live once, but not only one day.
+
 links:
   - label: LinkedIn
     icon: linkedin

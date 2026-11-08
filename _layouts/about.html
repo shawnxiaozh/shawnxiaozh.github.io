@@ -32,5 +32,14 @@ layout: default
     </div>
   </section>
 
+  {%- assign mottos = cv.mottos | where_exp: "m", "m.text != nil and m.text != ''" %}
+  {%- if mottos.size > 0 %}
+  <section class="about-mottos">
+    {%- for m in mottos %}
+    <blockquote class="about-motto">{{ m.text }}</blockquote>
+    {%- endfor %}
+  </section>
+  {%- endif %}
+
   {{ content }}
 </article>
