@@ -2,6 +2,47 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: owe sb a response
+  pos: v.
+  kind: phrase
+  meaning: 欠对方一个答复。owe 本义是欠钱，引申为欠对方一样「本该给、对方有权等着」的东西：答复、解释、道歉。画面就是心里记着一笔账：对方在等，这笔账得还。
+  examples:
+  - en: I think we will owe a response to them.
+    zh: 我觉得我们得给他们一个答复。
+  note: |-
+    为什么不说 we need to reply：need to reply 只说「要回」，owe 强调「这是我们该给的、对方有权等」，带责任感，常常还暗含一点歉意（已经拖了一阵）。
+    两种语序都对：owe sb a response = owe a response to sb。宾语短时用前者更口语。
+    同类搭配：owe sb an apology（欠某人一个道歉）、owe sb an explanation（该给某人一个解释）、I owe you one（欠你个人情）。
+  source: Claude Code · 职场沟通
+  added: "2026-11-15"
+- term: capture sth up front
+  pos: adv.
+  kind: phrase
+  meaning: ① 在一开始、事情还没展开之前就先把它办掉（事先、提前）。front 是队伍的最前头，up front 就是把这件事排到整个流程的最前面先处理。② be up front about sth：有话直说、不藏着（坦率）。
+  examples:
+  - en: They wanted to capture those things up front.
+    zh: 他们想一开始就把这些事情都摸清楚、记下来。
+  note: |-
+    为什么不说 at the beginning / in advance：这两个只说时间早。up front 还暗含一层意思：先把这部分投入做掉，后面就不用返工、不用扯皮。所以常和需求、成本、付款连用：pay up front（先付款）、an upfront cost（前期成本）。
+    这里的 capture 不是「抓住」，是「把信息收集、记录下来」（capture requirements = 收集需求）。
+    位置：一般放在句尾，紧跟在动词短语后面。
+    拼写：副词常分开写 up front，作定语的形容词写成一个词 upfront（an upfront payment）。
+  source: Claude Code · 需求沟通
+  added: "2026-11-15"
+- term: the revocation of sth
+  ipa: /ˌrevəˈkeɪʃn/
+  pos: n.
+  kind: phrase
+  meaning: 把已经授予出去的权限、资格收回来，让它作废（撤销、吊销）。re-「回」+ voc「喊」（同 vocal、voice）——把说出去的话「喊回来」：当初开口给了你，现在开口收回。
+  examples:
+  - en: After the revocation of the API key, every request started failing with 401.
+    zh: API key 被吊销之后，所有请求都开始报 401。
+  note: |-
+    为什么不说 cancellation / deletion：cancel 是取消还没发生或正在进行的事（订单、会议）；delete 是东西直接没了。revocation 收回的是「已经给出去的授权」，东西可能还在，但已经失效了，而且带「由有权发放的一方正式收回」的权威感。
+    常见搭配：certificate revocation（证书吊销）、token revocation、license revocation（吊销执照）、access revocation。动词是 revoke：revoke a token / revoke sb's access。
+    发音：名词重音在 -ca-（rev-o-CA-tion），动词 revoke 重音在后（re-VOKE），第一个元音也变了，别按动词去读名词。
+  source: Claude Code · 技术术语
+  added: "2026-11-15"
 - term: drill down into individual steps
   pos: v.
   kind: phrase

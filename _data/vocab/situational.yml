@@ -2,6 +2,18 @@
 # 绑定特定场合才说的说法和话术，换个场合就不说了。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: set up an intake call with sb
+  kind: phrase
+  meaning: 接手新客户 / 新项目前的第一通「摸底电话」。intake 本义是「吸入、摄入」（water intake 饮水量），引申为「把新东西收进来的入口环节」——就像医院挂号处的登记：对方讲背景和需求，你记下来，再决定接不接、怎么接（初次沟通、需求收集会）。
+  examples:
+  - en: Let's set up a quick intake call to go over your requirements.
+    zh: 我们先约个简短的初次沟通电话，过一下你的需求吧。
+  note: |-
+    为什么不说 first call / kickoff meeting：first call 只说「第一次」，没有目的；kickoff 是已经决定开工后的启动会。intake call 在 kickoff 之前，重点是「收信息、做筛选」，带登记、评估的味道。
+    常见场合：咨询 / 律所接新客户、医疗和心理咨询接新病人、招聘里 recruiter 和 hiring manager 对齐岗位要求（也叫 intake meeting）、IT 团队接新需求。
+    常见搭配：have / schedule / set up an intake call with sb；也可单说 intake（the intake process、an intake form 登记表）。
+  source: Claude Code · 职场用语
+  added: "2026-11-15"
 - term: an affiliated third party
   ipa: /əˈfɪlieɪtɪd θɜːrd ˈpɑːrti/
   pos: n.
