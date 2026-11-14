@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Context Engineering · Module 2 · 00 Overview"
-date: 2026-11-14 10:00:00 +0800
+date: 2026-11-14 18:00:00 +0800
 tags: [ai-agent, context-engineering]
 excerpt: "Module 2 总览：agentic search——迭代搜索、搜索策略、tool registry、评估与数据准备 — Module 2 recap and index."
 ---
@@ -9,7 +9,7 @@ excerpt: "Module 2 总览：agentic search——迭代搜索、搜索策略、to
 <div class="lang-zh" lang="zh" markdown="1">
 
 > DeepLearning.AI × Chroma｜Context Engineering 课程 Module 2（Agentic Search）的
-> 模块介绍、模块总结，以及各节视频索引（不含 lab）
+> 模块介绍、模块总结，以及各节视频笔记索引（不含 lab）
 
 ## 从 Module 1 到 Module 2
 Module 1 讲了 context engineering 是「在正确的时间，以正确的格式，给到正确的信息」。
@@ -44,18 +44,18 @@ flowchart TB
 在一个收集客户反馈的小型 web 应用代码库上帮你探索和改代码。
 不同类型的查询需要不同的搜索工具。
 
-## 各节视频
+## 各节笔记
 
-| # | 视频 | 时长 |
+| # | 视频 | 一句话 |
 |---|---|---|
-| 1 | Introduction to Agentic Search | 5m |
-| 2 | Example: Coding Agent | 4m |
-| 3 | Search Strategies | 8m |
-| 4 | Implementing Search Strategies | 7m |
-| 5 | Tool Registries | 3m |
-| 6 | Evaluating Agentic Search | 6m |
-| 7 | Improving Retrieval with Data Preparation | 9m |
-| 8 | Guest Speaker: Drew Breunig (Part 2) | 5m |
+| 1 | [Introduction to Agentic Search](/Introduction-to-Agentic-Search/) | Agent 自己决定找什么、怎么找、要不要再找；检索决策从写死变成运行时 |
+| 2 | [Example: Coding Agent](/Example-Coding-Agent/) | 混用 hybrid、lexical、SQL 跨三个数据源，迭代定位工单升级 bug |
+| 3 | [Search Strategies](/Search-Strategies/) | 精确词法、BM25、语义、混合（RRF）各自适合找什么 |
+| 4 | [Implementing Search Strategies](/Implementing-Search-Strategies/) | 好的 tool description：该不该调、怎么调、结果怎么用 |
+| 5 | [Tool Registries](/Tool-Registries/) | 用搜索来找工具，按需加载描述，省 40% 以上 token |
+| 6 | [Evaluating Agentic Search](/Evaluating-Agentic-Search/) | 读 trace 定位失败在哪一步，先建小 eval 再一次改一处 |
+| 7 | [Improving Retrieval with Data Preparation](/Improving-Retrieval-with-Data-Preparation/) | 切块、AST 解析、metadata，用 Precision@k / Recall@k 衡量 |
+| 8 | [Guest Speaker Drew Breunig (Part 2)](/Drew-Breunig-Part-2/) | RLM：把超大上下文放进 REPL 变量，写代码查，递归交给子 agent |
 
 Lab（不单独记笔记）：Lab 1 Building a Search System；
 Lab 2 Tool Registries: Searching for the Right Tool。
@@ -78,7 +78,7 @@ Lab 2 Tool Registries: Searching for the Right Tool。
 <div class="lang-en" lang="en" markdown="1">
 
 > DeepLearning.AI × Chroma | Context Engineering, Module 2 (Agentic Search): introduction,
-> conclusion, and an index of the videos (labs not included)
+> conclusion, and an index of the video notes (labs not included)
 
 ## From Module 1 to Module 2
 Module 1 framed context engineering as the right information, in the right format, at the
@@ -116,18 +116,18 @@ The running example is a **coding agent** (like Claude Code or Codex) that helps
 explore and work on a codebase — a small web app for capturing customer feedback.
 Different kinds of queries call for different search tools.
 
-## Videos
+## Lesson Notes
 
-| # | Video | Length |
+| # | Video | In one line |
 |---|---|---|
-| 1 | Introduction to Agentic Search | 5m |
-| 2 | Example: Coding Agent | 4m |
-| 3 | Search Strategies | 8m |
-| 4 | Implementing Search Strategies | 7m |
-| 5 | Tool Registries | 3m |
-| 6 | Evaluating Agentic Search | 6m |
-| 7 | Improving Retrieval with Data Preparation | 9m |
-| 8 | Guest Speaker: Drew Breunig (Part 2) | 5m |
+| 1 | [Introduction to Agentic Search](/Introduction-to-Agentic-Search/) | The agent decides what, how and whether to search again; retrieval decisions move to runtime |
+| 2 | [Example: Coding Agent](/Example-Coding-Agent/) | Mixing hybrid, lexical and SQL across three sources to find an escalation bug |
+| 3 | [Search Strategies](/Search-Strategies/) | Exact lexical, BM25, semantic, hybrid (RRF) — what each is good for |
+| 4 | [Implementing Search Strategies](/Implementing-Search-Strategies/) | Good tool descriptions: should I call it, how, what to do with the result |
+| 5 | [Tool Registries](/Tool-Registries/) | Search for tools, load descriptions on demand, 40%+ token savings |
+| 6 | [Evaluating Agentic Search](/Evaluating-Agentic-Search/) | Locate failures in traces, build a small eval, change one thing at a time |
+| 7 | [Improving Retrieval with Data Preparation](/Improving-Retrieval-with-Data-Preparation/) | Chunking, AST parsing, metadata, measured with Precision@k / Recall@k |
+| 8 | [Guest Speaker Drew Breunig (Part 2)](/Drew-Breunig-Part-2/) | RLMs: huge context in REPL variables, queried with code, recursed to sub-agents |
 
 Labs (no separate notes): Lab 1 Building a Search System; Lab 2 Tool Registries: Searching
 for the Right Tool.
