@@ -621,7 +621,7 @@ RLM 把问题**转成模型擅长的形式**——推理和写代码。
 
 学完后，agent 能用更好的上下文补齐自己的知识缺口。
 但复杂任务可能持续数小时甚至数天，所有信息都往后带，
-上下文窗口终究会被填满——这是 Module 3（Context Management）要解决的问题。
+上下文窗口终究会被填满——这是 [Module 3（Context Management）](/Context-Engineering-Module-3/)要解决的问题。
 
 </div>
 
@@ -1295,6 +1295,6 @@ more out of them.
 
 Agents can now fill their knowledge gaps with better context. But complex tasks can run
 for hours or days, and if everything gets carried forward the context window eventually
-fills up — that's what Module 3 (Context Management) tackles.
+fills up — that's what [Module 3 (Context Management)](/Context-Engineering-Module-3/) tackles.
 
 </div>
