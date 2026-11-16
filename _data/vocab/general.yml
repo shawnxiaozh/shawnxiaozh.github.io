@@ -6948,7 +6948,7 @@
   meaning: 在关口架个机制守着，不合规的直接拦下（强制执行）。force（力）在里面 —— 不靠自觉，靠挡。
   examples:
   - en: When does this 70% coverage get enforced?
-    zh: 这个 70% 的覆盖率要求，是在哪一步卡的？
+    zh: 这个 70% 的覆盖率要求，什么时候开始强制执行？
   - en: enforcing them through a lint tool
     zh: 用 lint 工具来强制执行这些规范
   - en: So the second criteria is enforced when you check whether this task is complete.
@@ -6957,7 +6957,7 @@
     区分两件事：写出规范 ≠ 规范被遵守。
     和 implementing 的区别：implement 是把规范落地、做出来；enforce 强调有机制保证大家必须遵守，不遵守会被拦下（比如 lint 报错）。
     被动常说 get enforced，和 be enforced 意思一样，但更口语，更强调「真的有人去执行了」。最常见的是否定句：The rule exists but never gets enforced.（规定有，但没人管。）
-    问 when does X get enforced，是在问规则落在哪个关口才真正拦人：本地提交时、CI 跑的时候，还是合并 PR 之前？也可能是问「从哪天开始动真格」。
+    when does X get enforced 字面就是问时间：这条规定从什么时候开始动真格（比如下个 sprint 起、某个日期起）。在工程语境里，when 也可能指「流程里的哪一步」（提交时、CI 时、合并前），要看上下文。
   source: English Teacher · Condensing slow SQL optimization
   added: "2026-07-20"
 - term: prevent recurrence
