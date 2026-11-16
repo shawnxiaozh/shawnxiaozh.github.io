@@ -6948,9 +6948,14 @@
   meaning: 在关口架个机制守着，不合规的直接拦下（强制执行）。force（力）在里面 —— 不靠自觉，靠挡。
   examples:
   - enforcing them through a lint tool
+  - en: So the second criteria is enforced when you check whether this task is complete.
+    zh: 所以第二条标准，是在你检查这个任务有没有完成的时候卡住的。
+  - en: You could also enforce the structure using, for example, a Pydantic schema.
+    zh: 你也可以用比如 Pydantic schema 来强制输出符合这个结构。
   note: |-
     区分两件事：写出规范 ≠ 规范被遵守。
     和 implementing 的区别：implement 是把规范落地、做出来；enforce 强调有机制保证大家必须遵守，不遵守会被拦下（比如 lint 报错）。
+    被动常说 get enforced，和 be enforced 意思一样，但更口语，更强调「真的有人去执行了」。最常见的是否定句：The rule exists but never gets enforced.（规定有，但没人管。）
   source: English Teacher · Condensing slow SQL optimization
   added: "2026-07-20"
 - term: prevent recurrence
