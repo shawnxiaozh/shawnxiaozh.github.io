@@ -2,6 +2,19 @@
 # 跨场合都能用的表达和领域术语。判定不出场景绑定的一律进这里。
 # 字段见 _data/vocab_meta.yml 顶部注释。新词加在最上面（按 added 倒序）。
 
+- term: port sth over to …
+  pos: v.
+  kind: phrase
+  meaning: 把代码、功能从一个环境搬到另一个环境，并改到它在那边能跑起来（移植）。port 来自拉丁语 portare「搬运」（同 transport、portable），over 是「从这边越到那边」。合起来的画面：把一箱东西扛过河，到了对岸还得拆开重新装好。
+  examples:
+  - en: We'll need to port the auth logic over to the new service.
+    zh: 我们得把鉴权逻辑移植到新服务上。
+  note: |-
+    为什么不说 copy / move / migrate：copy 只是复制一份，move 只是挪位置，都不管到了新地方能不能用。port 暗含「搬过去要做适配」。migrate 多指数据、系统或用户整体迁移（migrate the database），port 多指一段代码、一个功能、一款游戏（port a game to Switch）。
+    over 可省：port sth to … 也常见，加 over 更口语，更突出「从旧的搬到新的」。
+    生活里也用：port your number 是携号转网。
+  source: Claude Code · 技术用语
+  added: "2026-11-16"
 - term: owe sb a response
   pos: v.
   kind: phrase
