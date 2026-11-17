@@ -1,0 +1,12 @@
+{%- comment -%}
+  待看清单的一行。用法：{% include watchlist-item.html item=item date=item.added %}
+  date 由调用方决定显示哪个日期（todo 页显示加入/上线日期，done 页显示看完日期）。
+{%- endcomment -%}
+{%- assign item = include.item -%}
+<li>
+  <span class="post-meta">{{ include.date }}</span>
+  <span class="watch-type">{% if item.type == "video" %}▶ video{% else %}✎ article{% endif %}</span>
+  <a href="{{ item.url }}">{{ item.title }}</a>
+  {%- if item.source %} <span class="post-meta">· {{ item.source }}</span>{% endif %}
+  {%- if item.note %}<br><small>{{ item.note }}</small>{% endif %}
+</li>

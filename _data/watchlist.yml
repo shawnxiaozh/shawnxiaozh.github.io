@@ -1,0 +1,21 @@
+# 待看清单：视频 / 文章。/todo/ 和 /done/ 两个页面都从这里读。
+# 看完了：把 status 改成 done，填上 done_on，下次构建它就移到 /done/。
+#
+# 字段：
+#   title      标题
+#   type       video | article
+#   url        链接
+#   source     频道 / 作者 / 网站（可选）
+#   added      加入日期 "YYYY-MM-DD"
+#   available  还没上线时填上线日期 "YYYY-MM-DD"（可选；已上线就留空）
+#   status     todo | done
+#   done_on    看完日期 "YYYY-MM-DD"（status: done 时填）
+#   note       为什么要看 / 看完的一句话感想（可选）
+# 日期一律加引号，Liquid 按字符串比较。
+
+- title: "All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI"
+  type: video
+  url: https://www.youtube.com/watch?v=O_zcc6Xl12g
+  source: AI Engineer
+  added: "2026-11-17"
+  status: todo

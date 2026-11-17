@@ -38,6 +38,8 @@ navigation:
     url: /
   - title: English
     url: /english/
+  - title: To-do
+    url: /todo/
   - title: Tags
     url: /tags/
   - title: About
